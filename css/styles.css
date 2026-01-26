@@ -1,1 +1,12 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 40px;
+  line-height: 1.6;
+  color: #111;
+}
 
+a {
+  color: #000;
+  text-decoration: underline;
+}
