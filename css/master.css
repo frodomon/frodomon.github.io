@@ -11,15 +11,72 @@ body {
   width: 100%;
   background-color: #FFFFFF;
   overflow: auto hidden;
-  font-family: system-ui, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   line-height:normal;
   color: var(--primary-color);
 }
-
-a {
-  color: #000;
-  text-decoration: underline;
+h1, h1 a{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+h2, h2 a{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+h3, h3 a{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+h4, h4 a{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+h5, h5 a{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+h6{
+}
+p, p a{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+a, a:visited {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-decoration: none;
+}
+a:focus, 
+a:hover{ 
+  text-decoration: none;
+}
+a img{
+  border: none;
+  width:100%;
+  height:auto;
+  display: block;
 }
 /* ------------------------------GRID---------------------- */
 .col-1{
