@@ -6,14 +6,14 @@ permalink: /es/
 {% assign t = site.data.translations[page.lang] %}
 
 <section id="hero" class="container">
-   <div class="hero-content">
+   <div class="hero-content fullwidth">
     <h1>{{ t.home.hero.name }}</h1>
     <h2>{{ t.home.hero.title }}</h2>
     <h3 class="hero-subheadline">{{ t.home.hero.headline }}</h3>
     <p class="hero-support">{{ t.home.hero.description }}</p>
-    <div class="hero-cta">
-      <a href="/projects/" class="btn-primary">{{ t.home.hero.cta.primary }}</a>
-      <a href="mailto:vasquez.alf@gmail.com" class="btn-secondary">{{ t.home.hero.cta.secondary }}</a>
+    <div class="flex-left-row{">
+      <a href="/projects/" class="btn btn-primary">{{ t.home.hero.cta.primary }}</a>
+      <a href="mailto:vasquez.alf@gmail.com" class="btn btn-secondary">{{ t.home.hero.cta.secondary }}</a>
     </div>
   </div>
 </section>
