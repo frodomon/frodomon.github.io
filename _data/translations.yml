@@ -1,24 +1,73 @@
 en:
-  header:
-    nav:
-      home: "Home"
-      about: "About"
-      contact: "Contact"
   home:
-    title: "Alfredo Vasquez - Design Lead"
-    subtitle: "I design digital experiences."
-  about:
-    title: "About Me"
-    description: "I am a product designer."
+    hero:
+      name: "Alfredo Vásquez"
+      title: "Design Lead in financial products and digital services"
+      description: >
+        I lead design from strategy to execution, aligning business,
+        technology, and people to build clear, scalable products
+        with measurable impact.
+      highlights:
+        - "Experience in fintech, services, and complex platforms"
+        - "Technical background that bridges collaboration with engineering"
+        - "Focused on decision-making, not just visual execution"
+
+  leadership:
+    title: "How I Lead Design"
+    description: >
+      I have built my career wearing different “hats”: technology, data,
+      product, design, and entrepreneurship. This combination allows me
+      to approach complex problems with a systemic perspective.
+
+    principles:
+      title: "Principles"
+      items:
+        - "Design is decision-making, not decoration"
+        - "The right problem is worth more than the perfect solution"
+        - "Scaling design requires systems, not heroes"
+        - "Impact must be measured, not assumed"
+
+    teamwork:
+      title: "Working with Teams"
+      items:
+        - "Align stakeholders in high-complexity environments"
+        - "Define decision criteria before designing"
+        - "Mentor designers to promote autonomy"
+        - "Prioritize clarity when the cost of error is high"
 
 es:
-  nav:
-    home: "Inicio"
-    about: "Acerca"
-    contact: "Contacto"
   home:
-    title: "Alfredo Vasquez - Lider de Diseno"
-    subtitle: "Diseño experiencias digitales."
-  about:
-    title: "Sobre mí"
-    description: "Soy diseñador de producto."
+    hero:
+      name: "Alfredo Vásquez"
+      title: "Design Lead en productos financieros y servicios digitales"
+      description: >
+        Lidero diseño desde la estrategia hasta la ejecución, alineando
+        negocio, tecnología y personas para construir productos claros,
+        escalables y con impacto real.
+      highlights:
+        - "Experiencia en fintech, servicios y plataformas complejas"
+        - "Background técnico que facilita el trabajo con ingeniería"
+        - "Foco en toma de decisiones, no solo ejecución visual"
+
+  leadership:
+    title: "Cómo lidero diseño"
+    description: >
+      He desarrollado mi carrera usando distintos “sombreros”: tecnología,
+      datos, producto, diseño y emprendimiento. Esta combinación me permite
+      abordar problemas complejos desde una mirada sistémica.
+
+    principles:
+      title: "Principios"
+      items:
+        - "Diseño es decisión, no decoración"
+        - "El problema correcto vale más que la solución perfecta"
+        - "Escalar diseño requiere sistemas, no héroes"
+        - "El impacto se mide, no se asume"
+
+    teamwork:
+      title: "Trabajo con equipos"
+      items:
+        - "Alineo stakeholders en contextos de alta complejidad"
+        - "Defino criterios antes de diseñar"
+        - "Mentoreo diseñadores promoviendo autonomía"
+        - "Priorizo claridad cuando el costo del error es alto"
