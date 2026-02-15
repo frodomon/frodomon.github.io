@@ -334,35 +334,20 @@ header nav a:hover{
   color: var(--secondary-color);
 }
 /* Header layout */
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem;
-}
 .menu-toggle {
   display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 6px;
 }
-.overlay-nav {
-  position: static;
-  opacity: 1;
-  visibility: visible;
-  background: transparent;
-  height: auto;
-  width: auto;
-  display: block;
+.menu-toggle span {
+  width: 24px;
+  height: 2px;
+  background: black;
+  transition: 0.3s ease;
 }
-.overlay-content {
-  flex-direction: row;
-  gap: 2rem;
-  font-size: 1rem;
-  align-items: center;
-}
-
-body.menu-open {
-  overflow: auto;
-}
-
 /* ------------------------------FOOTER---------------------- */
 footer{
   width:100%;
