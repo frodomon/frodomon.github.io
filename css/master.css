@@ -326,7 +326,7 @@ header nav a{
   padding:0 0.25rem;
 }
 .social{
-  font-size: 1.5rem !important;
+  font-size: 1.5rem;
   margin: 0 0.25rem;
   color: var(--primary-color);
 }
