@@ -378,8 +378,12 @@ footer a:focus{
   color: var(--secondary-color); 
 }
 footer nav a{
-  border-left: 2px solid var(--primary-bg-color);
+  border-tight: 2px solid var(--primary-bg-color);
   height:40px;
   padding:0 1rem;
   font-size: 1.25rem;
+}
+footer nav a:focus,
+footer nav a:hover{
+  color: var(--secondary-color);
 }
