@@ -1,7 +1,17 @@
 /* ------------------------------GLOBAL VARIABLES---------------------- */
 :root{
-  --primary-color:#1E3440;
-  --background-color:#FFFFFF;
+  --primary-color:#0B354B;
+  --primary-bg-color:#FFFFFF;
+  --secondary-color:#00CBD9;
+  --tertiary-color:#89C5C7;
+  --auxiliar1-color:#E64448;
+  --auxiliar2-color:#EAB244;
+  --grey600:#121212;
+  --grey500:#666666;
+  --grey400:#BDBDBD;
+  --grey300:#D3D3D3;
+  --grey200:#E9E9E9;
+  --grey100:#F4F4F4;
 }
 html{
   font-size: 16px;
@@ -9,7 +19,7 @@ html{
 }
 body {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: var(--primary-bg-color);
   overflow: auto;
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -77,6 +87,29 @@ a img{
   width:100%;
   height:auto;
   display: block;
+}
+h1, h1 a, h1 a:visited,
+h2, h2 a, h2 a:visited,
+h3, h3 a, h3 a:visited,
+h4, h4 a, h4 a:visited,
+h5, h5 a, h5 a:visited,
+h6, h6 a, h6 a:visited
+p a, p a:visited,
+a, a:visited{
+  color: var(--primary-color);
+}
+h1 a:hover, h1 a:focus,
+h2 a:hover, h2 a:focus,
+h3 a:hover, h3 a:focus,
+h4 a:hover, h4 a:focus,
+h5 a:hover, h5 a:focus,
+h6 a:hover, h6 a:focus,
+p a:hover, p a:focus,
+a:hover, a:focus{ 
+  color: var(--secondary-color); 
+}
+p{
+  color:var(--grey600); 
 }
 b,
 strong{ 
@@ -255,7 +288,7 @@ header{
   width:100%;
   height:96px;
   text-align: center;
-  background-color: var(--background-color);
+  background-color: var(--primary-bg-color);
   position: relative;
   z-index: 4;
   -webkit-box-shadow: 0 1rem 2rem rgba(0,0,0,0.25), 0 0.75rem 0.75rem rgba(0,0,0,0.22);
