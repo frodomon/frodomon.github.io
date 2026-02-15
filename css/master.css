@@ -321,8 +321,13 @@ header h1{
   display: block;
 }
 header nav a{
-  border-left: 0.25rem var(--grey200);
+  border-left: 0.25rem solid var(--grey200);
+  height:40px;
 }
+.social{
+  height: 24px;
+}
+
 /* ------------------------------FOOTER---------------------- */
 footer{
   width:100%;
