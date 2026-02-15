@@ -1,15 +1,25 @@
-<header class="container">
-  <div class='col-3 left fullheight flex-center-row'>
-    <a href="{{ '/'  | relative_url }}">
+<header class="header">
+  <div class="header-inner">
+    <a href="{{ '/' | relative_url }}" class="logo">
       <img id="logo-header" src="{{ '/assets/images/AV Logo Black.png' | relative_url }}">
     </a>
-  </div>
-  <div class='col-9 right fullheight'>
-    <nav class='fullheight flex-right-row'>
-      <a class="flex-center-row" href="/projects/">{{ t.nav.projects }}</a>
-      <a class="flex-center-row" href="mailto:vasquez.alf@gmail.com" target="_blank"><i class="fa-regular fa-envelope social" aria-hidden="true"></i>Escríbeme</a>
-      {% include language-switcher.html %}
-    </nav>
-    
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
   </div>
 </header>
+
+<nav class="overlay-nav">
+  <div class="overlay-content">
+    <a href="{{ '/projects/' | relative_url }}">{{ t.nav.projects }}</a>
+    <a href="mailto:vasquez.alf@gmail.com" target="_blank">
+      <i class="fa-regular fa-envelope"></i>
+      Escríbeme
+    </a>
+    {% include language-switcher.html %}
+  </div>
+</nav>

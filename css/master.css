@@ -333,8 +333,85 @@ header nav a:focus,
 header nav a:hover{
   color: var(--secondary-color);
 }
+/* Header layout */
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
 
+/* HAMBURGER */
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
 
+.menu-toggle span {
+  width: 26px;
+  height: 2px;
+  background: black;
+  transition: 0.3s ease;
+}
+
+/* Animación a X */
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* OVERLAY */
+.overlay-nav {
+  position: fixed;
+  inset: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease;
+
+  z-index: 1000;
+}
+
+.overlay-nav.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.overlay-content a {
+  text-decoration: none;
+  color: black;
+}
+body.menu-open {
+  overflow: hidden;
+}
+.overlay-nav {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.9);
+}
 /* ------------------------------FOOTER---------------------- */
 footer{
   width:100%;
