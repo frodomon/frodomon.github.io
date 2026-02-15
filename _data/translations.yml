@@ -1,14 +1,18 @@
 en:
+  page:
+    title: "Alfredo Vásquez | Strategic Design Leader – Product & UX"
+    description: "Strategic Design Leader specializing in product vision, UX strategy and digital platforms. I align business, design and technology to deliver measurable impact."
   nav:
     projects: "Projects"
   home:
     hero:
-      name: "Alfredo Vásquez"
-      title: "Design Lead in financial products and digital services"
-      description: >
-        I lead design from strategy to execution, aligning business,
-        technology, and people to build clear, scalable products
-        with measurable impact.
+      name: "Alfredo Vásquez Alcala"
+      title: "Strategic Design Leader for Digital Products & Platforms"
+      headline: "I align business strategy, product vision and user experience to build scalable digital solutions with measurable impact."
+      description: "I lead cross-functional teams, define design direction and drive product decisions that connect customer needs with business outcomes."
+      cta: 
+        primary: "Explore Case Studies"
+        secondary: "Connect"
       highlights:
         - "Experience in fintech, services, and complex platforms"
         - "Technical background that bridges collaboration with engineering"
@@ -38,6 +42,9 @@ en:
         - "Prioritize clarity when the cost of error is high"
 
 es:
+  page:
+    title: ""
+    description:
   nav:
     projects: "Proyectos"
   home:

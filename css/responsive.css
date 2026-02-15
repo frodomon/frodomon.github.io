@@ -143,4 +143,21 @@
 	.copyright{
 	  text-align: center;
 	}
+	/* ------------------------------HERO---------------------- */
+	.hero{
+    padding: 6rem 5% 4rem;
+  }
+
+  .hero h1{
+    font-size: 2rem;
+  }
+
+  .hero-subheadline{
+    font-size: 1.2rem;
+  }
+
+  .hero-cta{
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

@@ -3,22 +3,27 @@ layout: default
 lang: es
 permalink: /es/
 ---
-
 {% assign t = site.data.translations[page.lang] %}
 
-<section>
-  <h1>{{ t.home.hero.name }}</h1>
-  <h2>{{ t.home.hero.title }}</h2>
+<section id="hero" class="container">
+   <div class="hero-content">
+    <h1>{{ t.home.hero.title }}</h1>
+    <p class="hero-subheadline">{{ t.home.hero.headline }}</p>
+    <p class="hero-support">{{ t.home.hero.description }}</p>
+    <div class="hero-cta">
+      <a href="/projects/" class="btn-primary">{{ t.home.hero.cta.primary }}</a>
+      <a href="mailto:vasquez.alf@gmail.com" class="btn-secondary">{{ t.home.hero.cta.secondary }}</a>
+    </div>
+  </div>
+</section>
+<section class="container">
 
-  <p>{{ t.home.hero.description }}</p>
-
-  <ul>
+    <ul>
     {% for item in t.home.hero.highlights %}
       <li>{{ item }}</li>
     {% endfor %}
   </ul>
-</section>
-<section>
+
   <h1>{{ t.leadership.title }}</h1>
   <p>{{ t.leadership.description }}</p>
 
