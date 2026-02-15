@@ -97,4 +97,10 @@
 	.menu-toggle.active span:nth-child(3) {
 	  transform: translateY(-8px) rotate(-45deg);
 	}
+	footer div{
+		width: 100%;
+	}
+	footer nav a:last-child {
+		border-right: 0;
+	}
 }
