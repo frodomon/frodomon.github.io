@@ -1,10 +1,10 @@
 ---
 layout: default
+lang: en
 permalink: /
 ---
 
-{% assign lang = page.lang | default: site.default_lang %}
-{% assign t = site.data.translations[lang] %}
+{% assign t = site.data.translations[page.lang] %}
 
 <section>
   <h1>{{ t.home.hero.name }}</h1>
