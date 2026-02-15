@@ -3,9 +3,4 @@ layout: default
 lang: es
 permalink: /es/
 ---
-
-{% assign lang = "es" %}
-{% assign t = site.data.translations[lang] %}
-
-<h1>{{ t.home.title }}</h1>
-<p>{{ t.home.subtitle }}</p>
+{% include_relative ../index.html %}
