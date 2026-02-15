@@ -10,7 +10,7 @@ html{
 body {
   width: 100%;
   background-color: #FFFFFF;
-  overflow: auto hidden;
+  overflow: auto;
   font-family: 'Poppins', sans-serif;
   margin: 0;
   line-height:normal;
@@ -77,6 +77,43 @@ a img{
   width:100%;
   height:auto;
   display: block;
+}
+b,
+strong{ 
+  font-weight: bold;
+}
+blockquote{
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 30px;
+}
+ul, ol{
+  margin: 0;
+  padding: 0 0 1rem 2rem;
+}
+ul li, 
+ol li{
+  margin: 0;
+}
+ul li ul{
+  padding-bottom: 0;
+}
+
+address{
+  font-weight: bold; 
+}
+code{ 
+  font-family: Courier, monospace;
+}
+dt{
+  margin-left: 15px;
+  font-weight: bold;
+}
+dd{
+  margin: 15px 0 15px 30px;
+}
+em{ 
+  font-style: italic;
 }
 /* ------------------------------GRID---------------------- */
 .col-1{
@@ -207,6 +244,11 @@ a img{
 }
 .fullheight{
   height: 100%;
+}
+section{
+  width:100%;
+  padding: 3rem 5%;
+  background-color: #FFFFFF;
 }
 /* ------------------------------HEADER---------------------- */
 header{
