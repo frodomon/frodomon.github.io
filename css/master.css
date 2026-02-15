@@ -13,6 +13,9 @@
   --grey200:#E9E9E9;
   --grey100:#F4F4F4;
 }
+*{
+  box-sizing: border-box;
+}
 html{
   font-size: 16px;
   width: 100%;
@@ -154,6 +157,11 @@ section{
   background-color: #FFFFFF;
 }
 /* ------------------------------GRID---------------------- */
+.container{
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
+}
 .col-1{
   width: 8.3333%;
   padding-left: calc(5%/12);
@@ -322,6 +330,7 @@ footer{
   background-color: var(--primary-color);
   min-height: 144px;
   padding-top: 3rem;
+  overflow: auto;
 }
 footer a,
 footer a:visited,
