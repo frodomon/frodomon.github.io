@@ -1,7 +1,8 @@
 en:
-  page:
-    title: "Alfredo Vásquez | Strategic Design Leader – Product & UX"
-    description: "Strategic Design Leader specializing in product vision, UX strategy and digital platforms. I align business, design and technology to deliver measurable impact."
+  meta:
+    home:
+      title: "Alfredo Vásquez | Strategic Design Leader – Product & UX"
+      description: "Strategic Design Leader specializing in product vision, UX strategy and digital platforms. I align business, design and technology to deliver measurable impact."
   nav:
     projects: "Projects"
   home:
@@ -42,9 +43,10 @@ en:
         - "Prioritize clarity when the cost of error is high"
 
 es:
-  page:
-    title: ""
-    description:
+  meta:
+    home:
+      title: "Alfredo Vásquez | Strategic Design Leader – Product & UX"
+      description: "Strategic Design Leader specializing in product vision, UX strategy and digital platforms. I align business, design and technology to deliver measurable impact."
   nav:
     projects: "Proyectos"
   home:

@@ -5,7 +5,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>{{ page.title }}</title>
+  <title>{{ meta.home.title }}</title>
+  <meta name="description" content="{{ meta.home.description }}"/>
   <link rel="alternate" hreflang="en" href="{{ site.url }}/" />
   <link rel="alternate" hreflang="es" href="{{ site.url }}/es/" />
   <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
