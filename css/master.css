@@ -331,6 +331,9 @@ header nav a{
   padding:0 1rem;
   font-size: 1.25rem;
 }
+header nav a:first-child{
+  border-left: 0;
+}
 header nav a:focus,
 header nav a:hover{
   color: var(--secondary-color);
@@ -387,6 +390,9 @@ footer nav a:focus,
 footer nav a:hover{
   color: var(--secondary-color);
 }
+footer nav a:last-child {
+    border-right: 0;
+  }
 .copyright{
   text-align: left;
 }
