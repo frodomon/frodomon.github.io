@@ -387,3 +387,6 @@ footer nav a:focus,
 footer nav a:hover{
   color: var(--secondary-color);
 }
+.copyright{
+  text-align: left;
+}
