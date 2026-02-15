@@ -35,36 +35,52 @@
 		padding:0;
 	}
 	/* HAMBURGER */
-	.header-right {
-	    position: relative;
-	  }
 	.menu-toggle {
-	  display: flex;
-	  margin-left: auto;
-    z-index: 1001;
-	}
-	.nav {
-	  position: absolute;
-	  top: 60px;
-	  right: 0;
-	  width: 240px;
-	  background: white;
-	  flex-direction: column;
-	  align-items: flex-start;
-	  padding: 1.5rem;
-	  gap: 1rem;
-	  border-radius: 8px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-	  opacity: 0;
-	  visibility: hidden;
-	  transform: translateY(-10px);
-	  transition: all 0.25s ease
-	}
-	.nav.active {
-	  opacity: 1;
-	  visibility: visible;
-	  transform: translateY(0);
-	}
+    display: flex;
+    cursor: pointer;
+    gap: 6px;
+    background: none;
+    border: none;
+  }
+
+  .menu-toggle span {
+    width: 24px;
+    height: 2px;
+    background: #111;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .nav {
+    display: none; /* oculto por defecto */
+    flex-direction: column;
+    width: 100%; /* full width */
+    background: #ffffff;
+    margin-top: 0.5rem;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid #eee;
+		box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    transition: background 0.2s;
+    font-size: 1rem;
+  	letter-spacing: 0.5px;
+  }
+
+  .nav a:hover {
+    background: rgba(0, 0, 0, 0.03);
+  }
+
 
 	/* Animación a X */
 	.menu-toggle.active span:nth-child(1) {
