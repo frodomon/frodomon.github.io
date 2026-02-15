@@ -1,3 +1,9 @@
+/* ------------------------------GLOBAL VARIABLES---------------------- */
+:root{
+  --primary-color:#1E3440;
+  --background-color:#000000;
+
+}
 body {
   font-family: system-ui, sans-serif;
   margin: 0;
@@ -145,7 +151,7 @@ header{
   width:100%;
   height:96px;
   text-align: center;
-  background-color: #1E3440;
+  background-color: var(--background-color);
   position: relative;
   z-index: 4;
   -webkit-box-shadow: 0 1rem 2rem rgba(0,0,0,0.25), 0 0.75rem 0.75rem rgba(0,0,0,0.22);
