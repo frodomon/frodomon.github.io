@@ -7,7 +7,7 @@ permalink: /es/
 
 <section id="hero" class="container">
    <div class="hero-content">
-    <h1>{{ t.home.hero.name</h1>
+    <h1>{{ t.home.hero.name }}</h1>
     <h2>{{ t.home.hero.title }}</h2>
     <h3 class="hero-subheadline">{{ t.home.hero.headline }}</h3>
     <p class="hero-support">{{ t.home.hero.description }}</p>
@@ -18,27 +18,25 @@ permalink: /es/
   </div>
 </section>
 <section class="container">
-
-    <ul>
-    {% for item in t.home.hero.highlights %}
+  <h2>{{ t.leadership.title }}</h2>
+  <p>{{ t.leadership.description }}</p>
+  <ul>
+    {% for item in t.home.leadership.highlights %}
       <li>{{ item }}</li>
     {% endfor %}
   </ul>
-
-  <h1>{{ t.leadership.title }}</h1>
-  <p>{{ t.leadership.description }}</p>
-
-  <h2>{{ t.leadership.principles.title }}</h2>
+  <h3>{{ t.leadership.principles.title }}</h3>
   <ul>
     {% for item in t.leadership.principles.items %}
       <li>{{ item }}</li>
     {% endfor %}
   </ul>
 
-  <h2>{{ t.leadership.teamwork.title }}</h2>
+  <h3>{{ t.leadership.teamwork.title }}</h3>
   <ul>
     {% for item in t.leadership.teamwork.items %}
       <li>{{ item }}</li>
     {% endfor %}
   </ul>
+</section>
 </section>

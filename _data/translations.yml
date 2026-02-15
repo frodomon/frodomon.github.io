@@ -14,10 +14,6 @@ en:
       cta: 
         primary: "Explore Case Studies"
         secondary: "Connect"
-      highlights:
-        - "Experience in fintech, services, and complex platforms"
-        - "Technical background that bridges collaboration with engineering"
-        - "Focused on decision-making, not just visual execution"
 
   leadership:
     title: "How I Lead Design"
@@ -25,7 +21,10 @@ en:
       I have built my career wearing different “hats”: technology, data,
       product, design, and entrepreneurship. This combination allows me
       to approach complex problems with a systemic perspective.
-
+    highlights:
+        - "Experience in fintech, services, and complex platforms"
+        - "Technical background that bridges collaboration with engineering"
+        - "Focused on decision-making, not just visual execution"
     principles:
       title: "Principles"
       items:
@@ -58,10 +57,6 @@ es:
       cta: 
         primary: "Explore Case Studies"
         secondary: "Connect"
-      highlights:
-        - "Experiencia en fintech, servicios y plataformas complejas"
-        - "Background técnico que facilita el trabajo con ingeniería"
-        - "Foco en toma de decisiones, no solo ejecución visual"
 
   leadership:
     title: "Cómo lidero diseño"
@@ -69,7 +64,10 @@ es:
       He desarrollado mi carrera usando distintos “sombreros”: tecnología,
       datos, producto, diseño y emprendimiento. Esta combinación me permite
       abordar problemas complejos desde una mirada sistémica.
-
+    highlights:
+        - "Experiencia en fintech, servicios y plataformas complejas"
+        - "Background técnico que facilita el trabajo con ingeniería"
+        - "Foco en toma de decisiones, no solo ejecución visual"
     principles:
       title: "Principios"
       items:
