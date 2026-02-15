@@ -1,43 +1,11 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alfredo – Design Lead</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+---
+layout: default
+permalink: /about/
+---
 
-  <header>
-    <h1>Cómo lidero diseño</h1>
-    <p>
-    He desarrollado mi carrera usando distintos “sombreros”: tecnología, datos,
-    producto, diseño y emprendimiento. Esta combinación me permite abordar
-    problemas complejos desde una mirada sistémica.
-    </p>
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[lang] %}
 
-    <h2>Principios</h2>
-    <ul>
-      <li>Diseño es decisión, no decoración</li>
-      <li>El problema correcto vale más que la solución perfecta</li>
-      <li>Escalar diseño requiere sistemas, no héroes</li>
-      <li>El impacto se mide, no se asume</li>
-    </ul>
-
-    <h2>Trabajo con equipos</h2>
-    <ul>
-      <li>Alineo stakeholders en contextos de alta complejidad</li>
-      <li>Defino criterios antes de diseñar</li>
-      <li>Mentoreo diseñadores promoviendo autonomía</li>
-      <li>Prioritizo claridad cuando el costo del error es alto</li>
-    </ul>
-    <a href="index.html">Inicio →</a>
-    </header>
-
-  <footer id="contacto">
-    <p>Contacto:vasquez.alf@gmail.com</p>
-  </footer>
-
-</body>
-</html>
+<h1>{{ t.about.title }}</h1>
+<p>{{ t.about.description }}</p>
 

@@ -1,0 +1,24 @@
+en:
+  header:
+    nav:
+      home: "Home"
+      about: "About"
+      contact: "Contact"
+  home:
+    title: "Alfredo Vasquez - Design Lead"
+    subtitle: "I design digital experiences."
+  about:
+    title: "About Me"
+    description: "I am a product designer."
+
+es:
+  nav:
+    home: "Inicio"
+    about: "Acerca"
+    contact: "Contacto"
+  home:
+    title: "Alfredo Vasquez - Lider de Diseno"
+    subtitle: "Diseño experiencias digitales."
+  about:
+    title: "Sobre mí"
+    description: "Soy diseñador de producto."

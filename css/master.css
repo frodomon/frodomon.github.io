@@ -291,14 +291,6 @@ section{
 .fullheight{
   height: 100%;
 }
-/* self-clear floats */
-.group:after {
-  content: "."; 
-  display: block; 
-  height: 0; 
-  clear: both; 
-  visibility: hidden;
-}
 /* ------------------------------HEADER---------------------- */
 header{
   width:100%;

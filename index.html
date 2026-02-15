@@ -1,80 +1,50 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alfredo – Design Lead</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="assets/images/favicon.png" type="image/png">
-</head>
-<body>
+---
+layout: default
+permalink: /
+---
 
-  <header class="container">
-    <div class='col-3 left fullheight flex-center-row'>
-      <img id="logo-header" src="assets/images/AV Logo Black.png">
-    </div>
-    <div class='col-7 left fullheight flex-center-row'>
-    </div>
-    <div class='col-2 left fullheight flex-center-row hide-responsive'>
-    </div>
-  </header>
-  <section>
-    <h1>Alfredo Vásquez</h1>
-    <h2>Design Lead en productos financieros y servicios digitales</h2>
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[lang] %}
 
-    <p>
-    Lidero diseño desde la estrategia hasta la ejecución, alineando negocio,
-    tecnología y personas para construir productos claros, escalables y con impacto real.
-    </p>
-    <ul>
-      <li>Experiencia en fintech, servicios y plataformas complejas</li>
-      <li>Background técnico que facilita el trabajo con ingeniería</li>
-      <li>Foco en toma de decisiones, no solo ejecución visual</li>
-    </ul>
-  </section>  
-  <section>
-    <h1>Cómo lidero diseño</h1>
-    <p>
-    He desarrollado mi carrera usando distintos “sombreros”: tecnología, datos,
-    producto, diseño y emprendimiento. Esta combinación me permite abordar
-    problemas complejos desde una mirada sistémica.
-    </p>
+<h1>{{ t.home.title }}</h1>
+<p>{{ t.home.subtitle }}</p>
 
-    <h2>Principios</h2>
-    <ul>
-      <li>Diseño es decisión, no decoración</li>
-      <li>El problema correcto vale más que la solución perfecta</li>
-      <li>Escalar diseño requiere sistemas, no héroes</li>
-      <li>El impacto se mide, no se asume</li>
-    </ul>
 
-    <h2>Trabajo con equipos</h2>
-    <ul>
-      <li>Alineo stakeholders en contextos de alta complejidad</li>
-      <li>Defino criterios antes de diseñar</li>
-      <li>Mentoreo diseñadores promoviendo autonomía</li>
-      <li>Prioritizo claridad cuando el costo del error es alto</li>
-    </ul>
-  </section>
+<section>
+  <h1>Alfredo Vásquez</h1>
+  <h2>Design Lead en productos financieros y servicios digitales</h2>
 
-  <footer>
-    <div class="footer-top container">
-      <div class="col-3 float-footer-l flex-top-row fullheight flex-center-row">
-        <p>Contacto:<a href='mailto:vasquez.alf@gmail.com'>vasquez.alf@gmail.com</a></p>
-      </div>
-      <div class="col-3 float-footer-l flex-top-row fullheight flex-center-row">
-      </div>
-      <div class="col-3 float-footer-l flex-top-row fullheight flex-center-row">
-      </div>
-    </div>
-    <div class='footer-bottom container'>
-      <div class='col-6 left'>
-        <p class='copyright alignleft'>Copyright &copy; . Todos los derechos reservados</p>
-      </div>
-      <div class='col-6  left'>
-        <p class='copyright alignright'>Desarrollado por <a href='https://www.alfredovasquezalcala.com' title='Alfredo Vásquez' target="_blank">Alfredo Vásquez</a></p>
-      </div>    
-    </div>  
-  </footer>
-</body>
-</html>
+  <p>
+  Lidero diseño desde la estrategia hasta la ejecución, alineando negocio,
+  tecnología y personas para construir productos claros, escalables y con impacto real.
+  </p>
+  <ul>
+    <li>Experiencia en fintech, servicios y plataformas complejas</li>
+    <li>Background técnico que facilita el trabajo con ingeniería</li>
+    <li>Foco en toma de decisiones, no solo ejecución visual</li>
+  </ul>
+</section>  
+<section>
+  <h1>Cómo lidero diseño</h1>
+  <p>
+  He desarrollado mi carrera usando distintos “sombreros”: tecnología, datos,
+  producto, diseño y emprendimiento. Esta combinación me permite abordar
+  problemas complejos desde una mirada sistémica.
+  </p>
+
+  <h2>Principios</h2>
+  <ul>
+    <li>Diseño es decisión, no decoración</li>
+    <li>El problema correcto vale más que la solución perfecta</li>
+    <li>Escalar diseño requiere sistemas, no héroes</li>
+    <li>El impacto se mide, no se asume</li>
+  </ul>
+
+  <h2>Trabajo con equipos</h2>
+  <ul>
+    <li>Alineo stakeholders en contextos de alta complejidad</li>
+    <li>Defino criterios antes de diseñar</li>
+    <li>Mentoreo diseñadores promoviendo autonomía</li>
+    <li>Prioritizo claridad cuando el costo del error es alto</li>
+  </ul>
+</section>
