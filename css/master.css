@@ -313,6 +313,8 @@ header{
   background-color: var(--primary-bg-color);
   border-bottom: 1px solid var(--grey100); 
   padding: 0 5%;
+  position: relative;
+  z-index: 1000;
 }
 header h1{
   float: left;
@@ -356,6 +358,9 @@ header nav a:hover{
 .nav a {
   text-decoration: none;
   padding: 0.5rem 1rem;
+}
+body.menu-open {
+  overflow: hidden;
 }
 /* ------------------------------FOOTER---------------------- */
 footer{
