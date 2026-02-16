@@ -182,6 +182,7 @@ section{
 }
 .btn-primary:hover{
   background: var(--tertiary-color);
+  color:var(--primary-bg-color);
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
@@ -205,6 +206,12 @@ section{
 }
 .btn-secondary:focus{
   outline-offset: 2px;
+}
+.picture,
+#hero-picture{
+  width:100%;
+  height:auto;
+  display: block;
 }
 /* ------------------------------GRID---------------------- */
 .container{

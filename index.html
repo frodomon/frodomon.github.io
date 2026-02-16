@@ -7,10 +7,13 @@ permalink: /
 {% assign t = site.data.translations[page.lang] %}
 
 <section id="hero" class="container">
-   <div class="hero-content">
+   <div class="col-4 flex-center-row">
+     <img id="hero-picture" src="{{ '/assets/images/Alfredo Vasquez.png' | relative_url }}">
+   </div>
+   <div class="col-8 flex-left-row">
     <h1>{{ t.home.hero.name }}</h1>
     <h2>{{ t.home.hero.title }}</h2>
-    <h3 class="hero-subheadline">{{ t.home.hero.headline }}</h3>
+    <p class="hero-subheadline">{{ t.home.hero.headline }}</p>
     <p class="hero-support">{{ t.home.hero.description }}</p>
     <div class="hero-cta">
       <a href="/projects/" class="btn-primary">{{ t.home.hero.cta.primary }}</a>
