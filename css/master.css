@@ -487,6 +487,7 @@ footer nav a:last-child{
     rgba(0, 0, 0, 0.1) 0px 4px 8px 0px;
   backdrop-filter: blur(60px);
   border-color: var(--grey500);
+  overflow: hidden;
 }
 .hero-content{
   padding: 2rem 1rem;
@@ -498,8 +499,7 @@ footer nav a:last-child{
   color: var(--grey600);
 }
 #hero-picture{
-  width:auto;
-  height:100%;
+  height:500px;
   background-image: url('../assets/images/Alfredo Vasquez.jpg'); /* Dirección de la imagen */
     background-size: cover; /* Ajusta la imagen para cubrir todo el div */
     background-position: center; /* Centra la imagen */
