@@ -457,7 +457,7 @@ footer h1,
 footer h2,
 footer h3,
 footer h4{
-  color: var(--primary-bg-color) !important;
+  color: var(--primary-bg-color);
 }
 footer a:hover,
 footer a:focus,
