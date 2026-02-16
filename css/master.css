@@ -465,7 +465,7 @@ footer a i:hover,
 footer a i:focus,
 footer nav a:focus,
 footer nav a:hover{
-  color: var(--secondary-color;
+  color: var(--secondary-color);
 }
 footer nav a{
   border-right: 2px solid var(--primary-bg-color);
