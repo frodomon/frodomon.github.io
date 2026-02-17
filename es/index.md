@@ -1,9 +1,9 @@
 ---
 layout: default
-lang: en
-permalink: /
+lang: es
+page_key: home
+permalink: /es/
 ---
-
 {% assign t = site.data.translations[page.lang] %}
 
 <section id="hero" class="container">

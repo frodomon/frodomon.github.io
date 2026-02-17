@@ -1,11 +1,10 @@
 en:
-  meta:
-    home:
-      title: "Alfredo Vásquez | Strategic Design Leader – Product & UX"
-      description: "Strategic Design Leader specializing in product vision, UX strategy and digital platforms. I align business, design and technology to deliver measurable impact."
-  nav:
-    projects: "Projects"
   home:
+    projects: "Projects"
+    title: "Alfredo Vásquez"
+    subtitle: "Strategic Design Lead in Fintech & Complex Digital Products"
+    meta_title: "Strategic Design Lead | Alfredo Vásquez"
+    meta_description: "Design leadership in fintech, regulated environments and complex digital ecosystems."
     hero:
       name: "Hello, I'm Alfredo Vásquez Alcalá"
       title: "Strategic Design Leader for Digital Products & Platforms"
@@ -41,15 +40,41 @@ en:
         - "Define decision criteria before designing"
         - "Mentor designers to promote autonomy"
         - "Prioritize clarity when the cost of error is high"
+  cases:  
+    # Caso Janus (EN)
+    janus:
+      title: "Digital Mortgage Product (Janus)"
+      context: "A financial product aimed at digitizing the end-to-end mortgage acquisition process under strict regulatory and technical restrictions."
+      problem: "The team assumed the main issue was the number of steps, but the core pain point was complex financial terminology and lack of clarity before irreversible decisions."
+      role: "As Design Lead, I defined clarity and information hierarchy criteria, aligned stakeholders across design, risk, legal, and tech, and guided architectural decisions."
+      decisions:
+        - "Prioritized clarity of critical information before action."
+        - "Adaptive content based on user profile."
+        - "Visual support to reduce cognitive load."
+      results: "Shortened simulation flow and improved understanding, leading to early conversions post-launch."
+      learnings: "Content design must be integrated earlier, especially in financial products."
+
+    # Caso Otto (EN)
+    otto:
+      title: "Otto — Community-Centric Business Design"
+      context: "Otto was a community-focused TCG (trading card game) shop designed as a service ecosystem, not just a product."
+      problem: "Existing shops lacked accessibility and community experience; users needed belonging, not just transactions."
+      role: "As founder and design lead, I defined value propositions, led user research, designed end-to-end service experiences, and aligned business and tech decisions."
+      decisions:
+        - "Created differentiated experiences for distinct user archetypes."
+        - "Invested in comfortable physical spaces to enhance experience, prioritizing long-term value over short-term margin."
+        - "Built digital community channels as part of the product."
+      results: "Sustained growth in attendance and sales, high recurrency, strong community organic growth."
+      learnings: "Design is behaviour-focused; community is a strategic asset; tech supports experience, not replaces it."
+
 
 es:
-  meta:
-    home:
-      title: "Alfredo Vásquez | Strategic Design Leader – Product & UX"
-      description: "Strategic Design Leader specializing in product vision, UX strategy and digital platforms. I align business, design and technology to deliver measurable impact."
-  nav:
-    projects: "Proyectos"
   home:
+    projects: "Proyectos"
+    title: "Alfredo Vásquez"
+    subtitle: "Design Lead Estratégico en Fintech y Productos Digitales Complejos"
+    meta_title: "Design Lead Estratégico | Alfredo Vásquez"
+    meta_description: "Liderazgo de diseño en fintech, entornos regulados y ecosistemas digitales complejos."
     hero:
       name: "Hola, soy Alfredo Vásquez Alcalá"
       title: "Strategic Design Leader for Digital Products & Platforms"

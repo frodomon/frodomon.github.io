@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://frodomon.github.io/sitemap.xml
