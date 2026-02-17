@@ -13,33 +13,33 @@ en:
       cta: 
         primary: "Explore Case Studies"
         secondary: "Connect"
-  leadership:
-    title: "How I Lead Design"
-    description: >
-      I have built my career wearing different “hats”: technology, data,
-      product, design, and entrepreneurship. This combination allows me
-      to approach complex problems with a systemic perspective.
-    experience:
-      title: "Experience"
-      highlights:
-          - "Experience in fintech, services, and complex platforms"
-          - "Technical background that bridges collaboration with engineering"
-          - "Focused on decision-making, not just visual execution"
-    principles:
-      title: "Principles"
-      items:
-        - "Design is decision-making, not decoration"
-        - "The right problem is worth more than the perfect solution"
-        - "Scaling design requires systems, not heroes"
-        - "Impact must be measured, not assumed"
+    leadership:
+      title: "How I Lead Design"
+      description: >
+        I have built my career wearing different “hats”: technology, data,
+        product, design, and entrepreneurship. This combination allows me
+        to approach complex problems with a systemic perspective.
+      experience:
+        title: "Experience"
+        highlights:
+            - "Experience in fintech, services, and complex platforms"
+            - "Technical background that bridges collaboration with engineering"
+            - "Focused on decision-making, not just visual execution"
+      principles:
+        title: "Principles"
+        items:
+          - "Design is decision-making, not decoration"
+          - "The right problem is worth more than the perfect solution"
+          - "Scaling design requires systems, not heroes"
+          - "Impact must be measured, not assumed"
 
-    teamwork:
-      title: "Working with Teams"
-      items:
-        - "Align stakeholders in high-complexity environments"
-        - "Define decision criteria before designing"
-        - "Mentor designers to promote autonomy"
-        - "Prioritize clarity when the cost of error is high" 
+      teamwork:
+        title: "Working with Teams"
+        items:
+          - "Align stakeholders in high-complexity environments"
+          - "Define decision criteria before designing"
+          - "Mentor designers to promote autonomy"
+          - "Prioritize clarity when the cost of error is high" 
   # Caso Janus (EN)
   janus:
     case_studies: "Case Studies"
@@ -68,7 +68,6 @@ en:
       - "Strong recurrency"
       - "Organic community expansion"
 
-
 es:
   home:
     case_studies: "Casos de  Estudio"
@@ -84,33 +83,33 @@ es:
       cta: 
         primary: "Explore Case Studies"
         secondary: "Connect"
-  leadership:
-    title: "Cómo lidero diseño"
-    description: >
-      He desarrollado mi carrera usando distintos “sombreros”: tecnología,
-      datos, producto, diseño y emprendimiento. Esta combinación me permite
-      abordar problemas complejos desde una mirada sistémica.
-    experience:
-      title: "Experiencia"
-      highlights:
-          - "Experiencia en fintech, servicios y plataformas complejas"
-          - "Background técnico que facilita el trabajo con ingeniería"
-          - "Foco en toma de decisiones, no solo ejecución visual"
-    principles:
-      title: "Principios"
-      items:
-        - "Diseño es decisión, no decoración"
-        - "El problema correcto vale más que la solución perfecta"
-        - "Escalar diseño requiere sistemas, no héroes"
-        - "El impacto se mide, no se asume"
+    leadership:
+      title: "Cómo lidero diseño"
+      description: >
+        He desarrollado mi carrera usando distintos “sombreros”: tecnología,
+        datos, producto, diseño y emprendimiento. Esta combinación me permite
+        abordar problemas complejos desde una mirada sistémica.
+      experience:
+        title: "Experiencia"
+        highlights:
+            - "Experiencia en fintech, servicios y plataformas complejas"
+            - "Background técnico que facilita el trabajo con ingeniería"
+            - "Foco en toma de decisiones, no solo ejecución visual"
+      principles:
+        title: "Principios"
+        items:
+          - "Diseño es decisión, no decoración"
+          - "El problema correcto vale más que la solución perfecta"
+          - "Escalar diseño requiere sistemas, no héroes"
+          - "El impacto se mide, no se asume"
 
-    teamwork:
-      title: "Trabajo con equipos"
-      items:
-        - "Alineo stakeholders en contextos de alta complejidad"
-        - "Defino criterios antes de diseñar"
-        - "Mentoreo diseñadores promoviendo autonomía"
-        - "Priorizo claridad cuando el costo del error es alto"
+      teamwork:
+        title: "Trabajo con equipos"
+        items:
+          - "Alineo stakeholders en contextos de alta complejidad"
+          - "Defino criterios antes de diseñar"
+          - "Mentoreo diseñadores promoviendo autonomía"
+          - "Priorizo claridad cuando el costo del error es alto"
   janus:
     case_studies: "Casos de  Estudio"
     title: "Producto Hipotecario Digital (Janus)"
