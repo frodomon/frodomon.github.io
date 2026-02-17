@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: case
 lang: en
-permalink: /cases/janus
+case: janus
+permalink: /janus/
 ---
-
-{% assign t = site.data.translations[page.lang] %}
 
 <h1>Crédito Hipotecario Digital (Janus)</h1>
 

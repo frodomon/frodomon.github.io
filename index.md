@@ -4,7 +4,6 @@ lang: en
 page_key: home
 permalink: /
 ---
-
 {% assign t = site.data.translations[page.lang] %}
 
 <section id="hero" class="container">
@@ -50,4 +49,47 @@ permalink: /
       {% endfor %}
     </ul>
   </div>
+</section>
+<section>
+  <h2>What I Do</h2>
+  <ul>
+    <li>Lead design in high-risk financial environments</li>
+    <li>Align product, engineering and business stakeholders</li>
+    <li>Transform ambiguity into scalable product decisions</li>
+    <li>Design systems that reduce cognitive and operational risk</li>
+  </ul>
+</section>
+<section>
+  <h2>Selected Work</h2>
+
+  <article>
+    <h3><a href="/janus.html">Digital Mortgage Product (Janus)</a></h3>
+    <p>
+      Led strategic design decisions in a regulated fintech mortgage
+      product balancing compliance, clarity and business outcomes.
+    </p>
+  </article>
+
+  <article>
+    <h3><a href="/eltablerodeotto.html">Otto – Community Business Design</a></h3>
+    <p>
+      Entrepreneurial case integrating service design, business model
+      strategy and technology to build a sustainable ecosystem.
+    </p>
+  </article>
+</section>
+<section>
+  <h2>How I Lead</h2>
+
+  <p>
+    I believe design leadership is about decision architecture,
+    not visual authority.
+  </p>
+
+  <ul>
+    <li>Define principles before defining screens</li>
+    <li>Create clarity in high-ambiguity environments</li>
+    <li>Mentor designers toward autonomy and accountability</li>
+    <li>Balance user needs with business and regulatory constraints</li>
+  </ul>
 </section>

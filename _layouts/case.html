@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[lang][page.case] %}
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ t.meta_title }}</title>
+  <meta name="description" content="{{ t.meta_description }}"/>
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ t.meta_title }}">
+  <meta property="og:description" content="{{ t.meta_description }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  
+  </script>
+  <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/png">
+  <link rel="stylesheet" href="{{ '/assets/fontawesome/css/all.min.css' | relative_url }}">
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CreativeWork",
+    "author":{
+      "@type":"Person",
+      "name":"Alfredo Vásquez",
+      "jobTitle":"Strategic Design Lead"
+    },
+    "headline":"{{ t.title }}",
+    "description":"{{ t.meta_description }}"
+  }
+  </script>
+</head>
+<body>
+  {% include header.html %}
+  <section>
+    <h2>Context</h2>
+    <p>{{ t.context }}</p>
+  </section>
+
+  <section>
+    <h2>Problem</h2>
+    <p>{{ t.problem }}</p>
+  </section>
+
+  <section>
+    <h2>Role</h2>
+    <p>{{ t.role }}</p>
+  </section>
+
+  <section>
+    <h2>Impact</h2>
+    <ul>
+      {% for item in t.impact %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/menu.js' | relative_url }}"></script>
+</body>
+</html>
