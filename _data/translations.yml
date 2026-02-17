@@ -1,6 +1,6 @@
 en:
   home:
-    projects: "Projects"
+    case_studies: "Case Studies"
     title: "Alfredo Vásquez"
     subtitle: "Strategic Design Lead in Fintech & Complex Digital Products"
     meta_title: "Strategic Design Lead | Alfredo Vásquez"
@@ -43,6 +43,7 @@ en:
   case:  
     # Caso Janus (EN)
     janus:
+      case_studies: "Case Studies"
       title: "Digital Mortgage Product (Janus)"
       subtitle: "Design Leadership in a regulated fintech ecosystem"
       meta_title: "Digital Mortgage Product Case Study – Design Lead | Alfredo Vásquez"
@@ -55,6 +56,7 @@ en:
         - "Improved financial clarity"
         - "Enabled early conversions"
     otto:
+      case_studies: "Case Studies"
       title: "Otto – Community-Centric Business Design"
       subtitle: "Integrating design, business and technology"
       meta_title: "Otto Case Study – Service Design & Strategy | Alfredo Vásquez"
@@ -70,7 +72,7 @@ en:
 
 es:
   home:
-    projects: "Proyectos"
+    case_studies: "Casos de  Estudio"
     title: "Alfredo Vásquez"
     subtitle: "Design Lead Estratégico en Fintech y Productos Digitales Complejos"
     meta_title: "Design Lead Estratégico | Alfredo Vásquez"
@@ -112,6 +114,7 @@ es:
         - "Priorizo claridad cuando el costo del error es alto"
   case:
     janus:
+      case_studies: "Casos de  Estudio"
       title: "Producto Hipotecario Digital (Janus)"
       subtitle: "Liderazgo de diseño en un ecosistema fintech regulado"
       meta_title: "Caso Producto Hipotecario Digital – Design Lead | Alfredo Vásquez"
@@ -125,6 +128,7 @@ es:
         - "Conversión temprana tras lanzamiento"
 
     otto:
+      case_studies: "Casos de  Estudio"
       title: "Otto – Diseño de Negocio Basado en Comunidad"
       subtitle: "Integrando diseño, negocio y tecnología"
       meta_title: "Caso Otto – Diseño de Servicio y Estrategia | Alfredo Vásquez"
