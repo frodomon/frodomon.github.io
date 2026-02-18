@@ -2,6 +2,7 @@
 layout: case
 lang: en
 case: eltablerodeotto
+og_type: article
 permalink: /eltablerodeotto
 ---
 

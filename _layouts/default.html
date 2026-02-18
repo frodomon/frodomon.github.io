@@ -4,19 +4,43 @@
 <html lang="{{ lang }}">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Language" content="{{ lang }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>{{ t.meta_title }}</title>
   <meta name="description" content="{{ t.meta_description }}"/>
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Alfredo Vásquez">
+  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
   {% if page.lang == "en" %}
-    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url }}">
-    <link rel="alternate" hreflang="es" href="{{ site.url }}/es{{ page.url }}">
-    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url }}">
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+    <link rel="alternate" hreflang="es" href="{{ site.url }}{{ site.baseurl }}/es{{ page.url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
   {% endif %}
   {% if page.lang == "es" %}
-    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url | remove_first: '/es' }}">
-    <link rel="alternate" hreflang="es" href="{{ site.url }}{{ page.url }}">
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ page.url | remove_first: '/es' }}">
+    <link rel="alternate" hreflang="es" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
   {% endif %}
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ t.meta_title }}">
+  <meta property="og:description" content="{{ t.meta_description }}">
+  <meta property="og:type" content="{{ page.og_type | default: 'website' }}">
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-design-lead.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Alfredo Vásquez | Strategic Design Lead">
+  {% if lang == "en" %}
+    <meta property="og:locale:alternate" content="es_ES">
+  {% endif %}
+  {% if lang == "es" %}
+    <meta property="og:locale:alternate" content="en_US">
+  {% endif %}
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ t.meta_title }}">
+  <meta name="twitter:description" content="{{ t.meta_description }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ '/assets/images/favicon.png' | relative_url }}">
+  <!-- assets -->
   <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/png">
   <link rel="stylesheet" href="{{ '/assets/fontawesome/css/all.min.css' | relative_url }}">
@@ -26,12 +50,13 @@
       "@type":"Person",
       "name":"Alfredo Vásquez",
       "jobTitle":"Strategic Design Lead",
-      "description":"Design Lead en productos financieros y servicios digitales con impacto medible.",
-      "url":"https://frodomon.github.io",
+      "description":"{{ t.meta_description }}",
+      "inLanguage":"{{ lang }}",
+      "url":"{{ site.url }}{{ site.baseurl }}",
       "sameAs":[ "https://linkedin.com/…", "https://twitter.com/…" ],
       "worksFor":{
         "@type":"Organization",
-        "name":"Fintech Industry"
+        "name":"Banco de Credito BCP"
       },
       "knowsAbout":[
         "Product Design",
@@ -48,6 +73,5 @@
   {{ content }}
   {% include footer.html %}
   <script src="{{ '/assets/js/menu.js' | relative_url }}"></script>
-</body>
 </body>
 </html>

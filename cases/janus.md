@@ -1,8 +1,9 @@
 ---
 layout: case
-lang: es
+lang: en
 case: janus
-permalink: /es/janus
+og_type: article
+permalink: /janus
 ---
 
 <h1>Crédito Hipotecario Digital (Janus)</h1>
