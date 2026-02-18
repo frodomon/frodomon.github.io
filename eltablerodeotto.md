@@ -4,3 +4,58 @@ lang: en
 case: eltablerodeotto
 permalink: /eltablerodeotto
 ---
+
+<h1>El Tablero de Otto — Diseño de un negocio basado en comunidad</h1>
+
+<h2>Contexto</h2>
+<p>
+El Tablero de Otto fue un emprendimiento propio orientado a juegos de cartas coleccionables (TCG), diseñado desde cero como un sistema de experiencia, no solo como un punto de venta. El desafío era competir en un mercado establecido con recursos limitados, priorizando sostenibilidad y diferenciación.
+
+</p>
+
+<h2>El problema</h2>
+<p>
+Las tiendas existentes ofrecían experiencias poco accesibles: ubicaciones lejanas, espacios incómodos y foco en productos de alto costo.
+Los usuarios no buscaban solo comprar, sino pertenecer a una comunidad con una experiencia consistente.
+El equipo asumía que el principal problema era la cantidad de pasos.
+</p>
+
+<h2>Mi rol como fundador y responsable del proyecto</h2>
+<ul>
+  <li>Definí la propuesta de valor</li>
+  <li>Lideré investigación de usuarios</li>
+  <li>Diseñé el servicio end-to-end</li>
+  <li>Tomé decisiones de negocio y soporte tecnológico</li>
+</ul>
+<p>Cada decisión impactaba directamente en la viabilidad del negocio.</p> 
+<h2>Decisiones clave</h2>
+<ul>
+  <li>Diseñar experiencias diferenciadas por arquetipo en lugar de un modelo único</li>
+  <li>Priorizar experiencia sobre margen inmediato (espacio, mobiliario, atención)</li>
+  <li>Construir comunidad como parte del producto, apoyada en canales digitales</li>
+</ul>
+<p>Estas decisiones permitieron reducir fricción de entrada y aumentar recurrencia.</p> 
+<h2>Diseno del servicio</h2>
+<p>El servicio se estructuró como un sistema:</p>
+<ul>
+  <li>Eventos segmentados</li>
+  <li>Talleres de introducción</li>
+  <li>Sistema de puntos y premios</li>
+  <li>Comunidad digital activa</li>
+</ul>
+<p>La tecnología se usó para amplificar la experiencia, no para reemplazarla.</p>
+<h2>Resultados</h2>
+<ul>
+  <li>Crecimiento sostenido de asistencia y ventas</li>
+  <li>Alta recurrencia y recomendación</li>
+  <li>Consolidación como una de las tiendas mejor valoradas del mercado</li>
+  <li>Expansión orgánica de la comunidad</li>
+</ul>
+<p>El Tablero de Otto se convirtió en un punto de encuentro, no solo en una tienda.</p>
+<h2>Aprendizajes</h2>
+<ul>
+  <li>Diseñar servicios es diseñar comportamientos</li>
+  <li>Comunidad y experiencia son activos estratégicos</li>
+  <li>Las decisiones de diseño tienen impacto financiero directo</li>
+  <li>La tecnología aporta valor cuando refuerza la propuesta, no cuando la complica</li>
+</ul>
