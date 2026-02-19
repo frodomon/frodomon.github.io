@@ -71,18 +71,12 @@ permalink: /
   <h2 class="section-title">{{ t.cases.title }}</h2>
   <p>{{ t.cases.description }}</p>
   <article>
-    <h3><a href="{{ '/janus/' | relative_url }}">Digital Mortgage Product (Janus)</a></h3>
-    <p>
-      Led strategic design decisions in a regulated fintech mortgage
-      product balancing compliance, clarity and business outcomes.
-    </p>
+    <h3><a href="{{ '/janus/' | relative_url }}">{{ t.cases.janus.title }}</a></h3>
+    <p>{{ t.cases.janus.description }}</p>
   </article>
   <article>
-    <h3><a href="{{ '/eltablerodeotto/' | relative_url }}">Otto – Community Business Design</a></h3>
-    <p>
-      Entrepreneurial case integrating service design, business model
-      strategy and technology to build a sustainable ecosystem.
-    </p>
+    <h3><a href="{{ '/eltablerodeotto/' | relative_url }}">{{ t.cases.eltablerodeotto.title }}</a></h3>
+    <p>{{ t.cases.eltablerodeotto.description }} </p>
   </article>
 </section>
 <!-- LEADERSHIP -->
