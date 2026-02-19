@@ -1,47 +1,61 @@
 en:
   home:
+    meta_title: "Strategic Design Lead | Driving Business Impact"
+    meta_description: "Strategic Design Lead driving measurable impact through product strategy, design systems and organizational alignment across complex digital ecosystems."
     case_studies: "Case Studies"
-    title: "Alfredo Vásquez"
-    subtitle: "Strategic Design Lead in Fintech & Complex Digital Products"
-    meta_title: "Strategic Design Lead | Alfredo Vásquez"
-    meta_description: "Design leadership in fintech, regulated environments and complex digital ecosystems."
-    hero:
-      name: "Hello, I'm Alfredo Vásquez Alcalá"
-      title: "Strategic Design Lead building scalable financial products."
-      headline: "I align design, business strategy, and technology to deliver measurable growth in complex fintech environments."
-      description: "10+ years building digital ecosystems across banking, payments, and platform services."
-      cta: 
-        primary: "Explore Case Studies"
-        secondary: "Connect"
-    leadership:
-      title: "How I Lead Design"
-      description: >
-        I have built my career wearing different “hats”: technology, data,
-        product, design, and entrepreneurship. This combination allows me
-        to approach complex problems with a systemic perspective.
-      experience:
-        title: "Experience"
-        highlights:
-            - "Experience in fintech, services, and complex platforms"
-            - "Technical background that bridges collaboration with engineering"
-            - "Focused on decision-making, not just visual execution"
-      principles:
-        title: "Principles"
-        items:
-          - "Design is decision-making, not decoration"
-          - "The right problem is worth more than the perfect solution"
-          - "Scaling design requires systems, not heroes"
-          - "Impact must be measured, not assumed"
+    contact: "Let's connect"
 
-      teamwork:
-        title: "Working with Teams"
+    hero:
+      title: "Strategic Design Lead driving measurable impact across complex digital ecosystems."
+      subtitle: "I lead multidisciplinary design teams to scale products, align business strategy and deliver meaningful customer impact across corporate and emerging markets."
+      cta_primary: "Explore Case Studies"
+      cta_secondary: "Let’s Connect"
+
+    credibility: "Design leadership across fintech, banking and digital platforms in Latin America."
+
+    what:
+      title: "Design Leadership at the intersection of product, systems and business."
+      description: "I operate at the intersection of product strategy, service design and organizational alignment — translating complexity into scalable systems that drive growth and operational clarity."
+
+    capabilities:
+      title: "Core Strategic Capabilities"
+
+      org:
+        title: "Organizational Design Leadership"
         items:
-          - "Align stakeholders in high-complexity environments"
-          - "Define decision criteria before designing"
-          - "Mentor designers to promote autonomy"
-          - "Prioritize clarity when the cost of error is high" 
+          - "Building and mentoring high-performing design teams"
+          - "Establishing governance and scalable design standards"
+          - "Driving cross-functional alignment"
+
+      product:
+        title: "Product & Systems Thinking"
+        items:
+          - "End-to-end service design"
+          - "Scalable design systems"
+          - "Enterprise UX strategy"
+
+      business:
+        title: "Business Impact"
+        items:
+          - "Conversion and growth optimization"
+          - "Operational efficiency initiatives"
+          - "Customer experience transformation"
+
+    cases:
+      title: "Selected Strategic Initiatives"
+      description: "A selection of initiatives where design leadership drove measurable business and product impact."
+      cta: "View Case Studies"
+
+    leadership:
+      title: "Leadership Philosophy"
+      text: "Design leadership is not about visual polish — it is about clarity, alignment and measurable outcomes. Strong design organizations are built through trust, systems thinking and strategic execution."
+
+    final:
+      title: "Let’s build design organizations that scale."
+      cta: "Start a Conversation"
   # Caso Janus (EN)
   janus:
+    cover_image: /assets/images/janus-cover.webp
     case_studies: "Case Studies"
     title: "Digital Mortgage Product (Janus)"
     subtitle: "Design Leadership in a regulated fintech ecosystem"
@@ -70,47 +84,61 @@ en:
 
 es:
   home:
+    meta_title: "Strategic Design Lead | Liderando Impacto de Negocio"
+    meta_description: "Strategic Design Lead impulsando impacto medible a través de estrategia de producto, design systems y alineación organizacional en ecosistemas digitales complejos."
     case_studies: "Casos de  Estudio"
-    title: "Alfredo Vásquez"
-    subtitle: "Design Lead Estratégico en Fintech y Productos Digitales Complejos"
-    meta_title: "Design Lead Estratégico | Alfredo Vásquez"
-    meta_description: "Liderazgo de diseño en fintech, entornos regulados y ecosistemas digitales complejos."
-    hero:
-      name: "Hola, soy Alfredo Vásquez Alcalá"
-      title: "Strategic Design Leader for Digital Products & Platforms"
-      headline: "I align business strategy, product vision and user experience to build scalable digital solutions with measurable impact."
-      description: "I lead cross-functional teams, define design direction and drive product decisions that connect customer needs with business outcomes."
-      cta: 
-        primary: "Explore Case Studies"
-        secondary: "Connect"
-    leadership:
-      title: "Cómo lidero diseño"
-      description: >
-        He desarrollado mi carrera usando distintos “sombreros”: tecnología,
-        datos, producto, diseño y emprendimiento. Esta combinación me permite
-        abordar problemas complejos desde una mirada sistémica.
-      experience:
-        title: "Experiencia"
-        highlights:
-            - "Experiencia en fintech, servicios y plataformas complejas"
-            - "Background técnico que facilita el trabajo con ingeniería"
-            - "Foco en toma de decisiones, no solo ejecución visual"
-      principles:
-        title: "Principios"
-        items:
-          - "Diseño es decisión, no decoración"
-          - "El problema correcto vale más que la solución perfecta"
-          - "Escalar diseño requiere sistemas, no héroes"
-          - "El impacto se mide, no se asume"
+    contact: "Escríbeme"
 
-      teamwork:
-        title: "Trabajo con equipos"
+    hero:
+      title: "Strategic Design Lead impulsando impacto medible en ecosistemas digitales complejos."
+      subtitle: "Lidero equipos multidisciplinarios de diseño para escalar productos, alinear estrategia de negocio y generar impacto significativo en entornos corporativos y mercados emergentes."
+      cta_primary: "Explorar Casos"
+      cta_secondary: "Conversemos"
+
+    credibility: "Liderazgo en diseño a través de fintech, banca y plataformas digitales en Latinoamérica."
+
+    what:
+      title: "Liderazgo en diseño en la intersección de producto, sistemas y negocio."
+      description: "Opero en la intersección entre estrategia de producto, service design y alineación organizacional — transformando complejidad en sistemas escalables que impulsan crecimiento y claridad operativa."
+
+    capabilities:
+      title: "Capacidades Estratégicas"
+
+      org:
+        title: "Liderazgo Organizacional en Diseño"
         items:
-          - "Alineo stakeholders en contextos de alta complejidad"
-          - "Defino criterios antes de diseñar"
-          - "Mentoreo diseñadores promoviendo autonomía"
-          - "Priorizo claridad cuando el costo del error es alto"
+          - "Construcción y mentoría de equipos de alto desempeño"
+          - "Gobernanza y estándares escalables de diseño"
+          - "Alineación transversal entre áreas"
+
+      product:
+        title: "Pensamiento Sistémico y Producto"
+        items:
+          - "Service design end-to-end"
+          - "Design systems escalables"
+          - "Estrategia UX para entornos enterprise"
+
+      business:
+        title: "Impacto en Negocio"
+        items:
+          - "Optimización de conversión y crecimiento"
+          - "Iniciativas de eficiencia operativa"
+          - "Transformación de experiencia del cliente"
+
+    cases:
+      title: "Iniciativas Estratégicas Seleccionadas"
+      description: "Proyectos donde el liderazgo en diseño generó impacto medible en negocio y producto."
+      cta: "Ver Casos"
+
+    leadership:
+      title: "Filosofía de Liderazgo"
+      text: "El liderazgo en diseño no se trata de estética, sino de claridad, alineación y resultados medibles. Las organizaciones sólidas se construyen con confianza, pensamiento sistémico y ejecución estratégica."
+
+    final:
+      title: "Construyamos organizaciones de diseño que escalen."
+      cta: "Iniciar Conversación"  
   janus:
+    cover_image: /assets/images/janus-cover.webp
     case_studies: "Casos de  Estudio"
     title: "Producto Hipotecario Digital (Janus)"
     subtitle: "Liderazgo de diseño en un ecosistema fintech regulado"

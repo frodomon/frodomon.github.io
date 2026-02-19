@@ -27,7 +27,7 @@
   <meta property="og:description" content="{{ t.meta_description }}">
   <meta property="og:type" content="{{ page.og_type | default: 'website' }}">
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-design-lead-alfredo.png">
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-design-lead-alfredo.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Alfredo Vásquez | Strategic Design Lead">
@@ -42,8 +42,9 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ t.meta_title }}">
   <meta name="twitter:description" content="{{ t.meta_description }}">
-  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-design-lead-alfredo.png">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-design-lead-alfredo.webp">
   <!-- assets -->
+  <link rel="preload" href="{{ '/css/styles.css' | relative_url }}" as="style">
   <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/png">
   <link rel="stylesheet" href="{{ '/assets/fontawesome/css/all.min.css' | relative_url }}">
@@ -55,6 +56,7 @@
       "jobTitle":"Strategic Design Lead",
       "description":"{{ t.meta_description }}",
       "inLanguage":"{{ lang }}",
+      "image": "{{ site.url }}{{ site.baseurl }}/assets/images/og-design-lead-alfredo.webp",
       "url":"{{ site.url }}{{ site.baseurl }}",
       "sameAs":[ "https://linkedin.com/…", "https://twitter.com/…" ],
       "worksFor":{

@@ -2,9 +2,86 @@
 layout: default
 lang: en
 page_key: home
+og_type: website
 permalink: /
 ---
-{% assign t = site.data.translations[page.lang] %}
+
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[lang][page.page_key] %}
+
+ <!-- HERO -->
+<section class="hero container">
+  <h1>{{ t.hero.title }}</h1>
+  <p class="hero-subtitle">{{ t.hero.subtitle }}</p>
+  <div class="hero-cta">
+    <a href="{{ '/cases/' | relative_url }}" class="btn-primary">
+      {{ t.hero.cta_primary }}
+    </a>
+    <a href="mailto:vasquez.alf@gmail.com" class="btn-secondary">
+      {{ t.hero.cta_secondary }}
+    </a>
+  </div>
+</section>
+<!-- CREDIBILITY -->
+<section class="credibility container">
+  <p>{{ t.credibility }}</p>
+</section>
+<!-- WHAT I DO -->
+<section class="what-i-do container">
+  <h2>{{ t.what.title }}</h2>
+  <p>{{ t.what.description }}</p>
+</section>
+<!-- CAPABILITIES -->
+<section class="capabilities container">
+  <h2>{{ t.capabilities.title }}</h2>
+  <div class="capability-grid">
+    <div class="capability">
+      <h3>{{ t.capabilities.org.title }}</h3>
+      <ul>
+        {% for item in t.capabilities.org.items %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="capability">
+      <h3>{{ t.capabilities.product.title }}</h3>
+      <ul>
+        {% for item in t.capabilities.product.items %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="capability">
+      <h3>{{ t.capabilities.business.title }}</h3>
+      <ul>
+        {% for item in t.capabilities.business.items %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- FEATURED CASES -->
+<section class="featured-cases container">
+  <h2>{{ t.cases.title }}</h2>
+  <p>{{ t.cases.description }}</p>
+  <a href="{{ '/cases/' | relative_url }}" class="btn-primary">
+    {{ t.cases.cta }}
+  </a>
+</section>
+<!-- LEADERSHIP -->
+<section class="leadership container">
+  <h2>{{ t.leadership.title }}</h2>
+  <p>{{ t.leadership.text }}</p>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta container">
+  <h2>{{ t.final.title }}</h2>
+  <a href="mailto:vasquez.alf@gmail.com" class="btn-primary">
+    {{ t.final.cta }}
+  </a>
+</section>
 
 <section id="hero" class="container">
    <div id="hero-picture" class="col-4 flex-center-row">
@@ -15,50 +92,12 @@ permalink: /
     <h3 class="hero-subheadline">{{ t.home.hero.headline }}</h3>
     <p class="hero-support">{{ t.home.hero.description }}</p>
     <div class="hero-cta">
-      <a href="{{ '/cases.html' | relative_url }}" class="btn btn-primary">{{ t.home.hero.cta.primary }}</a>
+      <a href="{{ '/cases/' | relative_url }}" class="btn btn-primary">{{ t.home.hero.cta.primary }}</a>
       <a href="mailto:vasquez.alf@gmail.com" class="btn btn-secondary">{{ t.home.hero.cta.secondary }}</a>
     </div>
   </div>
 </section>
-<section class="container">
-  <div class="col-12 flex-center-row">
-    <h2>{{ t.leadership.title }}</h2>
-    <p>{{ t.leadership.description }}</p>
-  </div>
-  <div class="col-4 flex-center-row">  
-    <h3>{{ t.leadership.experience.title }}</h3>
-    <ul>
-      {% for item in t.leadership.experience.highlights %}
-        <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="col-4 flex-center-row">
-    <h3>{{ t.leadership.principles.title }}</h3>
-    <ul>
-      {% for item in t.leadership.principles.items %}
-        <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="col-4 flex-center-row">
-    <h3>{{ t.leadership.teamwork.title }}</h3>
-    <ul>
-      {% for item in t.leadership.teamwork.items %}
-        <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
-<section>
-  <h2>What I Do</h2>
-  <ul>
-    <li>Lead design in high-risk financial environments</li>
-    <li>Align product, engineering and business stakeholders</li>
-    <li>Transform ambiguity into scalable product decisions</li>
-    <li>Design systems that reduce cognitive and operational risk</li>
-  </ul>
-</section>
+
 <section>
   <h2>Selected Work</h2>
 
@@ -78,18 +117,4 @@ permalink: /
     </p>
   </article>
 </section>
-<section>
-  <h2>How I Lead</h2>
 
-  <p>
-    I believe design leadership is about decision architecture,
-    not visual authority.
-  </p>
-
-  <ul>
-    <li>Define principles before defining screens</li>
-    <li>Create clarity in high-ambiguity environments</li>
-    <li>Mentor designers toward autonomy and accountability</li>
-    <li>Balance user needs with business and regulatory constraints</li>
-  </ul>
-</section>

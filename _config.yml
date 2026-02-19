@@ -1,2 +1,4 @@
 url: "https://frodomon.github.io"
 baseurl: ""
+plugins:
+  - jekyll-sitemap
