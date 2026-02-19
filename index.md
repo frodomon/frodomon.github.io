@@ -23,7 +23,7 @@ permalink: /
 </section>
 <!-- CREDIBILITY -->
  <section class="credibility">
-    <div class="container">
+    <div>
       <p class="credibility-text">{{ t.credibility }}</p>
     </div>
   </section>
