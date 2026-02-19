@@ -40,7 +40,7 @@ permalink: /
       <h2 class="section-title">{{ t.capabilities.title }}</h2>
       <div class="capability-grid">
         <div class="card">
-          <h3 class="card-title">{{ t.capabilities.org.title }}</h3>
+          <h3>{{ t.capabilities.org.title }}</h3>
           <ul class="list">
             {% for item in t.capabilities.org.items %}
             <li>{{ item }}</li>
