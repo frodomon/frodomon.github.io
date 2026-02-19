@@ -50,11 +50,12 @@ h2, h2 a{
   color: var(--primary-color);
 }
 h3, h3 a{
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   line-height: 1.2;
-  margin:0;
+  margin:0 0 1rem 0;
+  color: var(--primary-color);
 }
 h4, h4 a{
   font-weight: 700;
@@ -131,7 +132,8 @@ ul, ol{
 }
 ul li, 
 ol li{
-  margin: 0;
+  margin: 0 0 0.5rem 0;
+  color: var(--grey500);
 }
 ul li ul{
   padding-bottom: 0;
@@ -510,12 +512,18 @@ footer nav a:last-child{
   padding: 1.5rem;
   border: 1px solid var(--grey200);
   border-radius: var(--radius);
-  background: #fff;
+  background: var(--primary-bg-color);
   transition: border 0.2s ease, transform 0.2s ease;
 }
 .card:hover {
   border-color: var(--secondary-color);
   transform: translateY(-2px);
+}
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 .credibility {
   background: var(--grey100);
@@ -530,8 +538,7 @@ footer nav a:last-child{
   margin-top: 6rem;
 }
 .capability-grid {
-  display: grid;
-  grid-template-columns: 3fr;
+  display: flex;
   gap: 2rem;
   margin-top: 2rem;
 }
