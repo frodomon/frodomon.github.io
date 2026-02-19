@@ -38,13 +38,16 @@ h1, h1 a{
   line-height: 1.2;
   letter-spacing: -0.02em;
   margin:0;
+  color: var(--primary-color);
 }
 h2, h2 a{
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1.2;
-  margin:0;
+  margin:0 0 2rem 0;
+  padding:0 0 1rem 1rem;
+  color: var(--primary-color);
 }
 h3, h3 a{
   font-weight: 700;
@@ -73,6 +76,7 @@ p, p a{
   font-size: 1rem;
   line-height: 1.7;
   margin:0;
+  color: var(--grey500);
 }
 a, a:visited {
   font-weight: 500;
@@ -468,7 +472,6 @@ footer nav a:last-child{
   margin-bottom: 1.25rem;
 }
 .hero-title{
-  color:var(--primary-color);
   position: relative;
   padding-bottom: 1.25rem;
 }
@@ -502,14 +505,8 @@ footer nav a:last-child{
 }
 /* ----------------------------SECTIONS HOME---------------------- */
 .section-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--primary-color);
   position: relative;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
   border-left: 4px solid var(--secondary-color);
-  padding-left: 1rem;
 }
 .section-title::after {
   content: "";
@@ -519,10 +516,6 @@ footer nav a:last-child{
   width: 32px;
   height: 2px;
   background: var(--secondary-color);
-}
-.section-lead {
-  font-size: 1rem;
-  color: var(--grey500);
 }
 .card {
   padding: 1.5rem;
