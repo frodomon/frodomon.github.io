@@ -127,8 +127,9 @@ blockquote{
   margin-left: 30px;
 }
 ul, ol{
+  list-style: none;
   margin: 0;
-  padding: 0 0 1rem 2rem;
+  padding: 0;
 }
 ul li, 
 ol li{
@@ -156,7 +157,7 @@ em{
   font-style: italic;
 }
 section{
-  padding: 4rem 5%;
+  padding: 4rem 10%;
 }
 .social{
   font-size: 1.5rem;
@@ -491,7 +492,6 @@ footer nav a:last-child{
   background: var(--secondary-color);
   border-radius: 2px;
 }
-
 .hero-subtitle{
   margin-top: 1.5rem;
   font-size: 1.125rem;
@@ -514,6 +514,13 @@ footer nav a:last-child{
 .section-title {
   border-left: 4px solid var(--secondary-color);
 }
+/* ----------------------------GRID CAPABILITIES--------------------- */
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 2rem;
+}
 .card {
   padding: 1.5rem;
   border: 1px solid var(--grey200);
@@ -524,12 +531,6 @@ footer nav a:last-child{
 .card:hover {
   border-color: var(--secondary-color);
   transform: translateY(-2px);
-}
-.card-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
 }
 .credibility {
   background: var(--grey100);
