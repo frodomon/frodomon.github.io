@@ -29,14 +29,14 @@ permalink: /
   </section>
 <!-- WHAT I DO -->
 <section>
-    <div class="container">
+    <div>
       <h2 class="section-title">{{ t.what.title }}</h2>
       <p class="section-lead">{{ t.what.description }}</p>
     </div>
   </section>
 <!-- CAPABILITIES -->
-<section class="section">
-    <div class="container">
+<section>
+    <div>
       <h2 class="section-title">{{ t.capabilities.title }}</h2>
       <div class="capability-grid">
         <div class="card">

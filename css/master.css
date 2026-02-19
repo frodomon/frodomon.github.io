@@ -458,9 +458,8 @@ footer nav a:last-child{
 #hero{
   background: var(--primary-bg-color);
   max-width: 80%;
-  margin: 6rem auto 4rem;
+  padding: 6rem auto 4rem;
   border-radius: 1.25rem;
-  padding:0;
   border-bottom: 1px solid var(--grey200);
 }
 .hero-eyebrow {
@@ -505,17 +504,7 @@ footer nav a:last-child{
 }
 /* ----------------------------SECTIONS HOME---------------------- */
 .section-title {
-  position: relative;
   border-left: 4px solid var(--secondary-color);
-}
-.section-title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 32px;
-  height: 2px;
-  background: var(--secondary-color);
 }
 .card {
   padding: 1.5rem;
