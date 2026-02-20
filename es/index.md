@@ -11,7 +11,7 @@ permalink: /es/
 
 <!-- HERO -->
 <section id="hero">
-  <div class="container">
+  <div>
     <p class="hero-eyebrow">{{ t.hero.eyebrow }}</p>
     <h1 class="hero-title">{{ t.hero.title }}</h1>
     <p class="hero-subtitle">{{ t.hero.subtitle }}</p>
