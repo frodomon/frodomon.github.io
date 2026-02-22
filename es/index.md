@@ -79,6 +79,12 @@ permalink: /es/
   <h2 class="section-title">{{ t.leadership.title }}</h2>
   <p>{{ t.leadership.text }}</p>
 </section>
+<!-- SIGNATURE-->
+<section class="credibility">
+  <div>
+    <p class="credibility-text">{{ t.signature.statement }}</p>
+  </div>
+</section>
 <!-- FINAL CTA -->
 <section>
   <h2 class="section-title">{{ t.final.title }}</h2>
