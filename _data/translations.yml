@@ -57,14 +57,15 @@ en:
     final:
       title: "Let’s build enterprise design organizations that endure."
       cta: "Let's connect"
+  
   # Caso Janus (EN)
   cases:
     janus:
-        title: "Digital Mortgage Product (Janus)"
-        description: "Led strategic design decisions in a regulated fintech mortgage product balancing compliance, clarity and business outcomes."
-      eltablerodeotto:
-        title: "El Tablero de Otto – Community Business Design"
-        description: "Entrepreneurial case integrating service design, business model strategy and technology to build a sustainable ecosystem."
+      title: "Digital Mortgage Product (Janus)"
+      description: "Led strategic design decisions in a regulated fintech mortgage product balancing compliance, clarity and business outcomes."
+    eltablerodeotto:
+      title: "El Tablero de Otto – Community Business Design"
+      description: "Entrepreneurial case integrating service design, business model strategy and technology to build a sustainable ecosystem."
   janus:
     cover_image: /assets/images/janus-cover.webp
     case_studies: "Case Studies"
@@ -155,12 +156,11 @@ es:
   
   cases:
     janus:
-        title: "Producto Digital Hipotecario (Janus)"
-        description: "Lideré decisiones de diseño estratégico en un producto fintech hipotecario regulado, equilibrando cumplimiento normativo, claridad para el usuario y resultados de negocio."
-
-      eltablerodeotto:
-        title: "El Tablero de Otto – Diseño de Negocio Comunitario"
-        description: "Caso emprendedor que integra diseño de servicios, estrategia de modelo de negocio y tecnología para construir un ecosistema sostenible."
+      title: "Producto Digital Hipotecario (Janus)"
+      description: "Lideré decisiones de diseño estratégico en un producto fintech hipotecario regulado, equilibrando cumplimiento normativo, claridad para el usuario y resultados de negocio."
+    eltablerodeotto:
+      title: "El Tablero de Otto – Diseño de Negocio Comunitario"
+      description: "Caso emprendedor que integra diseño de servicios, estrategia de modelo de negocio y tecnología para construir un ecosistema sostenible."
   janus:
     cover_image: /assets/images/janus-cover.webp
     case_studies: "Casos de  Estudio"
