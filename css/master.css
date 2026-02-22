@@ -565,4 +565,96 @@ footer nav a:last-child{
   gap: 2rem;
   margin-top: 2rem;
 }
+/* ============ CASES HERO BACKGROUND ============ */
 
+.cases-page .cases-hero-wrapper {
+  position: relative;
+  height: 75vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  background: url('/assets/images/cases-hero-bg.jpg') center center / cover no-repeat;
+  color: #fff;
+}
+
+.cases-page .cases-hero-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+.cases-page .cases-hero {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.cases-title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.cases-description {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  opacity: 0.9;
+}
+/* ----------------------------HEADER white initial state--------------------- */
+.cases-page header {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.cases-page header a,
+.cases-page header nav a {
+  color: #fff;
+}
+/* ----------------------------HEADER white initial state--------------------- */
+.cases-page header.scrolled {
+  position: fixed;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.cases-page header.scrolled a,
+.cases-page header.scrolled nav a {
+  color: #000;
+}
+/* ============ MASONRY GRID ============ */
+
+.cases-grid {
+  column-count: 3;
+  column-gap: 2rem;
+  margin-top: 6rem;
+}
+
+.case-card {
+  break-inside: avoid;
+  margin-bottom: 2rem;
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.case-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.case-content {
+  padding: 1.2rem;
+}
+
+.case-subtitle {
+  opacity: 0.6;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
