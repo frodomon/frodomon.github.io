@@ -551,6 +551,12 @@ footer nav a:last-child{
   color: var(--grey500);
   text-align: center;
 }
+.signature-text {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--primary-color);
+  text-align: center;
+}
 .section + .section {
   margin-top: 6rem;
 }

@@ -82,7 +82,7 @@ permalink: /es/
 <!-- SIGNATURE-->
 <section class="credibility">
   <div>
-    <p class="credibility-text">{{ t.signature.statement }}</p>
+    <p class="signature-text">{{ t.signature.statement }}</p>
   </div>
 </section>
 <!-- FINAL CTA -->
