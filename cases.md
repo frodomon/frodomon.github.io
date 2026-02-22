@@ -4,22 +4,21 @@ lang: en
 page_key: cases
 og_type: website
 permalink: /cases/
-body_class: cases-page
+body_class: dark-header
 ---
 
 {% assign lang = page.lang | default: site.default_lang %}
 {% assign t = site.data.translations[lang][page.page_key] %}
 
 <!-- HERO WRAPPER -->
-<section class="cases-hero-wrapper">
-  <div class="cases-hero">
-    <h1 class="cases-title">{{ t.title }}</h1>
-    <p class="cases-description">{{ t.description }}</p>
+<section class="dark-hero-wrapper">
+  <div class="dark-hero">
+    <h1 class="dark-hero-title">{{ t.title }}</h1>
+    <p class="dark-hero-description">{{ t.description }}</p>
   </div>
 </section>
-
 <!-- CASES GRID -->
-<section class="cases-grid">
+<section class="masonry-grid">
   {% for case in t.case_studies %}
   <article class="case-card">
     <a href="{{ case.url | relative_url }}">
