@@ -4,6 +4,7 @@ lang: en
 page_key: cases
 og_type: website
 permalink: /cases/
+body_class: cases-page
 ---
 
 {% assign lang = page.lang | default: site.default_lang %}

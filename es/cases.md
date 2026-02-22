@@ -3,7 +3,7 @@ layout: default
 lang: es
 page_key: cases
 og_type: website
-permalink: /cases/
+permalink: /es/cases/
 body_class: cases-page
 ---
 
