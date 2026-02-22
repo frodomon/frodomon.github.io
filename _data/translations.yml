@@ -1,10 +1,11 @@
 en:
+  menu:
+    case_studies: "Case Studies"
+    contact: "Let's connect"
   home:
     meta_title: "Strategic Design Lead | Fintech Product Strategy & Organizational Capability"
     meta_description: "Strategic Design Lead specializing in fintech and enterprise product strategy, design systems and organizational capability across complex digital ecosystems."
-    case_studies: "Case Studies"
-    contact: "Let's connect"
-
+    
     hero:
       eyebrow: "Strategic Design & Product Leadership"
       title: "Building enterprise-grade design capability for complex, large-scale fintech and product ecosystems."

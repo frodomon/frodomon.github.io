@@ -10,10 +10,6 @@
       <span></span>
       <span></span>
     </button>
-    <nav class='flex-right-row nav'>
-      <a class="flex-center-row" href="{{ '/cases/' | relative_url }}">{{ t.case_studies }}</a>
-      <a class="flex-center-row" href="mailto:vasquez.alf@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-envelope social" aria-hidden="true"></i>{{ t.contact }}</a>
-      {% include language-switcher.html %}
-    </nav>
+    {% include menu.html %}
   </div>
 </header>
