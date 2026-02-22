@@ -28,7 +28,7 @@ permalink: /es/
     </div>
   </section>
 <!-- WHAT I DO -->
-<section>
+<section class="leadership">
     <div>
       <h2 class="section-title">{{ t.what.title }}</h2>
       <p class="section-lead">{{ t.what.description }}</p>
@@ -70,10 +70,12 @@ permalink: /es/
 <section class="featured-cases">
   <h2>{{ t.cases.title }}</h2>
   <p>{{ t.cases.description }}</p>
-  <a href="{{ '/cases/' | relative_url }}" class="btn btn-primary">{{ t.cases.cta }}</a>
+  <div class="hero-actions">
+    <a href="{{ '/cases/' | relative_url }}" class="btn btn-primary">{{ t.cases.cta }}</a>
+  </div>
 </section>
 <!-- LEADERSHIP PHILOSOPHY-->
-<section class="philosophy">
+<section class="leadership">
   <h2 class="section-title">{{ t.leadership.title }}</h2>
   <p>{{ t.leadership.text }}</p>
 </section>

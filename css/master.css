@@ -518,10 +518,10 @@ footer nav a:last-child{
 .section-title {
   border-left: 4px solid var(--secondary-color);
 }
-.philosophy{
+.leadership{
   background: var(--primary-color);
 }
-.philosophy h2, .philosophy p{
+.leadership h2, .leadership p{
   color: var(--primary-bg-color);
 }
 /* ----------------------------GRID CAPABILITIES--------------------- */

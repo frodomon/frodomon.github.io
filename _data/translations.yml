@@ -102,28 +102,27 @@ es:
       cta_primary: "Explorar Casos"
       cta_secondary: "Conversemos"
       
-    credibility: "Liderazgo de diseño para el sector fintech, banca y plataformas digitales en Latinoamérica."
+    credibility: "Liderazgo en diseño para el sector fintech, banca y plataformas digitales en Latinoamérica."
 
     what:
       title: "Liderazgo en diseño en la intersección de producto, sistemas y negocio."
       description: "Opero en la intersección entre estrategia de producto, service design y alineación organizacional — transformando complejidad en sistemas escalables que impulsan crecimiento y claridad operativa."
 
     capabilities:
-      title: "Capacidades Estratégicas"
-
+      title: "Capacidades Estratégicas Clave"
       org:
         title: "Liderazgo Organizacional en Diseño"
         items:
           - "Construcción y mentoría de equipos de alto desempeño"
-          - "Gobernanza y estándares escalables de diseño"
-          - "Alineación transversal entre áreas"
+          - "Establecimiento de Gobernanza y estándares de diseño escalables"
+          - "Impulso del alineamiento multidisciplinario."
 
       product:
         title: "Pensamiento Sistémico y Producto"
         items:
           - "Service design end-to-end"
           - "Design systems escalables"
-          - "Estrategia UX para entornos enterprise"
+          - "Estrategia UX para entornos corporativos"
 
       business:
         title: "Impacto en Negocio"
@@ -134,8 +133,8 @@ es:
 
     cases:
       title: "Iniciativas Estratégicas Seleccionadas"
-      description: "Proyectos donde el liderazgo en diseño generó impacto medible en negocio y producto."
-      cta: "Ver Casos"
+      description: "Proyectos donde mi liderazgo en diseño generó impacto medible en negocio y producto."
+      cta: "Explorar Casos"
       janus:
         title: "Producto Digital Hipotecario (Janus)"
         description: "Lideré decisiones de diseño estratégico en un producto fintech hipotecario regulado, equilibrando cumplimiento normativo, claridad para el usuario y resultados de negocio."
@@ -145,7 +144,7 @@ es:
         description: "Caso emprendedor que integra diseño de servicios, estrategia de modelo de negocio y tecnología para construir un ecosistema sostenible."
     leadership:
       title: "Filosofía de Liderazgo"
-      text: "El liderazgo en diseño no se trata de estética, sino de claridad, alineación y resultados medibles. Las organizaciones sólidas se construyen con confianza, pensamiento sistémico y ejecución estratégica."
+      text: "El liderazgo en diseño no se trata solo de estética, sino de claridad, alineación y resultados medibles. Las organizaciones sólidas se construyen con confianza, pensamiento sistémico y ejecución estratégica."
 
     final:
       title: "Construyamos organizaciones de diseño que escalen."
