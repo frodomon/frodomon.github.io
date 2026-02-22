@@ -58,14 +58,23 @@ en:
       title: "Let’s build enterprise design organizations that endure."
       cta: "Let's connect"
   
-  # Caso Janus (EN)
+  # Cases (EN)
   cases:
-    janus:
-      title: "Digital Mortgage Product (Janus)"
-      description: "Led strategic design decisions in a regulated fintech mortgage product balancing compliance, clarity and business outcomes."
-    eltablerodeotto:
-      title: "El Tablero de Otto – Community Business Design"
+  title: "Selected Strategic Initiatives"
+  description: "Enterprise and fintech initiatives where design leadership shaped product direction, organizational capability and business performance."
+
+  case_studies:
+    - title: "Digital Mortgage Product (Janus)"
+      subtitle: "Organizational Design & Capability Building"
+      description: "Led the restructuring of enterprise UX governance, aligning product strategy, operating models and cross-functional decision-making to increase delivery coherence and strategic clarity across digital portfolios."
+      url: "/cases/janus/"
+
+    - title: "El Tablero de Otto — Small Business retail"
+      subtitle: "A design leadership initiative in retail"
       description: "Entrepreneurial case integrating service design, business model strategy and technology to build a sustainable ecosystem."
+      url: "/cases/otto/"
+
+  # Caso Janus (EN)
   janus:
     cover_image: /assets/images/janus-cover.webp
     case_studies: "Case Studies"
@@ -80,6 +89,7 @@ en:
       - "Shortened simulation flow"
       - "Improved financial clarity"
       - "Enabled early conversions"
+  # El tablero de Otto (EN)
   eltablerodeotto:
     case_studies: "Case Studies"
     title: "El Tablero de Otto – Community-Centric Business Design"
@@ -154,13 +164,23 @@ es:
       title: "Construyamos organizaciones de diseño corporativas que perduren."
       cta: "Conversemos" 
   
+  # Cases (ES)
   cases:
-    janus:
-      title: "Producto Digital Hipotecario (Janus)"
+  title: "Iniciativas Estratégicas Seleccionadas"
+  description: "Iniciativas corporativas y fintech donde el liderazgo en diseño impactó la dirección de producto, la capacidad organizacional y el desempeño del negocio."
+
+  case_studies:
+    - title: "Producto Digital Hipotecario (Janus)"
+      subtitle: "Diseño Organizacional y Construcción de Capacidad"
       description: "Lideré decisiones de diseño estratégico en un producto fintech hipotecario regulado, equilibrando cumplimiento normativo, claridad para el usuario y resultados de negocio."
-    eltablerodeotto:
-      title: "El Tablero de Otto – Diseño de Negocio Comunitario"
+      url: "/cases/janus/"
+
+    - title: "El Tablero de Otto – Diseño de Negocio Retail"
+      subtitle: "Liderazgo en Ecosistema de Producto y Sistemas de Diseño"
       description: "Caso emprendedor que integra diseño de servicios, estrategia de modelo de negocio y tecnología para construir un ecosistema sostenible."
+      url: "/cases/otto/"
+  
+  # JANUS (ES)
   janus:
     cover_image: /assets/images/janus-cover.webp
     case_studies: "Casos de  Estudio"
@@ -176,6 +196,7 @@ es:
       - "Mejor comprensión financiera"
       - "Conversión temprana tras lanzamiento"
 
+  # Otto (ES)
   eltablerodeotto:
     case_studies: "Casos de  Estudio"
     title: "El Tablero de Otto – Diseño de Negocio Basado en Comunidad"
