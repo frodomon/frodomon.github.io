@@ -75,7 +75,7 @@ en:
         subtitle: "A design leadership initiative in retail"
         description: "Entrepreneurial case integrating service design, business model strategy and technology to build a sustainable ecosystem."
         url: "/cases/eltablerodeotto/"
-        image: "/assets/images/eltablerodeotto.jpg"
+        image: "/assets/images/eltablerodeotto.png"
 
   # Caso Janus (EN)
   janus:
@@ -183,7 +183,7 @@ es:
         subtitle: "Liderazgo en Ecosistema de Producto y Sistemas de Diseño"
         description: "Caso emprendedor que integra diseño de servicios, estrategia de modelo de negocio y tecnología para construir un ecosistema sostenible."
         url: "/es/cases/eltablerodeotto/"
-        image: "/assets/images/eltablerodeotto.jpg"
+        image: "/assets/images/eltablerodeotto.png"
   
   # JANUS (ES)
   janus:
