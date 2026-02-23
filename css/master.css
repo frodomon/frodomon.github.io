@@ -695,4 +695,14 @@ footer nav a:last-child{
 }
 .breadcrumb a {
   text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+.breadcrumb a:hover {
+  opacity: 1;
+}
+.breadcrumb-separator {
+  margin: 0 6px;
+}
+.breadcrumb-current {
+  font-weight: 500;
 }

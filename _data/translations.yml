@@ -63,6 +63,8 @@ en:
   cases:
     meta_title: "Strategic Design Lead | Cases"
     meta_description: "Selected Strategic Initiatives."
+    name: "Cases"
+    permalink: "/cases/"
     title: "Selected Strategic Initiatives"
     description: "Enterprise and fintech initiatives where design leadership shaped product direction, organizational capability and business performance."
 
@@ -89,6 +91,8 @@ en:
 
   # Caso Janus (EN)
   janus:
+    name: "Janus"
+    permalink: "/cases/janus/"
     cover_image: /assets/images/janus-cover.webp
     case_studies: "Case Studies"
     title: "Digital Mortgage Product (Janus)"
@@ -104,6 +108,8 @@ en:
       - "Enabled early conversions"
   # El tablero de Otto (EN)
   eltablerodeotto:
+    name: "El Tablero de Otto"
+    permalink: "/cases/eltablerodeotto/"
     case_studies: "Case Studies"
     title: "El Tablero de Otto – Community-Centric Business Design"
     subtitle: "Integrating design, business and technology"
@@ -186,6 +192,8 @@ es:
     meta_description: "Selected Strategic Initiatives."
     title: "Iniciativas Estratégicas Seleccionadas"
     description: "Iniciativas corporativas y fintech donde el liderazgo en diseño impactó la dirección de producto, la capacidad organizacional y el desempeño del negocio."
+    name: "Casos"
+    permalink: "/es/cases/"
 
     case_studies:
       - title: "Producto Digital Hipotecario (Janus)"
@@ -210,6 +218,8 @@ es:
   
   # JANUS (ES)
   janus:
+    name: "Janus"
+    permalink: "/es/cases/janus/"
     cover_image: /assets/images/janus-cover.webp
     case_studies: "Casos de  Estudio"
     title: "Producto Hipotecario Digital (Janus)"
@@ -226,6 +236,8 @@ es:
 
   # Otto (ES)
   eltablerodeotto:
+    name: "El Tablero de Otto"
+    permalink: "/es/cases/eltablerodeotto/"
     case_studies: "Casos de  Estudio"
     title: "El Tablero de Otto – Diseño de Negocio Basado en Comunidad"
     subtitle: "Integrando diseño, negocio y tecnología"
