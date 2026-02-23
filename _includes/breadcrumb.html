@@ -1,28 +1,36 @@
 {% assign lang = page.lang | default: site.default_lang %}
-{% assign current_url = page.url | remove: '/' | split: '/' %}
+{% assign current_url = page.url | split: '/' %}
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
   <pre>page url: {{ page.url }}</pre>
   <pre>current url: {{ current_url }}</pre>
-  <pre>site pages: {{ site.pages | map: "url" }}</pre>
   <!-- HOME -->
   <a href="{{ '/' | relative_url }}">{% if lang == 'es' %}Inicio{% else %}Home{% endif %}</a>
   {% assign path = "" %}
   <pre> first path: {{ path }}</pre>
   {% for segment in current_url %}
     <pre>segment: {{ segment }}</pre>
-    {% assign path = path | append: '/' | append: segment | append: '/' %}
-    <pre>path: {{ path }}</pre>
-    {% assign page_match = site.pages | where: "url", path | first %}
-    <pre>page_match: {{ page_match }}</pre>
-    <pre>page match title: {{ page_match.title }}</pre>
-    {% if page_match and page_match.title %}
-      <span class="breadcrumb-separator">/</span>
-      {% if forloop.last %}
-        <span class="breadcrumb-current">{{ page_match.title }}</span>
+    {% unless segment == "" %}
+      {% assign path = path | append: '/' | append: segment | append: '/' %}
+      <pre>path: {{ path }}</pre>
+      {% comment %}
+      Si estamos en español y el primer segmento es "es",
+      lo ignoramos para no duplicar
+      {% endcomment %}
+
+      {% if segment == "es" %}
+        {% continue %}
+      {% endif %}
+      {% assign page_match = site.pages | where: "url", path | first %}
+      <pre>page_match: {{ page_match }}</pre>
+      {% if page_match  %}
+        <span class="breadcrumb-separator">/</span>
+        {% if forloop.last %}
+          <span class="breadcrumb-current">{{ page_match.title }}</span>
         {% else %}
           <a href="{{ page_match.url | relative_url }}">{{ page_match.title }}</a>
         {% endif %}
       {% endif %}
+    {% endunless %}
   {% endfor %}
 </nav>

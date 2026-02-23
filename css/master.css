@@ -621,6 +621,11 @@ footer nav a:last-child{
 .masonry-grid {
   position: relative;
   min-height: 100px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.masonry-grid.is-ready {
+  opacity: 1;
 }
 .case-card {
   position: absolute;

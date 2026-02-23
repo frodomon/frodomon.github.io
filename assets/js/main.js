@@ -216,6 +216,7 @@ function masonryLayout() {
   });
 
   grid.style.height = Math.max(...columnHeights) + "px";
+  grid.classList.add("is-ready");
 }
 
 window.addEventListener("load", function() {
