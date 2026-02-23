@@ -155,5 +155,10 @@
 
   .case-card { 
   	width: 100%; 
-  	position: relative; }
+  	position: relative;
+  	transform: none;
+  }
+  .masonry-grid{
+  	height: auto;
+  }
 }

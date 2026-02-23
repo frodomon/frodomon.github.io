@@ -188,6 +188,9 @@ function masonryLayout() {
     if (grid) grid.style.height = "0px";
     return;
   }
+  if (window.innerWidth <= 480) {
+    return;
+  }
 
   const gap = 32;
   const computedStyle = window.getComputedStyle(grid);
