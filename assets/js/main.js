@@ -206,12 +206,12 @@ function masonryLayout() {
 
     card.style.transform = `translate(${x}px, ${y}px)`;
 
-    columnHeights[minColumn] += card.offsetHeight + gap;
+    columnHeights[minColumn] += y + card.offsetHeight + gap;
 
   });
 
-  grid.style.height = Math.max(...columnHeights) + "px";
-  grid.classList.add("is-ready");
+  const maxHeight = Math.max(...columnHeights);
+  grid.style.height = (maxHeight - gap) + "px";
 }
 
 window.addEventListener("load", function() {
