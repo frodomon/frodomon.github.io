@@ -15,7 +15,7 @@
         <span class="breadcrumb-separator">/</span>
         {% if forloop.last %}
           <span class="breadcrumb-current">
-            {{ site.data.translations[lang].navigation.cases }}
+            {{ page_match.title }}
           </span>
         {% else %}
           <a href="{{ path | relative_url }}">{{ page_match.title }}</a>
