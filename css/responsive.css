@@ -10,7 +10,7 @@
 
 }
 @media only screen and (max-width: 768px){
-	.cases-grid {
+	.masonry-grid {
     column-count: 1;
   }
   .cases-title {
