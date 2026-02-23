@@ -2,6 +2,8 @@
 {% assign current_url = page.url | split: '/' | reject: '' %}
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
+  <pre>{{ page.url }}</pre>
+  <pre>{{ site.pages | map: "url" }}</pre>
   <!-- HOME -->
   <a href="{{ '/' | relative_url }}">{% if lang == 'es' %}Inicio{% else %}Home{% endif %}</a>
   {% assign path = "" %}

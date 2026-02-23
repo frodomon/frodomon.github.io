@@ -34,12 +34,14 @@ function filterCards(activeFilters) {
     } else {
       card.classList.add("is-hidden");
       card.style.opacity = 0;
-      setTimeout(masonryLayout, 350);
+      
     }
 
   });
-
+  setTimeout(function() { masonryLayout();}, 350);
 }
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -203,6 +205,9 @@ function masonryLayout() {
   grid.style.height = Math.max(...columnHeights) + "px";
 }
 
-window.addEventListener("load", () => {
+window.addEventListener("load", function() {
+  masonryLayout();
+});
+window.addEventListener("resize", function() {
   masonryLayout();
 });
