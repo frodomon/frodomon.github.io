@@ -195,13 +195,6 @@ function masonryLayout() {
   const columnWidth = cards[0].offsetWidth;
   const columns = Math.max(1, Math.floor(grid.clientWidth / (columnWidth + gap)));
 
-  if (columns === currentColumns && grid.dataset.initialized === "true") {
-    return;
-  }
-
-  currentColumns = columns;
-  grid.dataset.initialized = "true";
-
   let columnHeights = new Array(columns).fill(0);
 
   cards.forEach(card => {
@@ -222,28 +215,7 @@ function masonryLayout() {
 }
 
 window.addEventListener("load", function() {
-
-  const images = document.querySelectorAll(".case-card img");
-
-  let loadedImages = 0;
-
-  images.forEach(img => {
-    if (img.complete) {
-      loadedImages++;
-    } else {
-      img.addEventListener("load", () => {
-        loadedImages++;
-        if (loadedImages === images.length) {
-          masonryLayout();
-        }
-      });
-    }
-  });
-
-  if (loadedImages === images.length) {
     masonryLayout();
-  }
-
 });
 
 window.addEventListener("resize", function() {
