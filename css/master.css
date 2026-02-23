@@ -629,8 +629,6 @@ footer nav a:last-child{
 }
 .case-card {
   position: absolute;
-  top: 0;
-  left: 0;
   will-change: transform;
   width: 32%;
   transition: transform 0.4s ease, opacity 0.3s ease;
