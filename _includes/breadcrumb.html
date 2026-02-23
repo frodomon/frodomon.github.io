@@ -8,13 +8,14 @@
   <!-- HOME -->
   <a href="{{ '/' | relative_url }}">{% if lang == 'es' %}Inicio{% else %}Home{% endif %}</a>
   {% assign path = "" %}
+  <pre> first path: {{ path }}</pre>
   {% for segment in current_url %}
     {% assign path = path | append: '/' | append: segment %}
     <pre>path: {{ path }}</pre>
     {% assign page_match = site.pages | where: "url", path | first %}
     <pre>page_match: {{ page_match }}</pre>
     <pre>page match title: {{ page_match.title }}</pre>
-    {% if page_matcha nd page_match.title %}
+    {% if page_match and page_match.title %}
       <span class="breadcrumb-separator">/</span>
       {% if forloop.last %}
         <span class="breadcrumb-current">{{ page_match.title }}</span>
