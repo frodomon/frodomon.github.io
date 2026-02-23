@@ -10,6 +10,7 @@
   {% assign path = "" %}
   <pre> first path: {{ path }}</pre>
   {% for segment in current_url %}
+    <pre>segment: {{ segment }}</pre>
     {% assign path = path | append: '/' | append: segment | append: '/' %}
     <pre>path: {{ path }}</pre>
     {% assign page_match = site.pages | where: "url", path | first %}
