@@ -190,8 +190,9 @@ function masonryLayout() {
   }
 
   const gap = 32;
-  const paddingTop = window.getComputedStyle(grid).paddingTop;
-  const paddingBottom = window.getComputedStyle(grid).paddingBottom;
+  const computedStyle = window.getComputedStyle(grid);
+  const paddingTop = parseFloat(computedStyle.paddingTop);
+  const paddingBottom = parseFloat(computedStyle.paddingBottom);
   const paddingHeight = paddingTop + paddingBottom;
 
   const columnWidth = cards[0].offsetWidth;
@@ -216,8 +217,8 @@ function masonryLayout() {
 
   });
 
-  const maxHeight = Math.max(...columnHeights) + paddingHeight;
-  grid.style.height = maxHeight + "px";
+  const maxHeight = Math.max(...columnHeights);
+  grid.style.height = (maxHeight + paddingHeight) + "px";
   grid.classList.add("is-ready");
 }
 
