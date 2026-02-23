@@ -118,6 +118,9 @@ en:
       - "Organic community expansion"
 
 es:
+  menu:
+    case_studies: "Casos de Estudio"
+    contact: "Conversemos"
   home:
     meta_title: "Strategic Design Lead | Estrategia de Producto Fintech y Capacidad Organizacional"
     meta_description: "Strategic Design Lead en fintech y estrategia de producto corporativa, sistemas de diseño y capacidad organizacional en ecosistemas digitales complejos."
