@@ -680,3 +680,6 @@ footer nav a:last-child{
 .cases-filter button:hover {
   opacity: 1;
 }
+.breadcrumb{
+  padding: 1rem 10%;
+}
