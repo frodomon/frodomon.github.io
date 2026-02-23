@@ -190,7 +190,9 @@ function masonryLayout() {
   }
 
   const gap = 32;
-  grid.style.opacity = "1";
+  const paddingTop = window.getComputedStyle(grid).paddingTop;
+  const paddingBottom = window.getComputedStyle(grid).paddingBottom;
+  const paddingHeight = paddingTop + paddingBottom;
 
   const columnWidth = cards[0].offsetWidth;
   const columns = Math.max(1, Math.floor(grid.clientWidth / (columnWidth + gap)));
@@ -199,6 +201,7 @@ function masonryLayout() {
 
   cards.forEach(card => {
 
+    
     const minColumn = columnHeights.indexOf(Math.min(...columnHeights));
 
     const x = minColumn * (columnWidth + gap);
@@ -213,7 +216,7 @@ function masonryLayout() {
 
   });
 
-  const maxHeight = Math.max(...columnHeights);
+  const maxHeight = Math.max(...columnHeights) + paddingHeight;
   grid.style.height = maxHeight + "px";
   grid.classList.add("is-ready");
 }
