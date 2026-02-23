@@ -190,12 +190,20 @@ es:
         description: "Lideré decisiones de diseño estratégico en un producto fintech hipotecario regulado, equilibrando cumplimiento normativo, claridad para el usuario y resultados de negocio."
         url: "/es/cases/janus/"
         image: "/assets/images/janus.jpg"
+        date: "2023"
+        categories:
+          - Fintech
+          - Governance
 
       - title: "El Tablero de Otto – Diseño de Negocio Retail"
         subtitle: "Liderazgo en Ecosistema de Producto y Sistemas de Diseño"
         description: "Caso emprendedor que integra diseño de servicios, estrategia de modelo de negocio y tecnología para construir un ecosistema sostenible."
         url: "/es/cases/eltablerodeotto/"
         image: "/assets/images/eltablerodeotto.png"
+        date: "2023"
+        categories:
+          - Fintech
+          - Governance
   
   # JANUS (ES)
   janus:
