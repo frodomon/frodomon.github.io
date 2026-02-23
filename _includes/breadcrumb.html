@@ -3,12 +3,14 @@
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
   <pre>{{ page.url }}</pre>
+  <pre>{{ current_url }}</pre>
   <pre>{{ site.pages | map: "url" }}</pre>
   <!-- HOME -->
   <a href="{{ '/' | relative_url }}">{% if lang == 'es' %}Inicio{% else %}Home{% endif %}</a>
   {% assign path = "" %}
   {% for segment in current_url %}
     {% assign path = path | append: '/' | append: segment | append: '/' %}
+    <pre>path: {{ pathl }}</pre>
     {% assign page_match = site.pages | where: "url", path | first %}
     {% if page_match %}
       <span class="breadcrumb-separator">/</span>
