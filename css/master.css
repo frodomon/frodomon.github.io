@@ -432,6 +432,7 @@ footer{
   overflow: auto;
   padding: 0 5%;
   position: relative;
+  background: rgba(0,0,255,0.1);
 }
 footer a, footer a:visited,
 footer nav a, footer nav a:visited,
