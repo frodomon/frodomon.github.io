@@ -4,4 +4,5 @@ lang: es
 case: eltablerodeotto
 og_type: article
 permalink: /es/cases/eltablerodeotto/
+body_class: dark-header
 ---
