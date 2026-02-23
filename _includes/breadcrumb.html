@@ -1,5 +1,5 @@
 {% assign lang = page.lang | default: site.default_lang %}
-{% assign current_url = page.url | remove: '/' | split: '/' %}
+{% assign current_url = page.url | split: '/' | reject: '' %}
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
   <!-- HOME -->
