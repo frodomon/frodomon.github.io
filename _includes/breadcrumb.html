@@ -6,12 +6,12 @@
   <pre>current url:{{ current_url }}</pre>
   <!-- HOME -->
   <a href="{{ '/' | relative_url }}">{% if lang == 'es' %}Inicio{% else %}Home{% endif %}</a>
-  {% assign path = "" %}
+  {% assign path = "/" %}
   <pre> first path:{{ path }}</pre>
   {% for segment in current_url %}
     <pre>segment:{{ segment }}</pre>
     {% unless segment == "" %}
-      {% assign path = path | append: '/' | append: segment | append: '/'%}
+      {% assign path = path | append: segment | append: '/'%}
       <pre>path:{{ path }}</pre>
       {% comment %}
       Si estamos en español y el primer segmento es "es",
