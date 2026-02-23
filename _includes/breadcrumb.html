@@ -2,16 +2,17 @@
 {% assign current_url = page.url | split: '/' | reject: '' %}
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
-  <pre>{{ page.url }}</pre>
-  <pre>{{ current_url }}</pre>
-  <pre>{{ site.pages | map: "url" }}</pre>
+  <pre>page url: {{ page.url }}</pre>
+  <pre>current url: {{ current_url }}</pre>
+  <pre>site pages: {{ site.pages | map: "url" }}</pre>
   <!-- HOME -->
   <a href="{{ '/' | relative_url }}">{% if lang == 'es' %}Inicio{% else %}Home{% endif %}</a>
   {% assign path = "" %}
   {% for segment in current_url %}
     {% assign path = path | append: '/' | append: segment | append: '/' %}
-    <pre>path: {{ pathl }}</pre>
+    <pre>path: {{ path }}</pre>
     {% assign page_match = site.pages | where: "url", path | first %}
+    <pre>page_match: {{ page_match }}</pre>
     {% if page_match %}
       <span class="breadcrumb-separator">/</span>
       {% if forloop.last %}
