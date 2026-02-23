@@ -18,7 +18,7 @@ body_class: dark-header
   </div>
 </section>
 <!-- MENU FILTER -->
-<div class="cases-filter container">
+<div class="cases-filter">
   <button data-filter="all" class="active">All</button>
   <button data-filter="fintech">Fintech</button>
   <button data-filter="governance">Governance</button>

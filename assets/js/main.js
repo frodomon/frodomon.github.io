@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   updateLogo();
   
   const observer = new MutationObserver(updateLogo);
-  observer.observe(header, { attributes: true, attributeFilter: ["class"] });
+  observer.observe(body, { attributes: true, attributeFilter: ["class"] });
 
 });
 
