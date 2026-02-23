@@ -189,6 +189,14 @@ function masonryLayout() {
     return;
   }
   if (window.innerWidth <= 480) {
+    grid.style.height = "auto";
+    grid.classList.add("is-ready"); // 🔥 importante
+
+    cards.forEach(card => {
+      card.style.position = "relative";
+      card.style.transform = "none";
+      card.style.opacity = "1"; // 🔥 por si acaso
+    });
     return;
   }
 

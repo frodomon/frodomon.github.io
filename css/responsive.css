@@ -10,9 +10,6 @@
 
 }
 @media only screen and (max-width: 768px){
-	.masonry-grid {
-    column-count: 1;
-  }
   .cases-title {
     font-size: 2rem;
   }
@@ -157,8 +154,10 @@
   	width: 100%; 
   	position: relative;
   	transform: none;
+  	opacity: 1;
   }
   .masonry-grid{
   	height: auto;
+  	opacity: 1;
   }
 }
