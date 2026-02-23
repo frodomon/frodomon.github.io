@@ -33,12 +33,10 @@ function filterCards(activeFilters) {
       card.classList.remove("is-hidden");
     } else {
       card.classList.add("is-hidden");
-      card.style.opacity = 0;
-      
+      card.style.opacity = 0;   
     }
-
   });
-  setTimeout(function() { masonryLayout();}, 350);
+  setTimeout(function() { masonryLayout(); }, 350);
 }
 
 
@@ -183,9 +181,14 @@ function masonryLayout() {
   const grid = document.querySelector(".masonry-grid");
   const cards = Array.from(document.querySelectorAll(".case-card:not(.is-hidden)"));
 
+   if (!grid || cards.length === 0) {
+    grid.style.height = "0px";
+    return;
+  }
+  
   const gap = 32;
-  const columnWidth = cards[0]?.offsetWidth || 0;
-  const columns = Math.floor(grid.offsetWidth / (columnWidth + gap));
+  const columnWidth = cards[0].offsetWidth;
+  const columns = Math.max(1, Math.floor(grid.offsetWidth / (columnWidth + gap)));
 
   let columnHeights = new Array(columns).fill(0);
 
