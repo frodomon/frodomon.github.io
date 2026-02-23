@@ -432,7 +432,6 @@ footer{
   overflow: auto;
   padding: 0 5%;
   position: relative;
-  background: rgba(0,0,255,0.1);
 }
 footer a, footer a:visited,
 footer nav a, footer nav a:visited,
@@ -625,7 +624,6 @@ footer nav a:last-child{
   min-height: 100px;
   opacity: 0;
   transition: opacity 0.3s ease;
-  background: rgba(255,0,0,0.1);
 }
 .masonry-grid.is-ready {
   opacity: 1;
