@@ -627,11 +627,19 @@ footer nav a:last-child{
   padding:0;
   margin-bottom: 2rem;
   background: var(--primary-bg-color);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.35s ease, transform 0.35s ease;
 }
 .case-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+.case-card.is-hidden {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+  position: absolute;
 }
 .case-image img {
   width: 100%;
@@ -682,4 +690,9 @@ footer nav a:last-child{
 }
 .breadcrumb{
   padding: 1rem 10%;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+.breadcrumb a {
+  text-decoration: none;
 }

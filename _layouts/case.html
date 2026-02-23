@@ -12,13 +12,9 @@ og_type: article
     <p class="dark-hero-description">{{ t.subtitle }}</p>
   </div>
 </section>
-
-<nav class="breadcrumb">
-  <a href="/">Home</a> / 
-  <a href="/cases/">Case Studies</a> / 
-  <span>{{ t.title }}</span>
-</nav>
-
+{% if page.layout != 'home' %}
+  {% include breadcrumb.html %}
+{% endif %}
 <article class="case-study">
   <section>
     <h2>Context</h2>

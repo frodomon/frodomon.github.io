@@ -17,6 +17,9 @@ body_class: dark-header
     <p class="dark-hero-description">{{ t.description }}</p>
   </div>
 </section>
+{% if page.layout != 'home' %}
+  {% include breadcrumb.html %}
+{% endif %}
 <!-- MENU FILTER -->
 <div class="cases-filter">
   <button data-filter="all" class="active">All</button>

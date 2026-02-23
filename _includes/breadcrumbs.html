@@ -1,0 +1,13 @@
+<nav class="breadcrumb">
+  <a href="{{ '/' | relative_url }}">Home</a>
+
+  {% if page.permalink != '/' %}
+    <span> / </span>
+    <a href="{{ '/cases/' | relative_url }}">Cases</a>
+  {% endif %}
+
+  {% if page.case %}
+    <span> / </span>
+    <span>{{ page.title }}</span>
+  {% endif %}
+</nav>
