@@ -184,20 +184,24 @@ function masonryLayout() {
   const grid = document.querySelector(".masonry-grid");
   const cards = Array.from(document.querySelectorAll(".case-card:not(.is-hidden)"));
 
-  if (!grid) return;
-
-  if (cards.length === 0) {
-    grid.style.height = "0px";
+ if (!grid || cards.length === 0) {
+    if (grid) grid.style.height = "0px";
     return;
   }
 
   const gap = 32;
+  grid.style.opacity = "1";
+
   const columnWidth = cards[0].offsetWidth;
   const columns = Math.max(1, Math.floor(grid.clientWidth / (columnWidth + gap)));
 
   let columnHeights = new Array(columns).fill(0);
 
   cards.forEach(card => {
+
+    card.style.position = "absolute";
+    card.style.top = "0";
+    card.style.left = "0";
 
     const minColumn = columnHeights.indexOf(Math.min(...columnHeights));
 
@@ -206,7 +210,10 @@ function masonryLayout() {
 
     card.style.transform = `translate(${x}px, ${y}px)`;
 
-    columnHeights[minColumn] += y + card.offsetHeight + gap;
+    const rect = card.getBoundingClientRect();
+    const realHeight = rect.height
+
+    columnHeights[minColumn] += y + realHeight + gap;
 
   });
 
