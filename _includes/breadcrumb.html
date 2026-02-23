@@ -11,7 +11,7 @@
   {% for segment in current_url %}
     <pre>segment: {{ segment }}</pre>
     {% unless segment == "" %}
-      {% assign path = path | append: '/' | append: segment | append: '/' %}
+      {% assign path = path | append: '/' | append: segment %}
       <pre>path: {{ path }}</pre>
       {% comment %}
       Si estamos en español y el primer segmento es "es",
