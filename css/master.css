@@ -593,6 +593,7 @@ footer nav a:last-child{
   font-size: 1.2rem;
   margin-top: 1rem;
   color:var(--primary-bg-color);
+  text-align: center;
 }
 /* ----------------------------HEADER white initial state--------------------- */
 .dark-header header {
@@ -642,4 +643,40 @@ footer nav a:last-child{
 }
 .case-subtitle {
   margin-top: 0.5rem;
+}
+.case-date {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.case-categories {
+  margin-top: 1rem;
+}
+.category-tag {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border: 1px solid #ddd;
+  margin-right: 6px;
+  display: inline-block;
+  opacity: 0.7;
+}
+.cases-filter {
+  margin: 4rem 0 2rem;
+  text-align: center;
+}
+
+.cases-filter button {
+  background: none;
+  border: none;
+  margin: 0 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.cases-filter button.active,
+.cases-filter button:hover {
+  opacity: 1;
 }

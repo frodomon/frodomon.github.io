@@ -72,12 +72,20 @@ en:
         description: "Led the restructuring of enterprise UX governance, aligning product strategy, operating models and cross-functional decision-making to increase delivery coherence and strategic clarity across digital portfolios."
         url: "/cases/janus/"
         image: "/assets/images/janus.jpg"
+        date: "2023"
+        categories:
+          - Fintech
+          - Governance
 
       - title: "El Tablero de Otto — Small Business retail"
         subtitle: "A design leadership initiative in retail"
         description: "Entrepreneurial case integrating service design, business model strategy and technology to build a sustainable ecosystem."
         url: "/cases/eltablerodeotto/"
         image: "/assets/images/eltablerodeotto.png"
+        date: "2023"
+        categories:
+          - Fintech
+          - Governance
 
   # Caso Janus (EN)
   janus:
