@@ -33,6 +33,8 @@ function filterCards(activeFilters) {
       card.classList.remove("is-hidden");
     } else {
       card.classList.add("is-hidden");
+      card.style.opacity = 0;
+      setTimeout(masonryLayout, 350);
     }
 
   });
@@ -172,4 +174,35 @@ document.addEventListener("DOMContentLoaded", function() {
     card.style.transition = "all 0.6s ease";
     observer.observe(card);
   });
+});
+
+function masonryLayout() {
+
+  const grid = document.querySelector(".masonry-grid");
+  const cards = Array.from(document.querySelectorAll(".case-card:not(.is-hidden)"));
+
+  const gap = 32;
+  const columnWidth = cards[0]?.offsetWidth || 0;
+  const columns = Math.floor(grid.offsetWidth / (columnWidth + gap));
+
+  let columnHeights = new Array(columns).fill(0);
+
+  cards.forEach(card => {
+
+    const minColumn = columnHeights.indexOf(Math.min(...columnHeights));
+
+    const x = minColumn * (columnWidth + gap);
+    const y = columnHeights[minColumn];
+
+    card.style.transform = `translate(${x}px, ${y}px)`;
+
+    columnHeights[minColumn] += card.offsetHeight + gap;
+
+  });
+
+  grid.style.height = Math.max(...columnHeights) + "px";
+}
+
+window.addEventListener("load", () => {
+  masonryLayout();
 });
