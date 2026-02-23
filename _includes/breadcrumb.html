@@ -3,7 +3,8 @@
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
   <!-- HOME -->
-  <a href="{{ '/' | relative_url }}">{% if lang == 'es' %}Inicio{% else %}Home{% endif %}</a>
+  <a href="{% if lang == 'es' %}/es/{% else %}/{% endif %}">{% if lang == 'es' %}Inicio{% else %}Home{% endif %}</a>
+
   {% assign path = "/" %}
   {% for segment in current_url %}
     {% unless segment == "" %}
