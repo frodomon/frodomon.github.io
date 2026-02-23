@@ -1,3 +1,6 @@
+let currentColumns = 0;
+let resizeTimer;
+
 document.addEventListener("DOMContentLoaded", function () {
 
   const body = document.querySelector("body");
@@ -185,10 +188,17 @@ function masonryLayout() {
     grid.style.height = "0px";
     return;
   }
-  
+
   const gap = 32;
   const columnWidth = cards[0].offsetWidth;
   const columns = Math.max(1, Math.floor(grid.offsetWidth / (columnWidth + gap)));
+
+   if (columns === currentColumns && grid.dataset.initialized === "true") {
+    return;
+  }
+
+  currentColumns = columns;
+  grid.dataset.initialized = "true";
 
   let columnHeights = new Array(columns).fill(0);
 
@@ -209,8 +219,36 @@ function masonryLayout() {
 }
 
 window.addEventListener("load", function() {
-  masonryLayout();
+
+  const images = document.querySelectorAll(".case-card img");
+
+  let loadedImages = 0;
+
+  images.forEach(img => {
+    if (img.complete) {
+      loadedImages++;
+    } else {
+      img.addEventListener("load", () => {
+        loadedImages++;
+        if (loadedImages === images.length) {
+          masonryLayout();
+        }
+      });
+    }
+  });
+
+  if (loadedImages === images.length) {
+    masonryLayout();
+  }
+
 });
+
 window.addEventListener("resize", function() {
-  masonryLayout();
+
+  clearTimeout(resizeTimer);
+
+  resizeTimer = setTimeout(function() {
+    masonryLayout();
+  }, 200);
+
 });
