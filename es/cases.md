@@ -17,15 +17,27 @@ body_class: dark-header
     <p class="dark-hero-description">{{ t.description }}</p>
   </div>
 </section>
+<!-- BREADCRUMBS -->
 {% if page.layout != 'home' %}
   {% include breadcrumb.html %}
 {% endif %}
 <!-- MENU FILTER -->
+{% assign all_categories = "" | split: "" %}
+
+{% for case in t.case_studies %}
+  {% for cat in case.categories %}
+    {% unless all_categories contains cat %}
+      {% assign all_categories = all_categories | push: cat %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
 <div class="cases-filter">
   <button data-filter="all" class="active">All</button>
-  <button data-filter="fintech">Fintech</button>
-  <button data-filter="governance">Governance</button>
-  <button data-filter="design-systems">Design Systems</button>
+  {% for cat in all_categories %}
+    <button data-filter="{{ cat | downcase }}">
+      {{ cat }}
+    </button>
+  {% endfor %}
 </div>
 <!-- CASES GRID -->
 <section class="masonry-grid">
