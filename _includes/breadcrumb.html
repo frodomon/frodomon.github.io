@@ -11,14 +11,14 @@
     {% unless segment == "" %}
       {% assign path = path | append: '/' | append: segment %}
       {% assign page_match = site.pages | where: "url", path | first %}
-      {% if page_match and page_match.name %}
+      {% if page_match and page_match.title %}
         <span class="breadcrumb-separator">/</span>
         {% if forloop.last %}
           <span class="breadcrumb-current">
             {{ site.data.translations[lang].navigation.cases }}
           </span>
         {% else %}
-          <a href="{{ path | relative_url }}">{{ page_match.name }}</a>
+          <a href="{{ path | relative_url }}">{{ page_match.title }}</a>
         {% endif %}
       {% endif %}
     {% endunless %}
