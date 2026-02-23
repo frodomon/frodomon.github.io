@@ -2,6 +2,7 @@
 layout: default
 lang: es
 page_key: cases
+title: "Casos"
 og_type: website
 permalink: /es/cases/
 body_class: dark-header
