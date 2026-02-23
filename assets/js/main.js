@@ -184,16 +184,18 @@ function masonryLayout() {
   const grid = document.querySelector(".masonry-grid");
   const cards = Array.from(document.querySelectorAll(".case-card:not(.is-hidden)"));
 
-   if (!grid || cards.length === 0) {
+  if (!grid) return;
+
+  if (cards.length === 0) {
     grid.style.height = "0px";
     return;
   }
 
   const gap = 32;
   const columnWidth = cards[0].offsetWidth;
-  const columns = Math.max(1, Math.floor(grid.offsetWidth / (columnWidth + gap)));
+  const columns = Math.max(1, Math.floor(grid.clientWidth / (columnWidth + gap)));
 
-   if (columns === currentColumns && grid.dataset.initialized === "true") {
+  if (columns === currentColumns && grid.dataset.initialized === "true") {
     return;
   }
 
