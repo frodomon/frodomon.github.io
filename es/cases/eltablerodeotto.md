@@ -3,5 +3,5 @@ layout: case
 lang: es
 case: eltablerodeotto
 og_type: article
-permalink: /es/eltablerodeotto
+permalink: /es/cases/eltablerodeotto/
 ---
