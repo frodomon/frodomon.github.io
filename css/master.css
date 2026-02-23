@@ -623,6 +623,7 @@ footer nav a:last-child{
   min-height: 100px;
   opacity: 0;
   transition: opacity 0.3s ease;
+  background: rgba(255,0,0,0.1);
 }
 .masonry-grid.is-ready {
   opacity: 1;
