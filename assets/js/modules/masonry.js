@@ -43,6 +43,7 @@ function applyMasonry() {
 
   if (window.innerWidth <= 480) {
     grid.style.height = "auto";
+    grid.classList.add("is-ready");
     return;
   }
 
