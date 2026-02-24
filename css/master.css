@@ -424,7 +424,6 @@ body.menu-open {
   overflow: hidden;
 }
 .active-lang {
-  opacity: 0.5;
   pointer-events: none;
   color: oklch(from var(--primary-color) 0 0 0 / .5);
 }
