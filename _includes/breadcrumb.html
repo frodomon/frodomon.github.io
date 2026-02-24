@@ -8,13 +8,11 @@
   {% if page.collection %}
     {% assign collection_name = page.collection %}
     {% assign collection_label = t.labels[collection_name] | default: collection_name %}
-    <p class="breadcrumb-separator">/</p>
+    <span class="breadcrumb-separator">/</span>
     <a href="{% if lang == 'es' %}/es/{{ collection_name }}/{% else %}/{{ collection_name }}/{% endif %}">{{ collection_label }}</a>
     {% unless page.url contains collection_name and page.url == '/' | append: collection_name | append: '/' %}
-      <p class="breadcrumb-separator">/</p>
-      <p class="breadcrumb-current">
-        {{ page.title }}
-      </p>
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">{{ page.title }}</span>
     {% endunless %}
   {% else %}
   <!-- If it's a normal page (like /cases/ or /about/) -->
@@ -27,9 +25,9 @@
         {% endif %}
         {% assign page_match = site.pages | where: "url", path | first %}
         {% if page_match %}
-          <p class="breadcrumb-separator">/</p>
+          <span class="breadcrumb-separator">/</span>
           {% if page_match.url == page.url %}
-            <p class="breadcrumb-current">{{ page_match.title }}</p>
+            <span class="breadcrumb-current">{{ page_match.title }}</span>
           {% else %}
             <a href="{{ page_match.url | relative_url }}">{{ page_match.title }}</a>
           {% endif %}
