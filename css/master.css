@@ -612,6 +612,9 @@ footer nav a:last-child{
 .dark-header header nav a {
   color: var(--primary-bg-color);
 }
+.dark-header header nav p{
+  color: oklch(from var(--primary-bg-color) 0 0 0 / .5);
+}
 /* ----------------------------HEADER scrooled-------------------- */
 .dark-header header.scrolled {
   position: fixed;
@@ -621,6 +624,9 @@ footer nav a:last-child{
 .dark-header header.scrolled a,
 .dark-header header.scrolled nav a {
   color: var(--primary-color);
+}
+dark-header header.scrolled nav p {
+  color: oklch(from var(--primary-bg-color) 0 0 0 / .5);
 }
 /* ============ MASONRY GRID ============ */
 .masonry-grid {
