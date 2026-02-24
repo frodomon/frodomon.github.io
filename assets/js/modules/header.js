@@ -3,7 +3,6 @@ export function initHeader() {
   const body = document.body;
   const logo = document.getElementById("logo-header");
   const header = document.querySelector("header");
-  const darkbody = body.classList.contains("dark-header");
 
   if (logo) {
     function updateLogo() {
@@ -22,16 +21,7 @@ export function initHeader() {
   }
 
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 80) {
-      header.classList.add("scrolled");
-      if darkbody {
-        body.classList.remove("dark-header");
-      }
-    } else {
-      header.classList.remove("scrolled");
-      if darkbody {
-        body.classList.add("dark-header");  
-      }
-    }
+    if (window.scrollY > 80) header.classList.add("scrolled");
+    else header.classList.remove("scrolled");
   });
 }

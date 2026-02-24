@@ -626,7 +626,7 @@ footer nav a:last-child{
   color: var(--primary-color);
 }
 dark-header header.scrolled nav p {
-  color: oklch(from var(--primary-bg-color) 0 0 0 / .5);
+  color: oklch(from var(--primary-color) 0 0 0 / .5);
 }
 /* ============ MASONRY GRID ============ */
 .masonry-grid {
