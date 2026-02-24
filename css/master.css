@@ -426,7 +426,7 @@ body.menu-open {
 .active-lang {
   opacity: 0.5;
   pointer-events: none;
-  color:var(--primary-color);
+  color: oklch(from var(--primary-color) 0 0 0 / .5);
 }
 /* ------------------------------FOOTER---------------------- */
 footer{
