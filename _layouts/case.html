@@ -4,16 +4,11 @@ og_type: article
 ---
 
 {% assign lang = page.lang | default: site.default_lang %}
-{% assign t = site.data.translations[lang][page.ref] %}
-
-{% unless t %}
-  <p style="color:red;">Translation missing for {{ page.ref }} ({{ lang }})</p>
-{% endunless %}
 
 <section class="dark-hero-wrapper">
   <div class="dark-hero fullwidth">
-    <h1 class="dark-hero-title">{{ t.title }}</h1>
-    <p class="dark-hero-description">{{ t.subtitle }}</p>
+    <h1 class="dark-hero-title">{{ page.title }}</h1>
+    <p class="dark-hero-description">{{ page.subtitle }}</p>
   </div>
 </section>
 {% if page.layout != 'home' %}
@@ -22,27 +17,27 @@ og_type: article
 <article class="case-study">
   <section>
     <h2>Context</h2>
-    <p>{{ t.context }}</p>
+    <p>{{ page.context }}</p>
   </section>
   <section>
     <h2>The Challenge</h2>
-    <p>{{ t.problem }}</p>
+    <p>{{ page.problem }}</p>
   </section>
 
   <section>
     <h2>My Role</h2>
-    <p>{{ t.role }}</p>
+    <p>{{ page.role }}</p>
   </section>
 
   <section>
     <h2>Strategic Approach</h2>
-    <p>{{ t.approach }}</p>
+    <p>{{ page.approach }}</p>
   </section>
 
   <section>
     <h2>Impact</h2>
     <ul>
-      {% for item in t.impact %}
+      {% for item in page.impact %}
         <li>{{ item }}</li>
       {% endfor %}
     </ul>
