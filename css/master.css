@@ -385,11 +385,11 @@ header h1{
 header.scrolled #logo-header{
   height:32px;
 }
-header nav a{
+header nav a,
+header nav p{
   border-left: 2px solid var(--grey400);
   height:40px;
   padding:0 1rem;
-  font-size: 1.25rem;
 }
 header nav a:first-child{
   border-left: 0;
