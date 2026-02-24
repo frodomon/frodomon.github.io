@@ -427,6 +427,64 @@ body.menu-open {
   pointer-events: none;
   color: oklch(from var(--primary-color) 0 0 0 / .5);
 }
+/* ============ DARK HERO BACKGROUND ============ */
+
+.dark-header .dark-hero-wrapper {
+  position: relative;
+  height: 50%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  background: url('/assets/images/cases-hero-bg.jpg') center center / cover no-repeat;
+  color: var(--primary-bg-color);
+}
+.dark-header .dark-hero-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+.dark-header .dark-hero {
+  position: relative;
+  z-index: 2;
+}
+.dark-hero-title {
+  color:var(--primary-bg-color);
+  text-align: center;
+}
+.dark-hero-description {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color:var(--primary-bg-color);
+  text-align: center;
+}
+/* ----------------------------HEADER white initial state--------------------- */
+.dark-header header {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.dark-header header a,
+.dark-header header nav a {
+  color: var(--primary-bg-color);
+}
+.dark-header header nav .active-lang{
+  color: oklch(from var(--primary-bg-color) 0 0 0 / .5);
+}
+/* ----------------------------HEADER scrooled-------------------- */
+.dark-header header.scrolled {
+  position: fixed;
+  background: var(--primary-bg-color);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.dark-header header.scrolled a,
+.dark-header header.scrolled nav a {
+  color: var(--primary-color);
+}
+dark-header header.scrolled nav .active-lang {
+  color: oklch(from var(--primary-color) 0 0 0 / .5);
+}
 /* ------------------------------FOOTER---------------------- */
 footer{
   width:100%;
@@ -569,64 +627,6 @@ footer nav a:last-child{
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
-}
-/* ============ DARK HERO BACKGROUND ============ */
-
-.dark-header .dark-hero-wrapper {
-  position: relative;
-  height: 50%;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  background: url('/assets/images/cases-hero-bg.jpg') center center / cover no-repeat;
-  color: var(--primary-bg-color);
-}
-.dark-header .dark-hero-wrapper::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-}
-.dark-header .dark-hero {
-  position: relative;
-  z-index: 2;
-}
-.dark-hero-title {
-  color:var(--primary-bg-color);
-  text-align: center;
-}
-.dark-hero-description {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  color:var(--primary-bg-color);
-  text-align: center;
-}
-/* ----------------------------HEADER white initial state--------------------- */
-.dark-header header {
-  position: absolute;
-  width: 100%;
-  background: transparent;
-  transition: all 0.3s ease;
-}
-
-.dark-header header a,
-.dark-header header nav a {
-  color: var(--primary-bg-color);
-}
-.dark-header header nav p{
-  color: oklch(from var(--primary-bg-color) 0 0 0 / .5);
-}
-/* ----------------------------HEADER scrooled-------------------- */
-.dark-header header.scrolled {
-  position: fixed;
-  background: var(--primary-bg-color);
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-}
-.dark-header header.scrolled a,
-.dark-header header.scrolled nav a {
-  color: var(--primary-color);
-}
-dark-header header.scrolled nav p {
-  color: oklch(from var(--primary-color) 0 0 0 / .5);
 }
 /* ============ MASONRY GRID ============ */
 .masonry-grid {
