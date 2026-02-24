@@ -18,7 +18,7 @@ export function initAnimations() {
   });
 
   cards.forEach(card => {
-    prepareCard(card);
+   // prepareCard(card);
     observer.observe(card);
   });
 
@@ -45,12 +45,9 @@ function reobserveVisibleCards() {
 /* ================= ANIMATION LOGIC ================= */
 
 function prepareCard(card) {
-  card.style.opacity = "0";
-  card.style.transform = "translateY(30px)";
-  card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+  card.classList.add("is-hidden");
 }
 
 function animateIn(card) {
-  card.style.opacity = "1";
-  card.style.transform = "translateY(0)";
+  card.classList.remove("is-hidden")
 }

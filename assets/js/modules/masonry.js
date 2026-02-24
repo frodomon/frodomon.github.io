@@ -55,6 +55,7 @@ function applyMasonry() {
 
   const columnWidth = cards[0].offsetWidth;
   const columns = Math.max(1, Math.floor(grid.clientWidth / (columnWidth + gap)));
+  
   let columnHeights = new Array(columns).fill(0);
 
   cards.forEach(card => {
