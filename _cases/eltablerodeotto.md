@@ -3,6 +3,8 @@ layout: case
 lang: en
 ref: eltablerodeotto
 title: "El Tablero de Otto – Community-Centric Business Design"
+subtitle: "Integrating design, business and technology"
+description: "Entrepreneurial case integrating service design, business model strategy and technology to build a sustainable ecosystem."    
 og_type: article
 permalink: /cases/eltablerodeotto/
 body_class: dark-header
@@ -14,10 +16,6 @@ meta_title: "El Tablero de Otto Case Study – Service Design & Strategy | Alfre
 meta_description: "Entrepreneurial case integrating service design, business strategy and technology."
 cover_image: /assets/images/eltablerodeotto-cover.webp
 ---
-
-subtitle1: "A design leadership initiative in retail"
-subtitle2: "Integrating design, business and technology"
-description: "Entrepreneurial case integrating service design, business model strategy and technology to build a sustainable ecosystem."    
 
 ## El tablero de Otto (EN)
 context: "El Tablero de Otto was a self-initiated venture..."

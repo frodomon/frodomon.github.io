@@ -3,6 +3,8 @@ layout: case
 lang: es
 ref: janus
 title: "Producto Hipotecario Digital (Janus)"
+subtitle: "Liderazgo de diseño en un ecosistema fintech regulado"
+description: "Lideré decisiones de diseño estratégico en un producto fintech hipotecario regulado, equilibrando cumplimiento normativo, claridad para el usuario y resultados de negocio."
 og_type: article
 permalink: /es/cases/janus/
 body_class: dark-header
@@ -15,12 +17,7 @@ meta_description: "Liderazgo estratégico de diseño en un producto hipotecario 
 cover_image: /assets/images/janus-cover.webp
 ---
 
-subtitle1: "Liderazgo de diseño en un ecosistema fintech regulado"
-subtitle2: "Diseño Organizacional y Construcción de Capacidad"
-description: "Lideré decisiones de diseño estratégico en un producto fintech hipotecario regulado, equilibrando cumplimiento normativo, claridad para el usuario y resultados de negocio."
-
 ## JANUS (ES)
-
 context: "Janus fue una plataforma hipotecaria digital end-to-end..."
 problem: "El equipo asumía inicialmente..."
 role: "Como Design Lead..."

@@ -3,6 +3,8 @@ layout: case
 lang: es
 ref: eltablerodeotto
 title: "El Tablero de Otto – Diseño de Negocio Basado en Comunidad"
+subtitle: "Integrando diseño, negocio y tecnología"
+description: "Caso emprendedor que integra diseño de servicios, estrategia de modelo de negocio y tecnología para construir un ecosistema sostenible."
 og_type: article
 permalink: /es/cases/eltablerodeotto/
 body_class: dark-header
@@ -14,10 +16,6 @@ meta_title: "Caso El Tablero de Otto – Diseño de Servicio y Estrategia | Alfr
 meta_description: "Caso emprendedor que integra diseño de servicio, estrategia de negocio y tecnología."
 cover_image: /assets/images/eltablerodeotto-cover.webp
 ---
-
-subtitle1: "Liderazgo en Ecosistema de Producto y Sistemas de Diseño"
-subtitle2: "Integrando diseño, negocio y tecnología"
-description: "Caso emprendedor que integra diseño de servicios, estrategia de modelo de negocio y tecnología para construir un ecosistema sostenible."
 
 ## Otto (ES)
 context: "El Tablero de Otto fue un emprendimiento propio..."

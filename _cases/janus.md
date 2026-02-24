@@ -3,6 +3,8 @@ layout: case
 lang: en
 ref: janus
 title: "Digital Mortgage Product (Janus)"
+subtitle: "Design Leadership in a regulated fintech ecosystem"
+description: "Led the restructuring of enterprise UX governance, aligning product strategy, operating models and cross-functional decision-making to increase delivery coherence and strategic clarity across digital portfolios."
 og_type: article
 permalink: /cases/janus/
 body_class: dark-header
@@ -14,10 +16,6 @@ meta_title: "Digital Mortgage Product Case Study – Design Lead | Alfredo Vásq
 meta_description: "Strategic product design leadership in a regulated fintech mortgage product."
 cover_image: /assets/images/janus-cover.webp
 ---
-
-subtitle1: "Design Leadership in a regulated fintech ecosystem"
-subtitle2: "Organizational Design & Capability Building"
-description: "Led the restructuring of enterprise UX governance, aligning product strategy, operating models and cross-functional decision-making to increase delivery coherence and strategic clarity across digital portfolios."
 
 # Caso Janus (EN)    
 context: "Janus was an end-to-end digital mortgage platform..."

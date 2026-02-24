@@ -42,8 +42,9 @@ body_class: dark-header
 </div>
 <!-- CASES GRID -->
 <section class="masonry-grid">
-  {% for case in t.case_studies %}
-  <article class="case-card" data-date="{{ case.date }}" data-category="{% for cat in case.categories %}{{ cat | downcase }} {% endfor %}">
+  {% assign cases = site.cases | where: "lang", page.lang %}
+  {% for case in cases %}
+  <article class="case-card" data-date="{{ case.date }}" data-category="{{ case.categories | join: ' ' }}">
     <a href="{{ case.url | relative_url }}">
       <div class="case-image">
         <img src="{{ case.image }}" alt="{{ case.title }}">
