@@ -15,9 +15,7 @@ categories: [fintech, product]
 meta_title: "Caso Producto Hipotecario Digital – Design Lead | Alfredo Vásquez"
 meta_description: "Liderazgo estratégico de diseño en un producto hipotecario fintech regulado."
 cover_image: /assets/images/janus-cover.webp
----
 
-## JANUS (ES)
 context: "Janus fue una plataforma hipotecaria digital end-to-end..."
 problem: "El equipo asumía inicialmente..."
 role: "Como Design Lead..."
@@ -25,3 +23,4 @@ impact:
   - "Reducción del flujo de simulación"
   - "Mejor comprensión financiera"
   - "Conversión temprana tras lanzamiento"
+---

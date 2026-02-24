@@ -15,9 +15,7 @@ categories: [retail, product]
 meta_title: "Caso El Tablero de Otto – Diseño de Servicio y Estrategia | Alfredo Vásquez"
 meta_description: "Caso emprendedor que integra diseño de servicio, estrategia de negocio y tecnología."
 cover_image: /assets/images/eltablerodeotto-cover.webp
----
 
-## Otto (ES)
 context: "El Tablero de Otto fue un emprendimiento propio..."
 problem: "Los competidores existentes..."
 role: "Como fundador y líder de diseño..."
@@ -25,3 +23,4 @@ impact:
   - "Crecimiento sostenido de asistencia"
   - "Alta recurrencia"
   - "Expansión orgánica de la comunidad"
+---

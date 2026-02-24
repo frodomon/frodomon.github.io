@@ -15,9 +15,7 @@ categories: [retail, product]
 meta_title: "El Tablero de Otto Case Study – Service Design & Strategy | Alfredo Vásquez"
 meta_description: "Entrepreneurial case integrating service design, business strategy and technology."
 cover_image: /assets/images/eltablerodeotto-cover.webp
----
 
-## El tablero de Otto (EN)
 context: "El Tablero de Otto was a self-initiated venture..."
 problem: "Existing competitors focused..."
 role: "As founder and design lead..."
@@ -25,3 +23,4 @@ impact:
   - "Sustained growth in attendance"
   - "Strong recurrency"
   - "Organic community expansion"
+---
