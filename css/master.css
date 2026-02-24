@@ -708,7 +708,6 @@ footer nav a:last-child{
 /* ============ BREADCRUMB ============ */
 .breadcrumb{
   padding: 1rem 10%;
-  font-size: 0.8rem;
   opacity: 0.6;
 }
 .breadcrumb a {

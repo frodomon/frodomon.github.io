@@ -212,10 +212,7 @@ function masonryLayout() {
   let columnHeights = new Array(columns).fill(0);
 
   cards.forEach(card => {
-
-    
     const minColumn = columnHeights.indexOf(Math.min(...columnHeights));
-
     const x = minColumn * (columnWidth + gap);
     const y = columnHeights[minColumn];
 
