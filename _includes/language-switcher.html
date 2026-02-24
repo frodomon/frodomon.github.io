@@ -5,7 +5,7 @@
      | where_exp: "item", "item.lang != current_lang"
      | first %}
   {% if current_lang == "en" %}
-    <span class="active-lang">EN</span>
+    <p class="active-lang">EN</p>
     {% if alternate %}
       <a class="flex-center-row" href="{{ alternate.url | relative_url }}">ES</a>
     {% endif %}
@@ -13,15 +13,15 @@
     {% if alternate %}
       <a class="flex-center-row" href="{{ alternate.url | relative_url }}">EN</a>
     {% endif %}
-    <span class="active-lang">ES</span>
+    <p class="active-lang">ES</p>
   {% endif %}
 {% else %}
   {% assign clean_url = page.url | remove_first:'/es' %}
   {% if current_lang == "en" %}
-    <span class="active-lang">EN</span>
+    <p class="active-lang">EN</p>
     <a class="flex-center-row" href="{{ '/es' | append: clean_url | relative_url }}">ES</a>
   {% else %}
     <a class="flex-center-row" href="{{ clean_url | relative_url }}">EN</a>
-    <span class="active-lang">ES</span>
+    <p class="active-lang">ES</p>
   {% endif %}
 {% endif %}

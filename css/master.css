@@ -422,6 +422,10 @@ header nav a:hover{
 body.menu-open {
   overflow: hidden;
 }
+.active-lang {
+  opacity: 0.5;
+  pointer-events: none;
+}
 /* ------------------------------FOOTER---------------------- */
 footer{
   width:100%;
@@ -695,6 +699,7 @@ footer nav a:last-child{
 .cases-filter button:hover {
   opacity: 1;
 }
+/* ============ BREADCRUMB ============ */
 .breadcrumb{
   padding: 1rem 10%;
   font-size: 0.8rem;
@@ -708,12 +713,8 @@ footer nav a:last-child{
   opacity: 1;
 }
 .breadcrumb-separator {
-  margin: 0 6px;
+  margin: 0 0.5rem;
 }
 .breadcrumb-current {
   font-weight: 500;
-}
-.active-lang {
-  opacity: 0.5;
-  pointer-events: none;
 }
