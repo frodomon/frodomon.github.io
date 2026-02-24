@@ -425,7 +425,7 @@ body.menu-open {
 }
 .active-lang {
   pointer-events: none;
-  color: oklch(from var(--primary-color) l c h / .5);
+  color: oklch(from var(--primary-color) l c h / .8);
 }
 /* ============ DARK HERO BACKGROUND ============ */
 
@@ -470,7 +470,7 @@ body.menu-open {
   color: var(--primary-bg-color);
 }
 .dark-header header nav .active-lang{
-  color: oklch(from var(--primary-bg-color) l c h / .5);
+  color: oklch(from var(--primary-bg-color) l c h / .8);
 }
 /* ----------------------------HEADER scrooled-------------------- */
 .dark-header header.scrolled {
@@ -483,7 +483,7 @@ body.menu-open {
   color: var(--primary-color);
 }
 dark-header header.scrolled nav .active-lang {
-  color: oklch(from var(--primary-color) l c h / .5);
+  color: oklch(from var(--primary-color) l c h / .8);
 }
 /* ------------------------------FOOTER---------------------- */
 footer{
