@@ -10,6 +10,7 @@ body_class: dark-header
 
 {% assign lang = page.lang | default: site.default_lang %}
 {% assign t = site.data.translations[lang][page.page_key] %}
+{% assign cases = site.cases | where: "lang", page.lang %}
 
 <!-- HERO WRAPPER -->
 <section class="dark-hero-wrapper">
@@ -24,8 +25,7 @@ body_class: dark-header
 {% endif %}
 <!-- MENU FILTER -->
 {% assign all_categories = "" | split: "" %}
-
-{% for case in t.case_studies %}
+{% for case in cases %}
   {% for cat in case.categories %}
     {% unless all_categories contains cat %}
       {% assign all_categories = all_categories | push: cat %}
@@ -42,7 +42,6 @@ body_class: dark-header
 </div>
 <!-- CASES GRID -->
 <section class="masonry-grid">
-  {% assign cases = site.cases | where: "lang", page.lang %}
   {% for case in cases %}
   <article class="case-card" data-date="{{ case.date }}" data-category="{{ case.categories | join: ' ' }}">
     <a href="{{ case.url | relative_url }}">

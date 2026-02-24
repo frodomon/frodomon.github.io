@@ -66,4 +66,5 @@ function applyMasonry() {
   });
   const maxHeight = Math.max(...columnHeights);
   grid.style.height = (maxHeight + paddingHeight) + "px";
+  grid.classList.add("is-ready");
 }
