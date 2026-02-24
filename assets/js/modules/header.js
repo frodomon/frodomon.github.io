@@ -21,7 +21,13 @@ export function initHeader() {
   }
 
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 80) header.classList.add("scrolled");
-    else header.classList.remove("scrolled");
+    if (window.scrollY > 80) {
+      header.classList.add("scrolled");
+      body.classList.remove("dark-header");
+    }
+    else {
+      header.classList.remove("scrolled");
+      body.classList.add("dark-header");
+    }
   });
 }
