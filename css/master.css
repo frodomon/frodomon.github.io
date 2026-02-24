@@ -714,6 +714,9 @@ footer nav a:last-child{
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
+.breadcrum, .breadcrum a{
+  font-size: 0.6rem;
+}
 .breadcrumb a:hover {
   opacity: 1;
 }
