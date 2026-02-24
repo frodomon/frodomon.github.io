@@ -49,14 +49,29 @@
   <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/png">
   <link rel="stylesheet" href="{{ '/assets/fontawesome/css/all.min.css' | relative_url }}">
-  <script type="application/ld+json">
-    {{ site.data.structured.person | jsonify }}
-  </script>
+  {% if page.url == "/" or page.url == "/es/" %}
+    {% include structured-data.html type="person" %}
+  {% endif %}
+
+  {% if page.og_type == "article" %}
+    {% include structured-data.html type="article" %}
+    {% include structured-data.html type="breadcrumb" %}
+  {% endif %}
 </head>
 <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
   {% include header.html %}
   {{ content }}
   {% include footer.html %}
   <script type="module" src="{{ '/assets/js/app.js' | relative_url }}"></script>
+  <script src="https://t.contentsquare.net/uxa/f0a53c561bc3f.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9R6ZEYGM3E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9R6ZEYGM3E');
+  </script>
 </body>
 </html>
