@@ -2,6 +2,19 @@ en:
   menu:
     case_studies: "Case Studies"
     contact: "Let's connect"
+
+  labels:
+    home: "Home"
+    cases: "Cases"
+    blog: "Blog"
+    insights: "Insights"
+    all: "All"
+    filter_by: "Filter by"
+    sorted_by: "Sorted by"
+    recent_first: "Most Recent"
+    view_case: "View Case"
+    back_to_cases: "Back to Cases"
+  
   home:
     meta_title: "Strategic Design Lead | Fintech Product Strategy & Organizational Capability"
     meta_description: "Strategic Design Lead specializing in fintech and enterprise product strategy, design systems and organizational capability across complex digital ecosystems."
@@ -66,66 +79,26 @@ en:
     title: "Selected Strategic Initiatives"
     description: "Enterprise and fintech initiatives where design leadership shaped product direction, organizational capability and business performance."
 
-    case_studies:
-      - title: "Digital Mortgage Product (Janus)"
-        subtitle: "Organizational Design & Capability Building"
-        description: "Led the restructuring of enterprise UX governance, aligning product strategy, operating models and cross-functional decision-making to increase delivery coherence and strategic clarity across digital portfolios."
-        url: "/cases/janus/"
-        image: "/assets/images/janus.jpg"
-        date: "2021-05-01"
-        categories:
-          - Fintech
-          - Governance
-
-      - title: "El Tablero de Otto — Small Business retail"
-        subtitle: "A design leadership initiative in retail"
-        description: "Entrepreneurial case integrating service design, business model strategy and technology to build a sustainable ecosystem."
-        url: "/cases/eltablerodeotto/"
-        image: "/assets/images/eltablerodeotto.png"
-        date: "2018-06-01"
-        categories:
-          - Fintech
-          - Governance
-
-  # Caso Janus (EN)
-  janus:
-    cover_image: /assets/images/janus-cover.webp
-    case_studies: "Case Studies"
-    title: "Digital Mortgage Product (Janus)"
-    subtitle: "Design Leadership in a regulated fintech ecosystem"
-    meta_title: "Digital Mortgage Product Case Study – Design Lead | Alfredo Vásquez"
-    meta_description: "Strategic product design leadership in a regulated fintech mortgage product."
-    context: "Janus was an end-to-end digital mortgage platform..."
-    problem: "The team initially assumed..."
-    role: "As Design Lead, I..."
-    impact:
-      - "Shortened simulation flow"
-      - "Improved financial clarity"
-      - "Enabled early conversions"
-  # El tablero de Otto (EN)
-  eltablerodeotto:
-    case_studies: "Case Studies"
-    title: "El Tablero de Otto – Community-Centric Business Design"
-    subtitle: "Integrating design, business and technology"
-    meta_title: "El Tablero de Otto Case Study – Service Design & Strategy | Alfredo Vásquez"
-    meta_description: "Entrepreneurial case integrating service design, business strategy and technology."
-    context: "El Tablero de Otto was a self-initiated venture..."
-    problem: "Existing competitors focused..."
-    role: "As founder and design lead..."
-    impact:
-      - "Sustained growth in attendance"
-      - "Strong recurrency"
-      - "Organic community expansion"
-
 es:
   menu:
     case_studies: "Casos de Estudio"
     contact: "Conversemos"
+  
+  labels:
+    home: "Inicio"
+    cases: "Casos"
+    blog: "Blog"
+    insights: "Insights"
+    all: "Todos"
+    filter_by: "Filtrar por"
+    sorted_by: "Ordenado por"
+    recent_first: "Más recientes"
+    view_case: "Ver Caso"
+    back_to_cases: "Volver a Casos"
+
   home:
     meta_title: "Strategic Design Lead | Estrategia de Producto Fintech y Capacidad Organizacional"
     meta_description: "Strategic Design Lead en fintech y estrategia de producto corporativa, sistemas de diseño y capacidad organizacional en ecosistemas digitales complejos."
-    case_studies: "Casos de Estudio"
-    contact: "Conversemos"
     
     hero:
       eyebrow: "Strategic Design & Product Leadership"
@@ -187,54 +160,3 @@ es:
     title: "Iniciativas Estratégicas Seleccionadas"
     description: "Iniciativas corporativas y fintech donde el liderazgo en diseño impactó la dirección de producto, la capacidad organizacional y el desempeño del negocio."
 
-    case_studies:
-      - title: "Producto Digital Hipotecario (Janus)"
-        subtitle: "Diseño Organizacional y Construcción de Capacidad"
-        description: "Lideré decisiones de diseño estratégico en un producto fintech hipotecario regulado, equilibrando cumplimiento normativo, claridad para el usuario y resultados de negocio."
-        url: "/es/cases/janus/"
-        image: "/assets/images/janus.jpg"
-        date: "2021-05-01"
-        categories:
-          - Fintech
-          - Governance
-
-      - title: "El Tablero de Otto – Diseño de Negocio Retail"
-        subtitle: "Liderazgo en Ecosistema de Producto y Sistemas de Diseño"
-        description: "Caso emprendedor que integra diseño de servicios, estrategia de modelo de negocio y tecnología para construir un ecosistema sostenible."
-        url: "/es/cases/eltablerodeotto/"
-        image: "/assets/images/eltablerodeotto.png"
-        date: "2018-06-01"
-        categories:
-          - Fintech
-          - Governance
-  
-  # JANUS (ES)
-  janus:
-    cover_image: /assets/images/janus-cover.webp
-    case_studies: "Casos de  Estudio"
-    title: "Producto Hipotecario Digital (Janus)"
-    subtitle: "Liderazgo de diseño en un ecosistema fintech regulado"
-    meta_title: "Caso Producto Hipotecario Digital – Design Lead | Alfredo Vásquez"
-    meta_description: "Liderazgo estratégico de diseño en un producto hipotecario fintech regulado."
-    context: "Janus fue una plataforma hipotecaria digital end-to-end..."
-    problem: "El equipo asumía inicialmente..."
-    role: "Como Design Lead..."
-    impact:
-      - "Reducción del flujo de simulación"
-      - "Mejor comprensión financiera"
-      - "Conversión temprana tras lanzamiento"
-
-  # Otto (ES)
-  eltablerodeotto:
-    case_studies: "Casos de  Estudio"
-    title: "El Tablero de Otto – Diseño de Negocio Basado en Comunidad"
-    subtitle: "Integrando diseño, negocio y tecnología"
-    meta_title: "Caso El Tablero de Otto – Diseño de Servicio y Estrategia | Alfredo Vásquez"
-    meta_description: "Caso emprendedor que integra diseño de servicio, estrategia de negocio y tecnología."
-    context: "El Tablero de Otto fue un emprendimiento propio..."
-    problem: "Los competidores existentes..."
-    role: "Como fundador y líder de diseño..."
-    impact:
-      - "Crecimiento sostenido de asistencia"
-      - "Alta recurrencia"
-      - "Expansión orgánica de la comunidad"

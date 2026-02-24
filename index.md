@@ -1,6 +1,7 @@
 ---
 layout: default
 lang: en
+title: Home
 page_key: home
 og_type: website
 permalink: /

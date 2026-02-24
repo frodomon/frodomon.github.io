@@ -713,3 +713,7 @@ footer nav a:last-child{
 .breadcrumb-current {
   font-weight: 500;
 }
+.active-lang {
+  opacity: 0.5;
+  pointer-events: none;
+}

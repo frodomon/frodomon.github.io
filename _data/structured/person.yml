@@ -1,0 +1,19 @@
+"@context": "https://schema.org"
+"@type": "Person"
+name: "Alfredo Vásquez"
+jobTitle: "Strategic Design Lead"
+description: "{{ t.meta_description }}"
+inLanguage: "{{ lang }}"
+image: "{{ site.url }}{{ site.baseurl }}/assets/images/og-design-lead-alfredo.webp"
+url: "{{ site.url }}{{ site.baseurl }}"
+sameAs:
+  - "https://linkedin.com/..."
+worksFor:
+  "@type": "Organization"
+  name: "Banco de Credito BCP"
+knowsAbout:
+  - "Product Design"
+  - "Fintech"
+  - "Design Leadership"
+  - "Service Design"
+  - "Digital Strategy"

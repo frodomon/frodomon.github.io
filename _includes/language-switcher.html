@@ -1,4 +1,27 @@
-{% assign clean_url = page.url | remove_first:'/es' %}
-
-<a class="flex-center-row" href="{{ site.baseurl }}{{ clean_url }}">EN</a>
-<a class="flex-center-row" href="{{ site.baseurl }}/es{{ clean_url }}">ES</a>
+{% assign current_lang = page.lang | default: site.default_lang %}
+{% if page.collection %}
+  {% assign alternate = site[page.collection]
+     | where: "ref", page.ref
+     | where_exp: "item", "item.lang != current_lang"
+     | first %}
+  {% if current_lang == "en" %}
+    <span class="active-lang">EN</span>
+    {% if alternate %}
+      <a class="flex-center-row" href="{{ alternate.url | relative_url }}">ES</a>
+    {% endif %}
+  {% else %}
+    {% if alternate %}
+      <a class="flex-center-row" href="{{ alternate.url | relative_url }}">EN</a>
+    {% endif %}
+    <span class="active-lang">ES</span>
+  {% endif %}
+{% else %}
+  {% assign clean_url = page.url | remove_first:'/es' %}
+  {% if current_lang == "en" %}
+    <span class="active-lang">EN</span>
+    <a class="flex-center-row" href="{{ '/es' | append: clean_url | relative_url }}">ES</a>
+  {% else %}
+    <a class="flex-center-row" href="{{ clean_url | relative_url }}">EN</a>
+    <span class="active-lang">ES</span>
+  {% endif %}
+{% endif %}

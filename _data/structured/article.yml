@@ -1,0 +1,14 @@
+"@context": "https://schema.org"
+"@type": "Article"
+headline: "{{ t.meta_title }}"
+description: "{{ t.meta_description }}"
+image: "{{ site.url }}{{ site.baseurl }}{{ page.cover_image }}"
+author:
+  "@type": "Person"
+  name: "Alfredo Vásquez"
+datePublished: "{{ page.date }}"
+inLanguage: "{{ page.lang }}"
+url: "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+mainEntityOfPage:
+  "@type": "WebPage"
+  "@id": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"

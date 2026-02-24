@@ -2,6 +2,7 @@
 layout: default
 lang: es
 page_key: home
+title: Inicio
 og_type: website
 permalink: /es/
 ---

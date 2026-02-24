@@ -1,4 +1,12 @@
 url: "https://alfredovasquezalcala.com"
 baseurl: ""
+default_lang: en
+collections:
+  cases:
+    output: true
+  insights:
+    output: true
+  blog:
+    output: true
 plugins:
   - jekyll-sitemap

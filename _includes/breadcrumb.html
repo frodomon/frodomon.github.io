@@ -1,32 +1,40 @@
 {% assign lang = page.lang | default: site.default_lang %}
-{% assign current_url = page.url | split: '/' %}
+{% assign t = site.data.translations[lang] %}
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
   <!-- HOME -->
-  <a href="{% if lang == 'es' %}/es/{% else %}/{% endif %}">{% if lang == 'es' %}Inicio{% else %}Home{% endif %}</a>
-
-  {% assign path = "/" %}
-  {% for segment in current_url %}
-    {% unless segment == "" %}
-      {% assign path = path | append: segment | append: '/'%}
-      
-      {% comment %}
-      Si estamos en español y el primer segmento es "es",lo ignoramos para no duplicar
-      {% endcomment %}
-
-      {% if segment == "es" %}
-        {% continue %}
-      {% endif %}
-      
-      {% assign page_match = site.pages | where: "url", path | first %}
-      {% if page_match %}
-        <span class="breadcrumb-separator">/</span>
-        {% if forloop.last %}
-          <span class="breadcrumb-current">{{ page_match.title }}</span>
-        {% else %}
-          <a href="{{ page_match.url | relative_url }}">{{ page_match.title }}</a>
-        {% endif %}
-      {% endif %}
+   <a href="{% if lang == 'es' %}/es/{% else %}/{% endif %}">{{ t.labels.home }}</a>
+  <!-- If page belongs to a collection (cases, blog, insights...) -->
+  {% if page.collection %}
+    {% assign collection_name = page.collection %}
+    {% assign collection_label = t.labels[collection_name] | default: collection_name %}
+    <span class="breadcrumb-separator">/</span>
+    <a href="{% if lang == 'es' %}/es/{{ collection_name }}/{% else %}/{{ collection_name }}/{% endif %}">{{ collection_label }}</a>
+    {% unless page.url contains collection_name and page.url == '/' | append: collection_name | append: '/' %}
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">
+        {{ page.title }}
+      </span>
     {% endunless %}
-  {% endfor %}
+  {% else %}
+  <!-- If it's a normal page (like /cases/ or /about/) -->
+    {% assign segments = page.url | split: '/' %}
+    {% for segment in segments %}
+      {% unless segment == "" or segment == "es" %}
+        {% assign path = "/" | append: segment | append: "/" %}
+        {% if lang == "es" %}
+          {% assign path = "/es" | append: path %}
+        {% endif %}
+        {% assign page_match = site.pages | where: "url", path | first %}
+        {% if page_match %}
+          <span class="breadcrumb-separator">/</span>
+          {% if page_match.url == page.url %}
+            <span class="breadcrumb-current">{{ page_match.title }}</span>
+          {% else %}
+            <a href="{{ page_match.url | relative_url }}">{{ page_match.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
 </nav>
