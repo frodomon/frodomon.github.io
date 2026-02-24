@@ -460,7 +460,6 @@ footer nav a{
   border-right: 2px solid var(--primary-bg-color);
   height:40px;
   padding:0 1rem;
-  font-size: 1.25rem;
 }
 footer nav a:last-child{
   border-right: 0;
