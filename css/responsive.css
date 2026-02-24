@@ -37,7 +37,7 @@
 	.header-right{
 		padding-right: 5%;
 	}
-	/* HAMBURGER */
+	/* -------------------------HAMBURGER ------------------------*/
 	.menu-toggle {
     display: flex;
     cursor: pointer;
@@ -77,8 +77,8 @@
     opacity: 1;
     transform: translateY(0);
   }
-  /* Links full width */
-  .nav a {
+  /*-------------------- Links full width -----------------*/
+  .nav a, .nav p {
     width: 100%;
     padding: 1rem 5%;
     font-size: 1rem;
@@ -90,6 +90,9 @@
 	    opacity 0.3s ease,
 	    transform 0.3s ease,
 	    background 0.2s ease;
+  }
+  header nav p{
+  	border-left: none;
   }
   .nav.active a{
 	  opacity:1;

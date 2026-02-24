@@ -398,7 +398,7 @@ header nav a:focus,
 header nav a:hover{
   color: var(--secondary-color);
 }
-/* Header layout */
+/* -------------------Header layout --------------------------*/
 .menu-toggle {
   display: none;
   background: none;
