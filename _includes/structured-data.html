@@ -2,90 +2,80 @@
 {% assign t = site.data.translations[lang] %}
 
 {% if include.type == "person" %}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Alfredo Vásquez",
-  "jobTitle": "Strategic Design Lead",
-  "description": "{{ t.meta_description | escape }}",
-  "inLanguage": "{{ lang }}",
-  "image": "{{ site.url }}{{ site.baseurl }}/assets/images/og-design-lead-alfredo.webp",
-  "url": "{{ site.url }}{{ site.baseurl }}",
-  "sameAs": [
-    "https://linkedin.com/..."
-  ],
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Banco de Credito BCP"
-  },
-  "knowsAbout": [
-    "Product Design",
-    "Fintech",
-    "Design Leadership",
-    "Service Design",
-    "Digital Strategy"
-  ]
-}
-</script>
-
-{% endif %}
-
-
-{% if include.type == "article" %}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "{{ t.meta_title | escape }}",
-  "description": "{{ t.meta_description | escape }}",
-  "image": "{{ site.url }}{{ site.baseurl }}{{ page.cover_image }}",
-  "author": {
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Alfredo Vásquez"
-  },
-  "datePublished": "{{ page.date }}",
-  "inLanguage": "{{ page.lang }}",
-  "url": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+    "name": "Alfredo Vásquez",
+    "jobTitle": "Strategic Design Lead",
+    "description": "{{ t.meta_description | escape }}",
+    "inLanguage": "{{ lang }}",
+    "image": "{{ site.url }}{{ site.baseurl }}/assets/images/og-design-lead-alfredo.webp",
+    "url": "{{ site.url }}{{ site.baseurl }}",
+    "sameAs": [
+      "https://linkedin.com/..."
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Banco de Credito BCP"
+    },
+    "knowsAbout": [
+      "Product Design",
+      "Fintech",
+      "Design Leadership",
+      "Service Design",
+      "Digital Strategy"
+    ]
   }
-}
-</script>
-
+  </script>
 {% endif %}
-
-
-{% if include.type == "breadcrumb" %}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "{{ site.url }}{{ site.baseurl }}/"
+{% if include.type == "article" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.meta_title | default: page.title | escape }}",
+    "description": "{{ page.meta_description | default: page.description | escape }}",
+    "image": "{{ site.url }}{{ site.baseurl }}{{ page.cover_image }}",
+    "author": {
+      "@type": "Person",
+      "name": "Alfredo Vásquez"
     },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Case Studies",
-      "item": "{{ site.url }}{{ site.baseurl }}/cases/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "{{ t.title | escape }}",
-      "item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "inLanguage": "{{ page.lang }}",
+    "url": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
     }
-  ]
-}
-</script>
-
+  }
+  </script>
+{% endif %}
+{% if include.type == "breadcrumb" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "{% if page.lang == 'es' %}Inicio{% else %}Home{% endif %}",
+        "item": "{{ site.url }}{{ site.baseurl }}/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{% if page.lang == 'es' %}Casos{% else %}Case Studies{% endif %}",
+        "item": "{{ site.url }}{{ site.baseurl }}/cases/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{ page.title | escape }}",
+        "item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+      }
+    ]
+  }
+  </script>
 {% endif %}

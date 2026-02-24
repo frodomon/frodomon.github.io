@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 {% assign lang = page.lang | default: site.default_lang %}
 {% assign t = site.data.translations[lang][page.page_key] %}
+{% assign meta_title = page.meta_title | default: t.meta_title | default: page.meta?title %}
+{% assign meta_description = page.meta_description | default: t.meta_description | default: page.meta_description %}
 <html lang="{{ lang }}">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="Content-Language" content="{{ lang }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>{{ t.meta_title }}</title>
-  <meta name="description" content="{{ t.meta_description }}"/>
+  <title>{{ meta_title }}</title>
+  <meta name="description" content="{{ meta_description }}"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,8 +26,8 @@
     <link rel="alternate" hreflang="es" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
   {% endif %}
   <!-- Open Graph -->
-  <meta property="og:title" content="{{ t.meta_title }}">
-  <meta property="og:description" content="{{ t.meta_description }}">
+  <meta property="og:title" content="{{ meta_title }}">
+  <meta property="og:description" content="{{ meta_description }}">
   <meta property="og:type" content="{{ page.og_type | default: 'website' }}">
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
   <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-design-lead-alfredo.webp">
@@ -41,8 +43,8 @@
   {% endif %}
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ t.meta_title }}">
-  <meta name="twitter:description" content="{{ t.meta_description }}">
+  <meta name="twitter:title" content="{{ meta_title }}">
+  <meta name="twitter:description" content="{{ meta_description }}">
   <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-design-lead-alfredo.webp">
   <!-- assets -->
   <link rel="preload" href="{{ '/css/styles.css' | relative_url }}" as="style">
@@ -52,7 +54,6 @@
   {% if page.url == "/" or page.url == "/es/" %}
     {% include structured-data.html type="person" %}
   {% endif %}
-
   {% if page.og_type == "article" %}
     {% include structured-data.html type="article" %}
     {% include structured-data.html type="breadcrumb" %}
