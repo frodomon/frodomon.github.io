@@ -415,7 +415,8 @@ header nav a:hover{
     transform 0.35s cubic-bezier(.4,0,.2,1),
     opacity 0.2s ease;
 }
-.nav a {
+.nav a,
+.nav p {
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
