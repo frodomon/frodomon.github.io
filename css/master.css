@@ -715,7 +715,7 @@ footer nav a:last-child{
   transition: opacity 0.2s ease;
 }
 .breadcrumb, .breadcrumb a{
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 .breadcrumb a:hover {
   opacity: 1;
