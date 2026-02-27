@@ -1,8 +1,8 @@
 {% assign lang = page.lang | default: site.default_lang %}
 {% assign labels = site.data.translations[lang].labels %}
 
-<nav class="breadcrumb" aria-label="Breadcrumb">
-  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+<nav id="breadcrumb" aria-label="Breadcrumb">
+  <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
     <!-- HOME -->
     <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
       <a href="{% if lang == 'es' %}/es/{% else %}/{% endif %}" itemprop="item"><span itemprop="name">{{ labels.home }}</span></a>
