@@ -666,26 +666,31 @@ footer nav a:last-child{
 .case-content {
   padding: 1.2rem;
 }
-.case-subtitle {
-  margin-top: 0.5rem;
-}
 .case-date {
   font-size: 0.8rem;
-  opacity: 0.5;
+  color: var(--grey400);
   display: block;
   margin-bottom: 0.5rem;
 }
+.case.title{
+  margin: 0;
+  padding-left: 0;
+}
+.case-subtitle {
+  margin-top: 0.5rem;
+}
+
 .case-categories {
   margin-top: 1rem;
 }
 .category-tag {
-  font-size: 0.75rem;
-  padding: 4px 10px;
-  border: 1px solid #ddd;
-  margin-right: 6px;
+  font-size: 0.7rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--grey400);
+  margin-right: 0.5rem;
   display: inline-block;
-  opacity: 0.7;
 }
+/* ============ FILTROS ============ */
 .cases-filter {
   margin: 1rem 0;
   text-align: center;
