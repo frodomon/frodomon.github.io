@@ -649,7 +649,6 @@ footer nav a:last-child{
   opacity: 1;
 }
 .case-card:hover {
-  transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 .case-card.is-hidden {
@@ -756,6 +755,10 @@ footer nav a:last-child{
 }
 .related-case-card{
   width:30%;
+}
+.related-case-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 .related-case-content{
   padding:1rem;
