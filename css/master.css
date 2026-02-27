@@ -748,3 +748,13 @@ footer nav a:last-child{
 .breadcrumb-current {
   font-weight: 500;
 }
+/* ============ RELATED CASES ============ */
+#related-cases{
+}
+.related-cases{
+  border-top: 0.25rem solid var(--primary-color);
+}
+.related-case-card{
+  width:30%;
+  
+}

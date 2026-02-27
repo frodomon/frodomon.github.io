@@ -83,46 +83,34 @@ layout: default
 {% assign related_limited = related | limit: 3 %}
 
 {% if related_limited.size > 0 %}
-<section class="related-cases">
-  <div class="related-cases-inner">
-    <h2 class="related-cases-title">
-      {{ labels.related }}
-    </h2>
+<section id="related-cases">
+  <div class="related-cases">
+    <h2 class="related-cases-title">{{ labels.related }}</h2>
     <div class="related-cases-grid">
       {% for rc in related_limited %}
-      <a href="{{ rc.url | relative_url }}" class="related-case-card">
-        <div class="related-case-image">
-          <img
-            src="{{ rc.image }}"
-            alt="{{ rc.title }}"
-            loading="lazy"
-            width="400"
-            height="280">
-        </div>
-        <div class="related-case-content">
-          <div class="related-case-categories">
-            {% for cat in rc.categories %}
-              <span class="category-tag">{{ cat }}</span>
-            {% endfor %}
+      <a href="{{ rc.url | relative_url }}">
+        <div class="related-case-card">
+          <div class="related-case-image">
+            <img src="{{ rc.image }}" alt="{{ rc.title }}" loading="lazy" width="400" height="280">
           </div>
-          <h3>{{ rc.headline }}</h3>
-          <p>{{ rc.excerpt | default: rc.description }}</p>
-          <span class="related-case-cta">
-            {{ labels.view_case }} →
-          </span>
+          <div class="related-case-content">
+            <h3>{{ rc.headline }}</h3>
+            <p>{{ rc.excerpt | default: rc.description }}</p>
+            <div class="related-case-categories">
+              {% for cat in rc.categories %}
+                <span class="category-tag">{{ cat }}</span>
+              {% endfor %}
+            </div>
+            <p class="btn btn-primary">{{ labels.view_case }} →</span>
+          </div>  
         </div>
       </a>
       {% endfor %}
     </div>
-
-    <!-- CTA volver a todos los casos -->
-    <div class="related-cases-cta">
-      <a
-        href="{% if lang == 'es' %}/es/cases/{% else %}/cases/{% endif %}"
-        class="btn btn-secondary">
-        {{ labels.back_to_cases }}
-      </a>
-    </div>
   </div>
+  <!-- CTA volver a todos los casos -->
+    <div id="back">
+      <a href="{% if lang == 'es' %}/es/cases/{% else %}/cases/{% endif %}" class="btn btn-secondary">{{ labels.back_to_cases }}</a>
+    </div>
 </section>
 {% endif %}
