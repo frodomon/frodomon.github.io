@@ -716,7 +716,6 @@ footer nav a:last-child{
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 0.8rem;
 }
 .breadcrumb-item{
   display: flex;
@@ -726,13 +725,16 @@ footer nav a:last-child{
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
+.breadcrumb-item a, .breadcrumb-separator, .breadcrumb-current{
+  font-size: 0.8rem;
+}
 .breadcrumb-item a:hover {
   opacity: 1;
 }
 .breadcrumb-separator {
   margin: 0 0.5rem 0.5rem 0.5rem;
   display: flex;
-  align-items: flex-center-row;
+  align-items: center;
 }
 .breadcrumb-current {
   font-weight: 500;
