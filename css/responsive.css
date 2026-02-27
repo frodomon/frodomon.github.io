@@ -59,13 +59,13 @@
   .menu-toggle span {
     width: 24px;
     height: 2px;
-    background: #111;
+    background: var(--grey600);
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
  .nav {
 	 position: absolute;
-	 top: 96px; /* misma altura que tu header */
 	 left: 0;
+	 top: 96px; /* misma altura que tu header */
 	 width: 100vw;
 	 background: var(--primary-bg-color);
 	 border-top: 1px solid var(--grey100);
@@ -86,6 +86,9 @@
     max-height: 400px;
     opacity: 1;
     transform: translateY(0);
+  }
+  header.scrolled .nav.active{
+  	top: 72px;
   }
   /*-------------------- Links full width -----------------*/
   .nav a, .nav p {
