@@ -1,22 +1,30 @@
 {% assign lang = page.lang | default: site.default_lang %}
-{% assign t = site.data.translations[lang] %}
+{% assign labels = site.data.translations[lang].labels %}
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
-  <!-- HOME -->
-   <a href="{% if lang == 'es' %}/es/{% else %}/{% endif %}">{{ t.labels.home }}</a>
+  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <!-- HOME -->
+    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="{% if lang == 'es' %}/es/{% else %}/{% endif %}" itemprop="item"><span itemprop="name">{{ labels.home }}</span></a>
+      <meta itemprop="position" content="1">
+    </li>
   <!-- If page belongs to a collection (cases, blog, insights...) -->
   {% if page.collection %}
-    {% assign collection_name = page.collection %}
-    {% assign collection_label = t.labels[collection_name] | default: collection_name %}
-    <span class="breadcrumb-separator">/</span>
-    <a href="{% if lang == 'es' %}/es/{{ collection_name }}/{% else %}/{{ collection_name }}/{% endif %}">{{ collection_label }}</a>
-    {% unless page.url contains collection_name and page.url == '/' | append: collection_name | append: '/' %}
-      <span class="breadcrumb-separator">/</span>
-      <span class="breadcrumb-current">{{ page.title }}</span>
-    {% endunless %}
+    <li class="breadcrumb-separator" aria-hidden="true">/</li>
+    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="{% if lang == 'es' %}/es/{{ page.collection }}/{% else %}/{{ page.collection }}/{% endif %}">{{ labels.cases }}</a>
+      <meta itemprop="position" content="2">
+    </li>
+    <!-- 3. Current case -->
+    <li class="breadcrumb-separator" aria-hidden="true">/</li>
+    <li class="breadcrumb-item breadcrumb-current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name" aria-current="page">{{ page.title }}</span>
+      <meta itemprop="position" content="3">
+    </li>
   {% else %}
   <!-- If it's a normal page (like /cases/ or /about/) -->
     {% assign segments = page.url | split: '/' %}
+    {% assign position = 2 %}
     {% for segment in segments %}
       {% unless segment == "" or segment == "es" %}
         {% assign path = "/" | append: segment | append: "/" %}
@@ -25,12 +33,19 @@
         {% endif %}
         {% assign page_match = site.pages | where: "url", path | first %}
         {% if page_match %}
-          <span class="breadcrumb-separator">/</span>
-          {% if page_match.url == page.url %}
-            <span class="breadcrumb-current">{{ page_match.title }}</span>
+          {% assign is_current = false %}
+          {% if page_match.url == page.url %}{% assign is_current = true %}{% endif %}
+          <li class="breadcrumb-separator" aria-hidden="true">/</li>
+          <li class="breadcrumb-item{% if is_current %} breadcrumb-current{% endif %}"
+              itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          {% if is_current %}
+            <span itemprop="name" aria-current="page" class="breadcrumb-current">{{ page_match.title }}</span>
           {% else %}
-            <a href="{{ page_match.url | relative_url }}">{{ page_match.title }}</a>
+            <a href="{{ page_match.url | relative_url }}" itemprop="item"><span itemprop="name">{{ page_match.title }}</span></a>
           {% endif %}
+            <meta itemprop="position" content="{{ position }}">
+          </li>
+          {% assign position = position | plus: 1 %}
         {% endif %}
       {% endunless %}
     {% endfor %}

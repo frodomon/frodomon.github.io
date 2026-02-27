@@ -1,57 +1,139 @@
 {% assign lang = page.lang | default: 'en' %}
 {% assign t = site.data.translations[lang] %}
 
+{% assign labels = site.data.translations[lang].labels %}
+{% assign canonical_url = site.url | append: site.baseurl | append: page.url %}
+
+{% comment %} === 1. WEBSITE SCHEMA + SEARCHACTION === {% endcomment %}
+{% if include.type == "website" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "{{ site.url }}/#website",
+    "name": "Alfredo Vásquez | Strategic Design Lead",
+    "url": "{{ site.url }}",
+    "description": "Strategic Design Lead specializing in fintech, enterprise product strategy and design systems.",
+    "inLanguage": ["en", "es"],
+    "author": {
+      "@type": "Person",
+      "@id": "{{ site.url }}/#person"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "{{ site.url }}/cases/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+{% endif %}
+{% comment %} === 2. PERSON SCHEMA === {% endcomment %}
 {% if include.type == "person" %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "{{ site.url }}/#person",
     "name": "Alfredo Vásquez",
+    "givenName": "Alfredo",
+    "familyName": "Vásquez",
     "jobTitle": "Strategic Design Lead",
-    "description": "{{ t.meta_description | escape }}",
+    "description": "{{ site.description | escape }}",
     "inLanguage": "{{ lang }}",
-    "image": "{{ site.url }}{{ site.baseurl }}/assets/images/og-design-lead-alfredo.webp",
-    "url": "{{ site.url }}{{ site.baseurl }}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/images/Alfredo-Vasquez.webp",
+      "width": 800,
+      "height": 800
+    },
+    "url": "{{ site.url }}/",
+    "email": "vasquez.alf@gmail.com",
     "sameAs": [
-      "https://linkedin.com/..."
+      "https://www.linkedin.com/in/alfredohvasqueza/"
     ],
     "worksFor": {
       "@type": "Organization",
-      "name": "Banco de Credito BCP"
+      "name": "Banco de Credito BCP",
+      "url": "https://www.viabcp.com"
     },
     "knowsAbout": [
       "Product Design",
       "Fintech",
       "Design Leadership",
       "Service Design",
-      "Digital Strategy"
-    ]
-  }
-  </script>
-{% endif %}
-{% if include.type == "article" %}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "{{ page.meta_title | default: page.title | escape }}",
-    "description": "{{ page.meta_description | default: page.description | escape }}",
-    "image": "{{ site.url }}{{ site.baseurl }}{{ page.cover_image }}",
-    "author": {
-      "@type": "Person",
-      "name": "Alfredo Vásquez"
-    },
-    "datePublished": "{{ page.date | date_to_xmlschema }}",
-    "inLanguage": "{{ page.lang }}",
-    "url": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+      "Digital Strategy",
+      "UX Strategy",
+      "Design Systems",
+      "Organizational Design"
+    ],
+    "knowsLanguage": ["en", "es"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "PE"
     }
   }
   </script>
 {% endif %}
+{% comment %} === 3. ARTICLE SCHEMA (Cases) === {% endcomment %}
+{% if include.type == "article" %}
+{% assign article_image = site.url | append: site.baseurl | append: page.cover_image %}
+{% if page.cover_image == blank %}{% assign article_image = site.url | append: "/assets/images/og-design-lead-alfredo.webp" %}{% endif %}
+{% assign date_modified = page.date_modified | default: page.date %}
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "{{ canonical_url }}#article",
+  "headline": "{{ page.meta_title | default: page.title | escape }}",
+  "description": "{{ page.meta_description | default: page.description | escape }}",
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ article_image }}",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+    "name": "Alfredo Vásquez",
+    "url": "{{ site.url }}/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+    "name": "Alfredo Vásquez",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/images/av-logo-black.webp"
+    }
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ date_modified | date_to_xmlschema }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ canonical_url }}"
+  },
+  "url": "{{ canonical_url }}",
+  "inLanguage": "{{ page.lang }}",
+  "articleSection": "{{ page.categories | first | capitalize | default: 'Case Study' }}",
+  "keywords": "{{ page.categories | join: ', ' }}",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "{{ site.url }}/#website"
+  }
+}
+</script>
+{% endif %}
+
+{% comment %} === 4. BREADCRUMB SCHEMA DINÁMICO === {% endcomment %}
 {% if include.type == "breadcrumb" %}
+{% assign home_url = site.url | append: site.baseurl | append: "/" %}
+{% if lang == "es" %}{% assign home_url = site.url | append: site.baseurl | append: "/es/" %}{% endif %}
+{% assign cases_url = site.url | append: site.baseurl | append: "/cases/" %}
+{% if lang == "es" %}{% assign cases_url = site.url | append: site.baseurl | append: "/es/cases/" %}{% endif %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -60,20 +142,20 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "{% if page.lang == 'es' %}Inicio{% else %}Home{% endif %}",
-        "item": "{{ site.url }}{{ site.baseurl }}/"
+        "name": "{{ labels.home }}",
+        "item": "{{ home_url }}"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "{% if page.lang == 'es' %}Casos{% else %}Case Studies{% endif %}",
-        "item": "{{ site.url }}{{ site.baseurl }}/cases/"
+        "name": "{{ labels.cases }}",
+        "item": "{{ cases_url }}"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "{{ page.title | escape }}",
-        "item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+        "item": "{{ canonical_url }}"
       }
     ]
   }

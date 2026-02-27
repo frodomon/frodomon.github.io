@@ -1,0 +1,87 @@
+---
+layout: default
+---
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign labels = site.data.translations[lang].labels %}
+
+ <!-- HERO -->
+<section id="hero">
+  <div>
+    <p class="hero-eyebrow">{{ page.hero.eyebrow }}</p>
+    <h1 class="hero-title">{{ page.hero.title }}</h1>
+    <p class="hero-subtitle">{{ page.hero.subtitle }}</p>
+    <div class="hero-actions">
+      <a href="{% if lang == 'es' %}/es/cases/{% else %}/cases/{% endif %}" class="btn btn-primary">{{ labels.explore }}</a>
+      <a href="mailto:vasquez.alf@gmail.com" class="btn btn-secondary">{{ labels.contact }}</a>
+    </div>
+  </div>
+</section>
+<!-- CREDIBILITY -->
+ <section class="credibility">
+    <div>
+      <p class="credibility-text">{{ page.credibility }}</p>
+    </div>
+  </section>
+<!-- WHAT I DO -->
+<section class="leadership">
+    <div>
+      <h2 class="section-title">{{ page.what.title }}</h2>
+      <p class="section-lead">{{ page.what.description }}</p>
+    </div>
+  </section>
+<!-- CAPABILITIES -->
+<section>
+  <div>
+    <h2 class="section-title">{{ page.capabilities.title }}</h2>
+    <div class="capability-grid">
+      <div class="card">
+        <h3>{{ page.capabilities.org.title }}</h3>
+        <ul class="list">
+          {% for item in page.capabilities.org.items %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="card-title">{{ page.capabilities.product.title }}</h3>
+        <ul class="list">
+          {% for item in page.capabilities.product.items %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="card-title">{{ page.capabilities.business.title }}</h3>
+        <ul class="list">
+          {% for item in page.capabilities.business.items %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FEATURED CASES -->
+<section class="featured-cases">
+  <h2 class="section-title">{{ page.cases.title }}</h2>
+  <p>{{ page.cases.description }}</p>
+  <div class="hero-actions">
+    <a href="{{ '/cases/' | relative_url }}" class="btn btn-primary">{{ labels.explore }}</a>
+  </div>
+</section>
+<!-- LEADERSHIP PHILOSOPHY-->
+<section class="leadership">
+  <h2 class="section-title">{{ page.leadership.title }}</h2>
+  <p>{{ page.leadership.text }}</p>
+</section>
+<!-- SIGNATURE-->
+<section class="credibility">
+  <div>
+    <p class="signature-text">{{ page.signature.statement }}</p>
+  </div>
+</section>
+<!-- FINAL CTA -->
+<section>
+  <h2 class="section-title">{{ page.final.title }}</h2>
+  <a href="mailto:vasquez.alf@gmail.com" class="btn btn-primary">{{ labels.contact }}</a>
+</section>

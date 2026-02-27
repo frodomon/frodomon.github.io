@@ -1,12 +1,59 @@
+# ==========================================
+# alfredovasquezalcala.com · _config.yml
+# ==========================================
+
+# Site Identity
 url: "https://alfredovasquezalcala.com"
 baseurl: ""
+title: "Alfredo Vásquez | Strategic Design Lead"
+description: "Strategic Design Lead specializing in fintech and enterprise product strategy, design systems and organizational capability."
+author:
+  name: "Alfredo Vásquez"
+  email: "vasquez.alf@gmail.com"
+  linkedin: "https://www.linkedin.com/in/alfredohvasqueza/"
+
+# Internationalization
 default_lang: en
+languages: [en, es]
+
+# Collections
 collections:
   cases:
     output: true
-  insights:
-    output: true
-  blog:
-    output: true
+    permalink: /cases/:name/
+  # Añadir insights y blog solo cuando tengas contenido:
+  # insights:
+  #   output: true
+  # blog:
+  #   output: true
+
+# Defaults — evitan repetir front matter en cada archivo
+defaults:
+  - scope:
+      path: ""
+      type: "cases"
+    values:
+      layout: "case"
+      og_type: "article"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Plugins
 plugins:
   - jekyll-sitemap
+
+# Build
+timezone: "America/Lima"
+encoding: "utf-8"
+markdown: kramdown
+highlighter: rouge
+
+# Exclude from build
+exclude:
+  - .DS_Store
+  - "**/.DS_Store"
+  - README.md
+  - Gemfile
+  - Gemfile.lock

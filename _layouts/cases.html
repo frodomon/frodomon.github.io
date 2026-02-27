@@ -1,0 +1,53 @@
+---
+layout: default
+---
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign cases = site.cases | where: "lang", lang | sort: "date" | reverse %}
+{% assign labels = site.data.translations[lang].labels %}
+
+<section class="dark-hero-wrapper">
+  <div class="dark-hero">
+    <h1 class="dark-hero-title">{{ page.headline }}</h1>
+    <p class="dark-hero-description">{{ page.subheadline }}</p>
+  </div>
+</section>
+<!-- BREADCRUMB -->
+{% include breadcrumb.html %}
+<!-- MENU FILTER -->
+{% assign all_categories = "" | split: "" %}
+{% for case in cases %}
+  {% for cat in case.categories %}
+    {% unless all_categories contains cat %}
+      {% assign all_categories = all_categories | push: cat %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+<div class="cases-filter" role="group" aria-label="Filter cases">
+  <button data-filter="all" class="active" aria-pressed="true">{{ labels.all }}</button>
+  {% for cat in all_categories %}
+    <button data-filter="{{ cat | downcase }}" aria-pressed="false">
+      {{ cat }}
+    </button>
+  {% endfor %}
+</div>
+<section class="masonry-grid" aria-label="Case Studies">
+  {% for case in cases %}
+  <article class="case-card" data-date="{{ case.date | date: '%Y-%m-%d' }}" data-category="{{ case.categories | join: ' ' | downcase }}">
+    <a href="{{ case.url | relative_url }}">
+      <div class="case-image">
+        <img src="{{ case.image }}" alt="{{ case.headline }}" loading="lazy">
+      </div>
+      <div class="case-content">
+        <time class="case-date" datetime="{{ case.date | date: '%Y-%m-%d' }}">{{ case.date | date: "%Y" }}</time>
+        <h2>{{ case.headline }}</h2>
+        <p class="case-subtitle">{{ case.excerpt }}</p>
+        <div class="case-categories">
+          {% for cat in case.categories %}
+            <span class="category-tag">{{ cat }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    </a>
+  </article>
+  {% endfor %}
+</section>

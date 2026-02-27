@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://frodomon.github.io/sitemap.xml
+Sitemap: https://alfredovasquezalcala.com/sitemap.xml

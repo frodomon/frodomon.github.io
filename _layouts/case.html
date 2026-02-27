@@ -1,48 +1,128 @@
 ---
 layout: default
-og_type: article
 ---
-
 {% assign lang = page.lang | default: site.default_lang %}
+{% assign labels = site.data.translations[lang].labels %}
 
-<section class="dark-hero-wrapper">
-  <div class="dark-hero fullwidth">
-    <h1 class="dark-hero-title">{{ page.title }}</h1>
-    <p class="dark-hero-description">{{ page.subtitle }}</p>
-  </div>
-</section>
-{% if page.layout != 'home' %}
+<article class="case-study" itemscope itemtype="https://schema.org/Article">
+  <section class="dark-hero-wrapper">
+    <div class="dark-hero fullwidth">
+      <h1 class="dark-hero-title">{{ page.headline }}</h1>
+      <p class="dark-hero-description">{{ page.subheadline }}</p>
+    </div>
+  </section>
   {% include breadcrumb.html %}
-{% endif %}
-<article class="case-study">
+  {% if page.industry or page.client %}
+    <section class="case-meta">
+      {% if page.industry %}
+        <p><strong>{{ labels.industry }}</strong> {{ page.industry }}</p>
+      {% endif %}
+      {% if page.client %}
+        <p><strong>{{ labels.client }}</strong> {{ page.client }}</p>
+      {% endif %}
+    </section>
+  {% endif %}
   <section>
-    <h2>Context</h2>
+    <h2>{{ labels.context }}</h2>
     <p>{{ page.context }}</p>
   </section>
   <section>
-    <h2>The Challenge</h2>
+    <h2>{{ labels.challenge }}</h2>
     <p>{{ page.problem }}</p>
   </section>
 
   <section>
-    <h2>My Role</h2>
+    <h2>{{ labels.role }}</h2>
     <p>{{ page.role }}</p>
   </section>
 
   <section>
-    <h2>Strategic Approach</h2>
+    <h2>{{ labels.approach }}</h2>
     <p>{{ page.approach }}</p>
   </section>
 
   <section>
-    <h2>Impact</h2>
+    <h2>{{ labels.impact }}</h2>
     <ul>
       {% for item in page.impact %}
         <li>{{ item }}</li>
       {% endfor %}
     </ul>
   </section>
-
   {{ content }}
-
 </article>
+<!-- ============ RELATED CASES ============ -->
+{% assign all_cases = site.cases | where: "lang", lang %}
+{% assign related = "" | split: "" %}
+
+{% comment %} 1. Buscar casos con categorías en común {% endcomment %}
+{% for case in all_cases %}
+  {% unless case.url == page.url %}
+    {% assign shared_cats = 0 %}
+    {% for cat in page.categories %}
+      {% if case.categories contains cat %}
+        {% assign shared_cats = shared_cats | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    {% if shared_cats > 0 %}
+      {% assign related = related | push: case %}
+    {% endif %}
+  {% endunless %}
+{% endfor %}
+
+{% comment %} 2. Si no hay suficientes relacionados por categoría, añadir recientes {% endcomment %}
+{% if related.size < 2 %}
+  {% for case in all_cases %}
+    {% unless case.url == page.url or related contains case %}
+      {% assign related = related | push: case %}
+    {% endunless %}
+  {% endfor %}
+{% endif %}
+
+{% comment %} 3. Limitar a 3 casos {% endcomment %}
+{% assign related_limited = related | limit: 3 %}
+
+{% if related_limited.size > 0 %}
+<section class="related-cases">
+  <div class="related-cases-inner">
+    <h2 class="related-cases-title">
+      {{ labels.related }}
+    </h2>
+    <div class="related-cases-grid">
+      {% for rc in related_limited %}
+      <a href="{{ rc.url | relative_url }}" class="related-case-card">
+        <div class="related-case-image">
+          <img
+            src="{{ rc.image }}"
+            alt="{{ rc.title }}"
+            loading="lazy"
+            width="400"
+            height="280">
+        </div>
+        <div class="related-case-content">
+          <div class="related-case-categories">
+            {% for cat in rc.categories %}
+              <span class="category-tag">{{ cat }}</span>
+            {% endfor %}
+          </div>
+          <h3>{{ rc.headline }}</h3>
+          <p>{{ rc.excerpt | default: rc.description }}</p>
+          <span class="related-case-cta">
+            {{ labels.view_case }} →
+          </span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+    <!-- CTA volver a todos los casos -->
+    <div class="related-cases-cta">
+      <a
+        href="{% if lang == 'es' %}/es/cases/{% else %}/cases/{% endif %}"
+        class="btn btn-secondary">
+        {{ labels.back_to_cases }}
+      </a>
+    </div>
+  </div>
+</section>
+{% endif %}

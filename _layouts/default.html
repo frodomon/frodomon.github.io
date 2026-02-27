@@ -1,78 +1,124 @@
 <!DOCTYPE html>
 {% assign lang = page.lang | default: site.default_lang %}
-{% assign t = site.data.translations[lang][page.page_key] %}
-{% assign meta_title = page.meta_title | default: t.meta_title | default: page.meta?title %}
-{% assign meta_description = page.meta_description | default: t.meta_description | default: page.meta_description %}
+{% assign seo_title = page.meta_title %}
+{% if seo_title == blank %}{% assign seo_title = page.title | append: " | Alfredo Vásquez" %}{% endif %}
+{% assign seo_description = page.meta_description | default: page.description | default: site.description %}
+{% if page.cover_image %}
+  {% assign og_image = site.url | append: site.baseurl | append: page.cover_image %}
+{% else %}
+  {% assign og_image = site.url | append: site.baseurl | append: "/assets/images/og-design-lead-alfredo.webp" %}
+{% endif %}
+{% assign canonical_url = site.url | append: site.baseurl | append: page.url %}
+
+{% comment %} === HREFLANG — lógica unificada para páginas y colecciones === {% endcomment %}
+{% if page.collection %}
+  {% comment %} Es un item de colección — buscar el alternate por ref {% endcomment %}
+  {% assign alternate_case = site[page.collection] | where: "ref", page.ref | where_exp: "item", "item.lang != lang" | first %}
+  {% if lang == "en" %}
+    {% assign hreflang_en = canonical_url %}
+    {% if alternate_case %}{% assign hreflang_es = site.url | append: site.baseurl | append: alternate_case.url %}{% endif %}
+  {% else %}
+    {% assign hreflang_es = canonical_url %}
+    {% if alternate_case %}{% assign hreflang_en = site.url | append: site.baseurl | append: alternate_case.url %}{% endif %}
+  {% endif %}
+{% else %}
+  {% comment %} Es una página normal {% endcomment %}
+  {% assign clean_url = page.url | remove_first: '/es' %}
+  {% if lang == "en" %}
+    {% assign hreflang_en = canonical_url %}
+    {% assign hreflang_es = site.url | append: site.baseurl | append: "/es" | append: clean_url %}
+  {% else %}
+    {% assign hreflang_es = canonical_url %}
+    {% assign hreflang_en = site.url | append: site.baseurl | append: clean_url %}
+  {% endif %}
+{% endif %}
+
 <html lang="{{ lang }}">
 <head>
+  <!-- ================= META BÁSICOS ================= -->
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="Content-Language" content="{{ lang }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>{{ meta_title }}</title>
-  <meta name="description" content="{{ meta_description }}"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <meta name="robots" content="index, follow">
   <meta name="author" content="Alfredo Vásquez">
-  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-  {% if page.lang == "en" %}
-    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-    <link rel="alternate" hreflang="es" href="{{ site.url }}{{ site.baseurl }}/es{{ page.url }}">
-    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <!-- ================= SEO DINÁMICO ================= -->
+  <title>{{ seo_title }}</title>
+  <meta name="description" content="{{ seo_description }}"/>
+  <link rel="canonical" href="{{ canonical_url }}">
+  <!-- ================= HREFLANG DINÁMICO ================= -->
+  
+  
+  
+  {% comment %} ===== HREFLANG DINÁMICO ===== {% endcomment %}
+  {% if hreflang_en %}
+    <link rel="alternate" hreflang="en" href="{{ hreflang_en }}">
   {% endif %}
-  {% if page.lang == "es" %}
-    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ page.url | remove_first: '/es' }}">
-    <link rel="alternate" hreflang="es" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+  {% if hreflang_es %}
+    <link rel="alternate" hreflang="es" href="{{ hreflang_es }}">
   {% endif %}
-  <!-- Open Graph -->
-  <meta property="og:title" content="{{ meta_title }}">
-  <meta property="og:description" content="{{ meta_description }}">
+  <link rel="alternate" hreflang="x-default" href="{{ hreflang_en | default: canonical_url }}">
+  <!-- ===== OPEN GRAPH ===== -->
   <meta property="og:type" content="{{ page.og_type | default: 'website' }}">
-  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-design-lead-alfredo.webp">
+  <meta property="og:title" content="{{ seo_title }}">
+  <meta property="og:description" content="{{ seo_description }}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:image" content="{{ og_image }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:site_name" content="Alfredo Vásquez | Strategic Design Lead">
-  <meta property="og:locale" content="{% if lang == 'es' %}es_ES{% else %}en_US{% endif %}">
-  {% if lang == "en" %}
-    <meta property="og:locale:alternate" content="es_ES">
-  {% endif %}
-  {% if lang == "es" %}
-    <meta property="og:locale:alternate" content="en_US">
-  {% endif %}
-  <!-- Twitter Cards -->
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="{% if lang == 'es' %}es_LA{% else %}en_US{% endif %}">
+  {% if lang == "en" %}<meta property="og:locale:alternate" content="es_LA">{% endif %}
+  {% if lang == "es" %}<meta property="og:locale:alternate" content="en_US">{% endif %}
+  <!-- ===== TWITTER ===== -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ meta_title }}">
-  <meta name="twitter:description" content="{{ meta_description }}">
-  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-design-lead-alfredo.webp">
-  <!-- assets -->
+  <meta name="twitter:site" content="@alfredohvasquez">
+  <meta name="twitter:title" content="{{ seo_title }}">
+  <meta name="twitter:description" content="{{ seo_description }}">
+  <meta name="twitter:image" content="{{ og_image }}">
+  
+  <!-- ================= PERFORMANCE ================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- ⑦ FONTS: Carga non-blocking para LCP -->
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
+  <!-- ⑧ CSS CRÍTICO -->
   <link rel="preload" href="{{ '/css/styles.css' | relative_url }}" as="style">
   <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
+  <!-- ⑨ FONTAWESOME: Non-blocking (evita render block) -->
+  <link rel="preload" href="{{ '/assets/fontawesome/css/all.min.css' | relative_url }}"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet"
+    href="{{ '/assets/fontawesome/css/all.min.css' | relative_url }}"></noscript>
+  <!-- ================= FAVICON ================= -->
   <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/png">
-  <link rel="stylesheet" href="{{ '/assets/fontawesome/css/all.min.css' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
+  
+  <!-- ===== STRUCTURED DATA & JSON-lD. ===== -->
+  {% comment %} WebSite Schema — siempre presente en todas las páginas {% endcomment %}
+  {% include structured-data.html type="website" %}
+
+  {% comment %} Person Schema — solo en home {% endcomment %}
   {% if page.url == "/" or page.url == "/es/" %}
     {% include structured-data.html type="person" %}
   {% endif %}
+
+  {% comment %} Article + Breadcrumb Schema — solo en cases (og_type: article) {% endcomment %}
   {% if page.og_type == "article" %}
     {% include structured-data.html type="article" %}
     {% include structured-data.html type="breadcrumb" %}
   {% endif %}
+    
 </head>
 <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
   {% include header.html %}
   {{ content }}
   {% include footer.html %}
+  <!-- Scripts: module es diferido por defecto -->
   <script type="module" src="{{ '/assets/js/app.js' | relative_url }}"></script>
-  <script src="https://t.contentsquare.net/uxa/f0a53c561bc3f.js"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9R6ZEYGM3E"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-9R6ZEYGM3E');
-  </script>
 </body>
 </html>
