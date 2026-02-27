@@ -672,14 +672,13 @@ footer nav a:last-child{
   display: block;
   margin-bottom: 0.5rem;
 }
-.case.title{
+.case-title{
   margin: 0;
   padding-left: 0;
 }
 .case-subtitle {
   margin-top: 0.5rem;
 }
-
 .case-categories {
   margin-top: 1rem;
 }
@@ -690,7 +689,7 @@ footer nav a:last-child{
   color: var(--grey400);
   margin-right: 0.5rem;
   display: inline-block;
-  radius:100px;
+  border-radius:100px;
 }
 /* ============ FILTROS ============ */
 .cases-filter {
