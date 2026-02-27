@@ -687,23 +687,24 @@ footer nav a:last-child{
   opacity: 0.7;
 }
 .cases-filter {
-  margin: 2rem 0;
+  margin: 1rem 0;
   text-align: center;
 }
-
 .cases-filter button {
-  background: none;
-  border: none;
-  margin: 0 12px;
+  background: var(--primary-bg-color);
+  color: var(--grey300);
+  border: 1px solid var(--grey300);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin: 0 0.5rem;
   font-size: 0.9rem;
   cursor: pointer;
-  opacity: 0.6;
   transition: opacity 0.2s ease;
 }
-
 .cases-filter button.active,
 .cases-filter button:hover {
-  opacity: 1;
+  background: var(--secondary-color);
+  color: var(--primary-bg-color);
 }
 /* ============ BREADCRUMB ============ */
 #breadcrumb{
