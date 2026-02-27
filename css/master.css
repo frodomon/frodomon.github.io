@@ -470,7 +470,7 @@ body.menu-open {
 .dark-header header a,
 .dark-header header nav a,
 .dark-header header p,
-.dark-header header nav p, {
+.dark-header header nav p{
   color: var(--primary-bg-color);
 }
 .dark-header header nav .active-lang{
