@@ -692,12 +692,11 @@ footer nav a:last-child{
 }
 .cases-filter button {
   background: var(--primary-bg-color);
-  color: var(--grey300);
-  border: 1px solid var(--grey300);
-  border-radius: var(--radius);
-  padding: 1rem;
+  color: var(--grey600);
+  border: 1px solid var(--grey600);
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
   margin: 0 0.5rem;
-  font-size: 0.9rem;
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
