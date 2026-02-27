@@ -37,6 +37,15 @@
 	.header-right{
 		padding-right: 5%;
 	}
+	.dark-header header a,
+	.dark-header header nav a,
+	.dark-header header p,
+	.dark-header header nav p{
+	  color: var(--primary-color);
+	}
+	.dark-header header nav .active-lang{
+	  color: oklch(from var(--primary-color) l c h / .8);
+	}
 	/* -------------------------HAMBURGER ------------------------*/
 	.menu-toggle {
     display: flex;
