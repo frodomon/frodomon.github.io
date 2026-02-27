@@ -687,8 +687,10 @@ footer nav a:last-child{
   font-size: 0.7rem;
   padding: 0.5rem 1rem;
   border: 1px solid var(--grey400);
+  color: var(--grey400);
   margin-right: 0.5rem;
   display: inline-block;
+  radius:100px;
 }
 /* ============ FILTROS ============ */
 .cases-filter {
