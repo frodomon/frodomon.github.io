@@ -40,6 +40,7 @@
 	/* -------------------------HAMBURGER ------------------------*/
 	.menu-toggle {
     display: flex;
+    color:var(--primary-color);
     cursor: pointer;
     gap: 6px;
     background: none;
@@ -152,7 +153,6 @@
 	.card {
 	  background: var(--grey100);
 	}
-
   .case-card { 
   	width: 100%; 
   	position: relative;
@@ -163,4 +163,7 @@
   	height: auto;
   	opacity: 1;
   }
+  .related-case-card{
+	  width:100%;
+	}
 }

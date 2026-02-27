@@ -464,7 +464,9 @@ body.menu-open {
   background: transparent;
   transition: all 0.3s ease;
 }
-
+.dark-header .menu-toggle {
+  color:var(--primary-bg-color);
+}
 .dark-header header a,
 .dark-header header nav a {
   color: var(--primary-bg-color);
