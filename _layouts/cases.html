@@ -38,7 +38,7 @@ layout: default
         <img src="{{ case.image }}" alt="{{ case.headline }}" loading="lazy">
       </div>
       <div class="case-content">
-        <time class="case-date" datetime="{{ case.date | date: '%Y-%m-%d' }}">{{ case.date | date: "%m %Y" }}</time>
+        <time class="case-date" datetime="{{ case.date | date: '%Y-%m-%d' }}">{{ case.date | date: "%B %Y" }}</time>
         <h2 class="case-title">{{ case.headline }}</h2>
         <p class="case-subtitle">{{ case.excerpt }}</p>
         <div class="case-categories">
