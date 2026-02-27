@@ -756,5 +756,13 @@ footer nav a:last-child{
 }
 .related-case-card{
   width:30%;
-  
+}
+.related-case-content{
+  padding:1rem;
+}
+.related-case-categories{
+  margin: 1rem 0;
+}
+#back{
+  padding-top: 2rem;
 }
