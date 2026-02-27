@@ -730,7 +730,9 @@ footer nav a:last-child{
   opacity: 1;
 }
 .breadcrumb-separator {
-  margin: 0 0.5rem;
+  margin: 0 0.5rem 0.5rem 0.5rem;
+  display: flex;
+  align-items: flex-center-row;
 }
 .breadcrumb-current {
   font-weight: 500;

@@ -39,9 +39,9 @@
           <li class="breadcrumb-item{% if is_current %} breadcrumb-current{% endif %}"
               itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           {% if is_current %}
-            <span itemprop="name" aria-current="page" class="breadcrumb-current">{{ page_match.title }}</span>
+            <span itemprop="name" aria-current="page" class="breadcrumb-current">{{ page_match.breadcrumb }}</span>
           {% else %}
-            <a href="{{ page_match.url | relative_url }}" itemprop="item"><span itemprop="name">{{ page_match.title }}</span></a>
+            <a href="{{ page_match.url | relative_url }}" itemprop="item"><span itemprop="name">{{ page_match.breadcrumb }}</span></a>
           {% endif %}
             <meta itemprop="position" content="{{ position }}">
           </li>
