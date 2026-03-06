@@ -7,7 +7,7 @@ permalink: /es/cases/janus/
 body_class: dark-header
 date: 2021-05-01
 date_modified: 2024-01-15
-image: /assets/images/janus.jpg
+image: /assets/images/janus.webp
 categories: [fintech, product]
 
 title: "Janus: El Primer Crédito Hipotecario Digital E2E en Perú"

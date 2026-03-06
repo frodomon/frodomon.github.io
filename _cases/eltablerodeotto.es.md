@@ -7,7 +7,7 @@ permalink: /es/cases/eltablerodeotto/
 body_class: dark-header
 date: 2018-06-01
 date_modified: 2024-01-15
-image: /assets/images/eltablerodeotto.png
+image: /assets/images/eltablerodeotto.webp
 categories: [retail, product]
 
 title: "El Tablero de Otto: Diseño de Negocio Basado en Comunidad desde Cero"
