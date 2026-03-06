@@ -86,9 +86,9 @@ layout: default
 <section id="related-cases">
   <div class="related-cases">
     <h2 class="related-cases-title">{{ labels.related }}</h2>
-    <div class="related-cases-grid flex-center-row">
+    <div class="related-cases-grid">
       {% for rc in related_limited %}
-      <a href="{{ rc.url | relative_url }}">
+      <a class="flex-center-row" href="{{ rc.url | relative_url }}">
         <div class="related-case-card">
           <div class="related-case-image">
             <img src="{{ rc.image }}" alt="{{ rc.title }}" loading="lazy" width="400" height="280">
