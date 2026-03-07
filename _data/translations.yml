@@ -21,6 +21,7 @@ en:
     related: "Related Case Studies"
     industry: "Industry"
     client: "Client"
+    year: "Year"
   
 es:
   labels:
@@ -45,3 +46,4 @@ es:
     related: "Casos Relacionados"
     industry: "Industria"
     client: "Cliente"
+    year: "Año"

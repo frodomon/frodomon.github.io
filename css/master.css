@@ -762,6 +762,7 @@ footer nav a:last-child{
   flex-wrap: wrap;
   gap: 5%;
   align-items:start;
+  justify-content: center;
 }
 .related-case-card{
   width:30%;
@@ -782,4 +783,15 @@ footer nav a:last-child{
 /* ============ CASE STUIDES ============ */
 .case-study{
   padding:0;
+}
+#case-meta{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display:flex;
+  gap:1.5rem;
+}
+#case-meta p{
+  background:var(--grey200);
+  padding:0.5rem 1rem;
+  border-radius:0.5rem;
 }

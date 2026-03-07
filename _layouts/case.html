@@ -13,12 +13,15 @@ layout: default
   </section>
   {% include breadcrumb.html %}
   {% if page.industry or page.client %}
-    <section class="case-meta">
+    <section id="case-meta">
       {% if page.industry %}
         <p><strong>{{ labels.industry }}</strong> {{ page.industry }}</p>
       {% endif %}
       {% if page.client %}
         <p><strong>{{ labels.client }}</strong> {{ page.client }}</p>
+      {% endif %}
+      {% if page.date %}
+        <p><strong>{{ labels.year }}</strong> {{ page.date | date: "%Y" }}</p>
       {% endif %}
     </section>
   {% endif %}
