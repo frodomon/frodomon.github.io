@@ -47,7 +47,7 @@ h2, h2 a{
   font-size: 1.5rem;
   line-height: 1.2;
   margin:0 0 2rem 0;
-  padding:1rem 0 1rem 1rem;
+  padding:1rem 0;
   color: var(--primary-color);
 }
 h3, h3 a{
@@ -781,7 +781,7 @@ footer nav a:last-child{
   padding-top: 2rem;
 }
 /* ============ CASE STUIDES ============ */
-.case-study{
+#case-study{
   padding:0;
 }
 #case-meta{
@@ -794,4 +794,15 @@ footer nav a:last-child{
   background:var(--grey200);
   padding:0.5rem 1rem;
   border-radius:0.5rem;
+}
+.case-study{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.case-study ul{
+  list-style: disc;
+  padding-left: 1.25rem;;
+}
+.case-study li::marker{
+  color:var(--grey600);
 }
