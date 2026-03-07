@@ -88,13 +88,15 @@ layout: default
     <h2 class="related-cases-title">{{ labels.related }}</h2>
     <div class="related-cases-grid container">
       {% for rc in related_limited %}
-      <a class="flex-center-row" href="{{ rc.url | relative_url }}">
+      
         <div class="related-case-card">
           <div class="related-case-image">
             <img src="{{ rc.image }}" alt="{{ rc.title }}" loading="lazy" width="400" height="280">
           </div>
           <div class="related-case-content">
-            <h3>{{ rc.headline }}</h3>
+            <a class="flex-center-row" href="{{ rc.url | relative_url }}">
+              <h3>{{ rc.headline }}</h3>
+            </a> 
             <p>{{ rc.excerpt | default: rc.description }}</p>
             <div class="related-case-categories">
               {% for cat in rc.categories %}
@@ -103,7 +105,7 @@ layout: default
             </div>
           </div>  
         </div>
-      </a>
+      
       {% endfor %}
     </div>
   </div>
