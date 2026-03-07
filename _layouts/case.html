@@ -86,26 +86,26 @@ layout: default
 <section id="related-cases">
   <div class="related-cases">
     <h2 class="related-cases-title">{{ labels.related }}</h2>
-    <div class="related-cases-grid container">
+    <div class="related-cases-grid">
       {% for rc in related_limited %}
-      
         <div class="related-case-card">
-          <div class="related-case-image">
-            <img src="{{ rc.image }}" alt="{{ rc.title }}" loading="lazy" width="400" height="280">
-          </div>
-          <div class="related-case-content">
-            <a class="flex-center-row" href="{{ rc.url | relative_url }}">
-              <h3>{{ rc.headline }}</h3>
-            </a> 
-            <p>{{ rc.excerpt | default: rc.description }}</p>
-            <div class="related-case-categories">
-              {% for cat in rc.categories %}
-                <span class="category-tag">{{ cat }}</span>
-              {% endfor %}
+          <a class="flex-center-row" href="{{ rc.url | relative_url }}">
+            <div class="case-image">
+              <img src="{{ rc.image }}" alt="{{ rc.title }}" loading="lazy">
             </div>
-          </div>  
+            <div class="related-case-content">
+              
+                <h3>{{ rc.headline }}</h3>
+              
+              <p>{{ rc.excerpt | default: rc.description }}</p>
+              <div class="related-case-categories">
+                {% for cat in rc.categories %}
+                  <span class="category-tag">{{ cat }}</span>
+                {% endfor %}
+              </div>
+            </div>
+          </a> 
         </div>
-      
       {% endfor %}
     </div>
   </div>
