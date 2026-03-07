@@ -796,8 +796,11 @@ footer nav a:last-child{
   border-radius:0.5rem;
 }
 .case-study{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.case-study h2{
+  padding-bottom: 0.5rem;
 }
 .case-study ul{
   list-style: disc;
