@@ -157,6 +157,7 @@
   .hero-actions{
     flex-direction: column;
   }
+
   .capability-grid {
   	display: grid;
 	  grid-template-columns: 1fr;
@@ -174,7 +175,12 @@
   	height: auto;
   	opacity: 1;
   }
+  .related-cases-grid{
+	  gap: 0;
+	}
   .related-case-card{
 	  width:100%;
 	}
+	
+
 }

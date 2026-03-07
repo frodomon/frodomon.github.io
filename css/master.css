@@ -761,6 +761,7 @@ footer nav a:last-child{
   display: flex;
   flex-wrap: wrap;
   gap: 5%;
+  align-items:start;
 }
 .related-case-card{
   width:30%;
