@@ -757,6 +757,11 @@ footer nav a:last-child{
 .related-cases{
   border-top: 0.25rem solid var(--primary-color);
 }
+.related-cases-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
 .related-case-card{
   width:30%;
 }
