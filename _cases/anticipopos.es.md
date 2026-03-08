@@ -5,7 +5,7 @@ ref: anticipopos
 og_type: article
 permalink: /es/cases/anticipopos/
 body_class: dark-header
-date: 2021-09-01
+date: 2023-08-01
 date_modified: 2024-01-15
 image: /assets/images/anticipopos.webp
 categories: [Banking, Digital Product]
