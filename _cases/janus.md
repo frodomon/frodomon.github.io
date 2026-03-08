@@ -8,17 +8,16 @@ body_class: dark-header
 date: 2021-05-01
 date_modified: 2024-01-15
 image: /assets/images/janus.webp
-categories: [fintech, product]
+categories: [Banking , Digital Product]
 
-title: "Janus: Peru's First End-to-End Digital Mortgage"
-meta_title: "Janus: Designing Peru's First Digital Mortgage | Alfredo Vásquez"
+title: "Janus: End-to-End Digital Mortgage"
+meta_title: "Janus: Peru's First 100% Digital Mortgage | Alfredo Vásquez"
 meta_description: "Led UX strategy and service design for Interbank's end-to-end digital mortgage product — redesigning simulation flows, adaptive forms and multi-role back-office tooling to deliver Peru's first fully digital regulated home loan."
 cover_image: /assets/images/janus-cover.webp
 
-headline: "Janus: Peru's First End-to-End Digital Mortgage"
+headline: "Janus: End-to-End Digital Mortgage in Peru"
 subheadline: "Strategic Design Leadership in a Regulated Fintech Environment"
 excerpt: "Led UX strategy and service design for Interbank's end-to-end digital mortgage — turning a regulated, document-heavy transaction into a transparent, four-step digital experience."
-description: "Led the restructuring of enterprise UX governance, aligning product strategy, operating models and cross-functional decision-making to increase delivery coherence and strategic clarity across digital portfolios."
 
 industry: "Fintech · Banking · Regulated Financial Products"
 client: "Interbank"
@@ -29,7 +28,7 @@ problem: "The core problem wasn't the interface — it was the language. Financi
 
 role: "I led product design across three phases as the primary UX designer, embedded with product management, risk, legal and the content design consultant. I defined the UX strategy and information architecture for the full simulation-to-disbursement flow. I translated the risk team's complex data requirements into a dynamic, progressive-disclosure form — replacing a static multi-page paper document with an adaptive digital experience. I designed the back-office tooling for risk evaluators, legal reviewers and commercial executives, mapping all role interactions through service blueprints and user flow diagrams. I ran guerrilla testing with internal stakeholders and conducted in-depth user interviews to iterate the flow. I also coordinated the content design strategy with an external consultant to systematically address the terminology problem across the entire product."
 
-approach: "The strategic decision that changed the product was reframing the simulation step. Instead of treating it as a commitment gate — a step users had to pass before seeing results — I redesigned it as a discovery tool that showed users their range of options before asking for any personal data. This required negotiating with the risk team to expose partial simulation results earlier in the flow — a technically non-trivial change that meant aligning product, engineering and risk around a shared user insight. For the information architecture, I applied a progressive disclosure model: each screen contained exactly the information needed at that moment, with contextual support introduced precisely when cognitive load peaked. The form was rebuilt as an adaptive flow — questions dynamically appeared or disappeared based on prior answers, eliminating irrelevant fields entirely. For the back-office layer, I mapped the full multi-role workflow across a service blueprint before designing any interface, ensuring the tool reflected how risk, legal and commercial teams actually collaborated — not how the org chart said they should."
+approach: "The strategic decision that changed the product was reframing the simulation step. I redesigned it as a discovery tool that showed users a range of options o they could choose the one that best suited them. This required negotiating with the risk team to expose partial simulation results earlier in the flow — a technically non-trivial change that meant aligning product, engineering and risk around a shared user insight. For the information architecture, I applied a progressive disclosure model: each screen contained exactly the information needed at that moment, with contextual support introduced precisely when cognitive load peaked. The form was rebuilt as an adaptive flow — questions dynamically appeared or disappeared based on prior answers, eliminating irrelevant fields entirely. For the back-office layer, I mapped the full multi-role workflow across a service blueprint before designing any interface, ensuring the tool reflected how risk, legal and commercial teams actually collaborated — not how the org chart said they should."
 
 impact:
   - "4-step simulation flow — down from a multi-screen process with no early feedback loop"

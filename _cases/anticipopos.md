@@ -5,10 +5,10 @@ ref: anticipopos
 og_type: article
 permalink: /cases/anticipopos/
 body_class: dark-header
-date: 2021-09-01
-date_modified: 2024-01-15
+date: 2023-08-01
+date_modified: 2026-01-15
 image: /assets/images/anticipopos.webp
-categories: [fintech, product]
+categories: [Banking, Digital Product]
 
 title: "Anticipo POS: Financial Access for SMB Owners at the Point of Sale"
 meta_title: "Anticipo POS: Designing SMB Financial Access at BBVA | Alfredo Vásquez"
@@ -26,7 +26,7 @@ context: "In 2021, BBVA identified a significant gap in its SMB product portfoli
 
 problem: "The hardest design problem was not building the interface — it was making a novel, unfamiliar financial product intelligible to users who had no prior reference for how it worked. Anticipo POS was a new product category in Peru. Unlike a standard personal loan, it involved a credit model based on POS transaction volume rather than traditional credit history, and automatic payment deduction from future POS settlements — a repayment mechanism users had never encountered. The risk was high: if users didn't understand the product's mechanics at the moment of contracting, BBVA would face complaints, chargebacks and regulatory exposure. Clarity was not a UX preference — it was a business and compliance requirement. Additional complexity came from the co-creation model: BBVA Perú was building this product in parallel with the holding design team, requiring continuous alignment across organizations with different priorities, timelines and design standards."
 
-role: "I led UX design for the full product scope across four deliverable areas: the contracting journey from product discovery to signature, the loan-tracking dashboard with transaction history and payment monitoring, the payment flow (the first fully digital loan repayment at BBVA Perú), and transactional email communications aligned to BBVA's design system. I also owned the content strategy and produced a comprehensive Content Deck documenting all copy decisions and their regulatory rationale. A significant part of my role was managing the multi-stakeholder alignment process — scheduling iterative reviews with legal, marketing, security and the holding design team to ensure every content decision was both legally precise and user-comprehensible."
+role: "I led UX design for the full product scope across four deliverable areas: the contracting journey from product discovery to signature, the loan-tracking dashboard with transaction history and payment monitoring, the payment flow (the first fully digital loan repayment at BBVA Perú), and transactional email communications aligned to BBVA's design system. I also owned the content strategy and led the construction of a comprehensive Content Deck documenting all copy decisions and their regulatory rationale. A significant part of my role was managing the multi-stakeholder alignment process — scheduling iterative reviews with legal, marketing, security and the holding design team to ensure every content decision was both legally precise and user-comprehensible."
 
 approach: "The central design strategy was to treat content design as a structural component of the UX — not a finishing step. Before any visual design decisions were made, I invested in understanding the product's legal and financial mechanics deeply, working directly with legal and product teams to establish a shared vocabulary for the user-facing layer. The key principle I applied was recognition over recall: every screen had to make the product's mechanics self-evident at the moment of interaction, without requiring users to remember information from a previous step. This translated into persistent summary modules that displayed key loan terms at every stage of the contracting flow, progressive revelation of how automatic payment deduction worked — introduced contextually, at the moment users were most likely to ask — and a dynamic information architecture that adapted to each user's POS transaction profile. The co-creation process with the holding team was managed as a structured alignment protocol: I adapted their existing design assets to the Peruvian regulatory and cultural context, ensuring the product remained within BBVA's global design system while meeting local requirements. The final design was approved by the holding design team as a globally scalable pattern."
 

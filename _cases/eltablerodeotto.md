@@ -18,7 +18,6 @@ cover_image: /assets/images/eltablerodeotto-cover.webp
 headline: "El Tablero de Otto: Community-Driven Business Design from Zero"
 subheadline: "Service Design, Brand Strategy and Community Design as an Entrepreneurial Practice"
 excerpt: "Founded and designed a TCG retail and event ecosystem in Lima — applying service design methodology, four-archetype community strategy and iterative event design to build a store that grew entirely through peer referral."
-description: "Entrepreneurial case integrating service design, business model strategy and technology to build a sustainable ecosystem."
 
 industry: "Retail · Community Commerce · Entertainment"
 client: "Self-initiated venture"
