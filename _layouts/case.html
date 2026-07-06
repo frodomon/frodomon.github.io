@@ -37,6 +37,15 @@ layout: default
     <h2>{{ labels.role }}</h2>
     <p>{{ page.role }}</p>
   </section>
+  {% if page.journey_image %}
+    <figure class="case-diagram">
+      <img
+          src="{{ page.journey_image | relative_url }}"
+          alt="{{ page.title }}"
+          loading="lazy"
+      >
+    </figure>
+  {% endif %}
   <section class="case-study">
     <h2>{{ labels.approach }}</h2>
     <p>{{ page.approach }}</p>
