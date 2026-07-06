@@ -36,16 +36,13 @@ layout: default
   <section class="case-study">
     <h2>{{ labels.role }}</h2>
     <p>{{ page.role }}</p>
+    {% if page.journey_image %}
+      <div class="case-image">
+        <img src="{{ page.journey_image }}" alt="{{ page.title }}" loading="lazy">
+      </div>
+    {% endif %}
   </section>
-  {% if page.journey_image %}
-    <figure class="case-diagram">
-      <img
-          src="{{ page.journey_image }}"
-          alt="{{ page.title }}"
-          loading="lazy"
-      >
-    </figure>
-  {% endif %}
+  
   <section class="case-study">
     <h2>{{ labels.approach }}</h2>
     <p>{{ page.approach }}</p>
