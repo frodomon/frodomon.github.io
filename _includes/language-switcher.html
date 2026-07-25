@@ -1,23 +1,24 @@
-{% assign current_lang = page.lang | default: site.default_lang %}
+{% comment %}
+  lang, alternate_case (colecciones) y clean_url (páginas normales) ya
+  fueron calculados por default.html antes de incluir header.html →
+  menu.html → language-switcher.html. Jekyll comparte el scope entre
+  includes anidados, así que se reusan aquí en vez de volver a
+  consultar site[page.collection] con el mismo where/where_exp.
+{% endcomment %}
 {% if page.collection %}
-  {% assign alternate = site[page.collection]
-     | where: "ref", page.ref
-     | where_exp: "item", "item.lang != current_lang"
-     | first %}
-  {% if current_lang == "en" %}
+  {% if lang == "en" %}
     <p class="flex-center-row active-lang">EN</p>
-    {% if alternate %}
-      <a class="flex-center-row" href="{{ alternate.url | relative_url }}">ES</a>
+    {% if alternate_case %}
+      <a class="flex-center-row" href="{{ alternate_case.url | relative_url }}">ES</a>
     {% endif %}
   {% else %}
-    {% if alternate %}
-      <a class="flex-center-row" href="{{ alternate.url | relative_url }}">EN</a>
+    {% if alternate_case %}
+      <a class="flex-center-row" href="{{ alternate_case.url | relative_url }}">EN</a>
     {% endif %}
     <p class="flex-center-row active-lang">ES</p>
   {% endif %}
 {% else %}
-  {% assign clean_url = page.url | remove_first:'/es' %}
-  {% if current_lang == "en" %}
+  {% if lang == "en" %}
     <p class="flex-center-row active-lang">EN</p>
     <a class="flex-center-row" href="{{ '/es' | append: clean_url | relative_url }}">ES</a>
   {% else %}

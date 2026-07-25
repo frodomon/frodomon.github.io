@@ -46,10 +46,6 @@
   <meta name="description" content="{{ seo_description }}"/>
   <link rel="canonical" href="{{ canonical_url }}">
   <!-- ================= HREFLANG DINÁMICO ================= -->
-  
-  
-  
-  {% comment %} ===== HREFLANG DINÁMICO ===== {% endcomment %}
   {% if hreflang_en %}
     <link rel="alternate" hreflang="en" href="{{ hreflang_en }}">
   {% endif %}
@@ -86,9 +82,12 @@
     onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
-  <!-- ⑧ CSS CRÍTICO -->
-  <link rel="preload" href="{{ '/css/styles.css' | relative_url }}" as="style">
-  <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
+  <!-- ⑧ CSS CRÍTICO — enlazadas directo (sin @import) para que el navegador
+       las descubra y descargue en paralelo desde el parseo del HTML -->
+  <link rel="preload" href="{{ '/css/master.css' | relative_url }}" as="style">
+  <link rel="stylesheet" href="{{ '/css/master.css' | relative_url }}">
+  <link rel="preload" href="{{ '/css/responsive.css' | relative_url }}" as="style">
+  <link rel="stylesheet" href="{{ '/css/responsive.css' | relative_url }}">
   <!-- ⑨ FONTAWESOME: Non-blocking (evita render block) -->
   <link rel="preload" href="{{ '/assets/fontawesome/css/all.min.css' | relative_url }}"
     as="style" onload="this.onload=null;this.rel='stylesheet'">

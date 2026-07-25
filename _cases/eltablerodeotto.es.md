@@ -8,7 +8,7 @@ body_class: dark-header
 date: 2018-06-01
 date_modified: 2024-01-15
 image: /assets/images/eltablerodeotto.webp
-categories: [retail, product]
+categories: [Retail, Product]
 
 title: "El Tablero de Otto: Diseño de Negocio Basado en Comunidad desde Cero"
 meta_title: "El Tablero de Otto: Diseño de Servicios y Estrategia Comunitaria | Alfredo Vásquez"

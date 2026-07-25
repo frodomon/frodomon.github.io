@@ -1,129 +1,86 @@
-@media only screen and (min-width: 1920px){
+/* ============================================================
+   RESPONSIVE.CSS — media queries, desktop-first (max-width),
+   del breakpoint más ancho al más angosto. Usa los mismos
+   tokens definidos en master.css:root.
 
-}
-@media only screen and (max-width: 1280px){
-	.cases-grid {
-    column-count: 2;
-  }
-}
-@media only screen and (max-width: 1024px){
+   Los breakpoints 1920px y 1024px quedan reservados (sin reglas
+   activas) para cuando el sitio sume plantillas o densidad de
+   contenido que necesite un tratamiento propio en pantallas muy
+   grandes o tablet horizontal — evita tener que reordenar el
+   archivo más adelante, solo hay que rellenarlos.
+   ============================================================ */
 
+/* ---------- ≥1920px (reservado) ---------- */
+@media only screen and (min-width: 1920px) {
 }
-@media only screen and (max-width: 768px){
-  .cases-title {
-    font-size: 2rem;
+
+/* ---------- ≤1280px ---------- */
+@media only screen and (max-width: 1280px) {
+}
+
+/* ---------- ≤1024px (reservado) ---------- */
+@media only screen and (max-width: 1024px) {
+}
+
+/* ---------- ≤768px ---------- */
+@media only screen and (max-width: 768px) {
+}
+
+/* ---------- ≤480px — mobile ---------- */
+@media only screen and (max-width: 480px) {
+
+  /* BASE */
+  html {
+    font-size: 14px;
   }
-}
-@media only screen and (max-width: 480px){
-	/* ----------------------------BASE LAYOUT---------------------- */
-	html{
-		font-size: 14px;
-	}
-	section{
-		padding: 1.5rem 5%;
-	}
-	/* ------------------------------GRID---------------------- */
-	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11{
-		width: 100%;
-		padding:0;
-	}
-	/* ------------------------------HEADER---------------------- */
-	header{
-		padding:0;
-	}
-	.header-left{
-		padding-left: 5%;
-	}
-	.header-right{
-		padding-right: 5%;
-	}
-	.dark-header header a,
-	.dark-header header nav a,
-	.dark-header header p,
-	.dark-header header nav p{
-	  color: var(--primary-color);
-	}
-	.dark-header header nav .active-lang{
-	  color: oklch(from var(--primary-color) l c h / .8);
-	}
-	/* -------------------------HAMBURGER ------------------------*/
-	.menu-toggle {
+  section {
+    padding: var(--space-lg) var(--gutter-sm);
+  }
+
+  /* ATOMS — grid */
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+  .col-7, .col-8, .col-9, .col-10, .col-11 {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* MOLECULES — header */
+  header {
+    padding: 0;
+  }
+  .header-left {
+    padding-left: var(--gutter-sm);
+  }
+  .header-right {
+    padding-right: var(--gutter-sm);
+  }
+  .dark-header header a,
+  .dark-header header nav a,
+  .dark-header header p,
+  .dark-header header nav p {
+    color: var(--primary-color);
+  }
+  .dark-header header nav .active-lang {
+    color: oklch(from var(--primary-color) l c h / .8);
+  }
+
+  /* MOLECULES — menú hamburguesa */
+  .menu-toggle {
     display: flex;
-    color:var(--primary-color);
+    color: var(--primary-color);
     cursor: pointer;
     gap: 6px;
     background: none;
     border: none;
-    z-index: 1100;
+    z-index: var(--z-menu-toggle);
   }
   .menu-toggle span {
     width: 24px;
     height: 2px;
     background: var(--grey600);
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
- .nav {
-	 position: absolute;
-	 left: 0;
-	 top: 96px; /* misma altura que tu header */
-	 width: 100vw;
-	 background: var(--primary-bg-color);
-	 border-top: 1px solid var(--grey100);
-	 display: flex;
-	 flex-direction: column;
-	 box-shadow: 0 20px 50px rgba(0,0,0,0.06);
-	 max-height: 0;
-	 overflow: hidden;
-	 opacity: 0;
-	 transform: translateY(-10px);
-	 transition:
-	 	max-height 0.35s cubic-bezier(.4,0,.2,1),
-	 	opacity 0.25s ease,
-	  transform 0.25s ease;
-	 z-index: 1050;
-	}
-  .nav.active {
-    max-height: 400px;
-    opacity: 1;
-    transform: translateY(0);
-  }
-  header.scrolled .nav.active{
-  	top: 72px;
-  }
-  /*-------------------- Links full width -----------------*/
-  .nav a, .nav p {
-    width: 100%;
-    padding: 1rem 5%;
-    font-size: 1rem;
-    border-left: none;
-    border-bottom: 1px solid var(--grey100);
-	  transform:translateY(-6px);
-	  transition:
-	    opacity 0.3s ease,
-	    transform 0.3s ease,
-	    background 0.2s ease;
-  }
-  header nav p{
-  	border-left: none;
-  }
-  .nav.active a{
-	  opacity:1;
-	  transform:translateY(0);
-	}
-  .nav a:last-child {
-    border-bottom: none;
-  }
-  .nav a:hover {
-    background:rgba(0,0,0,0.025);
-  	padding-left:calc(5% + 4px);
-  }
-  .nav.active a:nth-child(1){ transition-delay:0.05s; }
-	.nav.active a:nth-child(2){ transition-delay:0.1s; }
-	.nav.active a:nth-child(3){ transition-delay:0.15s; }
-	.nav.active a:nth-child(4){ transition-delay:0.2s; }
-	/* Animación Hmaburguesa a X */
-	.menu-toggle span {
-    transition: transform 0.3s cubic-bezier(.4,0,.2,1), opacity 0.2s ease;
+    transition:
+      transform var(--duration-base) var(--ease-standard),
+      opacity var(--duration-fast) ease;
   }
   .menu-toggle.active span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
@@ -134,53 +91,118 @@
   .menu-toggle.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-	/* ------------------------------FOOTER---------------------- */
-	footer{
-		padding-top: 1rem;
-	}
-	footer div{
-		width: 100%;
-	}
-	.copyright{
-	  text-align: center;
-	}
-	/* ------------------------------HERO---------------------- */
-	.hero{
-    padding: 6rem 5% 4rem;
+
+  .nav {
+    position: absolute;
+    left: 0;
+    top: var(--header-height);
+    width: 100vw;
+    background: var(--primary-bg-color);
+    border-top: 1px solid var(--grey100);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition:
+      max-height var(--duration-slow) var(--ease-standard),
+      opacity 0.25s ease,
+      transform 0.25s ease;
+    z-index: var(--z-nav);
   }
-  .hero h1{
-    font-size: 2rem;
+  .nav.active {
+    max-height: 400px;
+    opacity: 1;
+    transform: translateY(0);
   }
-  .hero-subheadline{
-    font-size: 1.2rem;
+  header.scrolled .nav.active {
+    top: var(--header-height-scrolled);
   }
-  .hero-actions{
+  .nav a, .nav p {
+    width: 100%;
+    padding: var(--space-sm) var(--gutter-sm);
+    font-size: var(--fs-base);
+    border-left: none;
+    border-bottom: 1px solid var(--grey100);
+    transform: translateY(-6px);
+    transition:
+      opacity var(--duration-base) ease,
+      transform var(--duration-base) ease,
+      background var(--duration-base) ease;
+  }
+  header nav p {
+    border-left: none;
+  }
+  .nav.active a {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .nav a:last-child {
+    border-bottom: none;
+  }
+  .nav a:hover {
+    background: var(--overlay-hover);
+    padding-left: calc(5% + 4px);
+  }
+  .nav.active a:nth-child(1) { transition-delay: 0.05s; }
+  .nav.active a:nth-child(2) { transition-delay: 0.1s; }
+  .nav.active a:nth-child(3) { transition-delay: 0.15s; }
+  .nav.active a:nth-child(4) { transition-delay: 0.2s; }
+
+  /* MOLECULES — footer */
+  footer {
+    padding-top: var(--space-sm);
+  }
+  footer div {
+    width: 100%;
+  }
+  .copyright {
+    text-align: center;
+  }
+
+  /* ORGANISMS — hero de home
+     Antes estos selectores apuntaban a .hero/.hero h1/.hero-subheadline,
+     que no existen en index.html (el markup real usa #hero, .hero-title
+     y .hero-subtitle) — el hero nunca recibía ajuste en mobile. Corregido
+     para apuntar a los selectores reales. .hero-title no necesita override
+     propio: ya hereda var(--fs-4xl) de la regla base h1, y al bajar
+     html a 14px en este breakpoint se reduce en píxeles automáticamente. */
+  #hero {
+    padding: var(--space-4xl) var(--gutter-sm) var(--space-3xl) var(--gutter-sm);
+  }
+  .hero-subtitle {
+    font-size: var(--fs-xl);
+  }
+  .hero-actions {
     flex-direction: column;
   }
 
+  /* ORGANISMS — grid de capacidades */
   .capability-grid {
-  	display: grid;
-	  grid-template-columns: 1fr;
-	}
-	.card {
-	  background: var(--grey100);
-	}
-  .case-card { 
-  	width: 100%; 
-  	position: relative;
-  	transform: none;
-  	opacity: 1;
+    display: grid;
+    grid-template-columns: 1fr;
   }
-  .masonry-grid{
-  	height: auto;
-  	opacity: 1;
+  .card {
+    background: var(--grey100);
   }
-  .related-cases-grid{
-	  gap: 0;
-	}
-  .related-case-card{
-	  width:100%;
-	}
-	
 
+  /* MOLECULES/ORGANISMS — tarjetas y masonry */
+  .case-card {
+    width: 100%;
+    position: relative;
+    transform: none;
+    opacity: 1;
+  }
+  .masonry-grid {
+    height: auto;
+    opacity: 1;
+  }
+  .related-cases-grid {
+    gap: 0;
+  }
+  .related-case-card {
+    width: 100%;
+  }
 }

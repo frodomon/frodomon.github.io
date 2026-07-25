@@ -1,11 +1,15 @@
 ---
 layout: default
+lang: en
 permalink: /about/
+og_type: website
+breadcrumb: "About"
+title: "About | Alfredo Vásquez"
+meta_title: "About Alfredo Vásquez | Strategic Design Lead"
+meta_description: "Strategic Design Lead specializing in fintech and enterprise product strategy, design systems and organizational capability."
 ---
 
-{% assign lang = page.lang | default: site.default_lang %}
-{% assign t = site.data.translations[lang] %}
-
-<h1>{{ t.about.title }}</h1>
-<p>{{ t.about.description }}</p>
-
+<section class="case-study">
+  <h1>{{ page.title | remove: " | Alfredo Vásquez" }}</h1>
+  <p>{{ page.meta_description }}</p>
+</section>

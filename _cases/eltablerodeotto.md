@@ -8,7 +8,7 @@ body_class: dark-header
 date: 2018-06-01
 date_modified: 2024-01-15
 image: /assets/images/eltablerodeotto.webp
-categories: [retail, product]
+categories: [Retail, Product]
 
 title: "El Tablero de Otto: Community-Driven Business Design from Zero"
 meta_title: "El Tablero de Otto: Service Design & Community Strategy | Alfredo Vásquez"

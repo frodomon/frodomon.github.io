@@ -28,17 +28,21 @@ collections:
   #   output: true
 
 # Defaults — evitan repetir front matter en cada archivo
+# IMPORTANTE: el orden importa. Jekyll aplica los scopes en secuencia y el
+# último que matchea gana en las keys que se repiten. El scope general
+# (sin "type") matchea también los items de "cases", así que debe ir
+# primero — si no, pisa el layout: "case" con layout: "default".
 defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
   - scope:
       path: ""
       type: "cases"
     values:
       layout: "case"
       og_type: "article"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
 
 # Plugins
 plugins:
