@@ -15,12 +15,12 @@
    query deben ganar sobre todo lo anterior).
    ============================================================ */
 
-@use "tokens";
-@use "reset";
-@use "typography";
-@use "layout";
-@use "components";
-@use "pages";
-@use "utilities";
-@use "blog";
-@use "responsive";
+@import "tokens";
+@import "reset";
+@import "typography";
+@import "layout";
+@import "components";
+@import "pages";
+@import "utilities";
+@import "blog";
+@import "responsive";
