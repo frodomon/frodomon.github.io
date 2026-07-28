@@ -3,7 +3,17 @@
   Los tipos image/audio/link no tienen página individual navegable,
   así que no se sugieren como relacionados.
 {% endcomment %}
-{% assign all_posts = site.blog | where: "lang", lang | where_exp: "post", "post.post_type != 'image' and post.post_type != 'audio' and post.post_type != 'link'" %}
+{% assign all_posts_raw = site.blog | where: "lang", lang %}
+{% assign all_posts = "" | split: "" %}
+{% for post in all_posts_raw %}
+  {% unless post.post_type == "image" %}
+    {% unless post.post_type == "audio" %}
+      {% unless post.post_type == "link" %}
+        {% assign all_posts = all_posts | push: post %}
+      {% endunless %}
+    {% endunless %}
+  {% endunless %}
+{% endfor %}
 {% assign blog_page = site.pages | where: "layout", "blog" | where: "lang", lang | first %}
 {% assign related = "" | split: "" %}
 

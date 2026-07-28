@@ -29,7 +29,18 @@
   liste a sí mismo entre sus "recientes" (en blog.html no afecta nada,
   page.url ahí es la del listado, no la de ningún post).
 {% endcomment %}
-{% assign linkable_posts = posts | where_exp: "post", "post.post_type != 'image' and post.post_type != 'audio' and post.post_type != 'link' and post.url != page.url" %}
+{% assign linkable_posts = "" | split: "" %}
+{% for post in posts %}
+  {% unless post.post_type == "image" %}
+    {% unless post.post_type == "audio" %}
+      {% unless post.post_type == "link" %}
+        {% unless post.url == page.url %}
+          {% assign linkable_posts = linkable_posts | push: post %}
+        {% endunless %}
+      {% endunless %}
+    {% endunless %}
+  {% endunless %}
+{% endfor %}
 {% assign recent_posts = linkable_posts | slice: 0, 5 %}
 
 <aside class="post-sidebar">
