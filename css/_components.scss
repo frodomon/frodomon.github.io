@@ -178,6 +178,9 @@ body.menu-open {
 .dark-header header.scrolled nav a {
   color: var(--color-primary);
 }
+.dark-header header.scrolled .menu-toggle span {
+  background: var(--color-primary);
+}
 .dark-header header.scrolled nav .active-lang {
   color: oklch(from var(--color-primary) l c h / .8);
 }
