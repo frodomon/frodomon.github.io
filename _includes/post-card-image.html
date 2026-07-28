@@ -1,0 +1,9 @@
+{% assign p = include.post %}
+<button type="button" class="post-card-lightbox-trigger" data-lightbox-image="{{ p.featured_image }}" data-lightbox-alt="{{ p.title }}" data-lightbox-caption="{{ p.image_caption }}" data-close-label="{{ labels.close }}">
+  <div class="post-card-media">
+    <img src="{{ p.featured_image }}" alt="{{ p.title }}" loading="lazy" width="{{ p.featured_image_width }}" height="{{ p.featured_image_height }}">
+  </div>
+  <div class="post-card-content">
+    <h2 class="post-title">{{ p.title }}</h2>
+  </div>
+</button>

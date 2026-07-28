@@ -3,16 +3,17 @@ layout: default
 ---
 {% assign lang = page.lang | default: site.default_lang %}
 {% assign labels = site.data.translations[lang].labels %}
+{% assign cases_page = site.pages | where: "layout", "cases" | where: "lang", lang | first %}
 
  <!-- HERO -->
 <section id="hero">
   <div>
-    <p class="hero-eyebrow">{{ page.hero.eyebrow }}</p>
+    <p class="hero-eyebrow mb-5">{{ page.hero.eyebrow }}</p>
     <h1 class="hero-title">{{ page.hero.title }}</h1>
-    <p class="hero-subtitle">{{ page.hero.subtitle }}</p>
-    <div class="hero-actions">
-      <a href="{% if lang == 'es' %}/es/cases/{% else %}/cases/{% endif %}" class="btn btn-primary">{{ labels.explore }}</a>
-      <a href="mailto:vasquez.alf@gmail.com" class="btn btn-secondary">{{ labels.contact }}</a>
+    <p class="hero-subtitle mt-6">{{ page.hero.subtitle }}</p>
+    <div class="hero-actions mt-7">
+      <a href="{{ cases_page.url | relative_url }}" class="btn btn-primary">{{ labels.explore }}</a>
+      <a href="mailto:{{ site.author.email }}" class="btn btn-secondary">{{ labels.contact }}</a>
     </div>
   </div>
 </section>
@@ -25,34 +26,34 @@ layout: default
 <!-- WHAT I DO -->
 <section class="leadership">
     <div>
-      <h2 class="section-title">{{ page.what.title }}</h2>
-      <p class="section-lead">{{ page.what.description }}</p>
+      <h2 class="section-title mb-7">{{ page.what.title }}</h2>
+      <p>{{ page.what.description }}</p>
     </div>
   </section>
 <!-- CAPABILITIES -->
 <section>
   <div>
-    <h2 class="section-title">{{ page.capabilities.title }}</h2>
+    <h2 class="section-title mb-7">{{ page.capabilities.title }}</h2>
     <div class="capability-grid">
       <div class="card">
-        <h3 class="card-title">{{ page.capabilities.org.title }}</h3>
-        <ul class="list">
+        <h3 class="mb-4">{{ page.capabilities.org.title }}</h3>
+        <ul>
           {% for item in page.capabilities.org.items %}
           <li>{{ item }}</li>
           {% endfor %}
         </ul>
       </div>
       <div class="card">
-        <h3 class="card-title">{{ page.capabilities.product.title }}</h3>
-        <ul class="list">
+        <h3 class="mb-4">{{ page.capabilities.product.title }}</h3>
+        <ul>
           {% for item in page.capabilities.product.items %}
           <li>{{ item }}</li>
           {% endfor %}
         </ul>
       </div>
       <div class="card">
-        <h3 class="card-title">{{ page.capabilities.business.title }}</h3>
-        <ul class="list">
+        <h3 class="mb-4">{{ page.capabilities.business.title }}</h3>
+        <ul>
           {% for item in page.capabilities.business.items %}
           <li>{{ item }}</li>
           {% endfor %}
@@ -62,16 +63,16 @@ layout: default
   </div>
 </section>
 <!-- FEATURED CASES -->
-<section class="featured-cases">
-  <h2 class="section-title">{{ page.cases.title }}</h2>
+<section>
+  <h2 class="section-title mb-7">{{ page.cases.title }}</h2>
   <p>{{ page.cases.description }}</p>
-  <div class="hero-actions">
-    <a href="{{ '/cases/' | relative_url }}" class="btn btn-primary">{{ labels.explore }}</a>
+  <div class="hero-actions mt-7">
+    <a href="{{ cases_page.url | relative_url }}" class="btn btn-primary">{{ labels.explore }}</a>
   </div>
 </section>
 <!-- LEADERSHIP PHILOSOPHY-->
 <section class="leadership">
-  <h2 class="section-title">{{ page.leadership.title }}</h2>
+  <h2 class="section-title mb-7">{{ page.leadership.title }}</h2>
   <p>{{ page.leadership.text }}</p>
 </section>
 <!-- SIGNATURE-->
@@ -82,6 +83,6 @@ layout: default
 </section>
 <!-- FINAL CTA -->
 <section>
-  <h2 class="section-title">{{ page.final.title }}</h2>
-  <a href="mailto:vasquez.alf@gmail.com" class="btn btn-primary">{{ labels.contact }}</a>
+  <h2 class="section-title mb-7">{{ page.final.title }}</h2>
+  <a href="mailto:{{ site.author.email }}" class="btn btn-primary">{{ labels.contact }}</a>
 </section>

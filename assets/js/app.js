@@ -4,6 +4,8 @@ import { initFilters } from "./modules/filters.js";
 import { initMasonry } from "./modules/masonry.js";
 import { initAnimations } from "./modules/animations.js";
 import { initAnalytics }  from "./modules/analytics.js";
+import { initAbout } from "./modules/about.js";
+import { initBlog } from "./modules/blog.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   initHeader();
@@ -11,6 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initFilters();
   initAnimations();
   initAnalytics();
+  initAbout();
+  initBlog();
 });
 
 window.addEventListener("load", () => {

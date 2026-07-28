@@ -1,0 +1,115 @@
+/* ============================================================
+   TOKENS — variables de marca: color, espaciado, tipografía,
+   radios, sombras, motion, z-index, breakpoints de referencia.
+   ============================================================ */
+:root {
+  /* --- Color --- */
+  --color-primary: #0B354B;
+  --color-secondary: #00CBD9;
+  --color-bg: #F4F6F8;
+  --color-surface: #FFFFFF;
+  --color-text: #2A2E33;
+
+  --grey600: #121212;
+  --grey500: #666666;
+  --grey400: #BDBDBD;
+  --grey300: #D3D3D3;
+  --grey200: #E9E9E9;
+  --grey100: #F4F4F4;
+
+  /* --- Overlays / translúcidos --- */
+  --overlay-header-bg: rgba(255, 255, 255, 0.85);
+  --overlay-header-border: rgba(0, 0, 0, 0.04);
+  --overlay-hover: rgba(0, 0, 0, 0.025);
+  --overlay-text-muted: rgba(255, 255, 255, 0.6);
+
+  /* --- Radios --- */
+  --radius: 0.5rem;
+  --radius-lg: 1.25rem;
+  --radius-pill: 100px;
+
+  /* --- Espaciado (escala usada en todo el sitio) --- */
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 2rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 9rem;
+
+  /* --- Gutters de layout --- */
+  --section-padding-sm: 5%;
+  --section-padding-lg: 10%;
+  --header-height: 96px;
+  --header-height-scrolled: 72px;
+
+  /* --- Tipografía --- */
+  --font-family: 'Inter', sans-serif;
+  /* --- Tamaños --- */
+  --fs-2xs: 0.7rem;
+  --fs-xs: 0.8rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.2rem;
+  --fs-2xl: 1.4rem;
+  --fs-3xl: 1.5rem;
+  --fs-4xl: 2rem;
+  /* --- line height --- */
+  --lh-tight: 1.2;
+  --lh-base: 1.6;
+  --lh-relaxed: 1.7;
+  /* --- font weight --- */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* --- Sombras --- */
+  /* Utilitarias — se mantienen para nav y elementos pequeños */
+  --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.04);
+  --shadow-nav: 0 20px 50px rgba(0, 0, 0, 0.06);
+  
+   /* E · Primary Deep — para cards y componentes principales */
+   --shadow-md:
+   0 0 0 1px rgba(11, 53, 75, 0.08),
+   0 8px 24px rgba(11, 53, 75, 0.16),
+   0 32px 64px rgba(11, 53, 75, 0.10);
+
+   /* Hover — amplifica la profundidad */
+   --shadow-hover:
+   0 0 0 1px rgba(11, 53, 75, 0.10),
+   0 16px 40px rgba(11, 53, 75, 0.20),
+   0 48px 80px rgba(11, 53, 75, 0.12);
+
+  /* --- Motion --- */
+  --ease-standard: cubic-bezier(.4, 0, .2, 1);
+  --duration-fast: 0.2s;
+  --duration-base: 0.3s;
+  --duration-slow: 0.35s;
+  --duration-slower: 0.4s;
+
+  /* --- Z-index --- */
+  --z-header: 1000;
+  --z-nav: 1050;
+  --z-menu-toggle: 1100;
+  --z-lightbox: 1200;
+
+  /* --- Breakpoints de referencia ---
+     CSS no permite usar custom properties dentro de la condición
+     de un @media (`@media (max-width: var(--x))` es inválido), y
+     este proyecto no tiene preprocesador ni build step. Se declaran
+     acá como fuente única de verdad documental — _responsive.css
+     usa los mismos números crudos y los referencia en comentario. */
+  --bp-1920: 1920px;
+  --bp-1280: 1280px;
+  --bp-1024: 1024px;
+  --bp-768: 768px;
+  --bp-640: 640px;
+  --bp-480: 480px;
+}

@@ -2,18 +2,20 @@
 layout: case
 lang: en
 ref: eltablerodeotto
-og_type: article
 permalink: /cases/eltablerodeotto/
 body_class: dark-header
+dark_hero_image: /assets/images/Cases.webp
 date: 2018-06-01
 date_modified: 2024-01-15
-image: /assets/images/eltablerodeotto.webp
+image: /assets/images/cases/eltablerodeotto/eltablerodeotto.webp
+image_width: 880
+image_height: 912
 categories: [Retail, Product]
 
 title: "El Tablero de Otto: Community-Driven Business Design from Zero"
-meta_title: "El Tablero de Otto: Service Design & Community Strategy | Alfredo Vásquez"
-meta_description: "Founded and designed a TCG retail store and community ecosystem in Lima from scratch — applying service design, user archetype modeling and community-as-product strategy to build sustained organic growth across four distinct player segments."
-cover_image: /assets/images/eltablerodeotto-cover.webp
+meta_title: "El Tablero de Otto: Community Design | Alfredo Vásquez"
+meta_description: "Founded and designed a TCG retail store and community ecosystem in Lima from scratch — service design and archetype modeling for four distinct player segments."
+cover_image: /assets/images/cases/eltablerodeotto/eltablerodeotto-cover.webp
 
 headline: "El Tablero de Otto: Community-Driven Business Design from Zero"
 subheadline: "Service Design, Brand Strategy and Community Design as an Entrepreneurial Practice"

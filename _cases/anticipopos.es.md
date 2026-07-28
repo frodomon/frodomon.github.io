@@ -2,18 +2,20 @@
 layout: case
 lang: es
 ref: anticipopos
-og_type: article
 permalink: /es/cases/anticipopos/
 body_class: dark-header
+dark_hero_image: /assets/images/Cases.webp
 date: 2023-08-01
 date_modified: 2024-01-15
-image: /assets/images/anticipopos.webp
+image: /assets/images/cases/anticipopos/anticipopos.webp
+image_width: 880
+image_height: 912
 categories: [Banking, Digital Product]
 
 title: "Anticipo POS: Acceso Financiero para Propietarios de Negocio en el Punto de Venta"
-meta_title: "Anticipo POS: Diseñando Acceso Financiero PYME en BBVA | Alfredo Vásquez"
-meta_description: "Lideré la estrategia UX y diseño de contenidos del primer producto de préstamo digital E2E para PYME de BBVA Perú — diseñando un mecanismo de crédito novedoso basado en POS a través de seis organizaciones stakeholder, para lanzar el primer pago de préstamo digital del Perú."
-cover_image: /assets/images/anticipopos-cover.webp
+meta_title: "Anticipo POS: Acceso Financiero PYME BBVA | Alfredo Vásquez"
+meta_description: "Lideré la estrategia UX del primer préstamo digital E2E para PYME de BBVA Perú — crédito basado en POS validado con seis organizaciones stakeholder."
+cover_image: /assets/images/cases/anticipopos/anticipopos-cover.webp
 
 headline: "Anticipo POS: Acceso Financiero en el Punto de Venta"
 subheadline: "Diseñando un Producto Financiero Novedoso para Propietarios de Negocio en BBVA Perú"

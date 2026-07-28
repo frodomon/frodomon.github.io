@@ -1,0 +1,164 @@
+/* ============================================================
+   PAGES — reglas específicas de cada página que no son un
+   componente reutilizable (index, cases, case, about).
+   ============================================================ */
+
+/* --- Home: hero --- */
+#hero {
+  background: var(--color-surface);
+  padding: var(--space-10) var(--section-padding-lg) var(--space-9) var(--section-padding-lg);
+  border-radius: var(--radius-lg);
+  border-bottom: 1px solid var(--grey200);
+}
+.hero-eyebrow {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-secondary);
+}
+.hero-title {
+  position: relative;
+  padding-bottom: var(--space-5);
+  animation: fadeInUp 0.6s ease forwards;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(var(--space-5)); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 48px;
+  height: 3px;
+  background: var(--color-secondary);
+  border-radius: 2px;
+}
+.hero-subtitle {
+  font-size: var(--fs-lg);
+  color: var(--grey500);
+}
+.hero-actions {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+}
+
+/* --- Home: franjas de contenido --- */
+.leadership {
+  background: var(--color-primary);
+}
+.leadership h2, .leadership p {
+  color: var(--color-surface);
+}
+.credibility {
+  background: var(--grey100);
+  border-top: 1px solid var(--grey200);
+  border-bottom: 1px solid var(--grey200);
+}
+.credibility-text {
+  color: var(--grey500);
+  text-align: center;
+}
+.signature-text {
+  font-size: var(--fs-2xl);
+  font-style: italic;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+/* --- Home: grid de capacidades --- */
+.capability-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-7);
+  margin-top: var(--space-7);
+}
+
+/* --- Case detail --- */
+#case-study {
+  padding: 0;
+}
+#case-meta,
+#post-meta {
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-4);
+  display: flex;
+  gap: var(--space-6);
+}
+#case-meta p,
+#post-meta p {
+  background: var(--grey200);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius);
+}
+.case-study {
+  padding-top: var(--space-7);
+  padding-bottom: var(--space-4);
+}
+.case-study h2 {
+  margin: 0;
+}
+.case-study ul {
+  list-style: disc;
+  padding-left: var(--space-5);
+}
+.case-study li::marker {
+  color: var(--grey600);
+}
+
+/* --- About --- */
+#hats, #about-story{
+  padding: var(--space-6) var(--section-padding-lg);
+}
+.about-hero {
+  display: flex;
+  border-radius: var(--radius-lg);
+  gap: var(--space-7);
+  align-items: center;
+  box-shadow: var(--shadow-md);
+  transition:
+    box-shadow var(--duration-base) var(--ease-standard),
+    transform var(--duration-base) var(--ease-standard);
+
+  &:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+  }
+}
+.about-photo {
+  border-radius: var(--radius-lg) 0 0 var(--radius-lg) ;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+}
+.about-hero-content{
+  padding-left: var(--space-6);
+}
+.about-hero h2{
+  font-size: var(--fs-4xl);
+}
+.about-hats {
+  font-size: var(--fs-3xl);
+}
+.about-opening {
+  font-style: italic;
+  line-height: var(--lh-tight);
+}
+.about-subtitle {
+  font-size: var(--fs-xs);
+  color: var(--grey400);
+  letter-spacing: 0.08em;
+}
+#about-timeline{
+  padding: var(--space-6) var(--section-padding-lg);
+}
+#about-closing{
+  background-color: var(--color-bg);
+}
+#about-closing h2 {
+  font-size: var(--fs-4xl);
+}
+

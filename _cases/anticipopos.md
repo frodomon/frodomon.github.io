@@ -2,18 +2,20 @@
 layout: case
 lang: en
 ref: anticipopos
-og_type: article
 permalink: /cases/anticipopos/
 body_class: dark-header
+dark_hero_image: /assets/images/Cases.webp
 date: 2023-08-01
-date_modified: 2026-01-15
-image: /assets/images/anticipopos.webp
+date_modified: 2024-01-15
+image: /assets/images/cases/anticipopos/anticipopos.webp
+image_width: 880
+image_height: 912
 categories: [Banking, Digital Product]
 
 title: "Anticipo POS: Financial Access for SMB Owners at the Point of Sale"
-meta_title: "Anticipo POS: Designing SMB Financial Access at BBVA | Alfredo Vásquez"
-meta_description: "Led UX strategy and content design for BBVA Perú's first fully digital SMB loan product — designing a novel POS-based credit mechanism across six stakeholder organizations to launch Peru's first end-to-end digital loan repayment."
-cover_image: /assets/images/anticipopos-cover.webp
+meta_title: "Anticipo POS: SMB Financial Access at BBVA | Alfredo Vásquez"
+meta_description: "Led UX strategy for BBVA Perú's first fully digital SMB loan — a novel POS-based credit mechanism launched across six stakeholder organizations."
+cover_image: /assets/images/cases/anticipopos/anticipopos-cover.webp
 
 headline: "Anticipo POS: Financial Access at the Point of Sale"
 subheadline: "Designing a Novel Financial Product for SMB Owners at BBVA Perú"

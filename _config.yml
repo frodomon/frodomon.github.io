@@ -9,8 +9,26 @@ title: "Alfredo Vásquez | Strategic Design Lead"
 description: "Strategic Design Lead specializing in fintech and enterprise product strategy, design systems and organizational capability."
 author:
   name: "Alfredo Vásquez"
+  given_name: "Alfredo"
+  family_name: "Vásquez"
   email: "vasquez.alf@gmail.com"
   linkedin: "https://www.linkedin.com/in/alfredohvasqueza/"
+  twitter: "@alfredohvasquez"
+  photo: "/assets/images/Alfredo-Vasquez.webp"
+  job_title: "Strategic Design Lead"
+  works_for:
+    name: "Banco de Credito BCP"
+    url: "https://www.viabcp.com"
+  knows_about:
+    - "Product Design"
+    - "Fintech"
+    - "Design Leadership"
+    - "Service Design"
+    - "Digital Strategy"
+    - "UX Strategy"
+    - "Design Systems"
+    - "Organizational Design"
+  address_country: "PE"
 
 # Internationalization
 default_lang: en
@@ -21,10 +39,11 @@ collections:
   cases:
     output: true
     permalink: /cases/:name/
-  # Añadir insights y blog solo cuando tengas contenido:
+  blog:
+    output: true
+    permalink: /blog/:name/
+  # Añadir insights solo cuando tengas contenido:
   # insights:
-  #   output: true
-  # blog:
   #   output: true
 
 # Defaults — evitan repetir front matter en cada archivo
@@ -42,6 +61,12 @@ defaults:
       type: "cases"
     values:
       layout: "case"
+      og_type: "article"
+  - scope:
+      path: ""
+      type: "blog"
+    values:
+      layout: "post"
       og_type: "article"
 
 # Plugins
@@ -61,3 +86,7 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+
+sass:
+  sass_dir: css
+  style: compressed

@@ -1,0 +1,12 @@
+{% assign p = include.post %}
+<div class="post-card-media post-card-audio-media" data-audio-url="{{ p.audio_url }}">
+  <div class="post-card-audio-placeholder">
+    <i class="fa-brands fa-spotify" aria-hidden="true"></i>
+  </div>
+  <button type="button" class="post-card-play-btn" aria-label="{{ labels.play }} {{ p.title }}">
+    <i class="fa-solid fa-play" aria-hidden="true"></i>
+  </button>
+</div>
+<div class="post-card-content">
+  <h2 class="post-title">{{ p.title }}</h2>
+</div>

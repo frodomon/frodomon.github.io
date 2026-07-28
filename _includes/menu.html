@@ -1,7 +1,21 @@
-{% assign lang = page.lang | default: site.default_lang %}
-{% assign labels = site.data.translations[lang].labels %}
+{% comment %}
+  lang y labels ya fueron calculados por default.html y header.html
+  antes de incluir este archivo (mismo scope de render) — se reusan
+  tal cual en vez de recalcularlos.
 
-<nav class='flex-right-row nav'>
-  <a class="flex-center-row" href="{{ '/cases/' | relative_url }}">{{ labels.cases }}</a>
+  Resolvemos la página real por su layout + lang en vez de hardcodear
+  el permalink acá — la URL sale siempre del permalink: declarado en
+  about.md/es/about.md, cases.md/es/cases.md y blog.md/es/blog.md,
+  así que si cambia ahí, el menú lo sigue automáticamente sin tocar
+  este archivo.
+{% endcomment %}
+{% assign about_page = site.pages | where: "layout", "about" | where: "lang", lang | first %}
+{% assign cases_page = site.pages | where: "layout", "cases" | where: "lang", lang | first %}
+{% assign blog_page = site.pages | where: "layout", "blog" | where: "lang", lang | first %}
+
+<nav class='nav d-flex flex-flow-row-wrap align-items-center justify-content-right'>
+  <a class="d-flex align-items-center flex-flow-row-wrap justify-content-center" href="{{ cases_page.url | relative_url }}"{% if page.layout == 'cases' %} aria-current="page"{% endif %}>{{ labels.cases }}</a>
+  <a class="d-flex align-items-center flex-flow-row-wrap justify-content-center" href="{{ about_page.url | relative_url }}"{% if page.layout == 'about' %} aria-current="page"{% endif %}>{{ labels.about }}</a>
+  <a class="d-flex align-items-center flex-flow-row-wrap justify-content-center" href="{{ blog_page.url | relative_url }}"{% if page.layout == 'blog' %} aria-current="page"{% endif %}>{{ labels.blog }}</a>
   {% include language-switcher.html %}
 </nav>

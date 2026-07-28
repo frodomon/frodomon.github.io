@@ -1,0 +1,32 @@
+{% assign p = include.post %}
+{% assign post_type = p.post_type | default: "standard" %}
+{% assign type_key = "post_type_" | append: post_type %}
+{% assign type_label = labels[type_key] %}
+<article class="post-card" data-category="{{ p.categories | join: ' ' | downcase }}" data-month="{{ p.date | date: '%Y-%m' }}">
+  {% case post_type %}
+    {% when 'image' %}   {% include post-card-image.html post=p %}
+    {% when 'gallery' %} {% include post-card-gallery.html post=p %}
+    {% when 'video' %}   {% include post-card-video.html post=p %}
+    {% when 'audio' %}   {% include post-card-audio.html post=p %}
+    {% when 'link' %}    {% include post-card-link.html post=p %}
+    {% else %}           {% include post-card-standard.html post=p %}
+  {% endcase %}
+  <div class="post-card-meta">
+    <span class="post-type-badge" aria-label="{{ type_label }}">
+      {% case post_type %}
+        {% when 'image' %}<i class="fa-regular fa-image" aria-hidden="true"></i>
+        {% when 'video' %}<i class="fa-solid fa-play" aria-hidden="true"></i>
+        {% when 'link' %}<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        {% when 'gallery' %}<i class="fa-regular fa-images" aria-hidden="true"></i>
+        {% when 'audio' %}<i class="fa-solid fa-headphones" aria-hidden="true"></i>
+        {% else %}<i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+      {% endcase %}
+    </span>
+    <time class="post-date" datetime="{{ p.date | date: '%Y-%m-%d' }}">{{ p.date | date: "%B %Y" }}</time>
+    <div class="post-categories">
+      {% for cat in p.categories %}
+        <span class="category-tag">{{ cat }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</article>

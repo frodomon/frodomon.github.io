@@ -1,0 +1,33 @@
+/* ============================================================
+   LAYOUT — estructura de página: secciones, grid, contenedores.
+   ============================================================ */
+section {
+  width: 100%;
+  padding: var(--space-8) var(--section-padding-lg);
+}
+article {
+  padding: var(--space-5) 0;
+}
+
+/* --- Grid de columnas ---
+   col-3/4/6/8/9 están en uso activo (about.html, blog.html). El resto
+   (col-1/2/5/7/10/11/12) se mantiene como sistema de grid reservado
+   (decisión explícita: no se elimina). */
+.col-1  { width: 8.3333%;  padding-left: calc(5%/12);    padding-right: calc(5%/12); }
+.col-2  { width: 16.6667%; padding-left: calc(2.5%/6);   padding-right: calc(2.5%/6); }
+.col-3  { width: 25%;      padding-left: calc(1.666%/4); padding-right: calc(1.666%/4); }
+.col-4  { width: 33.3333%; padding-left: calc(1.25%/3);  padding-right: calc(1.25%/3); }
+.col-5  { width: 41.6667%; padding: 0 1%; }
+.col-6  { width: 50%;      padding: 0 0.8333%; }
+.col-7  { width: 58.3333%; padding-left: calc(0.7143%*7/12); padding-right: calc(0.7143%*7/12); }
+.col-8  { width: 66.6667%; padding-left: calc(0.625%*2/3);   padding-right: calc(0.625%*2/3); }
+.col-9  { width: 75%;      padding: 0 0.5556%; float: left; }
+.col-10 { width: 83.3333%; padding: 0 0.5;     float: left; }
+.col-11 { width: 91.6667%; padding: 0 0.4545%; float: left; }
+.col-12 { width: 100%;     padding: 0 0.4167%; float: left; }
+
+/* --- Layout helpers --- */
+.left { float: left; }
+.right { float: right; }
+.fullwidth { width: 100%; }
+.fullheight { height: 100%; }

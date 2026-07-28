@@ -4,9 +4,10 @@ lang: es
 og_type: website
 permalink: /es/cases/
 body_class: dark-header
+dark_hero_image: /assets/images/Cases.webp
 
 title: "Iniciativas Estratégicas Seleccionadas | Alfredo Vásquez"
-meta_title: "Casos de Diseño Estratégico en Fintech | Strategic Design Lead"
+meta_title: "Casos de Fintech | Strategic Design Lead"
 meta_description: "Casos de liderazgo en diseño de producto y fintech que demuestran impacto de negocio medible."
 
 breadcrumb: "Casos de Estudio"

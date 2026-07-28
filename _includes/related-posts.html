@@ -1,0 +1,52 @@
+<!-- ============ RELATED POSTS ============ -->
+{% comment %}
+  Los tipos image/audio/link no tienen página individual navegable,
+  así que no se sugieren como relacionados.
+{% endcomment %}
+{% assign all_posts = site.blog | where: "lang", lang | where_exp: "post", "post.post_type != 'image' and post.post_type != 'audio' and post.post_type != 'link'" %}
+{% assign blog_page = site.pages | where: "layout", "blog" | where: "lang", lang | first %}
+{% assign related = "" | split: "" %}
+
+{% comment %} 1. Buscar posts con categorías en común {% endcomment %}
+{% for post in all_posts %}
+  {% unless post.url == page.url %}
+    {% assign shared_cats = 0 %}
+    {% for cat in page.categories %}
+      {% if post.categories contains cat %}
+        {% assign shared_cats = shared_cats | plus: 1 %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% if shared_cats > 0 %}
+      {% assign related = related | push: post %}
+    {% endif %}
+  {% endunless %}
+{% endfor %}
+
+{% comment %} 2. Si no hay suficientes relacionados por categoría, añadir recientes {% endcomment %}
+{% if related.size < 2 %}
+  {% for post in all_posts %}
+    {% unless post.url == page.url or related contains post %}
+      {% assign related = related | push: post %}
+    {% endunless %}
+  {% endfor %}
+{% endif %}
+
+{% comment %} 3. Limitar a 3 posts {% endcomment %}
+{% assign related_limited = related | slice: 0, 3 %}
+
+{% if related_limited.size > 0 %}
+<section id="related-posts">
+  <div class="related-cases">
+    <h2 class="mb-7">{{ labels.related_posts }}</h2>
+    <div class="related-cases-grid">
+      {% for rp in related_limited %}
+        {% include post-card.html post=rp %}
+      {% endfor %}
+    </div>
+  </div>
+  <div id="back">
+    <a href="{{ blog_page.url | relative_url }}" class="btn btn-primary">{{ labels.all_posts }}</a>
+  </div>
+</section>
+{% endif %}

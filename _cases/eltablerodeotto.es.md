@@ -2,18 +2,20 @@
 layout: case
 lang: es
 ref: eltablerodeotto
-og_type: article
 permalink: /es/cases/eltablerodeotto/
 body_class: dark-header
+dark_hero_image: /assets/images/Cases.webp
 date: 2018-06-01
 date_modified: 2024-01-15
-image: /assets/images/eltablerodeotto.webp
+image: /assets/images/cases/eltablerodeotto/eltablerodeotto.webp
+image_width: 880
+image_height: 912
 categories: [Retail, Product]
 
 title: "El Tablero de Otto: Diseño de Negocio Basado en Comunidad desde Cero"
-meta_title: "El Tablero de Otto: Diseño de Servicios y Estrategia Comunitaria | Alfredo Vásquez"
-meta_description: "Fundé y diseñé una tienda de TCG y ecosistema comunitario en Lima desde cero — aplicando diseño de servicios, modelado de arquetipos de usuario y estrategia de comunidad-como-producto para construir crecimiento orgánico sostenido en cuatro segmentos distintos de jugadores."
-cover_image: /assets/images/eltablerodeotto-cover.webp
+meta_title: "El Tablero de Otto: Diseño de Servicios | Alfredo Vásquez"
+meta_description: "Fundé y diseñé una tienda de TCG y ecosistema comunitario en Lima desde cero — diseño de servicios y arquetipos de usuario para cuatro segmentos de jugadores."
+cover_image: /assets/images/cases/eltablerodeotto/eltablerodeotto-cover.webp
 
 headline: "El Tablero de Otto: Diseño de Negocio Basado en Comunidad desde Cero"
 subheadline: "Diseño de Servicios, Estrategia de Marca y Diseño de Comunidad como Práctica Emprendedora"

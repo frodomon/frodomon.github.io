@@ -1,8 +1,11 @@
 {% assign lang = page.lang | default: site.default_lang %}
-{% assign t = site.data.translations[lang] %}
-
 {% assign labels = site.data.translations[lang].labels %}
-{% assign canonical_url = site.url | append: site.baseurl | append: page.url %}
+{% comment %}
+  canonical_url, og_image, og_image_width y og_image_height ya fueron
+  calculados por default.html antes de incluir este archivo (mismo scope
+  de render) — se reusan tal cual en vez de recalcularlos en cada uno de
+  los 4 include.type distintos.
+{% endcomment %}
 
 {% comment %} === 1. WEBSITE SCHEMA + SEARCHACTION === {% endcomment %}
 {% if include.type == "website" %}
@@ -11,10 +14,10 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": "{{ site.url }}/#website",
-    "name": "Alfredo Vásquez | Strategic Design Lead",
+    "name": "{{ site.title }}",
     "url": "{{ site.url }}",
-    "description": "Strategic Design Lead specializing in fintech, enterprise product strategy and design systems.",
-    "inLanguage": ["en", "es"],
+    "description": "{{ site.description | escape }}",
+    "inLanguage": {{ site.languages | jsonify }},
     "author": {
       "@type": "Person",
       "@id": "{{ site.url }}/#person"
@@ -23,7 +26,7 @@
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "{{ site.url }}/cases/?q={search_term_string}"
+        "urlTemplate": "{{ site.url }}{% if lang == 'es' %}/es{% endif %}/blog/?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }
@@ -37,50 +40,39 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "{{ site.url }}/#person",
-    "name": "Alfredo Vásquez",
-    "givenName": "Alfredo",
-    "familyName": "Vásquez",
-    "jobTitle": "Strategic Design Lead",
+    "name": "{{ site.author.name }}",
+    "givenName": "{{ site.author.given_name }}",
+    "familyName": "{{ site.author.family_name }}",
+    "jobTitle": "{{ site.author.job_title }}",
     "description": "{{ site.description | escape }}",
     "inLanguage": "{{ lang }}",
     "image": {
       "@type": "ImageObject",
-      "url": "{{ site.url }}/assets/images/Alfredo-Vasquez.webp",
+      "url": "{{ site.url }}{{ site.author.photo }}",
       "width": 800,
       "height": 800
     },
     "url": "{{ site.url }}/",
-    "email": "vasquez.alf@gmail.com",
+    "email": "{{ site.author.email }}",
     "sameAs": [
-      "https://www.linkedin.com/in/alfredohvasqueza/"
+      "{{ site.author.linkedin }}"
     ],
     "worksFor": {
       "@type": "Organization",
-      "name": "Banco de Credito BCP",
-      "url": "https://www.viabcp.com"
+      "name": "{{ site.author.works_for.name }}",
+      "url": "{{ site.author.works_for.url }}"
     },
-    "knowsAbout": [
-      "Product Design",
-      "Fintech",
-      "Design Leadership",
-      "Service Design",
-      "Digital Strategy",
-      "UX Strategy",
-      "Design Systems",
-      "Organizational Design"
-    ],
-    "knowsLanguage": ["en", "es"],
+    "knowsAbout": {{ site.author.knows_about | jsonify }},
+    "knowsLanguage": {{ site.languages | jsonify }},
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "PE"
+      "addressCountry": "{{ site.author.address_country }}"
     }
   }
   </script>
 {% endif %}
 {% comment %} === 3. ARTICLE SCHEMA (Cases) === {% endcomment %}
 {% if include.type == "article" %}
-{% assign article_image = site.url | append: site.baseurl | append: page.cover_image %}
-{% if page.cover_image == blank %}{% assign article_image = site.url | append: "/assets/images/og-design-lead-alfredo.webp" %}{% endif %}
 {% assign date_modified = page.date_modified | default: page.date %}
   <script type="application/ld+json">
 {
@@ -88,26 +80,26 @@
   "@type": "Article",
   "@id": "{{ canonical_url }}#article",
   "headline": "{{ page.meta_title | default: page.title | escape }}",
-  "description": "{{ page.meta_description | default: page.description | escape }}",
+  "description": "{{ page.meta_description | escape }}",
   "image": {
     "@type": "ImageObject",
-    "url": "{{ article_image }}",
-    "width": 1200,
-    "height": 630
+    "url": "{{ og_image }}",
+    "width": {{ og_image_width }},
+    "height": {{ og_image_height }}
   },
   "author": {
     "@type": "Person",
     "@id": "{{ site.url }}/#person",
-    "name": "Alfredo Vásquez",
+    "name": "{{ site.author.name }}",
     "url": "{{ site.url }}/"
   },
   "publisher": {
     "@type": "Person",
     "@id": "{{ site.url }}/#person",
-    "name": "Alfredo Vásquez",
+    "name": "{{ site.author.name }}",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ site.url }}/assets/images/av-logo-black.webp"
+      "url": "{{ site.url }}/assets/images/AV-Logo.svg"
     }
   },
   "datePublished": "{{ page.date | date_to_xmlschema }}",
@@ -117,7 +109,7 @@
     "@id": "{{ canonical_url }}"
   },
   "url": "{{ canonical_url }}",
-  "inLanguage": "{{ page.lang }}",
+  "inLanguage": "{{ lang }}",
   "articleSection": "{{ page.categories | first | capitalize | default: 'Case Study' }}",
   "keywords": "{{ page.categories | join: ', ' }}",
   "isPartOf": {
@@ -130,10 +122,11 @@
 
 {% comment %} === 4. BREADCRUMB SCHEMA DINÁMICO === {% endcomment %}
 {% if include.type == "breadcrumb" %}
-{% assign home_url = site.url | append: site.baseurl | append: "/" %}
-{% if lang == "es" %}{% assign home_url = site.url | append: site.baseurl | append: "/es/" %}{% endif %}
-{% assign cases_url = site.url | append: site.baseurl | append: "/cases/" %}
-{% if lang == "es" %}{% assign cases_url = site.url | append: site.baseurl | append: "/es/cases/" %}{% endif %}
+{% assign home_page = site.pages | where: "layout", "index" | where: "lang", lang | first %}
+{% assign collection_page = site.pages | where: "layout", page.collection | where: "lang", lang | first %}
+{% assign home_url = site.url | append: site.baseurl | append: home_page.url %}
+{% assign collection_url = site.url | append: site.baseurl | append: collection_page.url %}
+{% assign collection_label = labels[page.collection] %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -148,8 +141,8 @@
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "{{ labels.cases }}",
-        "item": "{{ cases_url }}"
+        "name": "{{ collection_label }}",
+        "item": "{{ collection_url }}"
       },
       {
         "@type": "ListItem",

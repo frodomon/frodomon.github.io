@@ -1,0 +1,7 @@
+<figure>
+  <img src="{{ page.featured_image }}" alt="{{ page.title }}" loading="lazy" width="{{ page.featured_image_width }}" height="{{ page.featured_image_height }}">
+  {% if page.image_caption %}
+    <figcaption>{{ page.image_caption }}</figcaption>
+  {% endif %}
+</figure>
+<h1>{{ page.title }}</h1>

@@ -1,0 +1,22 @@
+<div class="post-gallery-swiper swiper">
+  <div class="swiper-wrapper">
+    {% for image in page.images %}
+      <div class="swiper-slide">
+        <img src="{{ image.path }}" alt="{{ image.alt }}" loading="lazy">
+        {% if image.caption %}
+          <p class="post-gallery-caption">{{ image.caption }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+<h1>{{ page.title }}</h1>
+{% assign body = content | strip %}
+{% if body != "" %}
+  {{ content }}
+{% else %}
+  <p class="post-excerpt">{{ page.excerpt }}</p>
+{% endif %}

@@ -10,9 +10,10 @@
     </li>
   <!-- If page belongs to a collection (cases, blog, insights...) -->
   {% if page.collection %}
+    {% assign collection_label = labels[page.collection] %}
     <li class="breadcrumb-separator" aria-hidden="true">/</li>
     <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <a href="{% if lang == 'es' %}/es/{{ page.collection }}/{% else %}/{{ page.collection }}/{% endif %}">{{ labels.cases }}</a>
+      <a href="{% if lang == 'es' %}/es/{{ page.collection }}/{% else %}/{{ page.collection }}/{% endif %}">{{ collection_label }}</a>
       <meta itemprop="position" content="2">
     </li>
     <!-- 3. Current case -->

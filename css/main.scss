@@ -1,0 +1,26 @@
+---
+---
+/* ============================================================
+   MAIN.CSS — entry point del sistema de diseño del portfolio.
+   Solo @import: sin reglas propias acá. Mismo criterio modular
+   que assets/js/modules/ + app.js.
+
+   El orden de @import importa: todos los selectores de este
+   sistema tienen la misma especificidad (clases simples, sin
+   anidamiento profundo), así que en caso de empate gana el
+   último importado. Por eso _utilities.css va después de
+   _components.css/_pages.css (una utilidad debe poder
+   sobreescribir un componente si se combinan en el HTML), y
+   _responsive.css siempre al final (sus overrides de media
+   query deben ganar sobre todo lo anterior).
+   ============================================================ */
+
+@use "tokens";
+@use "reset";
+@use "typography";
+@use "layout";
+@use "components";
+@use "pages";
+@use "utilities";
+@use "blog";
+@use "responsive";

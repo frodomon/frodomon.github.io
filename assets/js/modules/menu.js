@@ -10,12 +10,14 @@ export function initMenu() {
 
   function openMenu() {
     toggle.classList.add("active");
+    toggle.setAttribute("aria-expanded", "true");
     nav.classList.add("active");
     document.body.classList.add("menu-open");
   }
 
   function closeMenu() {
     toggle.classList.remove("active");
+    toggle.setAttribute("aria-expanded", "false");
     nav.classList.remove("active");
     document.body.classList.remove("menu-open");
   }

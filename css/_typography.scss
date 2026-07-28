@@ -1,0 +1,72 @@
+/* ============================================================
+   TYPOGRAPHY — headings, párrafos, links, escalas de fuente.
+   ============================================================ */
+h1, h2, h3 {
+  font-weight: var(--fw-semibold);
+  font-style: normal;
+  line-height: var(--lh-tight);
+  color: var(--color-primary);
+  margin: 0;
+}
+h1 {
+  font-size: var(--fs-4xl);
+  letter-spacing: -0.02em;
+}
+h2 {
+  font-size: var(--fs-3xl);
+  padding: var(--space-4) 0;
+}
+h3 {
+  font-size: var(--fs-md);
+}
+h4, h5 {
+  font-style: normal;
+  font-size: var(--fs-base);
+  line-height: var(--lh-tight);
+  color: var(--color-primary);
+  margin: 0;
+}
+h4 {
+  font-weight: var(--fw-bold);
+}
+h5 {
+  font-weight: var(--fw-regular);
+}
+p {
+  font-weight: var(--fw-regular);
+  font-style: normal;
+  font-size: var(--fs-base);
+  line-height: var(--lh-relaxed);
+  color: var(--grey600);
+  margin: 0;
+}
+a, a:visited {
+  color: var(--color-primary);
+  text-decoration: none;
+  line-height: var(--lh-relaxed);
+}
+a:hover, a:focus, a i:hover, a i:focus {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+a img {
+  border: none;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+figure {
+  margin: 0;
+}
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+figcaption {
+  font-size: var(--fs-xs);
+  color: var(--grey500);
+  font-style: italic;
+  margin-top: var(--space-2);
+}

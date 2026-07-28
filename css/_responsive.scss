@@ -1,0 +1,261 @@
+/* ============================================================
+   RESPONSIVE — todos los @media del sitio, desktop-first
+   (max-width), del breakpoint más ancho al más angosto. Usa los
+   mismos tokens definidos en _tokens.css:root. Los valores de
+   breakpoint están espejados como referencia en _tokens.css
+   (--bp-*), pero acá van como números crudos porque CSS no
+   permite custom properties dentro de la condición de un @media.
+
+   Los breakpoints 1920px, 1280px, 1024px y 768px quedan
+   reservados (sin reglas activas) para cuando el sitio sume
+   plantillas o densidad de contenido que necesite un tratamiento
+   propio en pantallas muy grandes o tablet horizontal — evita
+   tener que reordenar el archivo más adelante, solo hay que
+   rellenarlos.
+   ============================================================ */
+
+/* ---------- ≥1920px (reservado) ---------- */
+@media only screen and (min-width: 1920px) {
+}
+
+/* ---------- ≤1280px (reservado) ---------- */
+@media only screen and (max-width: 1280px) {
+}
+
+/* ---------- ≤1024px (reservado) ---------- */
+@media only screen and (max-width: 1024px) {
+}
+
+/* ---------- ≤768px (reservado) ---------- */
+@media only screen and (max-width: 768px) {
+}
+
+/* ---------- ≤640px — pages: about ---------- */
+@media only screen and (max-width: 640px) {
+  .about-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-hero .col-4 {
+    display: none;
+  }
+  .about-hero-content {
+    width: 100%;
+  }
+  #about-story p {
+    padding-left: var(--space-4);
+  }
+  .mantras-section {
+    padding: var(--space-8) var(--space-6);
+  }
+  #about-closing {
+    padding: var(--space-8) var(--space-6);
+  }
+}
+
+/* ---------- ≤480px — mobile ---------- */
+@media only screen and (max-width: 480px) {
+
+  /* RESET/LAYOUT */
+  html {
+    font-size: 14px;
+  }
+  section {
+    padding: var(--space-6) var(--section-padding-sm);
+  }
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+  .col-7, .col-8, .col-9, .col-10, .col-11 {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* COMPONENTS — header */
+  header {
+    padding: 0;
+  }
+  header .left {
+    padding-left: var(--section-padding-sm);
+  }
+  header .right {
+    padding-right: var(--section-padding-sm);
+  }
+  .dark-header header a,
+  .dark-header header nav a,
+  .dark-header header p,
+  .dark-header header nav p {
+    color: var(--color-primary);
+  }
+  .dark-header header nav .active-lang {
+    color: oklch(from var(--color-primary) l c h / .8);
+  }
+
+  /* COMPONENTS — menú hamburguesa */
+  .menu-toggle {
+    display: flex;
+    color: var(--color-primary);
+    cursor: pointer;
+    gap: 6px;
+    background: none;
+    border: none;
+    z-index: var(--z-menu-toggle);
+  }
+  .menu-toggle span {
+    width: 24px;
+    height: 2px;
+    background: var(--grey600);
+    transition:
+      transform var(--duration-base) var(--ease-standard),
+      opacity var(--duration-fast) ease;
+  }
+  .menu-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav {
+    position: absolute;
+    left: 0;
+    top: var(--header-height);
+    width: 100vw;
+    background: var(--color-surface);
+    border-top: 1px solid var(--grey100);
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-nav);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition:
+      max-height var(--duration-slow) var(--ease-standard),
+      opacity 0.25s ease,
+      transform 0.25s ease;
+    z-index: var(--z-nav);
+  }
+  .nav.active {
+    max-height: 400px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  header.scrolled .nav.active {
+    top: var(--header-height-scrolled);
+  }
+  .nav a, .nav p {
+    width: 100%;
+    padding: var(--space-4) var(--section-padding-sm);
+    font-size: var(--fs-base);
+    border-left: none;
+    border-bottom: 1px solid var(--grey100);
+    transform: translateY(-6px);
+    transition:
+      opacity var(--duration-base) ease,
+      transform var(--duration-base) ease,
+      background var(--duration-base) ease;
+  }
+  header nav p {
+    border-left: none;
+  }
+  .nav.active > * {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .nav > *:last-child {
+    border-bottom: none;
+  }
+  .nav a:hover {
+    background: var(--overlay-hover);
+    padding-left: calc(5% + 4px);
+  }
+  .nav.active > *:nth-child(1) { transition-delay: 0.05s; }
+  .nav.active > *:nth-child(2) { transition-delay: 0.1s; }
+  .nav.active > *:nth-child(3) { transition-delay: 0.15s; }
+  .nav.active > *:nth-child(4) { transition-delay: 0.2s; }
+  .nav.active > *:nth-child(5) { transition-delay: 0.25s; }
+
+  /* COMPONENTS — footer */
+  footer {
+    padding-top: var(--space-4);
+  }
+  footer div {
+    width: 100%;
+  }
+  .copyright {
+    text-align: center;
+  }
+
+  /* PAGES — hero de home
+     Antes estos selectores apuntaban a .hero/.hero h1/.hero-subheadline,
+     que no existen en index.html (el markup real usa #hero, .hero-title
+     y .hero-subtitle) — el hero nunca recibía ajuste en mobile. Corregido
+     para apuntar a los selectores reales. .hero-title no necesita override
+     propio: ya hereda var(--fs-4xl) de la regla base h1, y al bajar
+     html a 14px en este breakpoint se reduce en píxeles automáticamente. */
+  #hero {
+    padding: var(--space-9) var(--section-padding-sm) var(--space-8) var(--section-padding-sm);
+  }
+  .hero-subtitle {
+    font-size: var(--fs-xl);
+  }
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  /* PAGES — grid de capacidades */
+  .capability-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card {
+    background: var(--color-surface);
+  }
+
+  /* PAGES — case/post detail: chips de meta (industry/client/year,
+     posted_on/posted_in) no entran en una sola fila a este ancho. */
+  #case-meta,
+  #post-meta {
+    flex-wrap: wrap;
+  }
+
+  /* COMPONENTS — tarjetas y masonry */
+  .case-card {
+    width: 100%;
+    position: relative;
+    transform: none;
+    opacity: 1;
+  }
+  .post-card {
+    width: 100%;
+    position: relative;
+    transform: none;
+    opacity: 1;
+  }
+  .masonry-grid {
+    height: auto;
+    opacity: 1;
+  }
+  .blog-grid {
+    height: auto;
+    opacity: 1;
+  }
+  .related-cases-grid {
+    gap: 0;
+  }
+  .related-case-card {
+    width: 100%;
+  }
+  .related-cases-grid .post-card {
+    width: 100%;
+  }
+
+  /* PAGES — blog/post: el layout de dos columnas (contenido + sidebar)
+     debe apilarse en mobile en vez de comprimirse en una sola fila. */
+  #blog-layout,
+  #post-layout {
+    flex-direction: column;
+  }
+}

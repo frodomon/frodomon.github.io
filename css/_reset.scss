@@ -1,0 +1,58 @@
+/* ============================================================
+   RESET — normalización de elementos HTML crudos.
+   ============================================================ */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--fs-base);
+  line-height: var(--lh-base);
+  overflow: auto;
+  -webkit-font-smoothing: antialiased;
+}
+b, strong {
+  font-weight: bold;
+}
+blockquote {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-style: italic;
+  line-height: var(--lh-tight);
+  margin:0;
+}
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li, ol li {
+  margin: 0 0 var(--space-2) 0;
+  color: var(--grey500);
+}
+ul li ul {
+  padding-bottom: 0;
+}
+address {
+  font-weight: bold;
+}
+code {
+  font-family: Courier, monospace;
+}
+dt {
+  margin-left: var(--space-4);
+  font-weight: bold;
+}
+dd {
+  margin: var(--space-4) 0 var(--space-4) var(--space-7);
+}
+em {
+  font-style: italic;
+}

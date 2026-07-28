@@ -5,7 +5,7 @@ og_type: website
 permalink: /
 
 title: "Strategic Design Lead | Alfredo Vásquez Alcalá"
-meta_title: "Strategic Design Lead | Fintech Product Strategy & Organizational Capability"
+meta_title: "Strategic Design Lead | Fintech Product Strategy"
 meta_description: "Strategic Design Lead specializing in fintech and enterprise product strategy, design systems and organizational capability across complex digital ecosystems."
 image: /assets/images/og-design-lead-alfredo.webp
 

@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign labels = site.data.translations[lang].labels %}
+{% assign posts = site.blog | where: "lang", lang | sort: "date" | reverse %}
+
+<!-- BREADCRUMB -->
+{% include breadcrumb.html %}
+
+<section id="post-layout" class="d-flex">
+  <div class="post-main col-9">
+    <article id="post" itemscope itemtype="https://schema.org/BlogPosting">
+      <section id="post-meta">
+        <p><strong>{{ labels.posted_on }}:</strong> {{ page.date | date: "%B %Y" }}</p>
+        {% if page.categories %}
+          <p><strong>{{ labels.posted_in }}:</strong> {{ page.categories | join: ", " }}</p>
+        {% endif %}
+      </section>
+      <section id="post-content">
+        {% case page.post_type %}
+          {% when 'image' %}   {% include post-image.html %}
+          {% when 'video' %}   {% include post-video.html %}
+          {% when 'link' %}    {% include post-link.html %}
+          {% when 'gallery' %} {% include post-gallery.html %}
+          {% when 'audio' %}   {% include post-audio.html %}
+          {% else %}           {% include post-standard.html %}
+        {% endcase %}
+      </section>
+    </article>
+  </div>
+  <aside class="col-3">
+    {% include post-sidebar.html posts=posts %}
+  </aside>
+</section>
+
+{% include related-posts.html %}

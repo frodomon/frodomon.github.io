@@ -1,22 +1,30 @@
-let resizeTimer;
-let observer;
-let masonryInitialized = false;
+export function initMasonry(config = {}) {
+  const {
+    gridSelector = ".masonry-grid",
+    cardSelector = ".case-card",
+    gap = 32
+  } = config;
 
-export function initMasonry() {
+  const grid = document.querySelector(gridSelector);
+  if (!grid) return; // la página no tiene este grid
 
-  const grid = document.querySelector(".masonry-grid");
-  if (!grid) return; // 🔥 solo existe en cases
-
-  // Pre-render safe
   if (typeof window === "undefined") return;
 
-  observer = new IntersectionObserver(entries => {
+  let resizeTimer;
+  let masonryInitialized = false;
+
+  const apply = () => applyMasonry(gridSelector, cardSelector, gap);
+
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting && !masonryInitialized) {
         masonryInitialized = true;
-        applyMasonry();
-        initResize();
-        document.addEventListener("layout:refresh", applyMasonry);
+        apply();
+        window.addEventListener("resize", () => {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(apply, 200);
+        });
+        document.addEventListener("layout:refresh", apply);
       }
     });
   }, { threshold: 0.1 });
@@ -24,17 +32,10 @@ export function initMasonry() {
   observer.observe(grid);
 }
 
-function initResize() {
-  window.addEventListener("resize", () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(applyMasonry, 200);
-  });
-}
+function applyMasonry(gridSelector, cardSelector, gap) {
 
-function applyMasonry() {
-
-  const grid = document.querySelector(".masonry-grid");
-  const cards = Array.from(document.querySelectorAll(".case-card:not(.is-hidden)"));
+  const grid = document.querySelector(gridSelector);
+  const cards = Array.from(document.querySelectorAll(`${cardSelector}:not(.is-hidden)`));
 
   if (!grid || cards.length === 0) {
     if (grid) grid.style.height = "0px";
@@ -47,7 +48,6 @@ function applyMasonry() {
     return;
   }
 
-  const gap = 32;
   const computedStyle = window.getComputedStyle(grid);
   const paddingTop = parseFloat(computedStyle.paddingTop);
   const paddingBottom = parseFloat(computedStyle.paddingBottom);
@@ -55,7 +55,7 @@ function applyMasonry() {
 
   const columnWidth = cards[0].offsetWidth;
   const columns = Math.max(1, Math.floor(grid.clientWidth / (columnWidth + gap)));
-  
+
   let columnHeights = new Array(columns).fill(0);
 
   cards.forEach(card => {

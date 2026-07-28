@@ -7,22 +7,22 @@
 {% endcomment %}
 {% if page.collection %}
   {% if lang == "en" %}
-    <p class="flex-center-row active-lang">EN</p>
+    <p class="d-flex align-items-center flex-flow-row-wrap justify-content-center active-lang" aria-current="true" aria-label="{{ labels.lang_name_en }}">EN</p>
     {% if alternate_case %}
-      <a class="flex-center-row" href="{{ alternate_case.url | relative_url }}">ES</a>
+      <a class="d-flex align-items-center flex-flow-row-wrap justify-content-center" href="{{ alternate_case.url | relative_url }}" aria-label="{{ labels.lang_name_es }}">ES</a>
     {% endif %}
   {% else %}
     {% if alternate_case %}
-      <a class="flex-center-row" href="{{ alternate_case.url | relative_url }}">EN</a>
+      <a class="d-flex align-items-center flex-flow-row-wrap justify-content-center" href="{{ alternate_case.url | relative_url }}" aria-label="{{ labels.lang_name_en }}">EN</a>
     {% endif %}
-    <p class="flex-center-row active-lang">ES</p>
+    <p class="d-flex align-items-center flex-flow-row-wrap justify-content-center active-lang" aria-current="true" aria-label="{{ labels.lang_name_es }}">ES</p>
   {% endif %}
 {% else %}
   {% if lang == "en" %}
-    <p class="flex-center-row active-lang">EN</p>
-    <a class="flex-center-row" href="{{ '/es' | append: clean_url | relative_url }}">ES</a>
+    <p class="d-flex align-items-center flex-flow-row-wrap justify-content-center active-lang" aria-current="true" aria-label="{{ labels.lang_name_en }}">EN</p>
+    <a class="d-flex align-items-center flex-flow-row-wrap justify-content-center" href="{{ '/es' | append: clean_url | relative_url }}" aria-label="{{ labels.lang_name_es }}">ES</a>
   {% else %}
-    <a class="flex-center-row" href="{{ clean_url | relative_url }}">EN</a>
-    <p class="flex-center-row active-lang">ES</p>
+    <a class="d-flex align-items-center flex-flow-row-wrap justify-content-center" href="{{ clean_url | relative_url }}" aria-label="{{ labels.lang_name_en }}">EN</a>
+    <p class="d-flex align-items-center flex-flow-row-wrap justify-content-center active-lang" aria-current="true" aria-label="{{ labels.lang_name_es }}">ES</p>
   {% endif %}
 {% endif %}

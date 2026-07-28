@@ -1,0 +1,19 @@
+{% assign p = include.post %}
+<div class="post-card-media post-card-gallery-media swiper">
+  <div class="swiper-wrapper">
+    {% for image in p.images %}
+      <div class="swiper-slide">
+        <img src="{{ image.path }}" alt="{{ image.alt }}" loading="lazy">
+      </div>
+    {% endfor %}
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+<a class="post-card-link" href="{{ p.url | relative_url }}">
+  <div class="post-card-content">
+    <h2 class="post-title">{{ p.title }}</h2>
+    <p class="post-excerpt">{{ p.excerpt }}</p>
+  </div>
+</a>

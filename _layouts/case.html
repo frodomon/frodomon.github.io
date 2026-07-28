@@ -5,12 +5,7 @@ layout: default
 {% assign labels = site.data.translations[lang].labels %}
 
 <article id="case-study" itemscope itemtype="https://schema.org/Article">
-  <section class="dark-hero-wrapper">
-    <div class="dark-hero fullwidth">
-      <h1 class="dark-hero-title">{{ page.headline }}</h1>
-      <p class="dark-hero-description">{{ page.subheadline }}</p>
-    </div>
-  </section>
+  {% include dark-hero.html %}
   {% include breadcrumb.html %}
   {% if page.industry or page.client %}
     <section id="case-meta">
@@ -38,7 +33,7 @@ layout: default
     <p>{{ page.role }}</p>
     {% if page.journey_image %}
       <div class="case-image">
-        <img src="{{ page.journey_image }}" alt="{{ page.title }}" loading="lazy">
+        <img src="{{ page.journey_image }}" alt="{{ page.title }}" loading="lazy" width="{{ page.journey_image_width }}" height="{{ page.journey_image_height }}">
       </div>
     {% endif %}
   </section>
@@ -56,67 +51,4 @@ layout: default
   </section>
   {{ content }}
 </article>
-<!-- ============ RELATED CASES ============ -->
-{% assign all_cases = site.cases | where: "lang", lang %}
-{% assign related = "" | split: "" %}
-
-{% comment %} 1. Buscar casos con categorías en común {% endcomment %}
-{% for case in all_cases %}
-  {% unless case.url == page.url %}
-    {% assign shared_cats = 0 %}
-    {% for cat in page.categories %}
-      {% if case.categories contains cat %}
-        {% assign shared_cats = shared_cats | plus: 1 %}
-      {% endif %}
-    {% endfor %}
-    {% if shared_cats > 0 %}
-      {% assign related = related | push: case %}
-    {% endif %}
-  {% endunless %}
-{% endfor %}
-
-{% comment %} 2. Si no hay suficientes relacionados por categoría, añadir recientes {% endcomment %}
-{% if related.size < 2 %}
-  {% for case in all_cases %}
-    {% unless case.url == page.url or related contains case %}
-      {% assign related = related | push: case %}
-    {% endunless %}
-  {% endfor %}
-{% endif %}
-
-{% comment %} 3. Limitar a 3 casos {% endcomment %}
-{% assign related_limited = related | limit: 3 %}
-
-{% if related_limited.size > 0 %}
-<section id="related-cases">
-  <div class="related-cases">
-    <h2 class="related-cases-title">{{ labels.related }}</h2>
-    <div class="related-cases-grid">
-      {% for rc in related_limited %}
-        <div class="related-case-card">
-          <a class="flex-center-row" href="{{ rc.url | relative_url }}">
-            <div class="case-image">
-              <img src="{{ rc.image }}" alt="{{ rc.title }}" loading="lazy">
-            </div>
-            <div class="related-case-content">
-              
-                <h3>{{ rc.headline }}</h3>
-              
-              <p>{{ rc.excerpt | default: rc.description }}</p>
-              <div class="related-case-categories">
-                {% for cat in rc.categories %}
-                  <span class="category-tag">{{ cat }}</span>
-                {% endfor %}
-              </div>
-            </div>
-          </a> 
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-  <!-- CTA volver a todos los casos -->
-    <div id="back">
-      <a href="{% if lang == 'es' %}/es/cases/{% else %}/cases/{% endif %}" class="btn btn-primary">{{ labels.back_to_cases }}</a>
-    </div>
-</section>
-{% endif %}
+{% include related-cases.html %}

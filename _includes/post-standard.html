@@ -1,0 +1,10 @@
+<figure>
+  <img src="{{ page.featured_image }}" alt="{{ page.title }}" loading="lazy" width="{{ page.featured_image_width }}" height="{{ page.featured_image_height }}">
+</figure>
+<h1>{{ page.title }}</h1>
+{% assign body = content | strip %}
+{% if body != "" %}
+  {{ content }}
+{% else %}
+  <p class="post-excerpt">{{ page.excerpt }}</p>
+{% endif %}

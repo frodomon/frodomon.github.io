@@ -1,0 +1,24 @@
+{% assign p = include.post %}
+{% assign is_youtube = false %}
+{% if p.video_url contains "youtube" or p.video_url contains "youtu.be" %}
+  {% assign is_youtube = true %}
+  {% assign yt_id = p.video_url | split: '/embed/' | last | split: '?' | first %}
+{% endif %}
+<div class="post-card-media post-card-video-media" data-video-url="{{ p.video_url }}">
+  {% if is_youtube %}
+    <img src="https://img.youtube.com/vi/{{ yt_id }}/hqdefault.jpg" alt="{{ p.title }}" loading="lazy">
+  {% else %}
+    <div class="post-card-video-placeholder">
+      <i class="fa-solid fa-film" aria-hidden="true"></i>
+    </div>
+  {% endif %}
+  <button type="button" class="post-card-play-btn" aria-label="{{ labels.play }} {{ p.title }}">
+    <i class="fa-solid fa-play" aria-hidden="true"></i>
+  </button>
+</div>
+<a class="post-card-link" href="{{ p.url | relative_url }}">
+  <div class="post-card-content">
+    <h2 class="post-title">{{ p.title }}</h2>
+    <p class="post-excerpt">{{ p.excerpt }}</p>
+  </div>
+</a>

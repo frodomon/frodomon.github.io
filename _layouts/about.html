@@ -1,0 +1,74 @@
+---
+layout: default
+---
+{% assign lang = page.lang | default: site.default_lang %}
+{% if lang == 'es' %}
+  {% assign hats = site.data.hats_es %}
+  {% assign mantras = site.data.mantras_es %}
+  {% assign timeline = site.data.timeline_es %}
+{% else %}
+  {% assign hats = site.data.hats %}
+  {% assign mantras = site.data.mantras %}
+  {% assign timeline = site.data.timeline %}
+{% endif %}
+
+{% include dark-hero.html %}
+<!-- BREADCRUMB -->
+{% include breadcrumb.html %}
+<section id="hats" class="d-flex align-items-center flex-flow-row-wrap justify-content-center align-content-center">
+  <div class="about-hero col-6 p-0">
+    <div class="fullwidth d-flex">
+      <div class="col-4 p-0">
+        <img
+        class="about-photo fullwidth fullheight"
+        src="{{ site.author.photo | relative_url }}"
+        alt="{{ page.photo_alt }}"
+        width="160" height="160">
+      </div>
+      <div class="about-hero-content col-8 d-flex flex-flow-column-wrap align-content-between justify-content-evenly">
+        <h2>{{ page.my_name }}</h2>
+        <p class="about-hats">{{ page.hats_intro }}{% include typed-hats.html %}</p>
+        <p class="about-opening mt-3">{{ page.opening }}</p>
+        <p class="about-subtitle mt-2 mb-2">{{ page.subtitle }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about-story">
+  {% for paragraph in page.story %}
+  <p class="mb-4">{{ paragraph }}</p>
+  {% endfor %}
+</section>
+
+{% include mantras-carousel.html %}
+
+<section id="about-timeline">
+  <h2 class="section-title">{{ page.timeline.title }}</h2>
+  <div class="fullwidth d-flex justify-content-center">
+    <div class="col-6 p-0">
+      <div class="timeline-filters">
+        {% for filter in page.timeline.filters %}
+        <button class="filter-btn{% if filter.key == 'all' %} active{% endif %}" data-filter="{{ filter.key }}" aria-pressed="{% if filter.key == 'all' %}true{% else %}false{% endif %}">{{ filter.label }}</button>
+        {% endfor %}
+      </div>
+      <div class="timeline">
+        {% for item in timeline %}
+        <div class="timeline-item" data-category="{{ item.category }}">
+          <p class="timeline-year">{{ item.year }}</p>
+          <p class="timeline-title">{{ item.title }}</p>
+          <p class="timeline-desc">{{ item.description }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about-closing" class="aligncenter">
+  <div class="fullwidth d-flex justify-content-center">
+    <div class="col-6 p-0">
+      <h2>{{ page.closing.title }}</h2>
+      <p class="mb-7">{{ page.closing.body }}</p>
+      <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">{{ page.closing.cta }}</a>
+    </div>
+  </div>
+</section>

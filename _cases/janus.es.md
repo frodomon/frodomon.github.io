@@ -2,18 +2,20 @@
 layout: case
 lang: es
 ref: janus
-og_type: article
 permalink: /es/cases/janus/
 body_class: dark-header
+dark_hero_image: /assets/images/Cases.webp
 date: 2021-05-01
 date_modified: 2024-01-15
-image: /assets/images/janus.webp
-categories: [Banking , Digital Product]
+image: /assets/images/cases/janus/janus.webp
+image_width: 880
+image_height: 1160
+categories: [Banking, Digital Product]
 
 title: "Janus: El Primer Crédito Hipotecario Digital E2E en Perú"
-meta_title: "Janus: El Primer Crédito Hipotecario 100% Digital en Perú | Alfredo Vásquez"
-meta_description: "Lideré la estrategia UX y diseño de servicios del producto hipotecario digital E2E de Interbank — rediseñando flujos de simulación, formularios adaptativos y herramientas de back office multi-rol para entregar el primer crédito hipotecario regulado completamente digital del Perú."
-cover_image: /assets/images/janus-cover.webp
+meta_title: "Janus: Hipoteca 100% Digital en Perú | Alfredo Vásquez"
+meta_description: "Lideré la estrategia UX y diseño de servicios del crédito hipotecario digital de Interbank — el primer crédito hipotecario regulado 100% digital del Perú."
+cover_image: /assets/images/cases/janus/janus-cover.webp
 
 headline: "Janus: Crédito Hipotecario Digital E2E en Perú"
 subheadline: "Liderazgo de Diseño Estratégico en un Entorno Fintech Regulado"
@@ -28,7 +30,9 @@ problem: "El problema central no era la interfaz — era el lenguaje. La termino
 
 role: "Lideré el diseño de producto en tres fases como diseñador UX principal, trabajando de forma embebida con gestión de producto, riesgos, legal y el consultor de diseño de contenidos. Definí la estrategia UX y la arquitectura de información para el flujo completo de simulación hasta desembolso. Traduje los complejos requisitos de datos del equipo de riesgos en un formulario dinámico con revelación progresiva — reemplazando un formulario en papel de múltiples páginas por una experiencia digital adaptativa. Diseñé las herramientas de back office para evaluadores de riesgo, revisores legales y ejecutivos comerciales, mapeando todas las interacciones de roles mediante service blueprints y diagramas de flujo. Ejecuté guerrilla testing con stakeholders internos y entrevistas a profundidad con usuarios para iterar el flujo. Coordiné la estrategia de diseño de contenidos con un consultor externo para abordar sistemáticamente el problema de terminología en todo el producto."
 
-journey_image: /assets/images/janus_journey_es.webp
+journey_image: /assets/images/cases/janus/janus_journey_es.webp
+journey_image_width: 1920
+journey_image_height: 1080
 
 approach: "La decisión estratégica que transformó el producto fue redefinir el paso de simulación. Lo rediseñé como una herramienta de descubrimiento que mostraba al usuario un rango de opciones para que pueda optar por la que más le convenga. Esto requirió negociar con el equipo de riesgos para exponer resultados parciales de simulación más temprano en el flujo — un cambio técnicamente no trivial que implicó alinear producto, ingeniería y riesgos en torno a un insight compartido sobre el usuario. Para la arquitectura de información, apliqué un modelo de revelación progresiva: cada pantalla contenía exactamente la información necesaria en ese momento, con apoyo contextual introducido precisamente cuando la carga cognitiva alcanzaba su pico. El formulario fue reconstruido como un flujo adaptativo — las preguntas aparecían o desaparecían dinámicamente según las respuestas previas, eliminando campos irrelevantes por completo. Para la capa de back office, mapeé el flujo completo de múltiples roles en un service blueprint antes de diseñar cualquier interfaz, asegurando que la herramienta reflejara cómo riesgos, legal y comercial realmente colaboraban — no cómo el organigrama decía que deberían hacerlo."
 

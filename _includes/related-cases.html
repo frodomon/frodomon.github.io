@@ -1,0 +1,64 @@
+<!-- ============ RELATED CASES ============ -->
+{% assign all_cases = site.cases | where: "lang", lang %}
+{% assign cases_page = site.pages | where: "layout", "cases" | where: "lang", lang | first %}
+{% assign related = "" | split: "" %}
+
+{% comment %} 1. Buscar casos con categorías en común {% endcomment %}
+{% for case in all_cases %}
+  {% unless case.url == page.url %}
+    {% assign shared_cats = 0 %}
+    {% for cat in page.categories %}
+      {% if case.categories contains cat %}
+        {% assign shared_cats = shared_cats | plus: 1 %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% if shared_cats > 0 %}
+      {% assign related = related | push: case %}
+    {% endif %}
+  {% endunless %}
+{% endfor %}
+
+{% comment %} 2. Si no hay suficientes relacionados por categoría, añadir recientes {% endcomment %}
+{% if related.size < 2 %}
+  {% for case in all_cases %}
+    {% unless case.url == page.url or related contains case %}
+      {% assign related = related | push: case %}
+    {% endunless %}
+  {% endfor %}
+{% endif %}
+
+{% comment %} 3. Limitar a 3 casos {% endcomment %}
+{% assign related_limited = related | slice: 0, 3 %}
+
+{% if related_limited.size > 0 %}
+<section>
+  <div class="related-cases">
+    <h2 class="mb-7">{{ labels.related }}</h2>
+    <div class="related-cases-grid">
+      {% for rc in related_limited %}
+        <div class="related-case-card">
+          <a class="d-flex align-items-center flex-flow-row-wrap justify-content-center" href="{{ rc.url | relative_url }}">
+            <div class="case-image">
+              <img src="{{ rc.image }}" alt="{{ rc.headline }}" loading="lazy" width="{{ rc.image_width }}" height="{{ rc.image_height }}">
+            </div>
+            <div class="related-case-content">
+              <h3 class="mb-4">{{ rc.headline }}</h3>
+              <p>{{ rc.excerpt | default: rc.description }}</p>
+              <div class="related-case-categories">
+                {% for cat in rc.categories %}
+                  <span class="category-tag">{{ cat }}</span>
+                {% endfor %}
+              </div>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <!-- CTA volver a todos los casos -->
+  <div id="back">
+    <a href="{{ cases_page.url | relative_url }}" class="btn btn-primary">{{ labels.back_to_cases }}</a>
+  </div>
+</section>
+{% endif %}

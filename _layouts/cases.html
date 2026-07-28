@@ -5,12 +5,7 @@ layout: default
 {% assign cases = site.cases | where: "lang", lang | sort: "date" | reverse %}
 {% assign labels = site.data.translations[lang].labels %}
 
-<section class="dark-hero-wrapper">
-  <div class="dark-hero">
-    <h1 class="dark-hero-title">{{ page.headline }}</h1>
-    <p class="dark-hero-description">{{ page.subheadline }}</p>
-  </div>
-</section>
+{% include dark-hero.html %}
 <!-- BREADCRUMB -->
 {% include breadcrumb.html %}
 <!-- MENU FILTER -->
@@ -35,7 +30,7 @@ layout: default
   <article class="case-card" data-date="{{ case.date | date: '%Y-%m-%d' }}" data-category="{{ case.categories | join: ' ' | downcase }}">
     <a href="{{ case.url | relative_url }}">
       <div class="case-image">
-        <img src="{{ case.image }}" alt="{{ case.headline }}" loading="lazy">
+        <img src="{{ case.image }}" alt="{{ case.headline }}" loading="lazy" width="{{ case.image_width }}" height="{{ case.image_height }}">
       </div>
       <div class="case-content">
         <time class="case-date" datetime="{{ case.date | date: '%Y-%m-%d' }}">{{ case.date | date: "%B %Y" }}</time>

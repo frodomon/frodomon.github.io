@@ -2,18 +2,20 @@
 layout: case
 lang: en
 ref: janus
-og_type: article
 permalink: /cases/janus/
 body_class: dark-header
+dark_hero_image: /assets/images/Cases.webp
 date: 2021-05-01
 date_modified: 2024-01-15
-image: /assets/images/janus.webp
-categories: [Banking , Digital Product]
+image: /assets/images/cases/janus/janus.webp
+image_width: 880
+image_height: 1160
+categories: [Banking, Digital Product]
 
 title: "Janus: End-to-End Digital Mortgage"
 meta_title: "Janus: Peru's First 100% Digital Mortgage | Alfredo Vásquez"
-meta_description: "Led UX strategy and service design for Interbank's end-to-end digital mortgage product — redesigning simulation flows, adaptive forms and multi-role back-office tooling to deliver Peru's first fully digital regulated home loan."
-cover_image: /assets/images/janus-cover.webp
+meta_description: "Led UX strategy and service design for Interbank's digital mortgage — Peru's first fully digital, end-to-end regulated home loan."
+cover_image: /assets/images/cases/janus/janus-cover.webp
 
 headline: "Janus: End-to-End Digital Mortgage in Peru"
 subheadline: "Strategic Design Leadership in a Regulated Fintech Environment"
@@ -28,7 +30,9 @@ problem: "The core problem wasn't the interface — it was the language. Financi
 
 role: "I led product design across three phases as the primary UX designer, embedded with product management, risk, legal and the content design consultant. I defined the UX strategy and information architecture for the full simulation-to-disbursement flow. I translated the risk team's complex data requirements into a dynamic, progressive-disclosure form — replacing a static multi-page paper document with an adaptive digital experience. I designed the back-office tooling for risk evaluators, legal reviewers and commercial executives, mapping all role interactions through service blueprints and user flow diagrams. I ran guerrilla testing with internal stakeholders and conducted in-depth user interviews to iterate the flow. I also coordinated the content design strategy with an external consultant to systematically address the terminology problem across the entire product."
 
-journey_image: /assets/images/janus_journey_en.webp
+journey_image: /assets/images/cases/janus/janus_journey_en.webp
+journey_image_width: 1920
+journey_image_height: 1080
 
 approach: "The strategic decision that changed the product was reframing the simulation step. I redesigned it as a discovery tool that showed users a range of options o they could choose the one that best suited them. This required negotiating with the risk team to expose partial simulation results earlier in the flow — a technically non-trivial change that meant aligning product, engineering and risk around a shared user insight. For the information architecture, I applied a progressive disclosure model: each screen contained exactly the information needed at that moment, with contextual support introduced precisely when cognitive load peaked. The form was rebuilt as an adaptive flow — questions dynamically appeared or disappeared based on prior answers, eliminating irrelevant fields entirely. For the back-office layer, I mapped the full multi-role workflow across a service blueprint before designing any interface, ensuring the tool reflected how risk, legal and commercial teams actually collaborated — not how the org chart said they should."
 

@@ -1,0 +1,16 @@
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign labels = site.data.translations[lang].labels %}
+<section class="mantras-section">
+  <h2 class="mb-5 aligncenter">{{ labels.mantras_title }}</h2>
+  <div class="swiper mantras-swiper">
+    <div class="swiper-wrapper">
+      {% for mantra in mantras %}
+      <div class="swiper-slide">
+        <blockquote class="mantra-quote mb-7">“{{ mantra.quote }}”</blockquote>
+        <span class="mantra-author mb-3">— {{ mantra.author }}</span>
+        <p class="mantra-reflection">{{ mantra.reflection }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

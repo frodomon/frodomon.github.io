@@ -1,0 +1,68 @@
+{% assign posts = include.posts %}
+
+{% assign all_categories = "" | split: "" %}
+{% for post in posts %}
+  {% for cat in post.categories %}
+    {% unless all_categories contains cat %}
+      {% assign all_categories = all_categories | push: cat %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+
+{% assign month_dates = "" | split: "" %}
+{% for post in posts %}
+  {% assign month_key = post.date | date: "%Y-%m" %}
+  {% assign seen = false %}
+  {% for d in month_dates %}
+    {% assign d_key = d.date | date: "%Y-%m" %}
+    {% if d_key == month_key %}{% assign seen = true %}{% break %}{% endif %}
+  {% endfor %}
+  {% unless seen %}
+    {% assign month_dates = month_dates | push: post %}
+  {% endunless %}
+{% endfor %}
+
+{% comment %}
+  Los tipos image/audio/link no tienen página individual navegable
+  (se resuelven en la propia card), así que no se sugieren acá. También se
+  excluye la página actual — en post.html no tiene sentido que el post se
+  liste a sí mismo entre sus "recientes" (en blog.html no afecta nada,
+  page.url ahí es la del listado, no la de ningún post).
+{% endcomment %}
+{% assign linkable_posts = posts | where_exp: "post", "post.post_type != 'image' and post.post_type != 'audio' and post.post_type != 'link' and post.url != page.url" %}
+{% assign recent_posts = linkable_posts | slice: 0, 5 %}
+
+<aside class="post-sidebar">
+  <div class="mb-7">
+    <input type="search" id="post-search" class="post-search-input" placeholder="{{ labels.search_placeholder }}" aria-label="{{ labels.search_placeholder }}">
+  </div>
+
+  <div class="mb-7">
+    <h2 class="section-title mb-4">{{ labels.categories }}</h2>
+    <div class="timeline-filters">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">{{ labels.all_posts }}</button>
+      {% for cat in all_categories %}
+        <button class="filter-btn" data-filter="{{ cat | downcase }}" aria-pressed="false">{{ cat }}</button>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="mb-7">
+    <h2 class="section-title mb-4">{{ labels.recent_posts }}</h2>
+    <ul>
+      {% for post in recent_posts %}
+        <li><a class="post-sidebar-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="mb-7">
+    <h2 class="section-title mb-4">{{ labels.monthly_archive }}</h2>
+    <div class="timeline-filters">
+      <button class="filter-btn active" data-month="all" aria-pressed="true">{{ labels.all_posts }}</button>
+      {% for m in month_dates %}
+        <button class="filter-btn" data-month="{{ m.date | date: '%Y-%m' }}" aria-pressed="false">{{ m.date | date: "%B %Y" }}</button>
+      {% endfor %}
+    </div>
+  </div>
+</aside>

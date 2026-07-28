@@ -1,0 +1,15 @@
+<figure>
+  <div class="post-audio-embed">
+    {% if page.audio_url contains "spotify" %}
+      <iframe src="{{ page.audio_url }}" title="{{ page.title }}" loading="lazy" allow="encrypted-media"></iframe>
+    {% else %}
+      <audio controls preload="metadata">
+        <source src="{{ page.audio_url }}">
+      </audio>
+    {% endif %}
+  </div>
+  {% if page.audio_caption %}
+    <figcaption>{{ page.audio_caption }}</figcaption>
+  {% endif %}
+</figure>
+<h1>{{ page.title }}</h1>
