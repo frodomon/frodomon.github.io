@@ -175,7 +175,9 @@ body.menu-open {
   box-shadow: var(--shadow-md);
 }
 .dark-header header.scrolled a,
-.dark-header header.scrolled nav a {
+.dark-header header.scrolled nav a,
+.dark-header header.scrolled p,
+.dark-header header.scrolled nav p {
   color: var(--color-primary);
 }
 .dark-header header.scrolled .menu-toggle span {

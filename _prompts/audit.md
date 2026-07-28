@@ -93,8 +93,9 @@ The reference architecture for this project is:
 - All CSS lives in css/main.scss and its partials (_tokens.scss,
   _reset.scss, _typography.scss, _layout.scss, _components.scss,
   _pages.scss, _utilities.scss, _blog.scss, _responsive.scss),
-  imported via @use from main.scss (compiled by Jekyll's built-in
-  Sass converter — no build step or external tooling involved)
+  imported via @import from main.scss (compiled by Jekyll's built-in
+  Sass converter — no build step or external tooling involved).
+  @use/@forward must NEVER be reintroduced here — see Area 7.1.
 - All JS lives in assets/js/modules/ and is imported from app.js
 - No inline styles anywhere
 - No inline scripts anywhere
@@ -360,6 +361,74 @@ something "should" work.
      pages share identical text.
    - robots.txt and the favicon/apple-touch-icon links in default.html
      point to files that actually exist.
+
+---
+
+AREA 7 — GITHUB PAGES RUNTIME COMPATIBILITY
+
+Context: this site deploys via GitHub Pages, which builds through the
+`github-pages` gem — a version-pinned bundle of Jekyll plus a small
+plugin whitelist, frozen at versions that can lag years behind whatever
+Jekyll/Sass/Liquid gems happen to be installed on this machine or in
+any local Gemfile. A local `jekyll build`/`jekyll serve` succeeding, or
+a partial recompiled with a standalone modern Sass/Liquid gem, is NOT
+proof the site will build — or render correctly — on GitHub Pages. It
+only proves compatibility with whatever versions are installed locally.
+Two real production outages already happened from exactly this gap;
+both passed every local check before shipping.
+
+1. Sass compatibility
+   - Confirm `@use` and `@forward` do NOT appear anywhere in css/*.scss.
+     GitHub Pages' pinned jekyll-sass-converter uses a Sass engine that
+     predates the Sass module system (@use/@forward are Dart-Sass-only)
+     — it never implemented them and cannot process a file that uses
+     them. Only `@import` is safe here.
+   - What actually happened: main.scss used `@use` to pull in every
+     partial. It compiled cleanly with a local Dart-Sass-based tool
+     (which supports @use) and looked fine on every prior audit. On
+     GitHub Pages it failed silently — the converter couldn't process
+     it, and the raw, unprocessed .scss text got served to the browser
+     as if it were the compiled .css.
+
+2. Liquid compatibility
+   - Flag any `where_exp` (or other condition string) that chains 3 or
+     more conditions with `and`/`or` in a single expression string.
+     GitHub Pages' pinned Liquid version failed to parse exactly this
+     shape, even though a newer standalone Liquid gem parsed the same
+     string without complaint.
+   - Prefer the pattern already used elsewhere in this codebase instead
+     of a compound where_exp string: a `{% for %}` loop with nested,
+     single-condition `{% unless %}` checks and `| push` to build the
+     filtered array. Verbose, but every piece of it is basic Liquid
+     that has worked unchanged since Liquid 1.0 — nothing about it
+     depends on how permissive a given version's expression parser is.
+
+3. dark-header / scrolled completeness
+   - Whenever a page-type class (`dark-header`) conditionally styles
+     something — a logo image swap, an icon's fill color, text color,
+     a background — and that same page also has a `.scrolled` state
+     (header goes from transparent-over-image to solid on scroll),
+     confirm every dark-header-conditional visual has an explicit
+     `.scrolled` counterpart that reverts it.
+   - What actually happened: this project shipped two separate bugs
+     from the exact same gap. `.dark-header .menu-toggle span` set the
+     hamburger icon white, with no `.dark-header header.scrolled
+     .menu-toggle span` to revert it — so it stayed white on a now-solid
+     white header. Separately, header.js's `updateLogo()` swapped the
+     logo image based on `body.dark-header` alone, with no awareness of
+     `header.scrolled` — so the white logo variant never switched back
+     either. Do not assume JS-driven state (e.g. `logo.src` swaps) is
+     handled just because the equivalent CSS-driven state is, or vice
+     versa — verify each independently.
+
+4. Local build ≠ production build
+   - When reporting that Sass "compiles cleanly" or JS "passes syntax
+     check" (Area 6.1), state explicitly which tool/engine was used for
+     that verification and that it may not match the exact versions
+     `github-pages` pins. Never phrase a local compile/syntax pass as
+     equivalent to "GitHub Pages will accept this" — Areas 7.1 and 7.2
+     exist precisely because that equivalence has already been false
+     twice.
 
 ---
 
