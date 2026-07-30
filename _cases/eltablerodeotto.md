@@ -43,6 +43,7 @@ The business problem was never selling cards. It was giving someone a reason str
     </figure>
   </div>
 </div>
+
 ## Four Kinds of Player, Three Customers
 
 Instead of assuming "Magic players" were a single audience, I ran personal interviews and built archetypes around two variables that actually predicted behavior: risk aversion and disposable capital for the hobby. Four profiles emerged: **semi-professional** players (chasing international qualification, highly committed, almost never buying sealed product — only singles), **pseudo-competitive** players (showing up only when a prize was on the line), **amateur** players (playing for fun, no interest in competing), and **new** players (wanting to learn without a large upfront investment, building their collection slowly).
