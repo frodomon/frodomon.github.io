@@ -51,7 +51,7 @@ The decision that most defined the business wasn't who to add — it was who to 
 
 ## The Value Map: Explicit and Implicit
 
-Before designing a single event, I mapped what players wanted across two layers. The explicit layer — what they said in interviews: parking, comfortable numbered tables, good ventilation, food and drinks without leaving the venue, good stock, good ambience, a rest zone. The implicit layer — what they didn't say directly but explained why they came back: belonging to a healthy community, kind treatment, finding players at their level, feeling the space was special, the progression of "beating the strongest player," making friends, discovering new games. Designing only for the explicit layer builds a store. Designing for both builds a community that doesn't leave for a better price down the street.
+Before designing a single event, I mapped what players wanted across two layers. The explicit layer — what they said in interviews: parking, comfortable numbered tables, good ventilation, food and drinks without leaving the venue, good stock, good ambience, a rest zone. The implicit layer — what they didn't say directly but explained why they came back: belonging to a healthy community, kind treatment, finding expert players, feeling the space was special, the progression of "beating the strongest player," making friends, discovering new games. Designing only for the explicit layer builds a store. Designing for both builds a community that doesn't leave for a better price down the street.
 
 <figure class="case-figure">
   <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-value-map.webp" alt="Explicit vs. implicit value map for Otto players">
@@ -69,6 +69,11 @@ With archetypes and the value map in place, I designed a four-phase cycle meant 
 
 **Phase 1 — Segment Acquisition:** each archetype had its own channel and tactic. I reached semi-professionals with competitive events offering international qualification. New players, with free workshops to learn the game and no-cost competitions, promoted through Facebook Ads. Amateurs, with casual formats free of competitive pressure.
 
+<figure class="case-figure">
+  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-interstore-tournament.webp" alt="Inter-store league prize check bearing the logos of the three organizing stores">
+  <figcaption>The Inter-Store League prize check, March 2018, bearing the logos of the three organizing stores.</figcaption>
+</figure>
+
 **Phase 2 — Living the Otto Experience:** once on the floor, the goal was for players to experience the explicit values (the space, the service) and notice the implicit ones (belonging) without having them explained.
 
 **Phase 3 — Otto Lover:** players who came back were brought into the brand's community groups — the first step in turning repeat attendance into a sense of belonging.
@@ -81,10 +86,7 @@ The cycle ran on concrete formats: two Sealed leagues per season, one Draft leag
   <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-lifecycle-engine.webp" alt="Otto's four-phase customer lifecycle engine diagram">
   <figcaption>The four-phase engine designed to turn casual players into brand ambassadors.</figcaption>
 </figure>
-<figure class="case-figure">
-  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-interstore-tournament.webp" alt="Inter-store league prize check bearing the logos of the three organizing stores">
-  <figcaption>The Inter-Store League prize check, March 2018, bearing the logos of the three organizing stores.</figcaption>
-</figure>
+
 <figure class="case-figure">
   <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-pokemon-champion.webp" alt="A new player holding their champion playmat after a Pokémon tournament at the store">
   <figcaption>Prize giving at a Pokémon tournament in the store.</figcaption>

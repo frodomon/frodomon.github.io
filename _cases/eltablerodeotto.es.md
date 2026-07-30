@@ -57,10 +57,7 @@ Antes de diseñar un solo evento, mapeé lo que los jugadores buscaban en dos ca
   <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-value-map_es.webp" alt="Mapa de valores explícitos e implícitos de los jugadores de Otto">
   <figcaption>Lo que los jugadores decían que querían, y lo que en realidad los hacía volver.</figcaption>
 </figure>
-<figure class="case-figure">
-  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-interstore-tournament.webp" alt="Cheque de premiación de la Liga Intertiendas con los logos de las tiendas aliadas">
-  <figcaption>Cheque de la Liga Intertiendas, marzo 2018, con los logos de las tres tiendas organizadoras.</figcaption>
-</figure>
+
 <figure class="case-figure">
   <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-intergeneration-match.webp" alt="Un adulto y un niño jugando Pokémon TCG en una mesa del local">
   <figcaption>Un adulto y un niño jugando Pokémon en el local.</figcaption>
@@ -71,6 +68,11 @@ Antes de diseñar un solo evento, mapeé lo que los jugadores buscaban en dos ca
 Con los arquetipos y el mapa de valores definidos, diseñé un ciclo de cuatro fases pensado para convertir a un jugador ocasional en promotor activo de la marca — y que ese promotor alimentara la captación del siguiente:
 
 **Fase 1 — Captación por Segmento:** cada arquetipo tenía un canal y una táctica distinta. A los semi-profesionales los capté con eventos competitivos con clasificación a torneos internacionales. A los jugadores nuevos, con talleres gratuitos para aprender a jugar y competencias sin costo, promocionados vía Facebook Ads. A los amateur, con formatos casuales sin presión competitiva.
+
+<figure class="case-figure">
+  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-interstore-tournament.webp" alt="Cheque de premiación de la Liga Intertiendas con los logos de las tiendas aliadas">
+  <figcaption>Cheque de la Liga Intertiendas, marzo 2018, con los logos de las tres tiendas organizadoras.</figcaption>
+</figure>
 
 **Fase 2 — Vivir la Experiencia Otto:** una vez en el local, el objetivo era que el jugador experimentara los valores explícitos (el espacio, el servicio) y notara los implícitos (pertenencia) sin que se los tuviera que explicar.
 
