@@ -14,32 +14,116 @@ categories: [Banking, Digital Product]
 
 title: "Janus: Crédito Hipotecario Digital E2E en Perú"
 meta_title: "Janus: El Primer Crédito Hipotecario 100% Digital en Perú | Alfredo Vásquez"
-meta_description: "Lideré el programa de tres fases del crédito hipotecario 100% digital de Interbank — de la simulación al desembolso, con un back office multi-rol para riesgos y legal."
+meta_description: "Estrategia UX y diseño de servicios del crédito hipotecario 100% digital de Interbank — de la simulación al desembolso, con un back office multi-rol para riesgos y legal."
 cover_image: /assets/images/cases/janus/janus-cover.webp
 
 headline: "Janus: Crédito Hipotecario Digital E2E en Perú"
-subheadline: "Liderazgo de Diseño Estratégico en un Entorno Fintech Regulado"
-excerpt: "Lideré la estrategia UX y el diseño de servicios del crédito hipotecario digital E2E de Interbank a lo largo de tres fases — desde la simulación hasta el desembolso — entregando el primer crédito hipotecario regulado completamente digital del Perú."
+subheadline: "Diseño de Servicios y Estrategia UX en un Entorno Fintech Regulado"
+excerpt: "Trece meses en el proyecto que llevó el crédito hipotecario de Interbank de extremo a extremo sin una sola visita a la agencia — reemplazando una evaluación de ingresos hecha en Excel por un formulario adaptativo, y diseñando el back office donde riesgos, legal y comercial trabajan sobre el mismo expediente."
 
 industry: "Fintech · Banca · Productos Financieros Regulados"
 client: "Interbank"
-
-context: "Interbank se propuso convertirse en el primer banco en Perú en ofrecer un producto hipotecario completamente digital, de extremo a extremo — desde la simulación hasta el desembolso — sin ninguna interacción presencial. Esto situó a Interbank en la frontera del fintech regulado en América Latina, donde marcos legales complejos, modelos de evaluación de riesgo y flujos de trabajo con múltiples stakeholders habían hecho históricamente inviable la digitalización completa. El producto, denominado Janus, tenía que lograr que la transacción financiera más regulada y documentada en la vida de un consumidor se sintiera simple, transparente y confiable en una pantalla."
-
-problem: "El problema central no era la interfaz — era el lenguaje. La terminología financiera y legal generaba fricción cognitiva en cada paso, llevando a los usuarios a abandonar el flujo antes de comprometerse. La investigación confirmó lo que los datos sugerían: los usuarios no abandonaban porque el proceso fuera largo. Abandonaban porque no entendían lo que estaban aceptando. El punto de fricción crítico era que los usuarios no podían ver su cuota mensual estimada antes de ingresar datos personales — una barrera de confianza que bloqueaba el engagement temprano. La terminología financiera densa, incluyendo programas gubernamentales como Mi Vivienda, añadía una capa adicional de confusión. Al mismo tiempo, el flujo de back office para los equipos de riesgos y legal era completamente manual, generando demoras que impactaban directamente el tiempo hasta el desembolso."
-
-role: "Lideré el diseño de producto en tres fases como diseñador UX principal, trabajando de forma embebida con gestión de producto, riesgos, legal y el consultor de diseño de contenidos. Definí la estrategia UX y la arquitectura de información para el flujo completo de simulación hasta desembolso. Traduje los complejos requisitos de datos del equipo de riesgos en un formulario dinámico con revelación progresiva — reemplazando un formulario en papel de múltiples páginas por una experiencia digital adaptativa. Diseñé las herramientas de back office para evaluadores de riesgo, revisores legales y ejecutivos comerciales, mapeando todas las interacciones de roles mediante service blueprints y diagramas de flujo. Ejecuté guerrilla testing con stakeholders internos y entrevistas a profundidad con usuarios para iterar el flujo. Coordiné la estrategia de diseño de contenidos con un consultor externo para abordar sistemáticamente el problema de terminología en todo el producto."
-
-journey_image: /assets/images/cases/janus/janus_journey_es.webp
-journey_image_width: 1920
-journey_image_height: 1080
-
-approach: "La decisión estratégica que transformó el producto fue redefinir el paso de simulación. Lo rediseñé como una herramienta de descubrimiento que mostraba al usuario un rango de opciones para que pueda optar por la que más le convenga. Esto requirió negociar con el equipo de riesgos para exponer resultados parciales de simulación más temprano en el flujo — un cambio técnicamente no trivial que implicó alinear producto, ingeniería y riesgos en torno a un insight compartido sobre el usuario. Para la arquitectura de información, apliqué un modelo de revelación progresiva: cada pantalla contenía exactamente la información necesaria en ese momento, con apoyo contextual introducido precisamente cuando la carga cognitiva alcanzaba su pico. El formulario fue reconstruido como un flujo adaptativo — las preguntas aparecían o desaparecían dinámicamente según las respuestas previas, eliminando campos irrelevantes por completo. Para la capa de back office, mapeé el flujo completo de múltiples roles en un service blueprint antes de diseñar cualquier interfaz, asegurando que la herramienta reflejara cómo riesgos, legal y comercial realmente colaboraban — no cómo el organigrama decía que deberían hacerlo."
-
-impact:
-  - "Flujo de simulación de 4 pasos — reducido desde un proceso multi-pantalla sin retroalimentación temprana"
-  - "Primeras ventas en días tras salir a producción, validando la hipótesis de conversión"
-  - "Primer producto hipotecario regulado completamente digital, de extremo a extremo, en el Perú"
-  - "Back office multi-rol que integró los flujos de riesgos, legal y comercial en un solo sistema"
-  - "Estableció un framework replicable para el diseño de productos financieros regulados: revelación progresiva bajo restricción, formularios adaptativos y diseño de servicios multi-rol"
 ---
+
+## Contexto
+
+Interbank se propuso ser el primer banco en Perú en ofrecer un crédito hipotecario completamente digital, de extremo a extremo: de la simulación al desembolso, sin una sola visita a la agencia. Es la transacción más regulada y documentada en la vida de una persona, y atraviesa cuatro organizaciones que no se coordinan entre sí — el banco, la inmobiliaria que vende la unidad, la notaría que formaliza y los equipos internos de riesgos y legal que evalúan la exposición.
+
+Por su magnitud, el programa se ejecutó en tres fases sucesivas. Participé en las tres durante trece meses como UX Designer Senior, liderando las decisiones de diseño dentro de mi squad de tecnología.
+
+<figure class="case-figure">
+  <img src="/assets/images/cases/janus/janus-roadmap_es.webp" alt="Línea de tiempo del programa Janus en tres fases: MVP, Fase I y Fase II">
+  <figcaption>Las tres fases del programa y el alcance de cada una.</figcaption>
+</figure>
+
+## El Problema No Era la Interfaz, Era el Lenguaje
+
+El brief llegó enmarcado como un diseño de pantallas. La investigación exploratoria decía otra cosa: los solicitantes no abandonaban porque el proceso fuera largo, sino porque no entendían qué estaban aceptando. La terminología financiera y legal — incluyendo programas del Estado como Mi Vivienda, cuyos beneficios muchos no lograban explicar — generaba fricción en cada paso.
+
+Mapear los dolores del solicitante junto a los del banco mostró que ambos venían de la misma causa: un proceso manual al que se le habían añadido parches digitales inconsistentes. El cliente enfrentaba información poco clara y sin acompañamiento; el banco, reprocesos, sistemas obsoletos y una capacidad que no escalaba. La promesa de velocidad era imposible de cumplir incluso cuando había voluntad de cumplirla.
+
+Al mapear el subflujo de cotización paso a paso — trece en total, con la emoción registrada en cada uno — apareció algo que contradecía la hipótesis del equipo. El punto más alto de toda la curva llega en el paso 3, cuando el solicitante decide que la tasa base es buena para negociar: el mejor momento ocurre antes de haber entregado un solo dato. El más bajo llega tres pasos después, al declarar los ingresos — el primer momento en que se expone de verdad. Y nada de lo que viene después vuelve a acercarse al pico. La ansiedad no estaba donde suponíamos, y el diseño estaba optimizando los pasos equivocados.
+
+<figure class="case-figure">
+  <img src="/assets/images/cases/janus/janus-quote-emotional-curve_es.webp" alt="Curva emocional del subflujo de cotización de Janus, trece pasos">
+  <figcaption>Acercamiento a las etapas de simulación y cotización: trece pasos, con la emoción registrada en cada uno.</figcaption>
+</figure>
+
+De ahí salió el principio que ordenó el resto del proyecto: para el solicitante esta es una decisión emocional antes que financiera. No estaba comparando tasas en una hoja de cálculo — buscaba alguien que le dijera con claridad qué esperar y le redujera la cantidad de veces que tenía que adivinar. Claridad y acompañamiento por encima de completitud funcional.
+
+## Mapeando un Recorrido que el Banco No Controla
+
+El alcance era el flujo de solicitud. Sin embargo, era necesario mapear el recorrido completo del comprador, que hasta entonces tratábamos como una caja negra, desde que busca el inmueble hasta años después de mudarse, porque los puntos de dolor no se concentraban donde vivía el producto del banco: desconfianza en las inmobiliarias, temor a una evaluación crediticia discriminatoria, términos legales confusos sin nadie del banco presente en la notaría, y desenganche total después del desembolso.
+
+<figure class="case-figure">
+  <img src="/assets/images/cases/janus/janus-journeymap_es.webp" alt="Journey de adquisición del crédito hipotecario: ocho etapas, curva emocional, dolores y oportunidades de diseño">
+  <figcaption>El recorrido completo: la emoción por etapa, el dolor declarado en cada una y la oportunidad de diseño que abría.</figcaption>
+</figure>
+
+Eso cambió la pregunta de diseño. Ya no era "cómo construimos una app hipotecaria", sino "dónde y cómo aparece el banco a lo largo de un recorrido que no controla". La respuesta fue un modelo de servicio con tres compromisos sosteniendo cada etapa: asesoría 360°, plataformas digitales unificadas y seguimiento visible.
+
+## De una Hoja de Cálculo Compartida a un Sistema
+
+Antes de Janus, saber si un solicitante calificaba significaba que un analista de crédito abría un Excel compartido y trabajaba a mano: un bloque de fórmulas distinto por cada categoría de renta — quinta, cuarta, primera, tercera — cada uno con sus propias reglas de descuento de ley. Funcionaba. Pero era lento, propenso a error, y dependía de que una persona específica estuviera disponible.
+
+<figure class="case-figure">
+  <img src="/assets/images/cases/janus/janus-excel-simulator.webp" alt="Simulador de endeudamiento en Excel usado por los analistas de crédito antes de Janus">
+  <figcaption>El simulador de endeudamiento en Excel, operado por un analista de crédito para cada solicitud.</figcaption>
+</figure>
+
+Lo rediseñé como una capacidad de autoservicio. Los tipos de ingreso se declaran de entrada — dependiente, profesional independiente, microempresario, rentista, accionista, jubilado y trabajador informal, pudiendo tener varios a la vez — y el formulario adapta campos, preguntas y su calculadora en vivo a esa combinación. La lógica regulatoria quedó codificada en el flujo en lugar de vivir en la cabeza de un analista.
+
+Incluir al trabajador informal como tipo de ingreso declarable fue la decisión con más consecuencias del formulario: es el perfil que el scoring tradicional deja fuera, y el mismo que en la investigación sentía que su tipo de ingreso jugaba en su contra.
+
+<figure class="case-figure">
+  <img src="/assets/images/cases/janus/janus-income-form.webp" alt="Pantalla de selección de tipos de ingreso en el formulario de cotización">
+  <figcaption>Selección de tipos de ingreso en canal oficinas: el formulario se reconfigura según lo declarado.</figcaption>
+</figure>
+
+## Cuatro Organizaciones en un Solo Expediente
+
+La otra mitad del producto no la usa el cliente. Antes de diseñar una interfaz de back office, mapeé cómo se incorpora un proyecto inmobiliario a Janus como service blueprint: cada sistema, cada entrega entre áreas, cada rol interno, y la experiencia del equipo de la inmobiliaria a lo largo del proceso.
+
+<figure class="case-figure">
+  <img src="/assets/images/cases/janus/janus-service-blueprint-add-a-project_es.webp" alt="Service blueprint del alta de un proyecto inmobiliario en Janus">
+  <figcaption>Service blueprint del alta de un proyecto inmobiliario.</figcaption>
+</figure>
+
+De ese blueprint salieron dos herramientas: un panel para que las inmobiliarias registren los datos legales, financieros y de cuentas de cada proyecto, y ASSI, el sistema donde evaluadores de riesgo y revisores legales gestionan el expediente de punta a punta.
+
+Los caminos de excepción ocuparon tanto diseño como el camino ideal. Una tasación rechazada, por ejemplo, no es un error del sistema: es una decisión que el cliente tiene que tomar antes de que el expediente pueda seguir, y si la interfaz no la resuelve con claridad, el expediente se anula solo.
+
+<figure class="case-figure">
+  <img src="/assets/images/cases/janus/janus-assi-property-appraisal.webp" alt="Pantalla de ASSI mostrando el caso de una tasación rechazada">
+  <figcaption>ASSI: el caso de una tasación rechazada y la decisión que habilita al ejecutivo comercial.</figcaption>
+</figure>
+
+## Acompañar al Cliente Hasta el Desembolso
+
+El flujo de simulación se rediseñó para mostrar una cifra real temprano y revelar el resto de forma progresiva, incluyendo una recomendación cuando un producto subsidiado como Crédito MiVivienda le convenía más que el hipotecario tradicional. Esto exigió negociar con el equipo de riesgos la exposición de resultados parciales antes de la evaluación completa — el costo de mostrar un número antes es que el cliente puede anclarse en una cifra que después cambia, y hubo que resolver cómo comunicar ese margen sin perder la utilidad de ver algo concreto desde el inicio.
+
+Iniciada la solicitud, la bandeja del cliente mostraba el estado de cada cotización activa, los siguientes pasos explícitos y el nombre y teléfono del asesor asignado — la traducción más directa del hallazgo de la investigación: alguien concreto a quién preguntar.
+
+<figure class="case-figure">
+  <img src="/assets/images/cases/janus/janus-client-inbox.webp" alt="Bandeja de cotizaciones del cliente con el asesor hipotecario asignado">
+  <figcaption>Bandeja del cliente: estado de cada cotización y asesor asignado con datos de contacto.</figcaption>
+</figure>
+
+Después de la aprobación, el seguimiento de desembolso desglosaba cada requisito pendiente — documentos, datos del inmueble, seguros, AFP — sin obligar a completarlos en orden.
+
+<figure class="case-figure">
+  <img src="/assets/images/cases/janus/janus-disbursement.webp" alt="Pantalla de seguimiento de requisitos pendientes para el desembolso">
+  <figcaption>Seguimiento de desembolso: qué falta, en cualquier orden.</figcaption>
+</figure>
+
+## Impacto
+
+- Flujo de simulación de 4 pasos, con una cifra visible antes de pedir datos personales
+- Primer crédito hipotecario regulado completamente digital, de extremo a extremo, en el Perú
+- La evaluación de ingresos pasó de un Excel operado por un analista a un formulario adaptativo de autoservicio segmentado por tipo de renta
+- Riesgos, legal y comercial trabajando sobre el mismo expediente en un solo sistema, con los caminos de excepción diseñados
+- Los patrones quedaron como base replicable para otros productos financieros regulados del banco: revelación progresiva bajo restricción, formularios adaptativos y diseño de servicios multi-rol
+
+## El Framework
+
+> Lo que me quedó de Janus: los dolores se mapean antes que las pantallas. El servicio se diseña alrededor de la transacción, no solo la transacción. El back office es una superficie de diseño de primer nivel, no un pendiente. Y lo que se revela y cuándo lo decide la ansiedad real de quien decide, no la teoría de arquitectura de información.

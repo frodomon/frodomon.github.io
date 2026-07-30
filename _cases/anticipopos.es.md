@@ -6,36 +6,101 @@ permalink: /es/cases/anticipopos/
 body_class: dark-header
 dark_hero_image: /assets/images/Cases.webp
 date: 2023-08-01
-date_modified: 2024-01-15
+date_modified: 2023-08-01
 image: /assets/images/cases/anticipopos/anticipopos.webp
 image_width: 880
 image_height: 912
 categories: [Banking, Digital Product]
 
 title: "Anticipo POS: Acceso Financiero para Propietarios de Negocio en el Punto de Venta"
-meta_title: "Anticipo POS: Acceso Financiero PYME BBVA | Alfredo Vásquez"
-meta_description: "Lideré la estrategia UX del primer préstamo digital E2E para PYME de BBVA Perú — crédito basado en POS validado con seis organizaciones stakeholder."
+meta_title: "Anticipo POS: Crédito Digital para Negocios en BBVA | Alfredo Vásquez"
+meta_description: "Lideré el equipo de diseño del primer préstamo con pago 100% digital de BBVA Perú — un mecanismo de crédito sin referente previo, hecho comprensible antes de firmar."
 cover_image: /assets/images/cases/anticipopos/anticipopos-cover.webp
 
 headline: "Anticipo POS: Acceso Financiero en el Punto de Venta"
-subheadline: "Diseñando un Producto Financiero Novedoso para Propietarios de Negocio en BBVA Perú"
-excerpt: "Lideré la estrategia UX y diseño de contenidos del primer préstamo digital PYME de BBVA — haciendo comprensible un mecanismo de crédito novedoso basado en POS para usuarios sin referente previo, coordinando seis organizaciones stakeholder."
+subheadline: "Liderazgo de Equipo y Diseño de Contenido en un Producto Financiero Nuevo"
+excerpt: "Lideré el equipo de diseño del primer préstamo con pago 100% digital de BBVA Perú: un producto que se evalúa con el historial de ventas del POS y se cobra del 35% de lo que el negocio vende cada día. Nadie en Perú había contratado algo así, y el reto no fue la interfaz — fue lograr que el comerciante entendiera el mecanismo antes de firmarlo."
 
 industry: "Fintech · Banca PYME · Productos Financieros Empresariales"
 client: "BBVA Perú"
-
-context: "En 2021, BBVA identificó una brecha significativa en su portafolio de productos para PYME: los propietarios de negocios que procesaban ventas a través del POS de BBVA no tenían acceso a evaluación crediticia digital ni a un producto de préstamo completamente digital. La evaluación crediticia tradicional excluía a muchos de estos comerciantes, y el proceso de originación era completamente manual y presencial. Anticipo POS fue diseñado para cerrar esta brecha — creando un producto financiero donde el historial de transacciones del propio POS del comerciante servía como base de evaluación crediticia, y donde el ciclo de vida completo (solicitud, aprobación, pago) podía completarse digitalmente. Se convertiría en el primer producto de BBVA Perú que podía pagarse completamente en línea, de extremo a extremo."
-
-problem: "El problema de diseño más difícil no era construir la interfaz — era hacer que un producto financiero nuevo y desconocido fuera comprensible para usuarios que no tenían ningún referente previo de cómo funcionaba. Anticipo POS era una nueva categoría de producto en Perú. A diferencia de un préstamo personal estándar, involucraba un modelo de crédito basado en el volumen de transacciones del POS en lugar del historial crediticio tradicional, y un descuento automático del pago de futuras liquidaciones del POS — un mecanismo de amortización que los usuarios nunca habían encontrado antes. El riesgo era alto: si los usuarios no entendían los mecanismos del producto al momento de contratar, BBVA enfrentaría reclamos, devoluciones y exposición regulatoria. La claridad no era una preferencia de UX — era un requisito de negocio y cumplimiento. La complejidad adicional vino del modelo de co-creación: BBVA Perú construía este producto en paralelo con el equipo de diseño del holding, requiriendo alineación constante entre organizaciones con distintas prioridades, tiempos y estándares de diseño."
-
-role: "Lideré el diseño UX para el alcance completo del producto en cuatro áreas de entregables: el proceso de contratación completo desde el descubrimiento del producto hasta la firma, el dashboard de seguimiento del préstamo con historial de transacciones y monitoreo de pagos, el flujo de pago (el primer pago de préstamo completamente digital en BBVA Perú), y las comunicaciones transaccionales por email alineadas al sistema de diseño de BBVA. También lideré la estrategia de contenidos y dirigí la construcción de un Content Deck exhaustivo documentando todas las decisiones de copy y su justificación regulatoria. Una parte significativa de mi rol fue gestionar el proceso de alineación multi-stakeholder — agendando revisiones iterativas con legal, marketing, seguridad y el equipo de diseño del holding para asegurar que cada decisión de contenido fuera legalmente precisa y comprensible para el usuario."
-
-approach: "La estrategia de diseño central fue tratar el diseño de contenidos como un componente estructural del UX — no como un paso de acabado. Antes de tomar ninguna decisión de diseño visual, invertí en comprender a profundidad los mecanismos legales y financieros del producto, trabajando directamente con los equipos legal y de producto para establecer un vocabulario compartido para la capa orientada al usuario. El principio clave que apliqué fue reconocimiento en lugar de recuerdo: cada pantalla tenía que hacer que los mecanismos del producto fueran evidentes por sí mismos en el momento de la interacción, sin requerir que los usuarios recordaran información de un paso anterior. Esto se tradujo en módulos de resumen persistentes que mostraban los términos clave del préstamo en cada etapa del flujo de contratación, revelación progresiva de cómo funciona el descuento automático de pago — introducido contextualmente en el momento en que los usuarios tenían más probabilidad de preguntarlo — y una arquitectura de información dinámica que se adaptaba al perfil de transacciones POS de cada usuario. El proceso de co-creación con el equipo del holding fue gestionado como un protocolo de alineación estructurado: adapté los activos de diseño existentes al contexto regulatorio y cultural peruano, asegurando que el producto permaneciera dentro del sistema de diseño global de BBVA mientras cumplía los requisitos locales. El diseño final fue aprobado por el equipo de diseño del holding como un patrón globalmente escalable."
-
-impact:
-  - "Primeras ventas en días tras el lanzamiento a producción, validando tanto la comprensión del usuario como la conversión"
-  - "Primer pago de préstamo completamente digital en BBVA Perú — de extremo a extremo sin interacción presencial"
-  - "Aprobación del equipo de diseño del holding como patrón globalmente escalable, replicable en otros mercados BBVA"
-  - "Alineación interfuncional de 6 equipos de stakeholders: legal, seguridad, marketing, riesgo, ingeniería y diseño holding"
-  - "El Content Deck se convirtió en un artefacto organizacional — una justificación documentada que dio a los equipos de producto, legal y marketing una única fuente de verdad para todas las iteraciones posteriores del producto"
 ---
+
+## Contexto
+
+En 2021 BBVA identificó una brecha en su portafolio para negocios: los comercios que cobraban con el POS del banco no tenían forma de ser evaluados en línea ni acceso a un financiamiento completamente digital. El scoring crediticio tradicional dejaba fuera a muchos de ellos, y la originación seguía siendo presencial y manual.
+
+Anticipo POS se diseñó para cerrar esa brecha con un mecanismo distinto: el propio historial de ventas del comercio sirve como base de evaluación, y el préstamo se paga solo cuando hay ventas — un 35% de lo recaudado cada día, hasta cubrir el total en un plazo de 120 días. Sería el primer producto de BBVA Perú pagable en línea de principio a fin.
+
+Lideré el equipo de diseño del producto — un UX Designer, un Visual Designer, un Content Designer y un QA — y coordiné con los líderes de producto del holding la co-creación de la primera versión que saldría al mercado peruano.
+
+## Un Producto Sin Referente
+
+El problema de diseño no era la interfaz. Era que ningún usuario tenía con qué comparar este producto.
+
+Un préstamo personal se entiende porque todos conocen uno. Anticipo POS no se parecía a nada que un comerciante peruano hubiera contratado antes: la evaluación no miraba su historial crediticio sino sus ventas, y el pago no era una cuota fija mensual sino un descuento variable sobre la recaudación diaria — que además no ocurría los días sin ventas. Tres mecanismos nuevos al mismo tiempo.
+
+El riesgo de eso no era una mala experiencia: era regulatorio. Si el comerciante no entendía cómo funcionaba el cobro en el momento de contratar, el resultado no sería frustración sino reclamos, contracargos y exposición ante el regulador. La claridad no era una preferencia de diseño; era un requisito del producto.
+
+<figure class="case-figure">
+  <img src="/assets/images/cases/anticipopos/anticipopos-characteristics.webp" alt="Pantalla de características de Anticipo POS explicando el mecanismo de cobro, la tasa y el plazo">
+  <figcaption>Las tres reglas del producto —cobro sobre ventas, tasa según monto, plazo de 120 días— antes de cualquier simulación.</figcaption>
+</figure>
+
+## Aprender el Producto Antes de Diseñarlo
+
+Antes de que el equipo tocara una sola pantalla, trabajé con las áreas legal y de producto para entender el mecanismo en todas sus dimensiones: qué es exactamente una venta neta, qué pasa si un día no hay ventas, qué pasa si el descuento no alcanza a cubrir el interés corrido, qué ocurre al llegar a la fecha límite con saldo pendiente.
+
+Ese trabajo previo es lo que hizo posible el resto. No se puede escribir con claridad sobre algo que uno mismo no termina de entender, y en un producto regulado cada simplificación mal hecha es un problema legal.
+
+## Mostrar el Mecanismo en Vez de Explicarlo
+
+El principio que ordenó el diseño fue que el usuario reconociera cómo funciona el producto en el momento de usarlo, en lugar de tener que recordar algo leído tres pantallas atrás.
+
+La decisión que más definió el producto fue no explicar el descuento del 35% con palabras. En vez de eso, el producto lo muestra funcionando: cinco días de ventas reales, con el cobro que corresponde a cada uno — incluyendo el día en que no se vendió nada y por lo tanto no se cobró. El comerciante ve el mecanismo operando sobre cifras concretas antes de comprometerse con nada.
+
+<figure class="case-figure">
+  <img src="/assets/images/cases/anticipopos/anticipopos-overview.webp" alt="Gráfico que muestra el cobro del 35% aplicado a las ventas de cinco días, incluyendo un día sin ventas">
+  <figcaption>El cobro del 35% aplicado a cinco días de ventas. El día 2, sin ventas, no hay cobro.</figcaption>
+</figure>
+
+El mismo criterio ordenó la simulación: en cada paso del flujo permanece visible el resumen de las condiciones —capital, interés, importe total, tasa, porcentaje de descuento y fecha límite— para que ninguna decisión dependa de recordar una pantalla anterior.
+
+<figure class="case-figure">
+  <img src="/assets/images/cases/anticipopos/anticipopos-simulation.webp" alt="Pantalla de simulación de Anticipo POS con el resumen de condiciones del préstamo">
+  <figcaption>Simulación: las condiciones completas permanecen a la vista mientras el usuario decide el monto.</figcaption>
+</figure>
+
+## Cuatro Personas Diseñando, Seis Áreas Aprobando
+
+Cada texto del producto tenía que pasar por seis áreas con prioridades distintas: legal necesitaba precisión regulatoria, seguridad validaba el tratamiento de datos, marketing cuidaba el tono, riesgos definía el mecanismo de cobro, desarrollo acotaba lo viable y diseño holding exigía consistencia con el sistema global. Al mismo tiempo, el producto se construía en paralelo con el equipo del holding, que estaba definiendo su propia versión.
+
+Sostener a un equipo de cuatro personas trabajando con esa cantidad de revisores exigía que las decisiones dejaran de discutirse por preferencia. Para eso dirigí la aprobación de un Content Deck: un documento donde cada texto del producto queda registrado junto a la razón legal y de uso que lo justifica. A partir de ahí, las revisiones dejaron de ser conversaciones sobre redacción y pasaron a ser validaciones sobre un fundamento ya escrito.
+
+Los términos técnicos que no podían eliminarse —TCEA, venta neta, interés compensatorio— se resolvieron con explicaciones que aparecen en el momento exacto en que el usuario probablemente se pregunta qué significan, no en un glosario aparte.
+
+<figure class="case-figure">
+  <img src="/assets/images/cases/anticipopos/anticipopos-terms.webp" alt="Explicación contextual del término TCEA dentro del flujo de simulación">
+  <figcaption>Los términos regulatorios obligatorios, explicados donde aparecen.</figcaption>
+</figure>
+
+<figure class="case-figure">
+  <img src="/assets/images/cases/anticipopos/anticipopos-faq.webp" alt="Preguntas frecuentes de Anticipo POS dentro del flujo de contratación">
+  <figcaption>Preguntas frecuentes dentro del flujo, no en una sección aparte.</figcaption>
+</figure>
+
+## Impacto
+
+- Primer producto de BBVA Perú con contratación y pago completamente digitales, de punta a punta
+- Evaluación crediticia basada en el historial de ventas con POS en lugar del scoring tradicional, abriendo acceso a negocios que el modelo estándar dejaba fuera
+- Diseño aprobado por el equipo de Diseño Holding como patrón escalable, replicable en otros mercados del grupo
+- Primera versión del producto co-creada con los líderes de producto del holding, con Perú como mercado de salida
+- El Content Deck quedó como fuente de verdad compartida para producto, legal y marketing en las iteraciones posteriores
+
+<figure class="case-figure">
+  <img src="/assets/images/cases/anticipopos/anticipopos-screenflow.webp" alt="Flujo completo de contratación de Anticipo POS, de la oferta a la confirmación">
+  <figcaption>El flujo de contratación completo, de la oferta a la operación exitosa.</figcaption>
+</figure>
+
+## El Framework
+
+> Lo que me dejó Anticipo POS: en un producto financiero nuevo, el contenido no es la capa final del diseño — es la estructura. Un mecanismo que el usuario no puede reconocer mientras lo usa no es un problema de comprensión, es un riesgo regulatorio. Y cuando seis áreas tienen que aprobar cada palabra, dejar escrito por qué se eligió cada texto libera al equipo de defenderlo una y otra vez.
