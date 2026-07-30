@@ -46,7 +46,7 @@ capabilities:
 
 cases:
   title: "Trabajo Seleccionado"
-  description: "Tres proyectos en siete años: un negocio que fundé y operé de punta a punta, un programa hipotecario donde lideré las decisiones de diseño dentro de un squad de tecnología, y un producto de crédito donde lideré un equipo de cuatro personas. De los tres salí antes de que llegaran los resultados de negocio. Hoy diseño en BCP las herramientas internas sobre Salesforce que usan quienes atienden al cliente."
+  description: "Tres proyectos en siete años: un negocio que fundé y operé de punta a punta, un programa hipotecario donde lideré las decisiones de diseño dentro de un squad de tecnología, y un producto de crédito de los tres años que pasé liderando un equipo de diseño en BBVA Perú. De los tres salí antes de que llegaran los resultados de negocio. Hoy diseño en BCP las herramientas internas sobre Salesforce que usan quienes atienden al cliente."
 
 leadership:
   title: "Cómo Pienso el Trabajo"

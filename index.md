@@ -46,7 +46,7 @@ capabilities:
 
 cases:
   title: "Selected Work"
-  description: "Three projects across seven years: a business I founded and ran end to end, a mortgage program where I led design decisions inside a technology squad, and a credit product where I led a four-person team. I left all three before the business results came in. Today I design the internal Salesforce tools used by the people who serve BCP's customers."
+  description: "Three projects across seven years: a business I founded and ran end to end, a mortgage program where I led design decisions inside a technology squad, and a credit product from the three years I spent leading a design team at BBVA Perú. I left all three before the business results came in. Today I design the internal Salesforce tools used by the people who serve BCP's customers."
 
 leadership:
   title: "How I Think About the Work"

@@ -31,7 +31,7 @@ In 2021 BBVA identified a gap in its business portfolio: merchants taking paymen
 
 Anticipo POS was designed to close that gap with a different mechanism: the merchant's own sales history serves as the basis for assessment, and the loan is repaid only when there are sales — 35% of each day's takings, until the full amount is covered within a 120-day term. It would be BBVA Peru's first product payable online from start to finish.
 
-I led the product's design team — a UX Designer, a Visual Designer, a Content Designer and a QA — and coordinated with the holding's product leads on co-creating the first version to reach the Peruvian market.
+Anticipo POS came midway through the three years I spent leading design at BBVA Perú. For this product I led a team of four — a UX Designer, a Visual Designer, a Content Designer and a QA — and coordinated with the holding's product leads on co-creating the first version to reach the Peruvian market.
 
 ## A Product With No Precedent
 

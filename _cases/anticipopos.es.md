@@ -31,7 +31,7 @@ En 2021 BBVA identificó una brecha en su portafolio para negocios: los comercio
 
 Anticipo POS se diseñó para cerrar esa brecha con un mecanismo distinto: el propio historial de ventas del comercio sirve como base de evaluación, y el préstamo se paga solo cuando hay ventas — un 35% de lo recaudado cada día, hasta cubrir el total en un plazo de 120 días. Sería el primer producto de BBVA Perú pagable en línea de principio a fin.
 
-Lideré el equipo de diseño del producto — un UX Designer, un Visual Designer, un Content Designer y un QA — y coordiné con los líderes de producto del holding la co-creación de la primera versión que saldría al mercado peruano.
+Anticipo POS llegó a mitad de los tres años que lideré diseño en BBVA Perú. Para este producto lideré un equipo de cuatro — un UX Designer, un Visual Designer, un Content Designer y un QA — y coordiné con los líderes de producto del holding la co-creación de la primera versión que saldría al mercado peruano.
 
 ## Un Producto Sin Referente
 
