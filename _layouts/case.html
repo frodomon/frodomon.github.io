@@ -4,7 +4,7 @@ layout: default
 {% assign lang = page.lang | default: site.default_lang %}
 {% assign labels = site.data.translations[lang].labels %}
 
-<article id="case-study" itemscope itemtype="https://schema.org/Article">
+<article class="case-study" itemscope itemtype="https://schema.org/Article">
   {% include dark-hero.html %}
   {% include breadcrumb.html %}
   {% if page.industry or page.client %}
@@ -20,35 +20,8 @@ layout: default
       {% endif %}
     </section>
   {% endif %}
-  <section class="case-study">
-    <h2>{{ labels.context }}</h2>
-    <p>{{ page.context }}</p>
+  <section id="case-study">
+    {{ content }}
   </section>
-  <section class="case-study">
-    <h2>{{ labels.challenge }}</h2>
-    <p>{{ page.problem }}</p>
-  </section>
-  <section class="case-study">
-    <h2>{{ labels.role }}</h2>
-    <p>{{ page.role }}</p>
-    {% if page.journey_image %}
-      <div class="case-image">
-        <img src="{{ page.journey_image }}" alt="{{ page.title }}" loading="lazy" width="{{ page.journey_image_width }}" height="{{ page.journey_image_height }}">
-      </div>
-    {% endif %}
-  </section>
-  <section class="case-study">
-    <h2>{{ labels.approach }}</h2>
-    <p>{{ page.approach }}</p>
-  </section>
-  <section class="case-study">
-    <h2>{{ labels.impact }}</h2>
-    <ul>
-      {% for item in page.impact %}
-        <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
-  </section>
-  {{ content }}
 </article>
 {% include related-cases.html %}

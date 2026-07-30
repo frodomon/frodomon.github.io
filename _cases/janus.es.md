@@ -6,20 +6,20 @@ permalink: /es/cases/janus/
 body_class: dark-header
 dark_hero_image: /assets/images/Cases.webp
 date: 2021-05-01
-date_modified: 2024-01-15
+date_modified: 2021-05-01
 image: /assets/images/cases/janus/janus.webp
 image_width: 880
 image_height: 1160
 categories: [Banking, Digital Product]
 
-title: "Janus: El Primer Crédito Hipotecario Digital E2E en Perú"
-meta_title: "Janus: Hipoteca 100% Digital en Perú | Alfredo Vásquez"
-meta_description: "Lideré la estrategia UX y diseño de servicios del crédito hipotecario digital de Interbank — el primer crédito hipotecario regulado 100% digital del Perú."
+title: "Janus: Crédito Hipotecario Digital E2E en Perú"
+meta_title: "Janus: El Primer Crédito Hipotecario 100% Digital en Perú | Alfredo Vásquez"
+meta_description: "Lideré el programa de tres fases del crédito hipotecario 100% digital de Interbank — de la simulación al desembolso, con un back office multi-rol para riesgos y legal."
 cover_image: /assets/images/cases/janus/janus-cover.webp
 
 headline: "Janus: Crédito Hipotecario Digital E2E en Perú"
 subheadline: "Liderazgo de Diseño Estratégico en un Entorno Fintech Regulado"
-excerpt: "Lideré la estrategia UX y el diseño de servicios del producto hipotecario digital de Interbank — convirtiendo la transacción financiera más regulada en una experiencia digital de cuatro pasos, transparente y confiable."
+excerpt: "Lideré la estrategia UX y el diseño de servicios del crédito hipotecario digital E2E de Interbank a lo largo de tres fases — desde la simulación hasta el desembolso — entregando el primer crédito hipotecario regulado completamente digital del Perú."
 
 industry: "Fintech · Banca · Productos Financieros Regulados"
 client: "Interbank"
