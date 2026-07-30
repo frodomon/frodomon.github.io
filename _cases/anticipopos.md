@@ -41,10 +41,16 @@ A personal loan makes sense because everyone knows one. Anticipo POS resembled n
 
 The risk in that wasn't a poor experience: it was regulatory. If the merchant didn't understand how the deduction worked at the moment of signing, the result wouldn't be frustration but complaints, chargebacks and exposure to the regulator. Clarity wasn't a design preference; it was a product requirement.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/anticipopos/anticipopos-characteristics.webp" alt="Anticipo POS features screen explaining the deduction mechanism, the rate and the term">
-  <figcaption>The product's three rules —deduction from sales, rate based on amount, 120-day term— before any simulation.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/anticipopos/anticipopos-characteristics.webp" data-lightbox-alt="Anticipo POS features screen explaining the deduction mechanism, the rate and the term" data-lightbox-caption="The product's three rules —deduction from sales, rate based on amount, 120-day term— before any simulation." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/anticipopos/anticipopos-characteristics.webp" alt="Anticipo POS features screen explaining the deduction mechanism, the rate and the term">
+      </button>
+      <figcaption>The product's three rules —deduction from sales, rate based on amount, 120-day term— before any simulation.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## Learning the Product Before Designing It
 
@@ -58,17 +64,29 @@ The principle that shaped the design was that the user should recognize how the 
 
 The decision that most defined the product was not to explain the 35% deduction in words. Instead, the product shows it working: five days of real sales, with the corresponding charge for each one — including the day nothing was sold and therefore nothing was charged. The merchant sees the mechanism operating on concrete figures before committing to anything.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/anticipopos/anticipopos-overview.webp" alt="Chart showing the 35% deduction applied to five days of sales, including a day with no sales">
-  <figcaption>The 35% deduction applied to five days of sales. On day 2, with no sales, there's no charge.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/anticipopos/anticipopos-overview.webp" data-lightbox-alt="Chart showing the 35% deduction applied to five days of sales, including a day with no sales" data-lightbox-caption="The 35% deduction applied to five days of sales. On day 2, with no sales, there's no charge." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/anticipopos/anticipopos-overview.webp" alt="Chart showing the 35% deduction applied to five days of sales, including a day with no sales">
+      </button>
+      <figcaption>The 35% deduction applied to five days of sales. On day 2, with no sales, there's no charge.</figcaption>
+    </figure>
+  </div>
+</div>
 
 The same criterion shaped the simulation: at every step of the flow the summary of conditions stays visible —principal, interest, total payable, rate, deduction percentage and deadline— so that no decision depends on remembering a previous screen.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/anticipopos/anticipopos-simulation.webp" alt="Anticipo POS simulation screen with the summary of loan conditions">
-  <figcaption>Simulation: the full conditions stay in view while the user decides the amount.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/anticipopos/anticipopos-simulation.webp" data-lightbox-alt="Anticipo POS simulation screen with the summary of loan conditions" data-lightbox-caption="Simulation: the full conditions stay in view while the user decides the amount." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/anticipopos/anticipopos-simulation.webp" alt="Anticipo POS simulation screen with the summary of loan conditions">
+      </button>
+      <figcaption>Simulation: the full conditions stay in view while the user decides the amount.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## Four People Designing, Six Areas Approving
 
@@ -78,15 +96,27 @@ Sustaining a four-person team working with that many reviewers meant decisions h
 
 The technical terms that couldn't be removed —TCEA, net sale, compensatory interest— were handled with explanations that appear at the exact moment the user is likely to wonder what they mean, not in a separate glossary.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/anticipopos/anticipopos-terms.webp" alt="Contextual explanation of the TCEA term inside the simulation flow">
-  <figcaption>The mandatory regulatory terms, explained where they appear.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/anticipopos/anticipopos-terms.webp" data-lightbox-alt="Contextual explanation of the TCEA term inside the simulation flow" data-lightbox-caption="The mandatory regulatory terms, explained where they appear." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/anticipopos/anticipopos-terms.webp" alt="Contextual explanation of the TCEA term inside the simulation flow">
+      </button>
+      <figcaption>The mandatory regulatory terms, explained where they appear.</figcaption>
+    </figure>
+  </div>
+</div>
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/anticipopos/anticipopos-faq.webp" alt="Anticipo POS frequently asked questions inside the contracting flow">
-  <figcaption>Frequently asked questions inside the flow, not in a separate section.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/anticipopos/anticipopos-faq.webp" data-lightbox-alt="Anticipo POS frequently asked questions inside the contracting flow" data-lightbox-caption="Frequently asked questions inside the flow, not in a separate section." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/anticipopos/anticipopos-faq.webp" alt="Anticipo POS frequently asked questions inside the contracting flow">
+      </button>
+      <figcaption>Frequently asked questions inside the flow, not in a separate section.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## Impact
 
@@ -96,10 +126,16 @@ The technical terms that couldn't be removed —TCEA, net sale, compensatory int
 - First version of the product co-created with the holding's product leads, with Peru as the launch market
 - The Content Deck became a shared source of truth for product, legal and marketing in the product's later iterations
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/anticipopos/anticipopos-screenflow.webp" alt="Complete Anticipo POS contracting flow, from offer to confirmation">
-  <figcaption>The complete contracting flow, from the offer to the successful transaction.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/anticipopos/anticipopos-screenflow.webp" data-lightbox-alt="Complete Anticipo POS contracting flow, from offer to confirmation" data-lightbox-caption="The complete contracting flow, from the offer to the successful transaction." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/anticipopos/anticipopos-screenflow.webp" alt="Complete Anticipo POS contracting flow, from offer to confirmation">
+      </button>
+      <figcaption>The complete contracting flow, from the offer to the successful transaction.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## The Framework
 

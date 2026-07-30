@@ -31,10 +31,16 @@ Interbank set out to become the first bank in Peru to offer a fully digital, end
 
 Given its scale, the program ran in three successive phases. I took part in all three over thirteen months as a Senior UX Designer, leading design decisions within my technology squad.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/janus/janus-roadmap.webp" alt="Timeline of the Janus program in three phases: MVP, Phase I and Phase II">
-  <figcaption>The program's three phases and the scope of each.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/janus/janus-roadmap.webp" data-lightbox-alt="Timeline of the Janus program in three phases: MVP, Phase I and Phase II" data-lightbox-caption="The program's three phases and the scope of each." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/janus/janus-roadmap.webp" alt="Timeline of the Janus program in three phases: MVP, Phase I and Phase II">
+      </button>
+      <figcaption>The program's three phases and the scope of each.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## The Problem Wasn't the Interface, It Was the Language
 
@@ -44,10 +50,16 @@ Mapping the applicant's pain points alongside the bank's showed both came from t
 
 Mapping the quotation sub-flow step by step — thirteen in all, with the emotion recorded at each one — turned up something that contradicted the team's hypothesis. The highest point of the entire curve comes at step 3, when the applicant decides the base rate is worth negotiating: the best moment happens before a single piece of data has been handed over. The lowest comes three steps later, when declaring income — the first moment of real exposure. And nothing that follows comes close to the peak again. The anxiety wasn't where we assumed, and the design was optimizing the wrong steps.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/janus/janus-quote-emotional-curve.webp" alt="Emotional curve of the Janus quotation sub-flow, thirteen steps">
-  <figcaption>A zoom into the simulation and quote stages: thirteen steps, with the emotion recorded at each one.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/janus/janus-quote-emotional-curve.webp" data-lightbox-alt="Emotional curve of the Janus quotation sub-flow, thirteen steps" data-lightbox-caption="A zoom into the simulation and quote stages: thirteen steps, with the emotion recorded at each one." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/janus/janus-quote-emotional-curve.webp" alt="Emotional curve of the Janus quotation sub-flow, thirteen steps">
+      </button>
+      <figcaption>A zoom into the simulation and quote stages: thirteen steps, with the emotion recorded at each one.</figcaption>
+    </figure>
+  </div>
+</div>
 
 That produced the principle that shaped the rest of the project: for the applicant this is an emotional decision before it is a financial one. They weren't comparing rates in a spreadsheet — they were looking for someone to tell them clearly what to expect and cut down how often they had to guess. Clarity and guidance over feature completeness.
 
@@ -55,10 +67,16 @@ That produced the principle that shaped the rest of the project: for the applica
 
 The scope was the application flow. Even so, it was necessary to map the buyer's full journey — which until then we treated as a black box — from searching for a property to years after moving in, because the pain points weren't concentrated where the bank's product lived: distrust of real estate agencies, fear of a discriminatory credit assessment, confusing legal terms with nobody from the bank present at the notary, and complete disengagement after disbursement.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/janus/janus-journeymap.webp" alt="Mortgage acquisition journey: eight stages, emotional curve, pain points and design opportunities">
-  <figcaption>The full journey: the emotion at each stage, the pain point stated there, and the design opportunity it opened.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/janus/janus-journeymap.webp" data-lightbox-alt="Mortgage acquisition journey: eight stages, emotional curve, pain points and design opportunities" data-lightbox-caption="The full journey: the emotion at each stage, the pain point stated there, and the design opportunity it opened." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/janus/janus-journeymap.webp" alt="Mortgage acquisition journey: eight stages, emotional curve, pain points and design opportunities">
+      </button>
+      <figcaption>The full journey: the emotion at each stage, the pain point stated there, and the design opportunity it opened.</figcaption>
+    </figure>
+  </div>
+</div>
 
 That changed the design question. It was no longer "how do we build a mortgage app," but "where and how does the bank show up across a journey it doesn't control." The answer was a service model with three commitments holding up every stage: 360° advisory, unified digital platforms, and visible tracking.
 
@@ -66,37 +84,61 @@ That changed the design question. It was no longer "how do we build a mortgage a
 
 Before Janus, finding out whether an applicant qualified meant a credit analyst opened a shared Excel file and worked it by hand: a different block of formulas for each income category — salaried, professional fees, rental, business — each with its own statutory deduction rules. It worked. But it was slow, error-prone, and dependent on one specific person being available.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/janus/janus-excel-simulator.webp" alt="Debt capacity simulator in Excel used by credit analysts before Janus">
-  <figcaption>The debt capacity simulator in Excel, run by a credit analyst for every application.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/janus/janus-excel-simulator.webp" data-lightbox-alt="Debt capacity simulator in Excel used by credit analysts before Janus" data-lightbox-caption="The debt capacity simulator in Excel, run by a credit analyst for every application." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/janus/janus-excel-simulator.webp" alt="Debt capacity simulator in Excel used by credit analysts before Janus">
+      </button>
+      <figcaption>The debt capacity simulator in Excel, run by a credit analyst for every application.</figcaption>
+    </figure>
+  </div>
+</div>
 
 I redesigned it as a self-service capability. Income types are declared upfront — salaried, self-employed professional, micro-business owner, landlord, shareholder, retiree, and informal worker, with more than one allowed at a time — and the form adapts its fields, questions and live calculator to that combination. The regulatory logic ended up encoded in the flow instead of living in an analyst's head.
 
 Including informal workers as a declarable income type was the form's most consequential decision: it's the profile traditional scoring leaves out, and the same one that told us in research that their income type was working against them.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/janus/janus-income-form.webp" alt="Income type selection screen in the quotation form">
-  <figcaption>Income type selection in the branch channel: the form reconfigures itself according to what's declared.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/janus/janus-income-form.webp" data-lightbox-alt="Income type selection screen in the quotation form" data-lightbox-caption="Income type selection in the branch channel: the form reconfigures itself according to what's declared." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/janus/janus-income-form.webp" alt="Income type selection screen in the quotation form">
+      </button>
+      <figcaption>Income type selection in the branch channel: the form reconfigures itself according to what's declared.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## Four Organizations, One Case File
 
 The other half of the product isn't used by the client. Before designing a single back-office interface, I mapped how a real estate project gets onboarded into Janus as a service blueprint: every system, every handoff between areas, every internal role, and the developer team's experience across the process.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/janus/janus-service-blueprint-add-a-project.webp" alt="Service blueprint for onboarding a real estate project into Janus">
-  <figcaption>Service blueprint for onboarding a real estate project.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/janus/janus-service-blueprint-add-a-project.webp" data-lightbox-alt="Service blueprint for onboarding a real estate project into Janus" data-lightbox-caption="Service blueprint for onboarding a real estate project." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/janus/janus-service-blueprint-add-a-project.webp" alt="Service blueprint for onboarding a real estate project into Janus">
+      </button>
+      <figcaption>Service blueprint for onboarding a real estate project.</figcaption>
+    </figure>
+  </div>
+</div>
 
 Two tools came out of that blueprint: a panel for developers to register each project's legal, financial and account details, and ASSI, the system where risk assessors and legal reviewers manage the case file end to end.
 
 The exception paths took as much design as the happy path. A rejected appraisal, for instance, isn't a system error: it's a decision the client has to make before the file can move forward, and if the interface doesn't resolve it clearly, the file cancels itself.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/janus/janus-assi-property-appraisal.webp" alt="ASSI screen showing a rejected appraisal case">
-  <figcaption>ASSI: a rejected appraisal and the decision that unblocks the commercial executive.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/janus/janus-assi-property-appraisal.webp" data-lightbox-alt="ASSI screen showing a rejected appraisal case" data-lightbox-caption="ASSI: a rejected appraisal and the decision that unblocks the commercial executive." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/janus/janus-assi-property-appraisal.webp" alt="ASSI screen showing a rejected appraisal case">
+      </button>
+      <figcaption>ASSI: a rejected appraisal and the decision that unblocks the commercial executive.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## Guiding the Client to Disbursement
 
@@ -104,17 +146,29 @@ The simulation flow was redesigned to show a real figure early and reveal the re
 
 Once the application was underway, the client inbox showed the status of every active quote, the explicit next steps, and the name and phone number of the assigned advisor — the most direct translation of the research finding: someone specific to ask.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/janus/janus-client-inbox.webp" alt="Client quotation inbox with the assigned mortgage advisor">
-  <figcaption>Client inbox: the status of each quote and the assigned advisor with contact details.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/janus/janus-client-inbox.webp" data-lightbox-alt="Client quotation inbox with the assigned mortgage advisor" data-lightbox-caption="Client inbox: the status of each quote and the assigned advisor with contact details." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/janus/janus-client-inbox.webp" alt="Client quotation inbox with the assigned mortgage advisor">
+      </button>
+      <figcaption>Client inbox: the status of each quote and the assigned advisor with contact details.</figcaption>
+    </figure>
+  </div>
+</div>
 
 After approval, the disbursement tracker broke down every outstanding requirement — documents, property details, insurance, pension fund — without forcing them to be completed in order.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/janus/janus-disbursement.webp" alt="Disbursement tracking screen showing outstanding requirements">
-  <figcaption>Disbursement tracking: what's still missing, in any order.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/janus/janus-disbursement.webp" data-lightbox-alt="Disbursement tracking screen showing outstanding requirements" data-lightbox-caption="Disbursement tracking: what's still missing, in any order." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/janus/janus-disbursement.webp" alt="Disbursement tracking screen showing outstanding requirements">
+      </button>
+      <figcaption>Disbursement tracking: what's still missing, in any order.</figcaption>
+    </figure>
+  </div>
+</div>
 
 The three commitments stopped being a statement of intent: the unified platforms are the form that replaced the Excel file and the single case file where risk, legal and commercial work on the same thing; the advisory is an advisor with a name and a phone number inside the inbox; the tracking is knowing, at any moment, what's still missing before disbursement.
 

@@ -2,11 +2,12 @@ import { initMasonry } from "./masonry.js";
 import { initFilters } from "./filters.js";
 
 export function initBlog() {
-  // Corren en cualquier página (no solo en el listado), porque post.html
-  // también puede tener un post de tipo gallery/video/audio/link — ya sea
-  // como el post principal o como related-post reusando post-card.html.
+  // Corren en cualquier página (no solo en el listado): post.html puede
+  // tener un post de tipo gallery/video/audio/link, y case.html tiene sus
+  // propias figuras con lightbox — ninguna de las dos tiene .blog-grid.
   initCardGalleries();
   initCardEmbeds();
+  initImageLightbox();
 
   const grid = document.querySelector(".blog-grid");
   if (!grid) return;
@@ -16,7 +17,6 @@ export function initBlog() {
   initMonthFilter();
   initSearch();
   initFilterReset();
-  initImageLightbox();
 
   document.addEventListener("layout:refresh", updateNoResults);
 }
@@ -149,10 +149,11 @@ function initCardEmbeds() {
   });
 }
 
-// Las cards de tipo "image" abren un lightbox de pantalla completa
-// en vez de navegar a la página del post (que no existe para este tipo).
+// Cualquier .lightbox-trigger (cards de blog tipo "image", figuras de
+// _cases/) abre un lightbox de pantalla completa compartido, en vez de
+// navegar a otra página.
 function initImageLightbox() {
-  const triggers = document.querySelectorAll(".post-card-lightbox-trigger");
+  const triggers = document.querySelectorAll(".lightbox-trigger");
   if (!triggers.length) return;
 
   const closeLabel = triggers[0].dataset.closeLabel || "Close";

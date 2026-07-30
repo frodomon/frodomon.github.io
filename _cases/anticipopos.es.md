@@ -41,10 +41,16 @@ Un préstamo personal se entiende porque todos conocen uno. Anticipo POS no se p
 
 El riesgo de eso no era una mala experiencia: era regulatorio. Si el comerciante no entendía cómo funcionaba el cobro en el momento de contratar, el resultado no sería frustración sino reclamos, contracargos y exposición ante el regulador. La claridad no era una preferencia de diseño; era un requisito del producto.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/anticipopos/anticipopos-characteristics.webp" alt="Pantalla de características de Anticipo POS explicando el mecanismo de cobro, la tasa y el plazo">
-  <figcaption>Las tres reglas del producto —cobro sobre ventas, tasa según monto, plazo de 120 días— antes de cualquier simulación.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/anticipopos/anticipopos-characteristics.webp" data-lightbox-alt="Pantalla de características de Anticipo POS explicando el mecanismo de cobro, la tasa y el plazo" data-lightbox-caption="Las tres reglas del producto —cobro sobre ventas, tasa según monto, plazo de 120 días— antes de cualquier simulación." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/anticipopos/anticipopos-characteristics.webp" alt="Pantalla de características de Anticipo POS explicando el mecanismo de cobro, la tasa y el plazo">
+      </button>
+      <figcaption>Las tres reglas del producto —cobro sobre ventas, tasa según monto, plazo de 120 días— antes de cualquier simulación.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## Aprender el Producto Antes de Diseñarlo
 
@@ -58,17 +64,29 @@ El principio que ordenó el diseño fue que el usuario reconociera cómo funcion
 
 La decisión que más definió el producto fue no explicar el descuento del 35% con palabras. En vez de eso, el producto lo muestra funcionando: cinco días de ventas reales, con el cobro que corresponde a cada uno — incluyendo el día en que no se vendió nada y por lo tanto no se cobró. El comerciante ve el mecanismo operando sobre cifras concretas antes de comprometerse con nada.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/anticipopos/anticipopos-overview.webp" alt="Gráfico que muestra el cobro del 35% aplicado a las ventas de cinco días, incluyendo un día sin ventas">
-  <figcaption>El cobro del 35% aplicado a cinco días de ventas. El día 2, sin ventas, no hay cobro.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/anticipopos/anticipopos-overview.webp" data-lightbox-alt="Gráfico que muestra el cobro del 35% aplicado a las ventas de cinco días, incluyendo un día sin ventas" data-lightbox-caption="El cobro del 35% aplicado a cinco días de ventas. El día 2, sin ventas, no hay cobro." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/anticipopos/anticipopos-overview.webp" alt="Gráfico que muestra el cobro del 35% aplicado a las ventas de cinco días, incluyendo un día sin ventas">
+      </button>
+      <figcaption>El cobro del 35% aplicado a cinco días de ventas. El día 2, sin ventas, no hay cobro.</figcaption>
+    </figure>
+  </div>
+</div>
 
 El mismo criterio ordenó la simulación: en cada paso del flujo permanece visible el resumen de las condiciones —capital, interés, importe total, tasa, porcentaje de descuento y fecha límite— para que ninguna decisión dependa de recordar una pantalla anterior.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/anticipopos/anticipopos-simulation.webp" alt="Pantalla de simulación de Anticipo POS con el resumen de condiciones del préstamo">
-  <figcaption>Simulación: las condiciones completas permanecen a la vista mientras el usuario decide el monto.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/anticipopos/anticipopos-simulation.webp" data-lightbox-alt="Pantalla de simulación de Anticipo POS con el resumen de condiciones del préstamo" data-lightbox-caption="Simulación: las condiciones completas permanecen a la vista mientras el usuario decide el monto." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/anticipopos/anticipopos-simulation.webp" alt="Pantalla de simulación de Anticipo POS con el resumen de condiciones del préstamo">
+      </button>
+      <figcaption>Simulación: las condiciones completas permanecen a la vista mientras el usuario decide el monto.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## Cuatro Personas Diseñando, Seis Áreas Aprobando
 
@@ -78,15 +96,27 @@ Sostener a un equipo de cuatro personas trabajando con esa cantidad de revisores
 
 Los términos técnicos que no podían eliminarse —TCEA, venta neta, interés compensatorio— se resolvieron con explicaciones que aparecen en el momento exacto en que el usuario probablemente se pregunta qué significan, no en un glosario aparte.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/anticipopos/anticipopos-terms.webp" alt="Explicación contextual del término TCEA dentro del flujo de simulación">
-  <figcaption>Los términos regulatorios obligatorios, explicados donde aparecen.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/anticipopos/anticipopos-terms.webp" data-lightbox-alt="Explicación contextual del término TCEA dentro del flujo de simulación" data-lightbox-caption="Los términos regulatorios obligatorios, explicados donde aparecen." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/anticipopos/anticipopos-terms.webp" alt="Explicación contextual del término TCEA dentro del flujo de simulación">
+      </button>
+      <figcaption>Los términos regulatorios obligatorios, explicados donde aparecen.</figcaption>
+    </figure>
+  </div>
+</div>
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/anticipopos/anticipopos-faq.webp" alt="Preguntas frecuentes de Anticipo POS dentro del flujo de contratación">
-  <figcaption>Preguntas frecuentes dentro del flujo, no en una sección aparte.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/anticipopos/anticipopos-faq.webp" data-lightbox-alt="Preguntas frecuentes de Anticipo POS dentro del flujo de contratación" data-lightbox-caption="Preguntas frecuentes dentro del flujo, no en una sección aparte." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/anticipopos/anticipopos-faq.webp" alt="Preguntas frecuentes de Anticipo POS dentro del flujo de contratación">
+      </button>
+      <figcaption>Preguntas frecuentes dentro del flujo, no en una sección aparte.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## Impacto
 
@@ -96,10 +126,16 @@ Los términos técnicos que no podían eliminarse —TCEA, venta neta, interés 
 - Primera versión del producto co-creada con los líderes de producto del holding, con Perú como mercado de salida
 - El Content Deck quedó como fuente de verdad compartida para producto, legal y marketing en las iteraciones posteriores
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/anticipopos/anticipopos-screenflow.webp" alt="Flujo completo de contratación de Anticipo POS, de la oferta a la confirmación">
-  <figcaption>El flujo de contratación completo, de la oferta a la operación exitosa.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/anticipopos/anticipopos-screenflow.webp" data-lightbox-alt="Flujo completo de contratación de Anticipo POS, de la oferta a la confirmación" data-lightbox-caption="El flujo de contratación completo, de la oferta a la operación exitosa." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/anticipopos/anticipopos-screenflow.webp" alt="Flujo completo de contratación de Anticipo POS, de la oferta a la confirmación">
+      </button>
+      <figcaption>El flujo de contratación completo, de la oferta a la operación exitosa.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## El Framework
 

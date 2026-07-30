@@ -324,8 +324,9 @@
   height: 100%;
 }
 
-/* --- Card como <button> (image): reset de estilos nativos de botón --- */
-.post-card-lightbox-trigger {
+/* --- Card/figura como <button> (image): reset de estilos nativos de botón.
+   Compartido por post-card-image.html (blog) y las figuras de _cases/. --- */
+.lightbox-trigger {
   display: block;
   width: 100%;
   background: none;

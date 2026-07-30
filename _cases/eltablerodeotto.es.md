@@ -33,10 +33,16 @@ El Tablero de Otto nació de una observación personal, no de un brief. Como jug
 
 El problema de negocio no era vender cartas. Era darle a alguien una razón lo bastante fuerte para salir de su casa y quedarse tres o cuatro horas en un lugar distinto — de forma consistente, semana tras semana. Cualquier tienda puede vender producto; muy pocas logran que la gente vuelva sin que el precio sea el motivo.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-fullhouse-tournament.webp" alt="Sala de El Tablero de Otto con todas las mesas ocupadas durante un torneo">
-  <figcaption>Torneo regular en el local, con todas las mesas ocupadas.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/eltablerodeotto/eltablerodeotto-fullhouse-tournament.webp" data-lightbox-alt="Sala de El Tablero de Otto con todas las mesas ocupadas durante un torneo" data-lightbox-caption="Torneo regular en el local, con todas las mesas ocupadas." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-fullhouse-tournament.webp" alt="Sala de El Tablero de Otto con todas las mesas ocupadas durante un torneo">
+      </button>
+      <figcaption>Torneo regular en el local, con todas las mesas ocupadas.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## Cuatro Tipos de Jugador, Tres Clientes
 
@@ -44,24 +50,42 @@ En vez de asumir que "los jugadores de Magic" eran un solo público, hice entrev
 
 La decisión que más definió el negocio no fue a quién sumar, sino a quién dejar fuera: decidí explícitamente que los jugadores pseudo-competitivos no eran el público de Otto, porque su comportamiento — solo aparecer cuando hay premio, sin compromiso con la comunidad — malograba el ambiente de juego para los otros tres segmentos. La decisión tenía un costo inmediato y medible: eran jugadores que llenaban eventos con premio, y dejarlos fuera significaba renunciar a asistencia y a ingresos que ya estaban sobre la mesa. Lo asumí porque el activo que sostenía al negocio no era el aforo de un torneo puntual, sino la razón por la que los otros tres segmentos volvían cada semana.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-archetype-matrix_es.webp" alt="Matriz 2x2 de arquetipos de jugadores de Otto, segmentados por aversión al riesgo y excedente de capital">
-  <figcaption>Los cuatro arquetipos de jugadores, segmentados por aversión al riesgo y excedente de capital — con los pseudo-competitivos marcados deliberadamente fuera de foco.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/eltablerodeotto/eltablerodeotto-archetype-matrix_es.webp" data-lightbox-alt="Matriz 2x2 de arquetipos de jugadores de Otto, segmentados por aversión al riesgo y excedente de capital" data-lightbox-caption="Los cuatro arquetipos de jugadores, segmentados por aversión al riesgo y excedente de capital — con los pseudo-competitivos marcados deliberadamente fuera de foco." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-archetype-matrix_es.webp" alt="Matriz 2x2 de arquetipos de jugadores de Otto, segmentados por aversión al riesgo y excedente de capital">
+      </button>
+      <figcaption>Los cuatro arquetipos de jugadores, segmentados por aversión al riesgo y excedente de capital — con los pseudo-competitivos marcados deliberadamente fuera de foco.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## El Mapa de Valores: Lo Explícito y Lo Implícito
 
 Antes de diseñar un solo evento, mapeé lo que los jugadores buscaban en dos capas. La capa explícita — lo que decían en las entrevistas: estacionamiento, mesas amplias y numeradas con sillas cómodas, buena ventilación, poder comprar bebidas y comida sin salir del local, buen stock, buen ambiente, una zona de descanso. La capa implícita — lo que no decían directamente pero explicaba por qué volvían: formar parte de una comunidad sana, recibir un trato amable, poder encontrar jugadores expertos, sentir el local como un lugar especial, la progresión de "vencer al más fuerte", hacer nuevos amigos, descubrir nuevos juegos. Diseñar solo para la capa explícita construye una tienda. Diseñar para ambas construye una comunidad que no se va a la competencia por un mejor precio.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-value-map_es.webp" alt="Mapa de valores explícitos e implícitos de los jugadores de Otto">
-  <figcaption>Lo que los jugadores decían que querían, y lo que en realidad los hacía volver.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/eltablerodeotto/eltablerodeotto-value-map_es.webp" data-lightbox-alt="Mapa de valores explícitos e implícitos de los jugadores de Otto" data-lightbox-caption="Lo que los jugadores decían que querían, y lo que en realidad los hacía volver." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-value-map_es.webp" alt="Mapa de valores explícitos e implícitos de los jugadores de Otto">
+      </button>
+      <figcaption>Lo que los jugadores decían que querían, y lo que en realidad los hacía volver.</figcaption>
+    </figure>
+  </div>
+</div>
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-intergeneration-match.webp" alt="Un adulto y un niño jugando Pokémon TCG en una mesa del local">
-  <figcaption>Un adulto y un niño jugando Pokémon en el local.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/eltablerodeotto/eltablerodeotto-intergeneration-match.webp" data-lightbox-alt="Un adulto y un niño jugando Pokémon TCG en una mesa del local" data-lightbox-caption="Un adulto y un niño jugando Pokémon en el local." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-intergeneration-match.webp" alt="Un adulto y un niño jugando Pokémon TCG en una mesa del local">
+      </button>
+      <figcaption>Un adulto y un niño jugando Pokémon en el local.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## Diseñando el Ciclo de Vida del Cliente
 
@@ -69,10 +93,16 @@ Con los arquetipos y el mapa de valores definidos, diseñé un ciclo de cuatro f
 
 **Fase 1 — Captación por Segmento:** cada arquetipo tenía un canal y una táctica distinta. A los semi-profesionales los capté con eventos competitivos con clasificación a torneos internacionales. A los jugadores nuevos, con talleres gratuitos para aprender a jugar y competencias sin costo, promocionados vía Facebook Ads. A los amateur, con formatos casuales sin presión competitiva.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-interstore-tournament.webp" alt="Cheque de premiación de la Liga Intertiendas con los logos de las tiendas aliadas">
-  <figcaption>Cheque de la Liga Intertiendas, marzo 2018, con los logos de las tres tiendas organizadoras.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/eltablerodeotto/eltablerodeotto-interstore-tournament.webp" data-lightbox-alt="Cheque de premiación de la Liga Intertiendas con los logos de las tiendas aliadas" data-lightbox-caption="Cheque de la Liga Intertiendas, marzo 2018, con los logos de las tres tiendas organizadoras." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-interstore-tournament.webp" alt="Cheque de premiación de la Liga Intertiendas con los logos de las tiendas aliadas">
+      </button>
+      <figcaption>Cheque de la Liga Intertiendas, marzo 2018, con los logos de las tres tiendas organizadoras.</figcaption>
+    </figure>
+  </div>
+</div>
 
 **Fase 2 — Vivir la Experiencia Otto:** una vez en el local, el objetivo era que el jugador experimentara los valores explícitos (el espacio, el servicio) y notara los implícitos (pertenencia) sin que se los tuviera que explicar.
 
@@ -82,24 +112,42 @@ Con los arquetipos y el mapa de valores definidos, diseñé un ciclo de cuatro f
 
 El ciclo se ejecutó con formatos concretos: dos ligas Sealed por temporada, una liga Draft por temporada, formato Pauper y FNM (Friday Night Magic) corriendo en paralelo, cada uno atendiendo a un arquetipo distinto.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-lifecycle-engine_es.webp" alt="Motor de ciclo de vida de Otto en cuatro fases">
-  <figcaption>El motor de cuatro fases que diseñé para convertir jugadores ocasionales en embajadores de marca.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/eltablerodeotto/eltablerodeotto-lifecycle-engine_es.webp" data-lightbox-alt="Motor de ciclo de vida de Otto en cuatro fases" data-lightbox-caption="El motor de cuatro fases que diseñé para convertir jugadores ocasionales en embajadores de marca." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-lifecycle-engine_es.webp" alt="Motor de ciclo de vida de Otto en cuatro fases">
+      </button>
+      <figcaption>El motor de cuatro fases que diseñé para convertir jugadores ocasionales en embajadores de marca.</figcaption>
+    </figure>
+  </div>
+</div>
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-pokemon-champion.webp" alt="Jugador nuevo con su playmat de campeón tras un torneo de Pokémon en el local">
-  <figcaption>Premiación de un torneo de Pokémon en el local.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/eltablerodeotto/eltablerodeotto-pokemon-champion.webp" data-lightbox-alt="Jugador nuevo con su playmat de campeón tras un torneo de Pokémon en el local" data-lightbox-caption="Premiación de un torneo de Pokémon en el local." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-pokemon-champion.webp" alt="Jugador nuevo con su playmat de campeón tras un torneo de Pokémon en el local">
+      </button>
+      <figcaption>Premiación de un torneo de Pokémon en el local.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## La Comunidad Como Infraestructura
 
 La tienda física era solo el punto de entrada. La retención real vivía en la infraestructura de comunidad construida alrededor: grupos de WhatsApp segmentados por formato de juego (Commander, Pauper, Modern, Pokémon TCG, e incluso un grupo específico "Otto - Cuarentena" durante la pandemia), más un grupo de Facebook para intercambio de cartas. Cada grupo era, en la práctica, un canal dedicado a un arquetipo distinto — la misma lógica de segmentación de la Fase 1, sostenida en el tiempo. Un uso emergente que no se había diseñado: los grupos empezaron a usarse para coordinar dónde ir a comer después de los eventos — la señal más clara de que la comunidad se había vuelto autónoma.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-whatsapp-groups.webp" alt="Lista de grupos de WhatsApp de El Tablero de Otto segmentados por formato de juego">
-  <figcaption>Los grupos de WhatsApp de Otto, segmentados por formato de juego.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/eltablerodeotto/eltablerodeotto-whatsapp-groups.webp" data-lightbox-alt="Lista de grupos de WhatsApp de El Tablero de Otto segmentados por formato de juego" data-lightbox-caption="Los grupos de WhatsApp de Otto, segmentados por formato de juego." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-whatsapp-groups.webp" alt="Lista de grupos de WhatsApp de El Tablero de Otto segmentados por formato de juego">
+      </button>
+      <figcaption>Los grupos de WhatsApp de Otto, segmentados por formato de juego.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## Administrando el Negocio Completo
 
@@ -109,28 +157,46 @@ Diseñar el servicio y responder por el margen al mismo tiempo cambia las decisi
 
 La marca formaba parte del mismo paquete. Otto no es un logotipo: es un personaje con voz propia, escrito para que la tienda se sintiera como un lugar y no como un punto de venta.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-otto.webp" alt="Pieza de marca de El Tablero de Otto presentando al personaje Otto">
-  <figcaption>Pieza de presentación del personaje Otto.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/eltablerodeotto/eltablerodeotto-otto.webp" data-lightbox-alt="Pieza de marca de El Tablero de Otto presentando al personaje Otto" data-lightbox-caption="Pieza de presentación del personaje Otto." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-otto.webp" alt="Pieza de marca de El Tablero de Otto presentando al personaje Otto">
+      </button>
+      <figcaption>Pieza de presentación del personaje Otto.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## Expansión: Cuando Llegó Pokémon
 
 Cuando decidimos incorporar Pokémon TCG, reutilicé el mismo proceso de segmentación por arquetipos. Apareció un perfil que no existía en Magic: el **coleccionista**, un cliente que no compra cartas para jugar sino producto especial (figuras, pokébolas). El framework se sostuvo y sumó ese quinto perfil sin necesidad de rehacerse. La experiencia construida con Magic aceleró todo: solo entonces empezamos a construir el e-commerce y ventas por catálogo en WhatsApp Business.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-pokemon-tournament.webp" alt="Torneo de Pokémon TCG en el local de El Tablero de Otto">
-  <figcaption>Torneo de Pokémon TCG en el local.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/eltablerodeotto/eltablerodeotto-pokemon-tournament.webp" data-lightbox-alt="Torneo de Pokémon TCG en el local de El Tablero de Otto" data-lightbox-caption="Torneo de Pokémon TCG en el local." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-pokemon-tournament.webp" alt="Torneo de Pokémon TCG en el local de El Tablero de Otto">
+      </button>
+      <figcaption>Torneo de Pokémon TCG en el local.</figcaption>
+    </figure>
+  </div>
+</div>
 
 ## Resiliencia: La Pandemia y Lo Que Sigue
 
 La pandemia cerró el local y movió el hobby a plataformas digitales — el grupo "Otto - Cuarentena" documenta ese momento. Con la tienda cerrada, un equipo formado por jugadores de la comunidad se inscribió al Team Challenge de Pokémon, el circuito oficial en línea, bajo el nombre de Otto. Llegaron a la final y quedaron segundos. Pokémon les envió la premiación a Lima.
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-2nd-prize-award-pokemon-team-challenge.webp" alt="Equipo de El Tablero de Otto con la premiación enviada por Pokémon tras el Team Challenge">
-  <figcaption>El equipo de Otto con el kit que Pokémon envió a los clasificados al Top 32. Terminaron segundos en el Team Challenge.</figcaption>
-</figure>
+<div class="d-flex align-items-center justify-content-center">
+  <div class="col-6">
+    <figure class="case-figure">
+      <button type="button" class="lightbox-trigger" data-lightbox-image="/assets/images/cases/eltablerodeotto/eltablerodeotto-2nd-prize-award-pokemon-team-challenge.webp" data-lightbox-alt="Equipo de El Tablero de Otto con la premiación enviada por Pokémon tras el Team Challenge" data-lightbox-caption="El equipo de Otto con el kit que Pokémon envió a los clasificados al Top 32. Terminaron segundos en el Team Challenge." data-close-label="{{ site.data.translations[page.lang].labels.close }}">
+        <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-2nd-prize-award-pokemon-team-challenge.webp" alt="Equipo de El Tablero de Otto con la premiación enviada por Pokémon tras el Team Challenge">
+      </button>
+      <figcaption>El equipo de Otto con el kit que Pokémon envió a los clasificados al Top 32. Terminaron segundos en el Team Challenge.</figcaption>
+    </figure>
+  </div>
+</div>
 
 La hoja de ruta que quedó planteada incluye relanzar la línea de juegos de mesa, adaptar torneos a formatos en línea (League of Legends, Legends of Runeterra), ampliar las líneas de producto Pokémon y terminar el e-commerce — evidencia de que el negocio siguió pensándose estratégicamente incluso bajo presión, en vez de solo reaccionar.
 
