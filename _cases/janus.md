@@ -116,6 +116,8 @@ After approval, the disbursement tracker broke down every outstanding requiremen
   <figcaption>Disbursement tracking: what's still missing, in any order.</figcaption>
 </figure>
 
+The three commitments stopped being a statement of intent: the unified platforms are the form that replaced the Excel file and the single case file where risk, legal and commercial work on the same thing; the advisory is an advisor with a name and a phone number inside the inbox; the tracking is knowing, at any moment, what's still missing before disbursement.
+
 ## Impact
 
 - A 4-step simulation flow, with a figure visible before asking for personal data

@@ -116,6 +116,8 @@ Después de la aprobación, el seguimiento de desembolso desglosaba cada requisi
   <figcaption>Seguimiento de desembolso: qué falta, en cualquier orden.</figcaption>
 </figure>
 
+Los tres compromisos dejaron de ser una declaración de intenciones: las plataformas unificadas son el formulario que reemplazó al Excel y el expediente único donde riesgos, legal y comercial trabajan sobre lo mismo; la asesoría es un asesor con nombre y teléfono dentro de la bandeja; el seguimiento es saber, en cualquier momento, qué falta para el desembolso.
+
 ## Impacto
 
 - Flujo de simulación de 4 pasos, con una cifra visible antes de pedir datos personales
