@@ -8,7 +8,7 @@ dark_hero_image: /assets/images/About.webp
 
 title: "Acerca de — Alfredo Vásquez"
 meta_title: "Acerca de Alfredo Vásquez | Strategic Design Lead"
-meta_description: "Líder de Diseño Estratégico con raíces en ingeniería informática, una historia construida entre startups, bancos y un hobby store de Magic."
+meta_description: "Líder de Diseño Estratégico con raíces en ingeniería informática. Dieciséis años en banca peruana y una tienda de cartas que me convirtió en diseñador."
 
 breadcrumb: "Acerca de"
 headline: "El panorama completo"

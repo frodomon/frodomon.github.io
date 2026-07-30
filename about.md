@@ -8,7 +8,7 @@ dark_hero_image: /assets/images/About.webp
 
 title: "About — Alfredo Vásquez"
 meta_title: "About Alfredo Vásquez | Strategic Design Lead"
-meta_description: "Strategic design lead rooted in computer engineering, with a career built across startups, banks, and a Magic card store."
+meta_description: "Strategic Design Lead rooted in computer engineering. Sixteen years inside Peruvian banking, and a Magic card store that turned me into a designer."
 
 breadcrumb: "About"
 headline: "The full picture"
