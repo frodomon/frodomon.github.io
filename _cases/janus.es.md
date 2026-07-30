@@ -13,8 +13,8 @@ image_height: 1160
 categories: [Banking, Digital Product]
 
 title: "Janus: Crédito Hipotecario Digital E2E en Perú"
-meta_title: "Janus: El Primer Crédito Hipotecario 100% Digital en Perú | Alfredo Vásquez"
-meta_description: "Estrategia UX y diseño de servicios del crédito hipotecario 100% digital de Interbank — de la simulación al desembolso, con un back office multi-rol para riesgos y legal."
+meta_title: "Janus: Hipotecario 100% Digital en Perú | Alfredo Vásquez"
+meta_description: "Estrategia UX y diseño de servicios del crédito hipotecario 100% digital de Interbank — de la simulación al desembolso, con back office multi-rol."
 cover_image: /assets/images/cases/janus/janus-cover.webp
 
 headline: "Janus: Crédito Hipotecario Digital E2E en Perú"

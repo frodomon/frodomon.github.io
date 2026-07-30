@@ -6,7 +6,7 @@ permalink: /es/
 
 title: "Strategic Design Lead | Alfredo Vásquez Alcalá"
 meta_title: "Strategic Design Lead | Diseño de Producto Fintech Regulado"
-meta_description: "Líder de diseño de producto en fintech regulado. Hago que los productos financieros se entiendan para el cliente y se puedan operar para los equipos que están detrás — hipotecas, crédito PYME y los sistemas de back office que los sostienen."
+meta_description: "Líder de diseño de producto en fintech regulado — productos financieros que el cliente entiende y los equipos detrás pueden operar: hipotecas y crédito PYME."
 image: /assets/images/og-design-lead-alfredo.webp
 
 hero:
@@ -14,7 +14,7 @@ hero:
   title: "Diseño productos financieros regulados que la gente puede entender de verdad — y los sistemas internos que los hacen funcionar."
   subtitle: "De la originación hipotecaria al crédito sobre ventas con POS, trabajo donde se cruzan la regulación, la operación de back office y la decisión del cliente — y donde la claridad no es una preferencia de diseño sino un requisito de cumplimiento."
 
-credibility: "Interbank y BBVA Perú — productos bancarios regulados, del flujo que ve el cliente al back office que lo sostiene."
+credibility: "BCP, Interbank y BBVA Perú — originación hipotecaria, crédito PYME y las herramientas internas que deciden qué tan rápido se atiende de verdad a un cliente."
 
 what:
   title: "Todo producto tiene dos mitades. Los portafolios suelen mostrar solo una."
@@ -46,7 +46,7 @@ capabilities:
 
 cases:
   title: "Trabajo Seleccionado"
-  description: "Tres proyectos en siete años: un negocio que fundé y operé de punta a punta, un programa hipotecario donde lideré las decisiones de diseño dentro de un squad de tecnología, y un producto de crédito donde lideré el equipo de diseño. Cada uno documentado con los artefactos que realmente produjo — investigación, blueprints, la hoja de cálculo que reemplazó."
+  description: "Tres proyectos en siete años: un negocio que fundé y operé de punta a punta, un programa hipotecario donde lideré las decisiones de diseño dentro de un squad de tecnología, y un producto de crédito donde lideré un equipo de cuatro personas. De los tres salí antes de que llegaran los resultados de negocio. Hoy diseño en BCP las herramientas internas sobre Salesforce que usan quienes atienden al cliente."
 
 leadership:
   title: "Cómo Pienso el Trabajo"

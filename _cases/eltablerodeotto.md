@@ -10,11 +10,11 @@ date_modified: 2018-06-01
 image: /assets/images/cases/eltablerodeotto/eltablerodeotto.webp
 image_width: 880
 image_height: 912
-categories: [Retail, Product]
+categories: [Retail, Phygital Product]
 
 title: "El Tablero de Otto: Community-Driven Business Design from Zero"
-meta_title: "El Tablero de Otto: Business Design and Community Strategy | Alfredo Vásquez"
-meta_description: "Founded and designed a TCG store and community ecosystem in Lima from zero — archetype segmentation, a four-phase lifecycle engine, and full business operations."
+meta_title: "El Tablero de Otto: Business & Community | Alfredo Vásquez"
+meta_description: "Founded and designed a TCG store and community ecosystem in Lima from zero — archetype segmentation and a four-phase lifecycle engine."
 cover_image: /assets/images/cases/eltablerodeotto/eltablerodeotto-cover.webp
 
 headline: "El Tablero de Otto: Community-Driven Business Design from Zero"

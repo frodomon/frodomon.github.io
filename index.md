@@ -6,7 +6,7 @@ permalink: /
 
 title: "Strategic Design Lead | Alfredo Vásquez Alcalá"
 meta_title: "Strategic Design Lead | Regulated Fintech Product Design"
-meta_description: "Product design lead in regulated fintech. I make financial products understandable for the customer and operable for the teams behind them — mortgages, SMB credit and the back-office systems that run them."
+meta_description: "Product design lead in regulated fintech — financial products customers understand and teams behind them can operate: mortgages, SMB credit, back office."
 image: /assets/images/og-design-lead-alfredo.webp
 
 hero:
@@ -14,7 +14,7 @@ hero:
   title: "I design regulated financial products people can actually understand — and the internal systems that make them work."
   subtitle: "From mortgage origination to POS-based credit, I work where regulation, back-office operations and the customer's decision all meet — and where clarity isn't a design preference but a compliance requirement."
       
-credibility: "Interbank and BBVA Perú — regulated banking products, from the customer-facing flow to the back office behind it."
+credibility: "BCP, Interbank and BBVA Perú — mortgage origination, SMB credit, and the internal tools that decide how fast a customer actually gets served."
 
 what:
   title: "Every product has two halves. Most portfolios only show one."
@@ -46,7 +46,7 @@ capabilities:
 
 cases:
   title: "Selected Work"
-  description: "Three projects across seven years: a business I founded and ran end to end, a mortgage program where I led design decisions inside a technology squad, and a credit product where I led the design team. Each one documented with the artifacts it actually produced — research, blueprints, the legacy spreadsheet it replaced."
+  description: "Three projects across seven years: a business I founded and ran end to end, a mortgage program where I led design decisions inside a technology squad, and a credit product where I led a four-person team. I left all three before the business results came in. Today I design the internal Salesforce tools used by the people who serve BCP's customers."
 
 leadership:
   title: "How I Think About the Work"

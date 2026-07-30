@@ -13,7 +13,7 @@ image_height: 912
 categories: [Banking, Digital Product]
 
 title: "Anticipo POS: Financial Access for Business Owners at the Point of Sale"
-meta_title: "Anticipo POS: Digital Credit for Small Businesses at BBVA | Alfredo Vásquez"
+meta_title: "Anticipo POS: Digital Credit at BBVA | Alfredo Vásquez"
 meta_description: "I led the design team behind BBVA Peru's first fully digital loan repayment — a credit mechanism with no local precedent, made understandable before signing."
 cover_image: /assets/images/cases/anticipopos/anticipopos-cover.webp
 
@@ -21,7 +21,7 @@ headline: "Anticipo POS: Financial Access at the Point of Sale"
 subheadline: "Team Leadership and Content Design in a New Financial Product"
 excerpt: "I led the design team behind BBVA Peru's first fully digital loan repayment: a product assessed on the merchant's POS sales history and repaid from 35% of whatever the business sells each day. Nobody in Peru had taken out anything like it, and the challenge wasn't the interface — it was getting the merchant to understand the mechanism before signing it."
 
-industry: "Fintech · SMB Banking · Enterprise Financial Products"
+industry: "Fintech · SMB Banking · Financial Products"
 client: "BBVA Perú"
 ---
 

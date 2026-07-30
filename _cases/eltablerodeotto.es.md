@@ -10,11 +10,11 @@ date_modified: 2018-06-01
 image: /assets/images/cases/eltablerodeotto/eltablerodeotto.webp
 image_width: 880
 image_height: 912
-categories: [Retail, Product]
+categories: [Retail, Phygital Product]
 
 title: "El Tablero de Otto: Diseño de Negocio Basado en Comunidad desde Cero"
-meta_title: "El Tablero de Otto: Diseño de Negocio y Estrategia de Comunidad | Alfredo Vásquez"
-meta_description: "Fundé y diseñé una tienda de TCG y ecosistema comunitario en Lima desde cero — segmentación de arquetipos, motor de ciclo de vida en 4 fases y operación de negocio completa."
+meta_title: "El Tablero de Otto: Negocio y Comunidad | Alfredo Vásquez"
+meta_description: "Fundé y diseñé una tienda de TCG y ecosistema comunitario en Lima desde cero — segmentación de arquetipos y un motor de ciclo de vida en 4 fases."
 cover_image: /assets/images/cases/eltablerodeotto/eltablerodeotto-cover.webp
 
 headline: "El Tablero de Otto: Diseño de Negocio Basado en Comunidad desde Cero"

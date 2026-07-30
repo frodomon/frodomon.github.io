@@ -13,15 +13,15 @@ image_height: 912
 categories: [Banking, Digital Product]
 
 title: "Anticipo POS: Acceso Financiero para Propietarios de Negocio en el Punto de Venta"
-meta_title: "Anticipo POS: Crédito Digital para Negocios en BBVA | Alfredo Vásquez"
-meta_description: "Lideré el equipo de diseño del primer préstamo con pago 100% digital de BBVA Perú — un mecanismo de crédito sin referente previo, hecho comprensible antes de firmar."
+meta_title: "Anticipo POS: Crédito Digital BBVA | Alfredo Vásquez"
+meta_description: "Lideré el equipo de diseño del primer préstamo 100% digital de BBVA Perú — un mecanismo de crédito sin referente previo, hecho comprensible antes de firmar."
 cover_image: /assets/images/cases/anticipopos/anticipopos-cover.webp
 
 headline: "Anticipo POS: Acceso Financiero en el Punto de Venta"
 subheadline: "Liderazgo de Equipo y Diseño de Contenido en un Producto Financiero Nuevo"
 excerpt: "Lideré el equipo de diseño del primer préstamo con pago 100% digital de BBVA Perú: un producto que se evalúa con el historial de ventas del POS y se cobra del 35% de lo que el negocio vende cada día. Nadie en Perú había contratado algo así, y el reto no fue la interfaz — fue lograr que el comerciante entendiera el mecanismo antes de firmarlo."
 
-industry: "Fintech · Banca PYME · Productos Financieros Empresariales"
+industry: "Fintech · Banca PYME · Productos Financieros"
 client: "BBVA Perú"
 ---
 
