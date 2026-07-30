@@ -14,7 +14,7 @@ hero:
   title: "Diseño productos financieros regulados que la gente puede entender de verdad — y los sistemas internos que los hacen funcionar."
   subtitle: "De la originación hipotecaria al crédito sobre ventas con POS, trabajo donde se cruzan la regulación, la operación de back office y la decisión del cliente — y donde la claridad no es una preferencia de diseño sino un requisito de cumplimiento."
 
-credibility: "BCP, Interbank y BBVA Perú — originación hipotecaria, crédito PYME y las herramientas internas que deciden qué tan rápido se atiende de verdad a un cliente."
+credibility: "BCP, Interbank y BBVA Perú desde 2009 — originación hipotecaria, crédito PYME y las herramientas internas que deciden qué tan rápido se atiende de verdad a un cliente."
 
 what:
   title: "Todo producto tiene dos mitades. Los portafolios suelen mostrar solo una."

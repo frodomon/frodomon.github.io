@@ -14,7 +14,7 @@ hero:
   title: "I design regulated financial products people can actually understand — and the internal systems that make them work."
   subtitle: "From mortgage origination to POS-based credit, I work where regulation, back-office operations and the customer's decision all meet — and where clarity isn't a design preference but a compliance requirement."
       
-credibility: "BCP, Interbank and BBVA Perú — mortgage origination, SMB credit, and the internal tools that decide how fast a customer actually gets served."
+credibility: "BCP, Interbank and BBVA Perú since 2009 — mortgage origination, SMB credit, and the internal tools that decide how fast a customer actually gets served."
 
 what:
   title: "Every product has two halves. Most portfolios only show one."
