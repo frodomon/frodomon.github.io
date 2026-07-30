@@ -81,7 +81,10 @@ The cycle ran on concrete formats: two Sealed leagues per season, one Draft leag
   <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-lifecycle-engine.webp" alt="Otto's four-phase customer lifecycle engine diagram">
   <figcaption>The four-phase engine designed to turn casual players into brand ambassadors.</figcaption>
 </figure>
-
+<figure class="case-figure">
+  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-interstore-tournament.webp" alt="Inter-store league prize check bearing the logos of the three organizing stores">
+  <figcaption>The Inter-Store League prize check, March 2018, bearing the logos of the three organizing stores.</figcaption>
+</figure>
 <figure class="case-figure">
   <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-pokemon-champion.webp" alt="A new player holding their champion playmat after a Pokémon tournament at the store">
   <figcaption>Prize giving at a Pokémon tournament in the store.</figcaption>
@@ -113,6 +116,11 @@ The brand was part of the same package. Otto isn't a logo: it's a character with
 
 When we decided to bring in Pokémon TCG, I reused the same archetype segmentation process. A profile emerged that didn't exist in Magic: the **collector**, a customer who doesn't buy cards to play but special product (figures, poké balls). The framework held and absorbed that fifth profile without needing to be rebuilt. The experience built with Magic accelerated everything: only then did we start building e-commerce and catalog sales through WhatsApp Business.
 
+<figure class="case-figure">
+  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-pokemon-tournament.webp" alt="Pokémon TCG tournament at El Tablero de Otto">
+  <figcaption>Pokémon TCG tournament at the store.</figcaption>
+</figure>
+
 ## Resilience: The Pandemic and What's Next
 
 The pandemic closed the store and pushed the hobby onto digital platforms — the "Otto - Quarantine" group documents that moment. With the store shut, a team of players from the community entered Pokémon's Team Challenge, the official online circuit, under the Otto name. They reached the final and placed second. Pokémon shipped the prizes to Lima.
@@ -134,10 +142,6 @@ The roadmap that came out of it includes relaunching the board games line, adapt
 - The archetype framework, originally mapped for Magic, was successfully reused when expanding into Pokémon TCG — validating it as a system, not a one-off solution
 - Established the frameworks later applied at institutional scale: archetype modeling, service blueprint design, community-as-product strategy and iterative event design
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-interstore-tournament.webp" alt="Inter-store league prize check bearing the logos of the allied stores">
-  <figcaption>The Inter-Store League prize check, March 2018, bearing the logos of the three organizing stores.</figcaption>
-</figure>
 
 ## The Framework
 

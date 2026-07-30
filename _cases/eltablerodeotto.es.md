@@ -51,13 +51,16 @@ La decisión que más definió el negocio no fue a quién sumar, sino a quién d
 
 ## El Mapa de Valores: Lo Explícito y Lo Implícito
 
-Antes de diseñar un solo evento, mapeé lo que los jugadores buscaban en dos capas. La capa explícita — lo que decían en las entrevistas: estacionamiento, mesas amplias y numeradas con sillas cómodas, buena ventilación, poder comprar bebidas y comida sin salir del local, buen stock, buen ambiente, una zona de descanso. La capa implícita — lo que no decían directamente pero explicaba por qué volvían: formar parte de una comunidad sana, recibir un trato amable, poder encontrar jugadores de su nivel, sentir el local como un lugar especial, la progresión de "vencer al más fuerte", hacer nuevos amigos, descubrir nuevos juegos. Diseñar solo para la capa explícita construye una tienda. Diseñar para ambas construye una comunidad que no se va a la competencia por un mejor precio.
+Antes de diseñar un solo evento, mapeé lo que los jugadores buscaban en dos capas. La capa explícita — lo que decían en las entrevistas: estacionamiento, mesas amplias y numeradas con sillas cómodas, buena ventilación, poder comprar bebidas y comida sin salir del local, buen stock, buen ambiente, una zona de descanso. La capa implícita — lo que no decían directamente pero explicaba por qué volvían: formar parte de una comunidad sana, recibir un trato amable, poder encontrar jugadores expertos, sentir el local como un lugar especial, la progresión de "vencer al más fuerte", hacer nuevos amigos, descubrir nuevos juegos. Diseñar solo para la capa explícita construye una tienda. Diseñar para ambas construye una comunidad que no se va a la competencia por un mejor precio.
 
 <figure class="case-figure">
   <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-value-map_es.webp" alt="Mapa de valores explícitos e implícitos de los jugadores de Otto">
   <figcaption>Lo que los jugadores decían que querían, y lo que en realidad los hacía volver.</figcaption>
 </figure>
-
+<figure class="case-figure">
+  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-interstore-tournament.webp" alt="Cheque de premiación de la Liga Intertiendas con los logos de las tiendas aliadas">
+  <figcaption>Cheque de la Liga Intertiendas, marzo 2018, con los logos de las tres tiendas organizadoras.</figcaption>
+</figure>
 <figure class="case-figure">
   <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-intergeneration-match.webp" alt="Un adulto y un niño jugando Pokémon TCG en una mesa del local">
   <figcaption>Un adulto y un niño jugando Pokémon en el local.</figcaption>
@@ -113,6 +116,11 @@ La marca formaba parte del mismo paquete. Otto no es un logotipo: es un personaj
 
 Cuando decidimos incorporar Pokémon TCG, reutilicé el mismo proceso de segmentación por arquetipos. Apareció un perfil que no existía en Magic: el **coleccionista**, un cliente que no compra cartas para jugar sino producto especial (figuras, pokébolas). El framework se sostuvo y sumó ese quinto perfil sin necesidad de rehacerse. La experiencia construida con Magic aceleró todo: solo entonces empezamos a construir el e-commerce y ventas por catálogo en WhatsApp Business.
 
+<figure class="case-figure">
+  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-pokemon-tournament.webp" alt="Torneo de Pokémon TCG en el local de El Tablero de Otto">
+  <figcaption>Torneo de Pokémon TCG en el local.</figcaption>
+</figure>
+
 ## Resiliencia: La Pandemia y Lo Que Sigue
 
 La pandemia cerró el local y movió el hobby a plataformas digitales — el grupo "Otto - Cuarentena" documenta ese momento. Con la tienda cerrada, un equipo formado por jugadores de la comunidad se inscribió al Team Challenge de Pokémon, el circuito oficial en línea, bajo el nombre de Otto. Llegaron a la final y quedaron segundos. Pokémon les envió la premiación a Lima.
@@ -134,10 +142,7 @@ La hoja de ruta que quedó planteada incluye relanzar la línea de juegos de mes
 - El framework de arquetipos, mapeado originalmente para Magic, se reutilizó con éxito al expandir a Pokémon — validando que era un sistema, no una solución puntual
 - Estableció los frameworks de diseño aplicados posteriormente a escala institucional: modelado de arquetipos, diseño de service blueprints, estrategia de comunidad-como-producto y diseño iterativo de eventos
 
-<figure class="case-figure">
-  <img src="/assets/images/cases/eltablerodeotto/eltablerodeotto-interstore-tournament.webp" alt="Cheque de premiación de la Liga Intertiendas con los logos de las tiendas aliadas">
-  <figcaption>Cheque de la Liga Intertiendas, marzo 2018, con los logos de las tres tiendas organizadoras.</figcaption>
-</figure>
+
 
 ## El Framework
 
