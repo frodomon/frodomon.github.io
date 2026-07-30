@@ -1,7 +1,17 @@
+- year: 2026
+  category: adventure
+  title: "Roadtrip Ayacucho — Semana Santa"
+  description: "Viaje grupal para ir a velatoro y jalatoro."
+
 - year: 2025
   category: professional
   title: "Product Designer directo para BCP"
   description: "De la consultoría a la relación directa — el siguiente paso natural."
+
+- year: 2025
+  category: adventure
+  title: "Año nuevo en Cusco"
+  description: "Visitar a Fer y recibir año nuevo entre amigos cusqueños."
 
 - year: 2024
   category: professional
@@ -17,6 +27,11 @@
   category: professional
   title: "Cebiche Design Team — BBVA Perú"
   description: "UX Designer y Design Lead vía Multiplica Talent, liderando proyectos de diseño para la banca peruana."
+
+- year: 2022
+  category: adventure
+  title: "Ayacucho — Semana Santa"
+  description: "Viaje grupal por el open house de Jack."
 
 - year: 2021
   category: professional
@@ -105,7 +120,7 @@
 
 - year: 2012
   category: professional
-  title: "Tiendas Ripley — Primer empleo"
+  title: "Tiendas Ripley — Experiencia de compra - Primer empleo"
   description: "El punto de partida profesional — donde aprendí que la experiencia del cliente es todo."
 
 - year: 2012
@@ -135,5 +150,5 @@
 
 - year: 2007
   category: personal
-  title: "Jefe de Tropa Scout — Valle de Vitor"
+  title: "Jefe de Tropa Scout — Valle de Vitor - Misticamp"
   description: "Campamento en Arequipa — el liderazgo más honesto que ejercí antes de entrar al mundo profesional."

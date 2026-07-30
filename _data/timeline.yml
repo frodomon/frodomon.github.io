@@ -1,7 +1,17 @@
+- year: 2026
+  category: adventure
+  title: "Ayacucho Road Trip — Holy Week"
+  description: "Group trip for Velatoro and Jalatoro."
+
 - year: 2025
   category: professional
   title: "Product Designer, direct hire at BCP"
   description: "From consulting to a direct relationship — the natural next step."
+
+- year: 2025
+  category: adventure
+  title: "New Year in Cusco"
+  description: "Visiting Fer and ringing in the new year with friends from Cusco."
 
 - year: 2024
   category: professional
@@ -17,6 +27,11 @@
   category: professional
   title: "Cebiche Design Team — BBVA Peru"
   description: "UX Designer and Design Lead via Multiplica Talent, leading design projects for Peruvian banking."
+
+- year: 2022
+  category: adventure
+  title: "Ayacucho — Holy Week"
+  description: "Group trip for Jack's open house."
 
 - year: 2021
   category: professional
@@ -135,5 +150,5 @@
 
 - year: 2007
   category: personal
-  title: "Scout Troop Leader — Valle de Vitor"
+  title: "Scout Troop Leader — Valle de Vitor - Misticamp"
   description: "Campout in Arequipa — the most honest leadership I exercised before entering the professional world."

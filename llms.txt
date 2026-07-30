@@ -1,0 +1,33 @@
+---
+permalink: /llms.txt
+layout: none
+---
+{%- assign home_en = site.pages | where: "layout", "index" | where: "lang", "en" | first -%}
+{%- assign cases_page_en = site.pages | where: "layout", "cases" | where: "lang", "en" | first -%}
+{%- assign about_en = site.pages | where: "layout", "about" | where: "lang", "en" | first -%}
+{%- assign blog_en = site.pages | where: "layout", "blog" | where: "lang", "en" | first -%}
+{%- assign home_es = site.pages | where: "layout", "index" | where: "lang", "es" | first -%}
+{%- assign cases_page_es = site.pages | where: "layout", "cases" | where: "lang", "es" | first -%}
+{%- assign about_es = site.pages | where: "layout", "about" | where: "lang", "es" | first -%}
+{%- assign cases_en = site.cases | where: "lang", "en" | sort: "date" | reverse -%}
+# {{ site.title }}
+
+> {{ site.description }}
+
+## Home
+- [Home]({{ site.url }}{{ home_en.url }}): Positioning, capabilities and philosophy for regulated product design leadership.
+
+## Case Studies
+- [Case Studies index]({{ site.url }}{{ cases_page_en.url }}): All case studies.
+{% for c in cases_en %}- [{{ c.title }}]({{ site.url }}{{ c.url }}): {{ c.excerpt }}
+{% endfor %}
+## About
+- [About]({{ site.url }}{{ about_en.url }}): Background, career timeline and how Alfredo approaches design work.
+
+## Español
+- [Inicio]({{ site.url }}{{ home_es.url }})
+- [Casos de Estudio]({{ site.url }}{{ cases_page_es.url }})
+- [Conóceme]({{ site.url }}{{ about_es.url }})
+
+## Optional
+- [Blog]({{ site.url }}{{ blog_en.url }}): Secondary notes and personal posts — not essential to understanding the core work.
